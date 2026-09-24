@@ -1,0 +1,21 @@
+{
+  "run_id": "EXP-Q3-BASE-R6-20260924-v1",
+  "status": "PASS",
+  "rows": 51,
+  "numeric_starts": 204,
+  "all_starts_success": true,
+  "max_loss_gap": 4.858335955759685e-13,
+  "max_kkt": 2.7755575615628914e-17,
+  "transitions": {
+    "unconstrained_N_upper_C": 6.886597184056822e+22,
+    "unconstrained_D_upper_C": 9.325359035607933e+21,
+    "both_upper_saturation_C": 2.300063908774456e+22,
+    "N_budget_elasticity_interior": 0.4515221451530468,
+    "D_budget_elasticity_interior": 0.5484778548469532
+  },
+  "config_sha256": "c6c7c747b0887c6610729c830d2f58b03c1bab715b9da9ebd7aeebdd7b86b9ba",
+  "code_sha256": "416630f469d15c38ac8353c59f35b787de6d7ecb1739d3d9aa2d5ea9b7b8829e",
+  "core_sha256": "01f2639b9ec59eb7f97f20e459a2427b84d189247dc649d234c2a373b349b152",
+  "evidence": "ATTACHMENT-INTERNAL ESTIMATED + PROBLEM-PROVIDED COST PROXIES",
+  "Q4_started": false
+}

@@ -45,3 +45,11 @@ Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 
 数值来源：06_results/raw/<Run>/<Artifact>，规格/代码/输入哈希见配置与summary。当前全项目14项Q1+9项Q2候选，VALIDATED FINAL仍0。
 
 接管收口：原 9 项 Q2 Result ID、数值、Run 和证据级别不变；Q2 PROVISIONALLY CLOSED 只指受限研究包完成，不升格 VALIDATED FINAL。新增导航见 `03_models/modeling_phase2/round5/Q2_DELIVERY_FIGURE_TABLE_PLAN_v1.md`；Q3 准入见接口 A–J。QA 和字节修复不新增科学结果。Gate3 仍未通过。
+
+
+## Round6 CP2 CHECKED CANDIDATES
+
+| Result ID | Source Run | Value | Status |
+|---|---|---|---|
+| CAND-Q3-R6-BASE-001 | EXP-Q3-BASE-R6-20260924-v1 | 51预算解析/204数值全部PASS，gap4.86e-13 | CHECKED，附件内部+题面proxy |
+| CAND-Q3-R6-SHIFT-001 | 同上summary/budget_path | D cap9.325359e21，两cap2.300064e22 | 支持限制转移，非现实阈值 |

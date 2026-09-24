@@ -10,3 +10,8 @@ Policy: every completed core module is committed/pushed/remote-verified before p
 
 
 CP0 remote confirmed f253450b31dccfe6670e719836840acbe909010c; CP0 RECOVERED — NO RE-RUN. CP1 R6-SPEC-001: targeted cost audit, cost model, baseline/generalized optimization and support specs frozen. No optimizer executed. Commit/push required before baseline.
+
+CP1 REMOTE VERIFIED: bb8b01561b75b4a23ef0ae8ec6385fe113376203 (local HEAD == remote main). Baseline now authorized to run.
+
+
+CP2 complete: baseline analytical/SLSQP verification PASS; no quality scenario run yet. Await CP2 remote verification before CP3.

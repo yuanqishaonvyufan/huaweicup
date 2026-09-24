@@ -34,3 +34,9 @@
 ## Round 5 takeover closeout
 
 QA-R5-TAKEOVER-20260924-v1：`04_code/modeling_phase2/round5_takeover_audit.py`，只核既有产物、SHA、保存格式、接口和交付完整性；输出 `10_review/ROUND5_TAKEOVER_INTEGRITY_v1.json`。字节恢复记录见 ROUND5_CHECKOUT_BYTE_RESTORATION_v1.json。无新模型 Run，无重训/重验/重画，随机种子不适用。既有原 59 项数值 QA 保持原文件与时间戳。新增审计与实验运行分开计数。Round5 COMPLETE，Q2 暂定关闭（受限候选），Gate3 READY / NOT PASSED。
+
+## Round6 preregistration
+
+| Run | Purpose | Config | Code | Status |
+|---|---|---|---|---|
+| EXP-Q3-BASE-R6-20260924-v1 | 51 budgets analytic/SLSQP baseline, quality/mix OFF | Q3_R6_FROZEN_v1.json | round6_baseline.py + round6_core.py | COMPLETED CP2 — PASS |

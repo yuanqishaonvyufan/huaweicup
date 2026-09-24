@@ -27,3 +27,6 @@ G3-SINGLE-001 六项裁决 PASS；新发现 P0=0/P1=0/P2=0，技术阻断0。89 
 
 
 Round6 CP0 recovered; CP1 R6-SPEC-001 frozen with problem-provided FLOPs proxies. B1 minimum70.542M does not overlap1M/60M mixture support; main transport0. Q4 NOT STARTED.
+
+
+CP2完成：题面算力代理+Q2源内支持基线；51预算/204数值全PASS。下一CP3，只在CP2远端确认后执行。
