@@ -1,0 +1,23 @@
+﻿signal_id,full22_role,DOWNSTREAM_ELIGIBILITY,direction_status,unit_status,encoding
+fineweb_edu,CORE,DESCRIPTIVE_ONLY,POSITIVE_CANDIDATE,raw model score,list[0]
+fluency_en,CORE,DESCRIPTIVE_ONLY,POSITIVE_CANDIDATE,logits,fluent minus not-fluent logit; argmax sensitivity
+modernbert_cleanliness,CORE,DESCRIPTIVE_ONLY,POSITIVE_CANDIDATE,logits,softmax expected level; argmax sensitivity
+modernbert_readability,CORE,DESCRIPTIVE_ONLY,POSITIVE_CANDIDATE,logits,softmax expected level; argmax sensitivity
+modernbert_reasoning,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,logits,argmax and softmax expected level separately
+modernbert_professionalism,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,logits,argmax and softmax expected level separately
+dsir_books,UNKNOWN,UNKNOWN,CONTEXT_DEPENDENT,raw negative score; exact scale/normalization unresolved,raw score in DSIR comparison only
+dsir_wiki,REDUNDANT,UNKNOWN,CONTEXT_DEPENDENT,raw negative score; exact scale/normalization unresolved,raw score in DSIR comparison only
+dsir_math,REDUNDANT,UNKNOWN,CONTEXT_DEPENDENT,raw negative score; exact scale/normalization unresolved,raw score in DSIR comparison only
+qurater,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,four raw ratings,retain four source facets; do not average as main
+ad_en,CORE,DESCRIPTIVE_ONLY,POSITIVE_CANDIDATE,logits,no-ad minus has-ad logit; argmax sensitivity
+rps_doc_word_count,SECONDARY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,words,log1p length covariate only
+rps_doc_num_sentences,SECONDARY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,sentences,log1p length covariate only
+rps_doc_unigram_entropy,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,"raw entropy, base unresolved",raw scalar / rank diagnostic
+rps_doc_frac_unique_words,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,percent-like raw scale,raw scalar / rank diagnostic
+rps_doc_frac_no_alph_words,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,percent-like raw scale,raw scalar / rank diagnostic
+rps_doc_frac_chars_top_2gram,SENSITIVITY,UNKNOWN,CONTEXT_DEPENDENT,A1: 100*RedPajama ratio matches both >100 cases; A2/A3: pipeline not verified,raw scalar / rank diagnostic; no clipping
+rps_doc_frac_chars_top_3gram,SENSITIVITY,UNKNOWN,CONTEXT_DEPENDENT,A1: 100*RedPajama ratio matches both >100 cases; A2/A3: pipeline not verified,raw scalar / rank diagnostic; no clipping
+rps_lines_uppercase_letter_fraction,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,percent-like raw scale,raw scalar / rank diagnostic
+rps_lines_ending_with_terminal_punctution_mark,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,percent-like raw scale,raw scalar / rank diagnostic
+rps_lines_numerical_chars_fraction,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,percent-like raw scale,raw scalar / rank diagnostic
+rps_doc_mean_word_length,SENSITIVITY,DESCRIPTIVE_ONLY,CONTEXT_DEPENDENT,characters/word,raw scalar / rank diagnostic

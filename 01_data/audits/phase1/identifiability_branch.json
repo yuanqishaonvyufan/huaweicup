@@ -1,0 +1,22 @@
+{
+  "audit_id": "F2026-AUDIT-01-20260923",
+  "primary_branch": "NO_MATCHED_Q",
+  "evidence_classification": "REAL_DIRECT",
+  "evidence_refs": {
+    "score_provenance_id": "RAW-SIGNAL-PROVENANCE-ONLY: source_manifest.json and RAW_SHA256.csv; no Q score constructed",
+    "pairing_evidence_id": "",
+    "rank_evidence_id": "",
+    "precision_rule_id": "",
+    "support_rule_id": "",
+    "oos_split_id": "",
+    "oos_metrics_id": ""
+  },
+  "risk_flags": [],
+  "Q2_ACTION": "Fit only source-supported p response; keep separate Q effect OPEN.",
+  "Q3_ACTION": "Treat Q as an explicit scenario, not an empirically estimated decision response.",
+  "allowed_claim": "Quality indicators and mixture Loss exist at different observational grains.",
+  "forbidden_claim": "A1 text-level Q variation identifies a mixture-run quality coefficient.",
+  "fallback_branch": "Joint p/q description or conditional Q scenario.",
+  "mathematical_model_confirmed": false,
+  "input_audit_summary_sha256": "a23a9ba043693a6ae19afaf79a047fc59e4219e1a7ebc77a779eb30e031a1693"
+}

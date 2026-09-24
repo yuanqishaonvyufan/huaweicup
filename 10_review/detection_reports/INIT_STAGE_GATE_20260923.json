@@ -1,0 +1,112 @@
+{
+  "workspace": "D:\\work document\\codex\\_work\\mathmodel\\F题\\HuaweiCup_F_2026",
+  "stage": "INITIALIZATION",
+  "checked_at_utc": "2026-09-23T01:27:10.622012+00:00",
+  "structural_status": "READY_FOR_MANUAL_REVIEW",
+  "manual_review_required": true,
+  "upstream_stages_checked": false,
+  "completion_decision": "NOT_MADE_BY_PREFLIGHT",
+  "checks": [
+    {
+      "check": "file",
+      "target": "README.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "PROJECT_RULES.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "META_MODEL_AGENT_ADAPTER.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "00_problem/OFFICIAL_REQUIREMENTS.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "00_problem/EXTERNAL_ADVICE.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "00_problem/PROBLEM_MAP.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "01_data/DATA_AUDIT.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "09_handoff/PROJECT_STATE.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "09_handoff/STAGE_GATES.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "09_handoff/NEXT_ACTION.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "09_handoff/JOINT_CONTEXT.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "09_handoff/JOINT_CONTEXT_v1.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "02_analysis/consensus/JOINT_COLLABORATION_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "02_analysis/consensus/JOINT_WORK_LOG.md",
+      "pass": true
+    },
+    {
+      "check": "glob_min",
+      "target": "00_problem/original/*",
+      "minimum": 7,
+      "found": 7,
+      "pass": true
+    },
+    {
+      "check": "glob_min",
+      "target": "skills/*/SKILL.md",
+      "minimum": 13,
+      "found": 13,
+      "pass": true
+    },
+    {
+      "check": "csv_rows_min",
+      "target": "01_data/raw/RAW_SHA256.csv",
+      "minimum": 2012,
+      "found": 2012,
+      "pass": true
+    },
+    {
+      "check": "empty_dir",
+      "target": "05_experiments/runs",
+      "pass": true
+    },
+    {
+      "check": "empty_dir",
+      "target": "06_results/validated",
+      "pass": true
+    }
+  ]
+}

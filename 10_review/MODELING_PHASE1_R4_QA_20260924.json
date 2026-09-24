@@ -1,0 +1,92 @@
+{
+  "qa_id": "QA-MODELING-PHASE1-R4-20260924-v1",
+  "status": "PASS",
+  "failures": [],
+  "checks": {
+    "freeze": {
+      "train_run": "EXP-Q1-PRESP-TRAIN-R4-20260924-v1",
+      "validation_run": "VAL-Q1-PRESP-A6A11-R4-20260924-v2",
+      "bundle_sha256": "9c1e8887098595f05aaa37e94d21658d0010cf6fb8bb8702bc965e8b73246e39",
+      "rank": 16,
+      "condition": 45.43559894607052,
+      "A6_A11_training_loss_read": false
+    },
+    "raw_inputs": "A4/A5 and A6–A11 match official raw SHA-256 manifest",
+    "quality": {
+      "physical_rows": 272505,
+      "unique_ids": 261086,
+      "roles": {
+        "SENSITIVITY": 12,
+        "CORE": 5,
+        "REDUNDANT": 2,
+        "SECONDARY": 2,
+        "UNKNOWN": 1
+      },
+      "semantic_conflicts": 0,
+      "TYPE_E": 0
+    },
+    "model_results": {
+      "CV": {
+        "M0": 1.0015782403587754,
+        "M1": 0.7504173681807004,
+        "M2": 0.7497149296111305
+      },
+      "R0_RMSE_recomputed": {
+        "1M": {
+          "M0": 0.2846149798599803,
+          "M1": 0.22776521261096522,
+          "M2": 0.22765452617213325
+        },
+        "60M": {
+          "M0": 1.5374062609300423,
+          "M1": 1.5205479228422571,
+          "M2": 1.520393499389993
+        },
+        "1B": {
+          "M0": 3.119518929406862,
+          "M1": 3.194344534559115,
+          "M2": 3.190582209945707
+        }
+      },
+      "A7_improved_domains": 13,
+      "support": {
+        "1M": {
+          "NEAR_SUPPORT": 252,
+          "IN_SUPPORT": 2,
+          "OUT_OF_SUPPORT": 2
+        },
+        "60M": {
+          "NEAR_SUPPORT": 252,
+          "IN_SUPPORT": 2,
+          "OUT_OF_SUPPORT": 2
+        },
+        "1B": {
+          "NEAR_SUPPORT": 46,
+          "IN_SUPPORT": 15,
+          "OUT_OF_SUPPORT": 3
+        }
+      },
+      "60M_centered_ratio": 0.8875744816416311,
+      "1B_centered_ratio": 3.108487461713722
+    },
+    "figures_tables": {
+      "figures": 4,
+      "tables": 5,
+      "visual_review": "four PNG previews inspected; no obvious clipping"
+    },
+    "registries": {
+      "final_results": 0,
+      "result_candidates": 14,
+      "figure_ids": [
+        "FIG-Q1-R4-001",
+        "FIG-Q1-R4-002",
+        "FIG-Q1-R4-003",
+        "FIG-Q1-R4-004"
+      ],
+      "local_links_checked": 85
+    }
+  },
+  "model_training_rerun": false,
+  "holdout_validation_rerun": false,
+  "qa_script_sha256": "ff0a8f8dc75dac2a9dce9029317a0df79f6fbedc776c67c0c8cd782de51c6e7d"
+}

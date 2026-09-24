@@ -1,0 +1,38 @@
+{
+  "audit_id": "AUDIT-B1-VALLOSS-R3-20260924-v1",
+  "status": "SOURCE_TRACE_NON_FINAL",
+  "run_utc": "2026-09-24T01:02:54.488365+00:00",
+  "script_sha256": "ef3645fd8bf5ca18f9dc4e5cdec53df2073c1672de430b02ef599f25ea2fe2f4",
+  "B1_sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+  "primary_readme": "https://github.com/EleutherAI/pythia/blob/a19eecb807ec2c79a39ebf18108816e6ffffc1d5/README.md",
+  "public_api_endpoint": "https://api.wandb.ai/graphql",
+  "group_checks": [
+    {
+      "size": "160m",
+      "group": "Pythia 125M_1mpgqyzx",
+      "runs_returned": 8,
+      "truncated_at_100_possible": false
+    },
+    {
+      "size": "1b",
+      "group": "800M Pythia_1zw5etef",
+      "runs_returned": 8,
+      "truncated_at_100_possible": false
+    },
+    {
+      "size": "1.4b",
+      "group": "Pythia 1.3B_lepj8rtx",
+      "runs_returned": 16,
+      "truncated_at_100_possible": false
+    },
+    {
+      "size": "2.8b",
+      "group": "2.7B New_36751euw",
+      "runs_returned": 8,
+      "truncated_at_100_possible": false
+    }
+  ],
+  "candidate_final_step_run_rows": 2,
+  "output_sha256": "02d16530235cce9488ec37212f60dfb007935c7001de2d4d8ff7f3b53644cafa",
+  "limitation": "README gives rough partial W&B group links; group summary cannot prove B1 row provenance"
+}

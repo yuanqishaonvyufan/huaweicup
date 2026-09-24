@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_BEFORE_ROUND3_MODEL_COMPARISON",
+  "script_sha256": "818453bbf622f7e47f4bd7f3778910b9e220f19266e10dbbe83c6199b079d284",
+  "round2_semantics_sha256": "f3931ae3a606d45014bd38785006c0dbf1d7976633f332c7eafcab93386fbf1a",
+  "round1_diagnostics_sha256": "c214382864539149f8d6fc09b2cc99cbdb1dae4b62b924a87fba5c4b71868a50",
+  "output_sha256": "3ac0dac810110f1cdadda4248a47894e3c7fe8eaac7281c1e5875ef4632f7303",
+  "counts": {
+    "SENSITIVITY_ONLY_SIGNAL": 12,
+    "CORE_DESCRIPTIVE_SIGNAL": 5,
+    "UNKNOWN": 3,
+    "EXCLUDED_FOR_NOW": 2
+  }
+}

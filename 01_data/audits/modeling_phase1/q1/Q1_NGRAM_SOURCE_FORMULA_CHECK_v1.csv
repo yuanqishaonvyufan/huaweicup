@@ -1,0 +1,5 @@
+﻿id,domain,signal,stored_percent,redpajama_formula_percent,absolute_difference,normalized_word_count
+BkiUctTxK6-gD0SrcyGG,stackexchange,rps_doc_frac_chars_top_2gram,135.13338722716247,135.1333872271625,2.842170943040401e-14,615
+BkiUctTxK6-gD0SrcyGG,stackexchange,rps_doc_frac_chars_top_3gram,201.6814874696847,201.68148746968473,2.842170943040401e-14,615
+BkiUdl7xK0zjCsHebIJy,stackexchange,rps_doc_frac_chars_top_2gram,111.53846153846155,111.53846153846153,1.4210854715202004e-14,291
+BkiUdl7xK0zjCsHebIJy,stackexchange,rps_doc_frac_chars_top_3gram,155.76923076923077,155.76923076923077,0.0,291

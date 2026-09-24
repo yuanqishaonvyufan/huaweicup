@@ -1,0 +1,72 @@
+{
+  "status": "AUDIT_EVIDENCE_ONLY_NOT_VALIDATED_BRIDGE",
+  "input_paths_sha256": {
+    "01_data/raw/real_attachments/C_efficiency_evolution/loss_benchmark_bridge_expanded.csv": "e175462233c2b856e2878c603055b4ed70135f021300f912852af1bb485ba4fd",
+    "01_data/raw/real_attachments/B_scaling_laws/pythia_training_log_existing.csv": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+  },
+  "high_rows": 7,
+  "family_prefixes": {
+    "EleutherAI": 7
+  },
+  "D_tokens_B_unique": [
+    299.893
+  ],
+  "N_params_B_min_max": [
+    0.162405,
+    11.965825
+  ],
+  "matched_B1_final_checkpoints": 7,
+  "max_abs_C6_B1_loss_difference": 0.0,
+  "B1_design": {
+    "rows": 1176,
+    "N_levels": 8,
+    "D_levels_per_N": [
+      147
+    ],
+    "N_range_B": [
+      0.070542,
+      11.965825
+    ],
+    "D_range_B": [
+      0.134,
+      299.893
+    ],
+    "val_loss_range": [
+      2.0933,
+      4.7388
+    ],
+    "logN_logD_correlation": 5.514707319566804e-18,
+    "rank_intercept_logN_logD": 3
+  },
+  "associations": {
+    "LB_Average": {
+      "pearson_with_val_loss": -0.3974663147423843,
+      "spearman_with_val_loss": -0.6071428571428572
+    },
+    "LB_IFEval": {
+      "pearson_with_val_loss": -0.8559619018471698,
+      "spearman_with_val_loss": -0.7142857142857144
+    },
+    "LB_BBH": {
+      "pearson_with_val_loss": -0.8435271532387838,
+      "spearman_with_val_loss": -0.8571428571428573
+    },
+    "LB_MATH": {
+      "pearson_with_val_loss": -0.8154125605474083,
+      "spearman_with_val_loss": -0.8288624656799143
+    },
+    "LB_GPQA": {
+      "pearson_with_val_loss": 0.6704993821550859,
+      "spearman_with_val_loss": 0.6847124716486249
+    },
+    "LB_MUSR": {
+      "pearson_with_val_loss": 0.7084071470429265,
+      "spearman_with_val_loss": 0.03571428571428572
+    },
+    "LB_MMLU_PRO": {
+      "pearson_with_val_loss": -0.19554160009020338,
+      "spearman_with_val_loss": -0.14285714285714288
+    }
+  },
+  "limit": "Seven correlated model sizes in one family, with D fixed; no held-out mapping, residual assessment, interval calibration, Q/p variation, or cross-family transport."
+}

@@ -1,0 +1,5 @@
+﻿candidate,definition,unit,status,bootstrap_score_rank_rho_p025,bootstrap_score_rank_rho_median
+R0,raw equal mean of 13 domain Loss,A5 original Loss,COMPUTABLE_CANDIDATE,1.0,1.0
+R1,equal mean of A5 train-standardized domain Loss,dimensionless,COMPUTABLE_CANDIDATE,0.9994794170071297,0.9998153739085156
+R2,"PC1 of A5 train z, sign aligned with R0",dimensionless,COMPUTABLE_CANDIDATE,0.9414639847692863,0.9873061291928451
+R3,13 original domain Loss vector,A5 original Loss per domain,MANDATORY_HETEROGENEITY,,

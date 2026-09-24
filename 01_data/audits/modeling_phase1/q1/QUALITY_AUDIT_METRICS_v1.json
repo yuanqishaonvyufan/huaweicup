@@ -1,0 +1,371 @@
+{
+  "run_id": "AUDIT-Q1-QUALITY-20260924-v1",
+  "status": "CHECKED_AUDIT_RESULT_NOT_FINAL_MODEL",
+  "run_utc": "2026-09-23T16:20:32.279751+00:00",
+  "script_sha256": "7d5e67631f103f0e61f733102e73c5fe4f68ac723b8a0738076ad088211d0ae5",
+  "mapping_sha256": "b79354e2ce9cb7674b2e36b1df39cbe5c73027a52ac4e1e3e0ca410ec0366f8b",
+  "official_pdf_sha256": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+  "inputs": {
+    "A1": {
+      "path": "A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+      "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579"
+    },
+    "A2": {
+      "path": "A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz",
+      "sha256": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a"
+    },
+    "A3": {
+      "path": "A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz",
+      "sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+    }
+  },
+  "sources": {
+    "A1": {
+      "label": "A1",
+      "rows": 51230,
+      "bad_json": 0,
+      "missing_id": 0,
+      "field_counts": {
+        "27": 51230
+      },
+      "keys": {
+        "id": 51230,
+        "content": 51230,
+        "dsir_books": 51230,
+        "fluency_en": 51230,
+        "rps_lines_ending_with_terminal_punctution_mark": 51230,
+        "modernbert_cleanliness": 51230,
+        "qurater": 51230,
+        "rps_doc_num_sentences": 51230,
+        "rps_doc_word_count": 51230,
+        "ad_en": 51230,
+        "rps_doc_frac_no_alph_words": 51230,
+        "modernbert_reasoning": 51230,
+        "rps_doc_frac_chars_top_2gram": 51230,
+        "rps_lines_uppercase_letter_fraction": 51230,
+        "rps_doc_frac_unique_words": 51230,
+        "rps_lines_numerical_chars_fraction": 51230,
+        "fineweb_edu": 51230,
+        "dsir_math": 51230,
+        "rps_doc_mean_word_length": 51230,
+        "dsir_wiki": 51230,
+        "rps_doc_frac_chars_top_3gram": 51230,
+        "rps_doc_unigram_entropy": 51230,
+        "modernbert_professionalism": 51230,
+        "modernbert_readability": 51230,
+        "sub_path": 51230,
+        "_source_domain": 51230,
+        "_source_path": 51230
+      },
+      "unique_ids": 51230,
+      "duplicate_id_rows": 0,
+      "duplicate_full_rows": 0,
+      "duplicate_content_rows": 0,
+      "overlap_ids": 0,
+      "overlap_equal": 0,
+      "overlap_different": 0,
+      "domains": {
+        "arxiv": 1419,
+        "book": 171,
+        "c4": 10000,
+        "commoncrawl": 9640,
+        "github": 10000,
+        "stackexchange": 10000,
+        "wikipedia": 10000
+      }
+    },
+    "A2": {
+      "label": "A2",
+      "rows": 17523,
+      "bad_json": 0,
+      "missing_id": 0,
+      "field_counts": {
+        "24": 17523
+      },
+      "keys": {
+        "id": 17523,
+        "dsir_books": 17523,
+        "fluency_en": 17523,
+        "rps_lines_ending_with_terminal_punctution_mark": 17523,
+        "modernbert_cleanliness": 17523,
+        "qurater": 17523,
+        "rps_doc_num_sentences": 17523,
+        "rps_doc_word_count": 17523,
+        "ad_en": 17523,
+        "rps_doc_frac_no_alph_words": 17523,
+        "modernbert_reasoning": 17523,
+        "rps_doc_frac_chars_top_2gram": 17523,
+        "rps_lines_uppercase_letter_fraction": 17523,
+        "rps_doc_frac_unique_words": 17523,
+        "rps_lines_numerical_chars_fraction": 17523,
+        "fineweb_edu": 17523,
+        "dsir_math": 17523,
+        "rps_doc_mean_word_length": 17523,
+        "dsir_wiki": 17523,
+        "rps_doc_frac_chars_top_3gram": 17523,
+        "rps_doc_unigram_entropy": 17523,
+        "modernbert_professionalism": 17523,
+        "modernbert_readability": 17523,
+        "sub_path": 17523
+      },
+      "unique_ids": 17523,
+      "duplicate_id_rows": 0,
+      "duplicate_full_rows": 0,
+      "duplicate_content_rows": 0,
+      "overlap_ids": 1419,
+      "overlap_equal": 1419,
+      "overlap_different": 0,
+      "domains": {
+        "arxiv": 17523
+      }
+    },
+    "A3": {
+      "label": "A3",
+      "rows": 203752,
+      "bad_json": 0,
+      "missing_id": 0,
+      "field_counts": {
+        "24": 203752
+      },
+      "keys": {
+        "id": 203752,
+        "modernbert_reasoning": 203752,
+        "dsir_books": 203752,
+        "modernbert_readability": 203752,
+        "fineweb_edu": 203752,
+        "rps_doc_unigram_entropy": 203752,
+        "modernbert_cleanliness": 203752,
+        "rps_doc_frac_chars_top_3gram": 203752,
+        "rps_doc_frac_chars_top_2gram": 203752,
+        "rps_doc_frac_no_alph_words": 203752,
+        "modernbert_professionalism": 203752,
+        "rps_lines_ending_with_terminal_punctution_mark": 203752,
+        "dsir_math": 203752,
+        "rps_doc_frac_unique_words": 203752,
+        "rps_doc_num_sentences": 203752,
+        "rps_lines_numerical_chars_fraction": 203752,
+        "ad_en": 203752,
+        "dsir_wiki": 203752,
+        "rps_doc_word_count": 203752,
+        "rps_doc_mean_word_length": 203752,
+        "rps_lines_uppercase_letter_fraction": 203752,
+        "qurater": 203752,
+        "fluency_en": 203752,
+        "sub_path": 203752
+      },
+      "unique_ids": 203752,
+      "duplicate_id_rows": 0,
+      "duplicate_full_rows": 0,
+      "duplicate_content_rows": 0,
+      "overlap_ids": 10000,
+      "overlap_equal": 10000,
+      "overlap_different": 0,
+      "domains": {
+        "github": 203752
+      }
+    }
+  },
+  "shared_quality_metric_count": 22,
+  "a1_a2_id_overlap": 1419,
+  "a1_a3_id_overlap": 10000,
+  "spectrum": {
+    "eigenvalues": [
+      7.731846990584839,
+      3.98576962383643,
+      2.1207470973032523,
+      1.5627634892253908,
+      1.2051130113054467,
+      0.9028813370527274,
+      0.7439345538989748,
+      0.6626624287927891,
+      0.5456119948712504,
+      0.4497994986133427,
+      0.37424376987324554,
+      0.33651978312242425,
+      0.3277597257312601,
+      0.2686871687217509,
+      0.23200816680773095,
+      0.195176984400578,
+      0.14234049222725584,
+      0.1274455258457981,
+      0.07239290666821363,
+      0.010373916828295153,
+      0.0013203400678043174,
+      0.00060119422119518
+    ],
+    "variance_share": [
+      0.35144759048112917,
+      0.1811713465380196,
+      0.09639759533196604,
+      0.0710347040556996,
+      0.054777864150247595,
+      0.04104006077512399,
+      0.03381520699540796,
+      0.030121019490581335,
+      0.024800545221420483,
+      0.020445431755151948,
+      0.017011080448783893,
+      0.015296353778292016,
+      0.01489816935142092,
+      0.012213053123715954,
+      0.010545825763987774,
+      0.008871681109117185,
+      0.006470022373966176,
+      0.00579297844753628,
+      0.003290586666736984,
+      0.0004715416740134162,
+      6.0015457627468994e-05,
+      2.7327010054326374e-05
+    ],
+    "positive_eigenvalues": 22,
+    "exploratory_cluster_count": 15
+  },
+  "top_positive_pairs": [
+    {
+      "signal_a": "dsir_books",
+      "signal_b": "dsir_wiki",
+      "spearman_A1": 0.9990023514774117
+    },
+    {
+      "signal_a": "dsir_books",
+      "signal_b": "dsir_math",
+      "spearman_A1": 0.9969390670221917
+    },
+    {
+      "signal_a": "dsir_wiki",
+      "signal_b": "dsir_math",
+      "spearman_A1": 0.99679370742798
+    },
+    {
+      "signal_a": "rps_doc_word_count",
+      "signal_b": "rps_doc_unigram_entropy",
+      "spearman_A1": 0.950560177328079
+    },
+    {
+      "signal_a": "rps_doc_word_count",
+      "signal_b": "rps_doc_num_sentences",
+      "spearman_A1": 0.8285903850896343
+    },
+    {
+      "signal_a": "dsir_math",
+      "signal_b": "rps_doc_frac_unique_words",
+      "spearman_A1": 0.8257121176110143
+    },
+    {
+      "signal_a": "dsir_wiki",
+      "signal_b": "rps_doc_frac_unique_words",
+      "spearman_A1": 0.8225918348132024
+    },
+    {
+      "signal_a": "dsir_books",
+      "signal_b": "rps_doc_frac_unique_words",
+      "spearman_A1": 0.8183966572860069
+    },
+    {
+      "signal_a": "rps_doc_num_sentences",
+      "signal_b": "rps_doc_unigram_entropy",
+      "spearman_A1": 0.7771970469529353
+    },
+    {
+      "signal_a": "modernbert_cleanliness",
+      "signal_b": "modernbert_readability",
+      "spearman_A1": 0.6491633483157394
+    },
+    {
+      "signal_a": "modernbert_readability",
+      "signal_b": "qurater",
+      "spearman_A1": 0.5998698056496596
+    },
+    {
+      "signal_a": "modernbert_reasoning",
+      "signal_b": "rps_doc_word_count",
+      "spearman_A1": 0.5895088021553868
+    }
+  ],
+  "top_negative_pairs": [
+    {
+      "signal_a": "dsir_math",
+      "signal_b": "rps_doc_word_count",
+      "spearman_A1": -0.9125154799259259
+    },
+    {
+      "signal_a": "dsir_math",
+      "signal_b": "rps_doc_num_sentences",
+      "spearman_A1": -0.8962723853690647
+    },
+    {
+      "signal_a": "dsir_wiki",
+      "signal_b": "rps_doc_num_sentences",
+      "spearman_A1": -0.8955849654248322
+    },
+    {
+      "signal_a": "dsir_books",
+      "signal_b": "rps_doc_num_sentences",
+      "spearman_A1": -0.8926110955462587
+    },
+    {
+      "signal_a": "dsir_wiki",
+      "signal_b": "rps_doc_word_count",
+      "spearman_A1": -0.8925818186054696
+    },
+    {
+      "signal_a": "dsir_books",
+      "signal_b": "rps_doc_word_count",
+      "spearman_A1": -0.8894306339391438
+    },
+    {
+      "signal_a": "dsir_math",
+      "signal_b": "rps_doc_unigram_entropy",
+      "spearman_A1": -0.8310760852946794
+    },
+    {
+      "signal_a": "rps_doc_word_count",
+      "signal_b": "rps_doc_frac_unique_words",
+      "spearman_A1": -0.8265879796905107
+    },
+    {
+      "signal_a": "dsir_wiki",
+      "signal_b": "rps_doc_unigram_entropy",
+      "spearman_A1": -0.8076150118271919
+    },
+    {
+      "signal_a": "dsir_books",
+      "signal_b": "rps_doc_unigram_entropy",
+      "spearman_A1": -0.8045742420306766
+    },
+    {
+      "signal_a": "rps_doc_num_sentences",
+      "signal_b": "rps_doc_frac_unique_words",
+      "spearman_A1": -0.7215819647030943
+    },
+    {
+      "signal_a": "rps_doc_unigram_entropy",
+      "signal_b": "rps_doc_frac_unique_words",
+      "spearman_A1": -0.6480059904166724
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "FIG-Q1-AUDIT-001",
+      "file": "FIG-Q1-AUDIT-001_missingness.png",
+      "source": "A1/A2/A3",
+      "n": "51,230/17,523/203,752",
+      "claim": "missingness by signal"
+    },
+    {
+      "figure_id": "FIG-Q1-AUDIT-002",
+      "file": "FIG-Q1-AUDIT-002_correlation.png",
+      "source": "A1",
+      "n": "51,230",
+      "claim": "raw signal redundancy/conflict diagnostic"
+    },
+    {
+      "figure_id": "FIG-Q1-AUDIT-003",
+      "file": "FIG-Q1-AUDIT-003_eigen_spectrum.png",
+      "source": "A1",
+      "n": "51,230",
+      "claim": "effective signal dimensionality diagnostic"
+    }
+  ],
+  "random_seed": "NOT_USED_DETERMINISTIC"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "DIAGNOSTIC_FIGURES_NOT_PAPER_RESULTS",
+  "script_sha256": "0fa6883bddeff6e526a108bd5779bc6cbe65dfa14273ccab4826cd2eb1890385",
+  "sources": {
+    "DQ": "e76ce2a21c6620606e546ba2b71eb7b991598e9d7f8127c46f31c17722615c43",
+    "RSP": "7ec4855b2db3485d3cfc1ad543f16d390aa9fc2d83479a694388c0a211f38b22"
+  },
+  "figures": [
+    {
+      "file": "FIG-Q1-R3-001_core_spectrum_loadings.png",
+      "sha256": "f44ad6273271fa27b821f9e316c0a35665416e7f94aa887fd6260424b540015d"
+    },
+    {
+      "file": "FIG-Q1-R3-002_domain_normalization.png",
+      "sha256": "57e9e2c44a640885e8e7c79c3da7f5a0865f7cac778e049eb92c872bf01929aa"
+    },
+    {
+      "file": "FIG-Q1-R3-003_13_domain_correlation.png",
+      "sha256": "62b703c2f87b1f3ec8d67c9dca063da31591f42473f4df90d8dab1b48616a03d"
+    },
+    {
+      "file": "FIG-Q1-R3-004_response_spectrum_loadings.png",
+      "sha256": "179b0e492dafc8ee2ee1f34652c46944c8f8378ec8e85a59c002679cdee8913f"
+    }
+  ]
+}

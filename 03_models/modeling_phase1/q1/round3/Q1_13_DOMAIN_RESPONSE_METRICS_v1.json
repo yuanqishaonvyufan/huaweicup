@@ -1,0 +1,148 @@
+{
+  "run_id": "MC-Q1-RSP-R3-20260924-v1",
+  "status": "MODEL_COMPARISON_NON_FINAL_CANDIDATE",
+  "run_utc": "2026-09-24T00:56:37.922074+00:00",
+  "script_sha256": "b616d45ab67ae01101d769f5fd4ea57e51a90726b033a67748936ed0aef0fe37",
+  "input_sha256": "647d7fe2889f3f076d0534a51733c5c7710ae337e3b1243650b0e377fc76047d",
+  "prereg_sha256": "c06660244b95dc6cf59f8811eb53cb6ab9329b44be9a13f6a5db0a8f4b00abaa",
+  "contract_sha256": "6501ddd23c62bc30e05cde5ff68e4462c133795feb602064746999ed6fa7e008",
+  "seed": 20260924,
+  "bootstrap_replicates": 500,
+  "rows": 512,
+  "domain_count": 13,
+  "R0_R1_spearman": 0.9240121922958081,
+  "R0_R2_spearman": 0.5451187722445382,
+  "R1_R2_spearman": 0.7687437951328092,
+  "R0_R1_best_decile_overlap": 0.7115384615384616,
+  "R0_R2_best_decile_overlap": 0.36538461538461536,
+  "R0_R2_sign_correlation": 0.6178768203597107,
+  "R2_eigenvalues": [
+    2.9611457496474762,
+    2.296702025633761,
+    1.9585453991939572,
+    0.9990772587848813,
+    0.923245161317007,
+    0.8121297181399653,
+    0.7312601796545756,
+    0.6678869766512405,
+    0.5983574376119764,
+    0.43334067249169156,
+    0.27709403221111173,
+    0.2029949704347269,
+    0.1382204182276283
+  ],
+  "R2_variance_share": [
+    0.22778044228057506,
+    0.17666938658721237,
+    0.15065733839953516,
+    0.07685209682960624,
+    0.07101885856284668,
+    0.06247151677999732,
+    0.05625078305035196,
+    0.05137592128086465,
+    0.04602749520092125,
+    0.03333389788397627,
+    0.021314925554700898,
+    0.01561499772574822,
+    0.010632339863663713
+  ],
+  "R2_PC1_bootstrap_evr": {
+    "median": 0.23112702345257088,
+    "p025": 0.21643226936488247,
+    "p975": 0.24780247469714803
+  },
+  "R2_PC1_bootstrap_loading_cosine": {
+    "median": 0.9811965365546708,
+    "p025": 0.9171640043859555,
+    "p975": 0.9975707717092358
+  },
+  "R1_bootstrap_score_rank_rho": {
+    "median": 0.9998153739085156,
+    "p025": 0.9994794170071297,
+    "p975": 0.9999431481278824
+  },
+  "R2_bootstrap_score_rank_rho": {
+    "median": 0.9873061291928451,
+    "p025": 0.9414639847692863,
+    "p975": 0.9988951089553221
+  },
+  "negative_domain_pair_count": 29,
+  "domain_pair_count": 78,
+  "R0_domain_variance_contribution_sum": 1.0,
+  "fixed_half_models": [
+    {
+      "side": 0,
+      "n": 264,
+      "R1_rho_to_full": 0.9999240037880088,
+      "R2_rho_to_full": 0.9898139147812454,
+      "R2_loading_cosine_to_full": 0.9852042387646709,
+      "PC1_variance_share": 0.23703353378022118
+    },
+    {
+      "side": 1,
+      "n": 248,
+      "R1_rho_to_full": 0.9999040659582745,
+      "R2_rho_to_full": 0.9716244449594305,
+      "R2_loading_cosine_to_full": 0.9592876870185778,
+      "PC1_variance_share": 0.22583705322137848
+    }
+  ],
+  "R2_1pct_outlier_trim_PC1_loading_abs_cosine": 0.9926872618213134,
+  "R2_1pct_outlier_trim_PC1_variance_share": 0.2253171870579282,
+  "domain_clusters": {
+    "k2": {
+      "arxiv": 1,
+      "freelaw": 2,
+      "pubmed_central": 1,
+      "wikipedia_en": 2,
+      "dm_mathematics": 2,
+      "github": 2,
+      "stackexchange": 2,
+      "gutenberg_pg_19": 2,
+      "pile_cc": 2,
+      "ubuntu_irc": 2,
+      "hackernews": 2,
+      "pubmed_abstracts": 1,
+      "uspto_backgrounds": 1
+    },
+    "k3": {
+      "arxiv": 1,
+      "freelaw": 2,
+      "pubmed_central": 1,
+      "wikipedia_en": 2,
+      "dm_mathematics": 3,
+      "github": 3,
+      "stackexchange": 3,
+      "gutenberg_pg_19": 2,
+      "pile_cc": 2,
+      "ubuntu_irc": 3,
+      "hackernews": 2,
+      "pubmed_abstracts": 1,
+      "uspto_backgrounds": 1
+    },
+    "k4": {
+      "arxiv": 2,
+      "freelaw": 3,
+      "pubmed_central": 1,
+      "wikipedia_en": 3,
+      "dm_mathematics": 4,
+      "github": 4,
+      "stackexchange": 4,
+      "gutenberg_pg_19": 3,
+      "pile_cc": 3,
+      "ubuntu_irc": 4,
+      "hackernews": 3,
+      "pubmed_abstracts": 1,
+      "uspto_backgrounds": 1
+    }
+  },
+  "outputs": {
+    "response_results": {
+      "path": "03_models/modeling_phase1/q1/round3/Q1_13_DOMAIN_RESPONSE_RESULTS_v1.csv",
+      "sha256": "46ab8cc45a770d363e8006ba733a24e0cf3c564d72e0019ac5bae0b8e7b7da2a"
+    },
+    "domain_rows": 13
+  },
+  "heldout_A6_A11_read": false,
+  "p_response_fitted": false
+}

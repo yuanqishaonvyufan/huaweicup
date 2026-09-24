@@ -1,0 +1,31 @@
+{
+  "run_id": "AUDIT-Q1-SEMANTICS-CONFLICT-20260924-v1",
+  "run_class": "AUDIT_RUN_WITH_DIAGNOSTICS_NO_MODEL_FIT",
+  "run_utc": "2026-09-24T00:16:46.561155+00:00",
+  "script_sha256": "b25452bf8e503147dac77832f0cec71de3ef312755fbc211e931357ddbb2c808",
+  "mapping_sha256": "b79354e2ce9cb7674b2e36b1df39cbe5c73027a52ac4e1e3e0ca410ec0366f8b",
+  "input_sha256": {
+    "A1": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+    "A2": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+    "A3": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+  },
+  "output_rows": {
+    "semantics": 22,
+    "dsir": 60,
+    "ngram": 24,
+    "ngram_examples": 4,
+    "list_encoding": 18,
+    "conflict_stability": 390,
+    "conflict_candidates": 42
+  },
+  "counts": {
+    "physical_rows": 272505,
+    "unique_ids": 261086,
+    "A1_ngram_over_100_cases": 2
+  },
+  "method_limits": [
+    "Wilson intervals treat document IDs as independent and hold empirical rank cutoffs fixed",
+    "No A4/A5 or A6-A11 Loss used to orient or select quality signals",
+    "Upstream RedPajama formula match on A1 cases does not prove A2/A3 pipeline identity"
+  ]
+}

@@ -1,0 +1,1172 @@
+{
+  "audit_id": "AUDIT-DOC-INTERFERENCE-20260924-v1",
+  "run_utc": "2026-09-24T00:07:19.556199+00:00",
+  "source_path": "00_problem/original/F_2026_data_description_user_supplied.pdf",
+  "source_sha256": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+  "script_sha256": "ab13eee12a7e9cda82aff7bf0f7ba21b321c444ee7421ed10f96c079a65649fc",
+  "page_count": 13,
+  "excluded_span_count": 96,
+  "exclusion_rule": "RGB >= #f0f0f0 AND font <= 5.1 pt AND (top y < 30 OR bottom y > 720)",
+  "pages": [
+    {
+      "page": 1,
+      "visible_span_count": 112,
+      "excluded_span_count": 0,
+      "visible_text_sha256": "9184a0eae2d8125e43a993b8e2dfa8579f566210e02b3ffa8c9c5bd9c9159e46",
+      "excluded_spans": []
+    },
+    {
+      "page": 2,
+      "visible_span_count": 160,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "834df1b13f75fa007bd06f59072fc3d8cf47abeaab63a59006319134b8e791a1",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            486.63,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f61237e0d56f36e749f2bf3b1e12593c1208f301ae7e34574aec17da91bb065b"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            464.11,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4510b06dade6617a3f4d10ce353815b53b0d271b66830b972aa311edfa70a095"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            413.79,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "ec437a084cc4ffa09708820647e3d7e0d2e604daefab69758bbf7817776ac517"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            414.45,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "43fcb50130ce551449ed95bb1d16008484125a3c4cbaf69dea94dd3a712ed2b4"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "visible_span_count": 173,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "7e4e890d376196afaf1d6c871e27c4f6015f9e5a44e5dff99a8177e63b238fbc",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            413.28,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "b11b554caa26049d842b7e1aa94015189b6c62ada9d81d1393f89ddd3af55374"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            407.01,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4e35cab09209c49b115a546c5d60d26c1e4267e70d6d646c785faceb50767a5e"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            376.24,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "0794fca8e20611e5d9dfbf6948782effa8feb512bcdcc4555744d2d442629b1f"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            397.7,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "97baae030649d07c0d1c4210d0b9279776f42b785d19ff9e39fa87f747ab2b6f"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "visible_span_count": 148,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "1c3c4e3fd6989fcf1023ffc1bcce7faa9d0ac4d291776fa3e5a2471246e099f3",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            442.31,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "8dcaf3658756d2548efce89edd4de95398764fd67426dfbe5fec119e309f3ee2"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            406.79,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4f822089cb2fefb35d7ace7e37c938699e63eb8905213eb148006fbbb67a7f38"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            375.44,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "fae1b3524a937fb83bfaff5a76bcf11633d1ce3d22f367e43441395b351ec4e2"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            393.52,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e1019b594537a14fe3efc67b96591a2fe27787d9661834310b0030aaed6f7403"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "visible_span_count": 182,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "0fd138b392c4e404b806e7314a024d557deb416013b282d9ad1c40543bb8b0c0",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            407.64,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "9836458662ae82ef1eab41d883fdabf072194d83514cfc9f3923dda18e0e0e68"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            431.57,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "7f7072ef9c07478f2e7964894691db69c7664e1e3f14214edc874bdc048279b5"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            402.71,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3b1afcd9955c82c9cef1c11f35f27f6bfe91c0772f4ba50fb9e9b61941e856cb"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            364.31,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4677a5a1aba2c19c44b2640f65f77d92215af7c5b1786ae76187fd4a53d4716e"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "visible_span_count": 159,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "89c9a7d5845c06b28d5358cde97a106663b5eda4228630f56da7a65fe7a40615",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            486.63,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f61237e0d56f36e749f2bf3b1e12593c1208f301ae7e34574aec17da91bb065b"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            464.11,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4510b06dade6617a3f4d10ce353815b53b0d271b66830b972aa311edfa70a095"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            413.79,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "ec437a084cc4ffa09708820647e3d7e0d2e604daefab69758bbf7817776ac517"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            414.45,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "43fcb50130ce551449ed95bb1d16008484125a3c4cbaf69dea94dd3a712ed2b4"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "visible_span_count": 140,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "fad0950cac5b2cd74648d1aa99212fbdb5e1f7efb579ce327512ba5f14749193",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            413.28,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "b11b554caa26049d842b7e1aa94015189b6c62ada9d81d1393f89ddd3af55374"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            407.01,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4e35cab09209c49b115a546c5d60d26c1e4267e70d6d646c785faceb50767a5e"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            376.24,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "0794fca8e20611e5d9dfbf6948782effa8feb512bcdcc4555744d2d442629b1f"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            397.7,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "97baae030649d07c0d1c4210d0b9279776f42b785d19ff9e39fa87f747ab2b6f"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "visible_span_count": 186,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "fdf9f6bcc5388014542fb05cabbff788a4d75a7db5949296c3a713521eadaa10",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            442.31,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "8dcaf3658756d2548efce89edd4de95398764fd67426dfbe5fec119e309f3ee2"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            406.79,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4f822089cb2fefb35d7ace7e37c938699e63eb8905213eb148006fbbb67a7f38"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            375.44,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "fae1b3524a937fb83bfaff5a76bcf11633d1ce3d22f367e43441395b351ec4e2"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            393.52,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e1019b594537a14fe3efc67b96591a2fe27787d9661834310b0030aaed6f7403"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "visible_span_count": 249,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "89da22897aa5b8bc700293787aeb74be1f8acf0d71ee3b1d596178f387d1a985",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            407.64,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "9836458662ae82ef1eab41d883fdabf072194d83514cfc9f3923dda18e0e0e68"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            431.57,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "7f7072ef9c07478f2e7964894691db69c7664e1e3f14214edc874bdc048279b5"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            402.71,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3b1afcd9955c82c9cef1c11f35f27f6bfe91c0772f4ba50fb9e9b61941e856cb"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            364.31,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4677a5a1aba2c19c44b2640f65f77d92215af7c5b1786ae76187fd4a53d4716e"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "visible_span_count": 164,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "b986e6c87c731b8662c86ceb25303ac6d0118f76cd9241da2b2be218531d8bf9",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            486.63,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f61237e0d56f36e749f2bf3b1e12593c1208f301ae7e34574aec17da91bb065b"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            464.11,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4510b06dade6617a3f4d10ce353815b53b0d271b66830b972aa311edfa70a095"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            413.79,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "ec437a084cc4ffa09708820647e3d7e0d2e604daefab69758bbf7817776ac517"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            414.45,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "43fcb50130ce551449ed95bb1d16008484125a3c4cbaf69dea94dd3a712ed2b4"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "visible_span_count": 129,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "f2ec613a55b7fae6b01a5c691dfb3d1bb04dd4204490d61b136fb1251d0dbaab",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            413.28,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "b11b554caa26049d842b7e1aa94015189b6c62ada9d81d1393f89ddd3af55374"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            407.01,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4e35cab09209c49b115a546c5d60d26c1e4267e70d6d646c785faceb50767a5e"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            376.24,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "0794fca8e20611e5d9dfbf6948782effa8feb512bcdcc4555744d2d442629b1f"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            397.7,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "97baae030649d07c0d1c4210d0b9279776f42b785d19ff9e39fa87f747ab2b6f"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "visible_span_count": 177,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "291c6f67070afc269fa31a9274626d2d8c54ea164ddb646d284f052fcbe4a09b",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            442.31,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "8dcaf3658756d2548efce89edd4de95398764fd67426dfbe5fec119e309f3ee2"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            406.79,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4f822089cb2fefb35d7ace7e37c938699e63eb8905213eb148006fbbb67a7f38"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            375.44,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "fae1b3524a937fb83bfaff5a76bcf11633d1ce3d22f367e43441395b351ec4e2"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            393.52,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e1019b594537a14fe3efc67b96591a2fe27787d9661834310b0030aaed6f7403"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "visible_span_count": 139,
+      "excluded_span_count": 8,
+      "visible_text_sha256": "ab59d601890cc0f3d2dacfcffda0fb5632a8d568743caf57c3f33dbae7cc832e",
+      "excluded_spans": [
+        {
+          "bbox": [
+            40.0,
+            732.7,
+            407.64,
+            737.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "9836458662ae82ef1eab41d883fdabf072194d83514cfc9f3923dda18e0e0e68"
+        },
+        {
+          "bbox": [
+            40.0,
+            738.7,
+            431.57,
+            743.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "7f7072ef9c07478f2e7964894691db69c7664e1e3f14214edc874bdc048279b5"
+        },
+        {
+          "bbox": [
+            40.0,
+            744.7,
+            402.71,
+            749.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3b1afcd9955c82c9cef1c11f35f27f6bfe91c0772f4ba50fb9e9b61941e856cb"
+        },
+        {
+          "bbox": [
+            40.0,
+            750.7,
+            364.31,
+            755.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "4677a5a1aba2c19c44b2640f65f77d92215af7c5b1786ae76187fd4a53d4716e"
+        },
+        {
+          "bbox": [
+            40.0,
+            3.7,
+            406.3,
+            8.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "e07229a3a9daf8645c25d2ea549da21aab1a2353fff5609aa589f1be7e00c0a2"
+        },
+        {
+          "bbox": [
+            40.0,
+            9.2,
+            454.5,
+            14.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "3f1040a29b87a2d0c85303586fb9acef29cd2b9634d8636e19b827720d69dad6"
+        },
+        {
+          "bbox": [
+            40.0,
+            14.7,
+            425.92,
+            19.7
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "283f3abccbecded532f8564fb09795b477a3f4168fe56b0b6bfaeb8dcdf2029e"
+        },
+        {
+          "bbox": [
+            40.0,
+            20.2,
+            390.0,
+            25.2
+          ],
+          "color_rgb": "#fcfcfc",
+          "font_size_pt": 5.0,
+          "text_sha256": "f6753ce2fb2913346819f06164a3ed6dadb81d7c7ef00d690a77d84b8619f349"
+        }
+      ]
+    }
+  ],
+  "decision": "EXCLUDED_FROM_OFFICIAL_CLAIMS_AND_MODEL_INSTRUCTIONS"
+}

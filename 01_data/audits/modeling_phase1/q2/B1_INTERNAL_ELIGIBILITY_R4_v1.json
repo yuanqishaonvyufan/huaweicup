@@ -1,0 +1,46 @@
+{
+  "audit_id": "AUDIT-B1-INTERNAL-ELIGIBILITY-R4-20260924-v1",
+  "run_utc": "2026-09-24T05:54:29.331899+00:00",
+  "script_sha256": "6fdce1f0fa7098757908698be2fe583eed6193a1c72bb23a2eae176d92e1b4a6",
+  "B1_sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+  "official_pdf_sha256": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+  "contract_sha256": "f2c4489750c3a7624fb555257dcd24fd9d6830b13914c5c3410120f2df4f7018",
+  "rows": 1176,
+  "N_levels": 8,
+  "D_levels": 147,
+  "unique_ND_pairs": 1176,
+  "within_N_D_loss_increase_intervals": 0,
+  "cross_N_loss_increase_adjacent_cells": 0,
+  "cross_N_D_rows_with_any_increase": 0,
+  "D_from_step_max_abs_Btokens": 0.0004959999999982756,
+  "C_to_6ND_ratio_median": 0.9999995935179582,
+  "ppl_exp_loss_max_relative_error": 0.0006104520946690934,
+  "precision_varies_within_all_N": true,
+  "wd_varies_within_all_N": true,
+  "metadata_quarantine": [
+    "precision",
+    "wd",
+    "lr",
+    "gpu_days",
+    "step_time_ms",
+    "grad_norm_avg"
+  ],
+  "permitted_baseline_variables_if_released": [
+    "N_params_B",
+    "D_tokens_B",
+    "val_loss"
+  ],
+  "external_empirical_eligibility": "NOT_ELIGIBLE_PROVENANCE_UNRESOLVED",
+  "attachment_internal_numeric_integrity": "PASS",
+  "no_scaling_law_fit": true,
+  "outputs": {
+    "cross_N": {
+      "sha256": "59ecc6b4a1ab24463f8d28d6db97b123f5e75ff17e45d0e299e1719f255cf193",
+      "rows": 147
+    },
+    "trajectories": {
+      "sha256": "279a01e8a90599d0a2af3940e20463c7c21c9c39322f01ca9165a690405c135e",
+      "rows": 8
+    }
+  }
+}

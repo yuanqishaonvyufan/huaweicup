@@ -1,0 +1,189 @@
+{
+  "run_id": "MC-Q1-DQ-R3-20260924-v1",
+  "status": "MODEL_COMPARISON_NON_FINAL_CANDIDATE",
+  "run_utc": "2026-09-24T00:54:00.315287+00:00",
+  "script_sha256": "bd7bb4977bc5120f9931a20ce1f4e166a9ed54f799d0f869a6a40311618c5c77",
+  "input_sha256": "b6e3fe2dcb7c37cd63509802ba7c9ce6624b195ef17331e6bc030ec8dcbb9202",
+  "signal_set_sha256": "3ac0dac810110f1cdadda4248a47894e3c7fe8eaac7281c1e5875ef4632f7303",
+  "contract_sha256": "6501ddd23c62bc30e05cde5ff68e4462c133795feb602064746999ed6fa7e008",
+  "seed": 20260924,
+  "bootstrap_replicates": 200,
+  "counts": {
+    "physical_records": 272505,
+    "unique_ids": 261086,
+    "A1_train": 40926,
+    "A1_check": 10304,
+    "A2_new": 16104,
+    "A3_new": 193752
+  },
+  "DQ0": {
+    "five_core_signals": [
+      "fineweb_edu",
+      "fluency_en",
+      "ad_en",
+      "modernbert_cleanliness",
+      "modernbert_readability"
+    ],
+    "A1_check_reference_bootstrap_rank_rho": {
+      "median": 0.9999953680627147,
+      "p025": 0.9999916162576538,
+      "p975": 0.9999970382629055
+    },
+    "core_rank_correlations": {
+      "fineweb_edu": 0.6138128621354764,
+      "fluency_en": 0.7663177534414511,
+      "ad_en": 0.39813147224065676,
+      "modernbert_cleanliness": 0.7762624608598788,
+      "modernbert_readability": 0.7595281080072628
+    }
+  },
+  "DQ1": {
+    "eigenvalues": [
+      2.4057230004462085,
+      1.0654303864588006,
+      0.7638647039045493,
+      0.4258988657716472,
+      0.3390830434187513
+    ],
+    "variance_share": [
+      0.4811446000892458,
+      0.21308607729176193,
+      0.15277294078091117,
+      0.08517977315433017,
+      0.06781660868375083
+    ],
+    "PC1_loadings": {
+      "fineweb_edu": 0.35346677818248695,
+      "fluency_en": 0.5197669191323147,
+      "ad_en": 0.12232312563949885,
+      "modernbert_cleanliness": 0.5422535568633707,
+      "modernbert_readability": 0.5439684912748167
+    },
+    "PC1_loading_bootstrap_cosine": {
+      "median": 0.9999867049170266,
+      "p025": 0.9999034443341286,
+      "p975": 0.9999986975995364
+    },
+    "PC1_variance_share_bootstrap": {
+      "median": 0.4813248064619844,
+      "p025": 0.47868407075295044,
+      "p975": 0.48369118838278435
+    },
+    "length_trim_1_99_PC1_loading_abs_cosine": 0.9999457721784452,
+    "length_trim_1_99_PC1_variance_share": 0.47531467671686073
+  },
+  "DQ2": {
+    "k2_groups": {
+      "fineweb_edu": 1,
+      "fluency_en": 1,
+      "ad_en": 2,
+      "modernbert_cleanliness": 1,
+      "modernbert_readability": 1
+    },
+    "k3_groups": {
+      "fineweb_edu": 2,
+      "fluency_en": 1,
+      "ad_en": 3,
+      "modernbert_cleanliness": 1,
+      "modernbert_readability": 1
+    },
+    "k2_bootstrap_coclustering_frequency": [
+      [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    ]
+  },
+  "DQ3": {
+    "caution": "Within-domain normalization removes between-domain location by construction"
+  },
+  "DSIR": {
+    "raw_rank_spearman": [
+      [
+        1.0,
+        0.9990063281015653,
+        0.9969424873758841
+      ],
+      [
+        0.9990063281015653,
+        1.0,
+        0.9968008343909106
+      ],
+      [
+        0.9969424873758841,
+        0.9968008343909106,
+        1.0
+      ]
+    ],
+    "medoid": "dsir_books",
+    "rank_PC1_variance_share": 0.9983889242937182,
+    "rank_PC1_loadings": {
+      "dsir_books": 0.5775012227931665,
+      "dsir_wiki": 0.5774739216073134,
+      "dsir_math": 0.5770755648404012
+    },
+    "rank_PC1_evr_bootstrap": {
+      "median": 0.9983865371104386,
+      "p025": 0.9983415231755223,
+      "p975": 0.9984225720108384
+    },
+    "rank_PC1_loading_cosine_bootstrap": {
+      "median": 0.9999999999892318,
+      "p025": 0.99999999990617,
+      "p975": 0.9999999999997157
+    },
+    "original_rho_word_count": {
+      "dsir_books": -0.8893217595413317,
+      "dsir_wiki": -0.8924168672817951,
+      "dsir_math": -0.9124494908995894
+    },
+    "residual_rho_word_count_exploratory": {
+      "dsir_books": -0.008936977794368736,
+      "dsir_wiki": -0.008786040335817168,
+      "dsir_math": -0.01668264654863035
+    },
+    "residual_status": "DIAGNOSTIC_ONLY_NOT_QUALITY"
+  },
+  "outputs": {
+    "scores": {
+      "path": "03_models/modeling_phase1/q1/round3/Q1_DESCRIPTIVE_QUALITY_RESULTS_v1.csv.gz",
+      "sha256": "adad64289d0361bef634e96541fa7ad100c0e5f25e2193dd23d04c8eb5b12237"
+    },
+    "domain_summary_rows": 14,
+    "list_rows": 39,
+    "domain_pca_rows": 7,
+    "loadings_rows": 5
+  },
+  "no_loss_used": true
+}

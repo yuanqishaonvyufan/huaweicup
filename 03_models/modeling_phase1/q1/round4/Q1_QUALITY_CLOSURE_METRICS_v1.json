@@ -1,0 +1,51 @@
+{
+  "audit_id": "AUDIT-Q1-QUALITY-CLOSURE-R4-20260924-v1",
+  "status": "Q1_QUALITY_PROVISIONAL_FINAL_CANDIDATE_NOT_GATE2_VALIDATED",
+  "run_utc": "2026-09-24T05:35:42.523612+00:00",
+  "script_sha256": "6384de1adba32e8939e97fc36e6318d5df979b20a412340a3a5cc7eb1b5213fc",
+  "inputs": {
+    "quality_features_sha256": "b6e3fe2dcb7c37cd63509802ba7c9ce6624b195ef17331e6bc030ec8dcbb9202",
+    "DQ_scores_sha256": "adad64289d0361bef634e96541fa7ad100c0e5f25e2193dd23d04c8eb5b12237",
+    "role_source_sha256": "3ac0dac810110f1cdadda4248a47894e3c7fe8eaac7281c1e5875ef4632f7303",
+    "candidate_spec_sha256": "834117fbf1f62c4ffe942eb198f5703d181791613fb7959a918dea31fd845ecb"
+  },
+  "role_counts": {
+    "SENSITIVITY": 12,
+    "CORE": 5,
+    "REDUNDANT": 2,
+    "SECONDARY": 2,
+    "UNKNOWN": 1
+  },
+  "physical_rows": 272505,
+  "unique_ids": 261086,
+  "group_count": 11,
+  "full22_rows": 242,
+  "core_rows": 55,
+  "facet_rows": 44,
+  "disagreement_rows": 30,
+  "outputs": {
+    "roles": {
+      "path": "03_models/modeling_phase1/q1/round4/Q1_FULL22_ROLE_MAP_v1.csv",
+      "sha256": "aa695c34423ddcbbfb20aabd3fdbcc9ff988c64cfa6241c91377bbb65772a258"
+    },
+    "full22": {
+      "path": "03_models/modeling_phase1/q1/round4/Q1_FULL22_DOMAIN_PROFILE_v1.csv",
+      "sha256": "2de4a6e86085bbe6b58d55bc20b7d20bda7212822ee01995a5033dcae191e7c8"
+    },
+    "core": {
+      "path": "03_models/modeling_phase1/q1/round4/Q1_CORE_DOMAIN_QUALITY_PROFILE_v1.csv",
+      "sha256": "a4327e92aad87642a0e938b6a88b07a022ede4ab79836680416abc398803acef"
+    },
+    "facets": {
+      "path": "03_models/modeling_phase1/q1/round4/Q1_QURATER_FACET_PROFILE_v1.csv",
+      "sha256": "349978e4fbf47461df6a9092b136a3332ac4f9a29f7192ce00ba7eefcf6955e3"
+    },
+    "disagreement": {
+      "path": "03_models/modeling_phase1/q1/round4/Q1_STATISTICAL_DISAGREEMENT_SUMMARY_v1.csv",
+      "sha256": "d9f23126dcbcaa37939dcb9da00b43712941f33ace3db9d0e47c7360c479394b"
+    }
+  },
+  "semantic_conflicts_confirmed": 0,
+  "q2_identifiable_quality_variables": 0,
+  "no_loss_used": true
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PAPER_TABLE_CANDIDATES_PENDING_GATE2",
+  "script_sha256": "14bc879229baf649495a4150c7ad126fee8aa98ea035cd673d34f65470132c95",
+  "tables": [
+    {
+      "path": "03_models/modeling_phase1/q1/round4/tables/TABLE_Q1_R4_001_full22_roles.md",
+      "sha256": "260cb5ca9470ec468040dcc7794de6f947988e3a309b31426292e96b662b0ec6",
+      "source": "03_models/modeling_phase1/q1/round4/Q1_FULL22_ROLE_MAP_v1.csv",
+      "source_sha256": "aa695c34423ddcbbfb20aabd3fdbcc9ff988c64cfa6241c91377bbb65772a258",
+      "publish_candidate": false,
+      "placement": "appendix_candidate"
+    },
+    {
+      "path": "03_models/modeling_phase1/q1/round4/tables/TABLE_Q1_R4_002_core_domain_comparison.md",
+      "sha256": "775b9270d9d85c2632d08eab017401d4761135b2b74eca6d37370e1a31088acf",
+      "source": "03_models/modeling_phase1/q1/round4/Q1_CORE_DOMAIN_QUALITY_PROFILE_v1.csv",
+      "source_sha256": "a4327e92aad87642a0e938b6a88b07a022ede4ab79836680416abc398803acef",
+      "publish_candidate": true,
+      "placement": "body_candidate"
+    },
+    {
+      "path": "03_models/modeling_phase1/q1/round4/tables/TABLE_Q1_R4_003_model_comparison.md",
+      "sha256": "10092ee9f9ef461d432a3ab493a8f17dd7d33c359b02593fb1d04f2218db2bcb",
+      "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv",
+      "source_sha256": "b7daa41415c406c373febef2e3a19cd4a402625f8708e7f8e6528afd008eca2e",
+      "publish_candidate": true,
+      "placement": "body_candidate"
+    },
+    {
+      "path": "03_models/modeling_phase1/q1/round4/tables/TABLE_Q1_R4_004_domain_validation.md",
+      "sha256": "7325a332a132c10a2a922a3fb2a1abf016f22dddb776fe55a1b941e1141815f3",
+      "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv",
+      "source_sha256": "3b84390371b30328a11f4197b33ef406fbfdf67fd560c0dd6d63ee239763b20f",
+      "publish_candidate": true,
+      "placement": "body_candidate"
+    },
+    {
+      "path": "03_models/modeling_phase1/q1/round4/tables/TABLE_Q1_R4_005_scale_support.md",
+      "sha256": "7f3d0a263ad7bfa445b214786e18961958629e77f0386eb9b5454a3a59b4162c",
+      "source": "03_models/modeling_phase1/q1/round4/P_SUPPORT_VALIDATION_ROWS_v2.csv",
+      "source_sha256": "2a027581a02a1fed59331972e2298cadd3c082398dc22816f93b84cffd6ad9bc",
+      "publish_candidate": true,
+      "placement": "body_candidate"
+    }
+  ]
+}

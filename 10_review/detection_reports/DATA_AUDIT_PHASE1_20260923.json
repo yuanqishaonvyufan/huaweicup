@@ -1,0 +1,48 @@
+{
+  "workspace": "D:\\work document\\codex\\_work\\mathmodel\\F题\\HuaweiCup_F_2026",
+  "stage": "DATA_AUDIT",
+  "checked_at_utc": "2026-09-23T06:35:51.806404+00:00",
+  "structural_status": "MISSING_STRUCTURE",
+  "manual_review_required": true,
+  "upstream_stages_checked": false,
+  "completion_decision": "NOT_MADE_BY_PREFLIGHT",
+  "checks": [
+    {
+      "check": "file",
+      "target": "01_data/DATA_INVENTORY.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "01_data/DATA_DICTIONARY.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "01_data/DATA_AUDIT.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "01_data/IDENTIFIABILITY_AUDIT_SPEC.md",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "04_code/utils/identifiability_decision.py",
+      "pass": true
+    },
+    {
+      "check": "file",
+      "target": "01_data/PREPROCESSING_LOG.md",
+      "pass": true
+    },
+    {
+      "check": "glob_min",
+      "target": "01_data/processed/**/*",
+      "minimum": 1,
+      "found": 0,
+      "pass": false
+    }
+  ]
+}

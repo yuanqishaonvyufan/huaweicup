@@ -1,0 +1,40 @@
+{
+  "run_id": "AUDIT-B1-PROVENANCE-20260924-v1",
+  "run_class": "AUDIT_RUN_NO_BASELINE_FIT",
+  "run_utc": "2026-09-24T00:13:32.402285+00:00",
+  "script_sha256": "7f40efcd9a418808451b82149cb53e73a8c866b4e2bd53a9ed85ed8349cc89b7",
+  "b1_sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+  "pdf_sha256": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+  "index_sha256": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed",
+  "source_manifest_sha256": "34e81dabf46302eebaac8551fa18d2e72acd0833b1cf0276690bee897f1323db",
+  "pythia_repository_commit": "a19eecb807ec2c79a39ebf18108816e6ffffc1d5",
+  "pythia_repository_url": "https://github.com/EleutherAI/pythia/tree/a19eecb807ec2c79a39ebf18108816e6ffffc1d5",
+  "candidate_checkpoint_selection": {
+    "selected_count_per_size": 147,
+    "published_count_per_size": 154,
+    "excluded_early_steps": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "summary": {
+    "precision_transitions": 503,
+    "precision_mismatch_if_training": 748,
+    "all_eight_lr_differ_from_pinned_config": true,
+    "all_eight_wd_vary": true,
+    "public_api_commit_samples_verified": 3
+  },
+  "alert_status": "PARTIALLY RESOLVED",
+  "eligibility": "NOT YET ELIGIBLE",
+  "critical_remaining": [
+    "B1 val_loss lacks original run/revision, validation corpus, tokenizer and extraction recipe",
+    "B1 precision/wd/lr have no documented training-vs-augmented meaning",
+    "B1 standard/deduped/v0 variant and seed are not observed in the table"
+  ],
+  "caution": "Matching a published step index is not proof that B1 Loss was copied from those checkpoints"
+}

@@ -1,0 +1,16 @@
+﻿field,lineage_status,basis,baseline_use
+run_id,SOURCE_ROW_LABEL,Each row has a unique ID; no training-run ID or seed is encoded,BLOCKED_BY_VAL_LOSS_PROVENANCE
+N_params_B,SUPPLIED_CANDIDATE_SIZE,Numerical sizes map plausibly to Pythia labels; repo variant unknown,BLOCKED_BY_VAL_LOSS_PROVENANCE
+D_tokens_B,DETERMINISTIC_DERIVATION_SUPPORTED,"Rounded steps x 2,097,152 / 1e9",BLOCKED_BY_VAL_LOSS_PROVENANCE
+C_FLOPs_1e21,DETERMINISTIC_DERIVATION_SUPPORTED,Approximately 0.006 x N_params_B x D_tokens_B,BLOCKED_BY_VAL_LOSS_PROVENANCE
+steps,CHECKPOINT_LABEL_CORROBORATED,Matches 147 of 154 published standard index labels,BLOCKED_BY_VAL_LOSS_PROVENANCE
+batch_tokens_M,ROUNDED_DERIVATION_CANDIDATE,Around 2.09/2.10 million tokens; source run not verified,BLOCKED_BY_VAL_LOSS_PROVENANCE
+lr,UNKNOWN_OR_AUGMENTED,Constant within each B1 size trajectory and differs from pinned public config,BLOCKED_BY_VAL_LOSS_PROVENANCE
+wd,UNKNOWN_OR_AUGMENTED,Varies within each B1 trajectory; pinned public config has fixed weight decay,BLOCKED_BY_VAL_LOSS_PROVENANCE
+precision,UNKNOWN_OR_AUGMENTED,Switches within every B1 trajectory; meaning not supplied,BLOCKED_BY_VAL_LOSS_PROVENANCE
+gpu_days,UNKNOWN,No row-level original training log or derivation identified,BLOCKED_BY_VAL_LOSS_PROVENANCE
+step_time_ms,UNKNOWN,No row-level original training log or derivation identified,BLOCKED_BY_VAL_LOSS_PROVENANCE
+train_loss,UNKNOWN,No row-level original training log or evaluation recipe identified,BLOCKED_BY_VAL_LOSS_PROVENANCE
+val_loss,UNKNOWN_CRITICAL,Validation corpus/tokenizer/version/checkpoint extraction missing,BLOCKED_BY_VAL_LOSS_PROVENANCE
+ppl,DETERMINISTIC_DERIVATION_SUPPORTED,"Numerically agrees with exp(val_loss), so not independent source proof",BLOCKED_BY_VAL_LOSS_PROVENANCE
+grad_norm_avg,UNKNOWN,No row-level original training log or derivation identified,BLOCKED_BY_VAL_LOSS_PROVENANCE

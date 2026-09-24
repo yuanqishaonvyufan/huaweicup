@@ -1,0 +1,10 @@
+﻿scope,n,k2_grouping,ad_en_singleton,pairwise_membership_agreement_to_A1_train,rho_cleanliness_readability,rho_ad_readability
+A1_arxiv,1419,fineweb_edu:1|fluency_en:2|ad_en:2|modernbert_cleanliness:2|modernbert_readability:1,0,0.4,0.11607757753383433,-0.3053481298834838
+A1_book,171,fineweb_edu:1|fluency_en:1|ad_en:2|modernbert_cleanliness:1|modernbert_readability:1,1,1.0,0.4323541411668707,0.018103131208261077
+A1_c4,10000,fineweb_edu:1|fluency_en:1|ad_en:2|modernbert_cleanliness:1|modernbert_readability:1,1,1.0,0.6704716187847162,0.09329996734649751
+A1_commoncrawl,9640,fineweb_edu:1|fluency_en:1|ad_en:2|modernbert_cleanliness:1|modernbert_readability:1,1,1.0,0.5614477424167157,0.02864612429092511
+A1_github,10000,fineweb_edu:2|fluency_en:1|ad_en:1|modernbert_cleanliness:2|modernbert_readability:2,0,0.6,0.6231382797033829,-0.0033014700774509505
+A1_stackexchange,10000,fineweb_edu:2|fluency_en:1|ad_en:1|modernbert_cleanliness:1|modernbert_readability:1,0,0.4,0.7494648192666481,0.10537192491099161
+A1_wikipedia,10000,fineweb_edu:2|fluency_en:1|ad_en:1|modernbert_cleanliness:2|modernbert_readability:2,0,0.6,0.473535099163351,0.1723171438911372
+A2_new_ids,16104,fineweb_edu:1|fluency_en:1|ad_en:2|modernbert_cleanliness:2|modernbert_readability:1,0,0.6,0.113708873361336,-0.33184586324799226
+A3_new_ids,193752,fineweb_edu:2|fluency_en:1|ad_en:1|modernbert_cleanliness:2|modernbert_readability:2,0,0.6,0.6262523995979589,-0.004650108865349214

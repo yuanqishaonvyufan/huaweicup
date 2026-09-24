@@ -1,0 +1,22 @@
+{
+  "audit_id": "F2026-AUDIT-01-20260923",
+  "audit_evidence_path": "01_data/audits/phase1/route_audit_metrics.json",
+  "audit_evidence_sha256": "8b360386df9fcc797bec6161ce258ec29eaf1b4dab12691752826f26b2e2c974",
+  "score_version": "NONE",
+  "score_provenance_valid": true,
+  "score_provenance_id": "RAW-SIGNAL-PROVENANCE-ONLY: source_manifest.json and RAW_SHA256.csv; no Q score constructed",
+  "score_uses_target_loss": false,
+  "nested_crossfit_valid": false,
+  "paired_quality_available": false,
+  "deterministic_from_p_fixed_q": false,
+  "rank_state": "NOT_TESTED",
+  "precision_state": "NOT_CALIBRATED",
+  "support_state": "NOT_CALIBRATED",
+  "oos_gain_state": "NOT_TESTED",
+  "quality_evidence_source": "REAL_DIRECT",
+  "paired_p_loss_rows": 512,
+  "paired_p_Q_loss_rows": 0,
+  "rank_X0_legal_simplex": 17,
+  "rank_Xfull": "NOT_TESTED: no matched run-level Q",
+  "qualification": "score_provenance_valid refers only to traceable raw quality-signal files; it does not assert a constructed or validated Q score."
+}

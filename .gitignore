@@ -1,0 +1,13 @@
+# Large source attachments are kept locally and referenced by SHA-256 manifests.
+01_data/raw/real_attachments/
+
+# Python caches and local runtime artifacts.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local editor and OS files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

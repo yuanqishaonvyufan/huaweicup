@@ -1,0 +1,4 @@
+﻿model_repo,step,branch,index_commit,api_commit,match,api_url
+EleutherAI/pythia-70m,64,step64,da06e97c1e155237b6296b223be599cbe95ad100,da06e97c1e155237b6296b223be599cbe95ad100,True,https://huggingface.co/api/models/EleutherAI/pythia-70m/revision/step64
+EleutherAI/pythia-1b,1000,step1000,f725b7d1f691917d835b064b18941c669b1670d4,f725b7d1f691917d835b064b18941c669b1670d4,True,https://huggingface.co/api/models/EleutherAI/pythia-1b/revision/step1000
+EleutherAI/pythia-12b,143000,step143000,9c5f35826eb1a9558fb4414c033f58e30322a092,9c5f35826eb1a9558fb4414c033f58e30322a092,True,https://huggingface.co/api/models/EleutherAI/pythia-12b/revision/step143000

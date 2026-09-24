@@ -1,0 +1,14 @@
+{
+  "qa_id": "QA-MP1-R2-20260924-v1",
+  "status": "PASS",
+  "source_pdf_extra_spans_excluded": 96,
+  "q1_semantic_rows": 22,
+  "q1_conflict_rows": 42,
+  "q1_semantic_conflicts_confirmed": 0,
+  "b1_trajectories": 8,
+  "b1_alert": "PARTIALLY RESOLVED",
+  "b1_eligibility": "NOT YET ELIGIBLE",
+  "formal_model_runs": 0,
+  "validated_final_results": 0,
+  "qa_script_sha256": "3aeccbd2a95f8cceee6fd54f8967ed2ff1ad24a7005402154d25ba3e1eb96c75"
+}

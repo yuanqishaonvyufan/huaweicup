@@ -1,0 +1,19 @@
+{
+  "qa_id": "QA-MP1-R3-20260924-v1",
+  "status": "PASS",
+  "qa_script_sha256": "fdb4cfd1dd5a15fbf579e87ede1b34367ca88bc56dc52f1ad40e5b1105a8394a",
+  "signal_set_rows": 22,
+  "physical_quality_rows": 272505,
+  "unique_quality_ids": 261086,
+  "A5_training_runs": 512,
+  "domain_count": 13,
+  "model_comparison_runs_nonfinal": 2,
+  "diagnostic_runs_cumulative": 4,
+  "formal_p_response_fits": 0,
+  "formal_ND_scaling_law_fits": 0,
+  "validated_final_results": 0,
+  "B1_alert": "PARTIALLY RESOLVED",
+  "B8": "GENERATOR UNKNOWN / QUARANTINED",
+  "figures_verified": 4,
+  "local_links_checked": 79
+}

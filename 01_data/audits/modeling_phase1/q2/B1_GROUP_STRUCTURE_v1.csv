@@ -1,0 +1,9 @@
+﻿inferred_model_size,N_params_B,rows,independent_training_run_count_confirmed,step_min,step_max,unique_steps,D_min_Btokens,D_max_Btokens,unique_D,val_loss_min,val_loss_max,val_loss_increase_intervals,train_loss_increase_intervals,step_strictly_increasing,D_strictly_increasing,unique_lr,lr_value,unique_wd,fp16_rows,bf16_rows,precision_transitions,official_expected_training_precision,precision_mismatch_rows_if_training_metadata,run_id_min,run_id_max,run_id_unique
+70m,0.070542,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.8131,4.7388,0,70,True,True,1,0.000318,69,51,96,58,fp16,96,8,154,147
+160m,0.162405,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.5978,4.5235,0,64,True,True,1,0.000292,75,46,101,66,fp16,101,162,308,147
+410m,0.409009,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.4209,4.3461,0,72,True,True,1,0.000266,72,46,101,63,fp16,101,316,462,147
+1b,1.040867,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.2904,4.2153,0,67,True,True,1,0.000243,73,49,98,65,bf16,49,470,616,147
+1.4b,1.416184,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.2558,4.1816,0,68,True,True,1,0.000235,69,41,106,62,fp16,106,624,770,147
+2.8b,2.782831,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.1911,4.1162,0,69,True,True,1,0.00022,76,50,97,68,fp16,97,778,924,147
+6.9b,6.86104,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.125,4.0512,0,70,True,True,1,0.000201,72,48,99,62,fp16,99,932,1078,147
+12b,11.965825,147,UNKNOWN,64,143000,147,0.134,299.893,147,2.0933,4.0188,0,68,True,True,1,0.00019,70,48,99,59,fp16,99,1086,1232,147

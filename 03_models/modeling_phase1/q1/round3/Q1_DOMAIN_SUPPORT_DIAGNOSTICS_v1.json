@@ -1,0 +1,19 @@
+{
+  "run_id": "DIAG-Q1-DOMAIN-R3-20260924-v1",
+  "status": "DIAGNOSTIC_NON_FINAL",
+  "run_utc": "2026-09-24T00:58:39.282078+00:00",
+  "script_sha256": "57e136b341956933fe1f606c76e4296b4c5502cfa5e777db9e1bc44072c24003",
+  "input_sha256": {
+    "Q1": "b6e3fe2dcb7c37cd63509802ba7c9ce6624b195ef17331e6bc030ec8dcbb9202",
+    "A5": "647d7fe2889f3f076d0534a51733c5c7710ae337e3b1243650b0e377fc76047d"
+  },
+  "A5_domain_pairs": 78,
+  "A5_negative_pearson_pairs": 24,
+  "A5_negative_spearman_pairs": 29,
+  "interpretation": "Different correlation definitions; not a data contradiction",
+  "DQ2_scope_rows": 9,
+  "DQ2_ad_singleton_scope_count": 3,
+  "outputs": {
+    "domain_support_csv_sha256": "b7cf2a9e10b8b21efea8b1cd2919afbd7bc895790cec0cca13eb66500c23f9cc"
+  }
+}

@@ -1,0 +1,7 @@
+# B1 Baseline Eligibility Executive v1
+
+**Verdict: NOT YET ELIGIBLE.** B1 has a complete 8 × 147 N–D grid (1,176 rows), so N and D vary independently in the observed geometry. The centered log-design rank is 3/3 and log N–log D correlation is 5.51e-18. There are no repeated N–D cells and only eight inferred training trajectories; checkpoint rows cannot be counted as independent runs.
+
+`ppl ≈ exp(val_loss)` and `C ≈ 6ND` in the official units, but those arithmetic checks do not establish the validation-Loss source. B1 lacks model version, seed, validation corpus and tokenizer. More seriously, all eight size trajectories alternate `precision` values, contrary to the [Pythia primary description](https://github.com/EleutherAI/pythia/blob/main/README.md#models) if `precision` is training precision. 748 rows conflict under that interpretation. The discrepancy is logged in [EVIDENCE_ALERT_B1_SOURCE_METADATA_v1.md](EVIDENCE_ALERT_B1_SOURCE_METADATA_v1.md). B1 remains usable for **data-geometry diagnostics**; formal N–D estimation awaits provenance reconciliation. No Scaling Law was fitted.
+
+The next evidence request is a row-level source or transformation record for N, D, `val_loss`, `precision`, validation corpus, tokenizer and Pythia version, followed by an entire-trajectory holdout design. Full checks and raw/code hashes: [audit](B1_BASELINE_ELIGIBILITY_AUDIT_v1.md), [machine JSON](B1_ELIGIBILITY_DIAGNOSTICS_v1.json), [coverage CSV](B1_COVERAGE_DIAGNOSTICS_v1.csv), [group CSV](B1_GROUP_STRUCTURE_v1.csv).

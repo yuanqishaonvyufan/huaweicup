@@ -1,0 +1,512 @@
+{
+  "provenance": {
+    "pdf_path": "00_problem/original/F_2026_data_description_user_supplied.pdf",
+    "pdf_sha256": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+    "raw_manifest_sha256": "62f97ac6cb8f84d95bda7e3c87914d5d3fa695cb1b865a4c0fa880988ac75413",
+    "source_manifest_sha256": "34e81dabf46302eebaac8551fa18d2e72acd0833b1cf0276690bee897f1323db",
+    "inputs": {
+      "B6": {
+        "official_id": "B6",
+        "official_description": "NQ 半合成实验（360 点）",
+        "question_role": "问题二·质量 Q·基础",
+        "evidence_type": "SEMI-SYNTHETIC",
+        "relative_path": "01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+        "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+        "bytes": 13670,
+        "rows": 360,
+        "fields": [
+          "experiment_id",
+          "N_params_B",
+          "D_tokens_B",
+          "Q_score",
+          "val_loss"
+        ],
+        "source_manifest_source": "Semi-synthetic, calibrated from Pythia training log + RegMix quality signals",
+        "source_manifest_note": "V5.29: 360 points (9N × 5D × 8Q); semi-synthetic supplement for N-D-Q interaction analysis.",
+        "mapping_status": "CONFIRMED official ID/path/role/hash; generator and shared semantics unresolved"
+      },
+      "B7": {
+        "official_id": "B7",
+        "official_description": "NQ 半合成实验（450 点）",
+        "question_role": "问题二·质量 Q·扩展",
+        "evidence_type": "SEMI-SYNTHETIC",
+        "relative_path": "01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+        "sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+        "bytes": 17154,
+        "rows": 450,
+        "fields": [
+          "experiment_id",
+          "N_params_B",
+          "D_tokens_B",
+          "Q_score",
+          "val_loss"
+        ],
+        "source_manifest_source": null,
+        "source_manifest_note": null,
+        "mapping_status": "CONFIRMED official ID/path/role/hash; generator and shared semantics unresolved"
+      },
+      "B8": {
+        "official_id": "B8",
+        "official_description": "NQ 半合成实验（1,704 点，含外推）",
+        "question_role": "问题二·质量 Q·大规模",
+        "evidence_type": "SEMI-SYNTHETIC",
+        "relative_path": "01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+        "sha256": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+        "bytes": 81268,
+        "rows": 1704,
+        "fields": [
+          "experiment_id",
+          "N_params_B",
+          "D_tokens_B",
+          "Q_score",
+          "val_loss",
+          "data_type"
+        ],
+        "source_manifest_source": null,
+        "source_manifest_note": null,
+        "mapping_status": "CONFIRMED official ID/path/role/hash; generator and shared semantics unresolved"
+      }
+    },
+    "audit_version": "1.0.0",
+    "script_relative_path": "04_code/data_audit/modeling_phase1_b8_audit.py",
+    "script_sha256": "4c72e942458dc45028f685a0f099db8c2c3735f96567cd4eedf7e1ccf531cdb5",
+    "python_libraries": {
+      "pandas": "3.0.3",
+      "numpy": "2.5.1"
+    },
+    "random_seed": "none; deterministic audit",
+    "run_utc": "2026-09-23T16:14:53.946548+00:00"
+  },
+  "id_encoding_mismatches": {
+    "B6": 0,
+    "B7": 0,
+    "B8": 0
+  },
+  "exact_duplicate_rows": {
+    "B6": 0,
+    "B7": 0,
+    "B8": 0
+  },
+  "overlap_B6_B7": {
+    "left": "B6",
+    "right": "B7",
+    "n_shared_NDQ": 360,
+    "n_shared_ND": 45,
+    "n_left": 360,
+    "n_right": 450,
+    "median_abs_loss_difference": 0.0,
+    "max_abs_loss_difference": 0.0,
+    "loss_pearson": 1.0,
+    "shared_data_type_counts": {},
+    "exact_loss_matches": 360
+  },
+  "overlap_B7_B8": {
+    "left": "B7",
+    "right": "B8",
+    "n_shared_NDQ": 224,
+    "n_shared_ND": 32,
+    "n_left": 450,
+    "n_right": 1704,
+    "median_abs_loss_difference": 1.1393,
+    "max_abs_loss_difference": 2.5769,
+    "loss_pearson": -0.02614443491975051,
+    "shared_data_type_counts": {
+      "calibrated": 224
+    },
+    "exact_loss_matches": 0
+  },
+  "strata": {
+    "B6": {
+      "all": {
+        "rows": 360,
+        "N_levels": 9,
+        "D_levels": 5,
+        "Q_levels": 8,
+        "ND_cells": 45,
+        "Q_levels_per_ND": {
+          "8": 45
+        },
+        "loss": {
+          "min": 2.0161,
+          "max": 3.7216,
+          "median": 2.5783
+        },
+        "q_slope": {
+          "min": -0.6164021909233183,
+          "max": -0.18087949921752894,
+          "median": -0.340860719874804
+        },
+        "q_slopes_positive": 0,
+        "q_slopes_negative": 45,
+        "linearity_r2": {
+          "min": 0.5340272958448636,
+          "max": 0.9910663634261561,
+          "median": 0.874675930344867
+        },
+        "floor_0_5_rows": 0
+      }
+    },
+    "B7": {
+      "all": {
+        "rows": 450,
+        "N_levels": 9,
+        "D_levels": 5,
+        "Q_levels": 10,
+        "ND_cells": 45,
+        "Q_levels_per_ND": {
+          "10": 45
+        },
+        "loss": {
+          "min": 2.0161,
+          "max": 3.7216,
+          "median": 2.5741
+        },
+        "q_slope": {
+          "min": -0.607218181818186,
+          "max": -0.19307878787879013,
+          "median": -0.33928484848485085
+        },
+        "q_slopes_positive": 0,
+        "q_slopes_negative": 45,
+        "linearity_r2": {
+          "min": 0.5267301105018316,
+          "max": 0.9849888946937214,
+          "median": 0.8719324662411099
+        },
+        "floor_0_5_rows": 0
+      }
+    },
+    "B8": {
+      "all": {
+        "rows": 1704,
+        "N_levels": 15,
+        "D_levels": 10,
+        "Q_levels": 12,
+        "ND_cells": 150,
+        "Q_levels_per_ND": {
+          "4": 12,
+          "12": 138
+        },
+        "loss": {
+          "min": 0.5,
+          "max": 3.3659,
+          "median": 1.2965
+        },
+        "q_slope": {
+          "min": 1.5516279540850775,
+          "max": 2.503688723835246,
+          "median": 1.972025320729237
+        },
+        "q_slopes_positive": 150,
+        "q_slopes_negative": 0,
+        "linearity_r2": {
+          "min": 0.8892918450965138,
+          "max": 0.9999318254039727,
+          "median": 0.9795636612130101
+        },
+        "floor_0_5_rows": 362
+      },
+      "calibrated": {
+        "rows": 984,
+        "N_levels": 9,
+        "D_levels": 10,
+        "Q_levels": 12,
+        "ND_cells": 90,
+        "Q_levels_per_ND": {
+          "4": 12,
+          "12": 78
+        },
+        "loss": {
+          "min": 0.5,
+          "max": 3.3659,
+          "median": 1.4621
+        },
+        "q_slope": {
+          "min": 1.7084274139095204,
+          "max": 2.503688723835246,
+          "median": 2.027857645113972
+        },
+        "q_slopes_positive": 90,
+        "q_slopes_negative": 0,
+        "linearity_r2": {
+          "min": 0.9630349381880534,
+          "max": 0.9999318254039727,
+          "median": 0.9965243340535356
+        },
+        "floor_0_5_rows": 129
+      },
+      "extrapolated": {
+        "rows": 720,
+        "N_levels": 6,
+        "D_levels": 10,
+        "Q_levels": 12,
+        "ND_cells": 60,
+        "Q_levels_per_ND": {
+          "12": 60
+        },
+        "loss": {
+          "min": 0.5,
+          "max": 2.6033,
+          "median": 1.0185
+        },
+        "q_slope": {
+          "min": 1.5516279540850775,
+          "max": 2.4101762322754894,
+          "median": 1.8105074274139095
+        },
+        "q_slopes_positive": 60,
+        "q_slopes_negative": 0,
+        "linearity_r2": {
+          "min": 0.8892918450965138,
+          "max": 0.975105554276089,
+          "median": 0.940508536709243
+        },
+        "floor_0_5_rows": 233
+      }
+    }
+  },
+  "fixed_q_scale_direction": {
+    "B6": [
+      {
+        "fixed_Q": 0.2,
+        "N_increase_loss_increase": 6,
+        "N_increase_loss_decrease": 34,
+        "D_increase_loss_increase": 2,
+        "D_increase_loss_decrease": 34,
+        "n_rows": 45
+      },
+      {
+        "fixed_Q": 0.8,
+        "N_increase_loss_increase": 5,
+        "N_increase_loss_decrease": 35,
+        "D_increase_loss_increase": 5,
+        "D_increase_loss_decrease": 31,
+        "n_rows": 45
+      }
+    ],
+    "B7": [
+      {
+        "fixed_Q": 0.2,
+        "N_increase_loss_increase": 6,
+        "N_increase_loss_decrease": 34,
+        "D_increase_loss_increase": 2,
+        "D_increase_loss_decrease": 34,
+        "n_rows": 45
+      },
+      {
+        "fixed_Q": 0.8,
+        "N_increase_loss_increase": 5,
+        "N_increase_loss_decrease": 35,
+        "D_increase_loss_increase": 5,
+        "D_increase_loss_decrease": 31,
+        "n_rows": 45
+      }
+    ],
+    "B8": [
+      {
+        "fixed_Q": 0.2,
+        "N_increase_loss_increase": 0,
+        "N_increase_loss_decrease": 56,
+        "D_increase_loss_increase": 10,
+        "D_increase_loss_decrease": 40,
+        "n_rows": 138
+      },
+      {
+        "fixed_Q": 0.8,
+        "N_increase_loss_increase": 11,
+        "N_increase_loss_decrease": 117,
+        "D_increase_loss_increase": 10,
+        "D_increase_loss_decrease": 113,
+        "n_rows": 138
+      }
+    ]
+  },
+  "B7_B8_by_shared_Q": {
+    "0.1": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -2.14785,
+      "median_abs_difference": 2.14785,
+      "loss_pearson": 0.6962437905076957
+    },
+    "0.2": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -1.9369,
+      "median_abs_difference": 1.9369,
+      "loss_pearson": 0.7983445009433798
+    },
+    "0.3": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -1.74125,
+      "median_abs_difference": 1.74125,
+      "loss_pearson": 0.8065551991855805
+    },
+    "0.4": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -1.5108000000000001,
+      "median_abs_difference": 1.5108000000000001,
+      "loss_pearson": 0.8594956027460948
+    },
+    "0.5": {
+      "n": 32,
+      "median_signed_B8_minus_B7": -1.25045,
+      "median_abs_difference": 1.25045,
+      "loss_pearson": 0.9719921695940121
+    },
+    "0.6": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -1.0320500000000001,
+      "median_abs_difference": 1.0320500000000001,
+      "loss_pearson": 0.9394344014705798
+    },
+    "0.7": {
+      "n": 32,
+      "median_signed_B8_minus_B7": -0.7640500000000002,
+      "median_abs_difference": 0.7640500000000002,
+      "loss_pearson": 0.9883599434630492
+    },
+    "0.8": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -0.49775000000000025,
+      "median_abs_difference": 0.49775000000000025,
+      "loss_pearson": 0.9618980266472903
+    },
+    "0.9": {
+      "n": 20,
+      "median_signed_B8_minus_B7": -0.25619999999999976,
+      "median_abs_difference": 0.25619999999999976,
+      "loss_pearson": 0.974416804923583
+    },
+    "1.0": {
+      "n": 20,
+      "median_signed_B8_minus_B7": 0.0016999999999998128,
+      "median_abs_difference": 0.029000000000000137,
+      "loss_pearson": 0.9610192812555767
+    }
+  },
+  "candidate_mechanism": "LIKELY SYNTHETIC RULE EFFECT",
+  "classification_basis": "opposite within-ND Q slopes in all cells, Q=1 near-anchor, and a repeated 0.5 Loss floor; exact generating rule unverified",
+  "official_definition_conflict_confirmed": false,
+  "generation_formula_verified": false,
+  "shared_Q_and_Loss_semantics_verified": false,
+  "evidence_alert_triggered": false,
+  "B8_status": "QUARANTINED",
+  "Q_sequence_monotonicity": {
+    "B6": {
+      "nondecreasing_ND_cells": 0,
+      "nonincreasing_ND_cells": 2
+    },
+    "B7": {
+      "nondecreasing_ND_cells": 0,
+      "nonincreasing_ND_cells": 1
+    },
+    "B8": {
+      "nondecreasing_ND_cells": 148,
+      "nonincreasing_ND_cells": 0
+    }
+  },
+  "B7_B8_common_ND_slope_discordance": 32,
+  "B7_B8_reflected_Q_shape_only": {
+    "left": "B7",
+    "right": "B8",
+    "n_shared_NDQ": 204,
+    "n_shared_ND": 32,
+    "n_left": 450,
+    "n_right": 1704,
+    "median_abs_loss_difference": 1.2246000000000001,
+    "max_abs_loss_difference": 2.193,
+    "loss_pearson": 0.6283565835429571,
+    "shared_data_type_counts": {
+      "calibrated": 204
+    },
+    "exact_loss_matches": 0,
+    "interpretation": "counterfactual 1-Q shape check; no source definition authorizes recoding"
+  },
+  "B8_floor_rate_by_type": {
+    "calibrated": 0.13109756097560976,
+    "extrapolated": 0.3236111111111111
+  },
+  "B8_sparse_Q_cells": {
+    "4": 12,
+    "12": 138
+  },
+  "B8_small_N_sparse_D": {
+    "0.07": {
+      "10": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "50": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "150": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "300": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ]
+    },
+    "0.16": {
+      "10": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "50": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "150": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "300": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ]
+    },
+    "0.41": {
+      "10": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "50": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "150": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ],
+      "300": [
+        0.05,
+        0.5,
+        0.7,
+        0.95
+      ]
+    }
+  }
+}

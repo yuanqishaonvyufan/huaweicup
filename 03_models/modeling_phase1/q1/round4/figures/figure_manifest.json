@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "status": "PAPER_FIGURE_CANDIDATES_PENDING_COMPILED_LAYOUT_QA",
+  "script_sha256": "75f9a130daeef2563d185e0db64b7698740ee56bffd48f87e1acc4350ac0bc03",
+  "figures": [
+    {
+      "figure_id": "FIG-Q1-R4-001",
+      "path": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-001_core_domain_profile.pdf",
+      "preview": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-001_core_domain_profile.png",
+      "claim": "五维质量画像存在明显域差；样本与扩展域可对照",
+      "source": "03_models/modeling_phase1/q1/round4/Q1_CORE_DOMAIN_QUALITY_PROFILE_v1.csv",
+      "source_sha256": "a4327e92aad87642a0e938b6a88b07a022ede4ab79836680416abc398803acef",
+      "reader_task": "比较五项 CORE 在各来源域的相对位置",
+      "publish": true,
+      "placement": "body",
+      "pdf_sha256": "4198a7ba2a267ade8096c5eb76e5193d36ab8e91401f312b8449cc0056183724",
+      "png_sha256": "2aa55b2326465008738dc817dc6fccd1e86d1a1048ebabde76412434da576577"
+    },
+    {
+      "figure_id": "FIG-Q1-R4-002",
+      "path": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-002_domain_validation_gain.pdf",
+      "preview": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-002_domain_validation_gain.png",
+      "claim": "M1 在 A7 1M 的 13 个域均低于 M0 误差",
+      "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv",
+      "source_sha256": "3b84390371b30328a11f4197b33ef406fbfdf67fd560c0dd6d63ee239763b20f",
+      "reader_task": "检查综合改善是否遮蔽任一领域恶化",
+      "publish": true,
+      "placement": "body",
+      "pdf_sha256": "c15957b3f53a0b72c391ecc0178c8e6253b87b703f6fad6712b17d72ea95b8d7",
+      "png_sha256": "9091c7cad9632f210a6c11cd758dd6f6d5d8aae08a9546674fc4bd1fd71d43ee"
+    },
+    {
+      "figure_id": "FIG-Q1-R4-003",
+      "path": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-003_scale_transfer_failure.pdf",
+      "preview": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-003_scale_transfer_failure.png",
+      "claim": "配比效应在 1M/60M 可见，但 1B 中心化迁移失败",
+      "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv",
+      "source_sha256": "b7daa41415c406c373febef2e3a19cd4a402625f8708e7f8e6528afd008eca2e",
+      "reader_task": "区分同尺度验证与跨规模转移",
+      "publish": true,
+      "placement": "body",
+      "pdf_sha256": "6bbc235bfa821e0af65fab7d0a6c89841f929172672566ad9b5d7c93d47c820a",
+      "png_sha256": "3902e58725a9f76046cead62a1dfbf06f0097fa423dd4f2ab4b20a4adea16a0a"
+    },
+    {
+      "figure_id": "FIG-Q1-R4-004",
+      "path": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-004_support_strata.pdf",
+      "preview": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-004_support_strata.png",
+      "claim": "观测凸包窄；验证主要落在训练近邻范围",
+      "source": "03_models/modeling_phase1/q1/round4/P_SUPPORT_VALIDATION_ROWS_v2.csv",
+      "source_sha256": "2a027581a02a1fed59331972e2298cadd3c082398dc22816f93b84cffd6ad9bc",
+      "reader_task": "对照经验凸包与局部近邻覆盖",
+      "publish": false,
+      "placement": "appendix_candidate",
+      "pdf_sha256": "3e5a1e884b368e0a0ac3e99897507783c41e8b35352a02b1a8c52e3fe965ec5f",
+      "png_sha256": "2edda58be13c65bc88f4a11353a802c85abf6323583ea361a2408e561a2eebd3"
+    }
+  ]
+}

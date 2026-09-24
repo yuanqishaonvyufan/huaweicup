@@ -1,0 +1,11 @@
+{
+  "audit_id": "AUDIT-Q1-CONTENT-FACE-R4-20260924-v1",
+  "run_utc": "2026-09-24T06:07:42.775690+00:00",
+  "script_sha256": "0ab74c1c3af5fd0144fd29858c43995a89b001fdb5e066318bdcde1c5c8e6763",
+  "A1_sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+  "DQ0_score_sha256": "adad64289d0361bef634e96541fa7ad100c0e5f25e2193dd23d04c8eb5b12237",
+  "cases": 14,
+  "selection": "one record closest to each A1 domain DQ0 5th/95th percentile; ID hash tie-break",
+  "purpose": "FACE_VALIDITY_SPOT_CHECK_NOT_INDEPENDENT_LABELS",
+  "output_sha256": "95cccb9b0dc0e7f7c21da1f3c4211071acf9e0d057e1cc195a4046eb9aa4cecd"
+}

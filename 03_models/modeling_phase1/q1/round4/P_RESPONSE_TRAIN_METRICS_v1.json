@@ -1,0 +1,26 @@
+{
+  "run_id": "EXP-Q1-PRESP-TRAIN-R4-20260924-v1",
+  "code_sha256": "68a6a1b271dccfd60ee4405b8e2ad1b735b58558082f1685ccf35f667d31a813",
+  "bundle_sha256": "9c1e8887098595f05aaa37e94d21658d0010cf6fb8bb8702bc965e8b73246e39",
+  "train_results_sha256": "21ecb6192b8e282b5bc5984f3e676990c4dd1b5ec8cb63d851c5c4f520876517",
+  "oof_sha256": "7db1b5cba757a48a3ad751fbe8a22e6e2e9b113beca012d3c12be921b667eedd",
+  "cv_candidates": {
+    "M0": {
+      "alpha": 0.0,
+      "score": 1.0015782403587754
+    },
+    "M1": {
+      "alpha": 0.0,
+      "score": 0.7504173681807004
+    },
+    "M2": {
+      "alpha": 0.01,
+      "score": 0.7497149296111305
+    }
+  },
+  "M2_triggered": true,
+  "M3_pattern_trigger": false,
+  "M3_gate_passed": false,
+  "design_condition": 45.43559894607052,
+  "A6_A11_loss_read": false
+}
