@@ -1,0 +1,44 @@
+{
+  "run_id": "AUDIT-Q3-COST-R6-20260924-v1",
+  "basis_commit": "219a8182af34b503c37da3016ed1d9dd52fb1016",
+  "code_sha256": "841a5aa4b601198338117a42dda2b88851e1cc4577d05d69b5bc52a21ea38059",
+  "C7_rows": 45,
+  "C7_unique_models": 45,
+  "context_levels_counts": {
+    "2048": 18,
+    "4096": 8,
+    "8192": 7,
+    "32768": 11,
+    "131072": 1
+  },
+  "pythia_context": [
+    2048
+  ],
+  "train_context_observed": false,
+  "official_cost": {
+    "train_coefficient": 6,
+    "eta": 0.0002,
+    "quality_exponential": [
+      10000000.0,
+      6.0
+    ],
+    "quality_power": [
+      5000000000.0,
+      4.0
+    ],
+    "quality_log": [
+      2000000000.0,
+      10.0
+    ]
+  },
+  "context_equal_cost_threshold": 30000.0,
+  "quality_curve_grade": "PROVIDED mathematical proxy, not measured real costs",
+  "missing_inputs": [
+    "actual training context",
+    "hardware efficiency / monetary price",
+    "real domain procurement prices / supply caps",
+    "empirical quality-to-cost calibration",
+    "DQ0 to B7 Q_score mapping"
+  ],
+  "Q4_started": false
+}
