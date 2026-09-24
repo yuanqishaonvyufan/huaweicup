@@ -1,5 +1,7 @@
 # RESULTS_REGISTRY
 
+**当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
+
 当前：14项Q1 + 9项Q2候选；Round5数值QA通过，Gate3待审，VALIDATED FINAL=NONE。以下Round4统计保留历史范围。
 
 论文唯一允许直接引用的定量结果源。MODELING PHASE 1 ROUND 4 累计 14 项**候选/诊断数值及模型选择状态**（Round 3 的 5 项及 Round 4 的 9 项）；VALIDATED FINAL RESULTS：NONE。Round 4 的 A7 留出证据已通过本地 QA，Gate 2 已接受 Q1 暂定关闭与受限用途，模型仍为 PROVISIONAL；不得提前标为 VALIDATED FINAL RESULT。

@@ -39,3 +39,7 @@
 ## R5-TAKEOVER-001 — 2026-09-24
 
 基准 main `47b88843c43b55e1fd822ac0b5344ba1387e9fb9` 已有完整 Q2 候选及 Gate3 预审包。按用户接管文本只补真实缺口，不重新拟合、验证、情景或作图。Git EOL 修复须精确命中原 SHA；四个混合换行 CSV 用 -text 保存原字节，原始附件只读。补 A–Q 清单、合并图表导航、A–J 准入与 QA 标准 verdict。Q2 更新为 PROVISIONALLY CLOSED，仅受限候选研究关闭；不改变模型/结果 ACTIVE 版本，不通过 Gate3、不启动 Q3。不是独立 Opus 审查。
+
+## Gate3 decision — 2026-09-24
+
+G3-SINGLE-001：用户授权 single-pass Gate3 Verdict A — PASS。六项用途裁决通过，Q2 正式暂定关闭；冻结 Q2→Q3 v1，support-aware 强制，quality/mixture 分级、默认零；区间仅敏感性。新 P0/P1/P2=0/0/0。无新模型 Run、无 Q3 求解；Round6 READY / Q3 AUTHORIZED TO START。除非 Q3 发现 P0，不重开 Q2。

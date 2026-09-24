@@ -1,5 +1,7 @@
 # EXPERIMENT_REGISTRY
 
+**当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
+
 当前：Round5已新增1次N-D主拟合、1次有效情景v3、2次隔离失败情景v1/v2；详本文件Round5区。以下Round4统计保留历史范围。
 
 状态：MODELING PHASE 1 ROUND 4 COMPLETE — 本地 QA PASS，累计 **2 个非最终 MODEL COMPARISON RUN、4 个 DIAGNOSTIC RUN、1 个正式 Q1 p 响应训练 RUN、1 个成功的 A6–A11 留出验证 RUN、1 个失败并隔离的验证 RUN**；正式 N–D Scaling Law 拟合 0、ACTIVE FINAL MODEL 0。本次接管只运行 `QA-MODELING-PHASE1-R4-20260924-v1` 只读产物核查（见 `10_review/MODELING_PHASE1_R4_QA_20260924.json`），没有新训练或验证 Run。来源审计另见 `01_data/audits/modeling_phase1/AUDIT_RUN_REGISTRY.md`。每次真实候选模型运行/比较须先登记 Experiment ID，指向可复现配置、数据/预处理/模型/响应版本、代码、种子、日志和输出；同名重跑创建新 ID。CANDIDATE/诊断条目不得冒充 VALIDATED FINAL RESULT。

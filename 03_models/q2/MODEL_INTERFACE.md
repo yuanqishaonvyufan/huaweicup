@@ -18,3 +18,7 @@
 ## Round5 active candidate
 
 R5-SPEC-001与03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md为当前已执行受限规格；S1附件内候选通过预设轨迹验证，参数/边界见Q2_RESULTS_REPORT与Q2_TO_Q3_INTERFACE_v1.json。此处初始OPEN字段为历史初始状态；FINAL MODEL仍NONE、Gate3待审。
+
+## Gate3 decision — 2026-09-24
+
+当前 Q2→Q3 权威接口：02_analysis/consensus/Q2_TO_Q3_INTERFACE_v1.md 与 03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json；G3-SINGLE-001 ACTIVE / PASS，冻结 manifest 位于 consensus。Q3 获准启动但未执行。

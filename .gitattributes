@@ -57,3 +57,7 @@
 /06_results/raw/SCEN-Q2-R5-20260924-v3/quality_substitution_scenarios.csv text eol=crlf
 /06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json text eol=crlf
 /04_code/modeling_phase2/round5_takeover_audit.py text eol=lf
+
+# Gate3 frozen interface byte formats.
+/02_analysis/consensus/Q2_TO_Q3_INTERFACE_v1.md text eol=lf
+/03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json text eol=lf

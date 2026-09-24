@@ -37,3 +37,7 @@ STATUS: READY FOR PRE-REVIEW / NO DECISION。Round5研究包 COMPLETE，原数�
 - Q2→Q3 A–J 分别明确 ENTER Q3 / ENTER Q3 AS SCENARIO / SENSITIVITY ONLY / DO NOT ENTER Q3，均待 Gate3 用途批准。
 - 新问题 P0=0；P1=1、P2=3 均关闭。B1 外部来源、TYPE E=0、A/B 量尺、B8、1B 失败与实际成本/供给缺口仍保留。
 - 本次不作 Gate3 裁决。Q3 NOT STARTED；无预算优化、KKT 或最终 N/D/Q/p。
+
+## Gate3 decision — 2026-09-24
+
+本预审已由 02_analysis/consensus/GATE3_CONSENSUS_v1.md 的 G3-SINGLE-001 裁决：Verdict A — PASS。以上 NO DECISION/待批为预审形成时状态；当前 Q3 AUTHORIZED TO START / NOT EXECUTED。

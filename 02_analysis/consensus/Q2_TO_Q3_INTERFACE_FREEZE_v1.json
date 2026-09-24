@@ -1,0 +1,17 @@
+{
+  "status": "ACTIVE / FROZEN",
+  "decision_id": "G3-SINGLE-001",
+  "version": 1,
+  "files": {
+    "02_analysis/consensus/Q2_TO_Q3_INTERFACE_v1.md": "d4fa7f38466c569e12472cb92226190cbaa00c30e9fdfd22442c546eaee2c22b",
+    "03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json": "2bef3b1e3bd71d057f00b5d739cb16f5df3c298550c10e33f3f9cb457ee82e73"
+  },
+  "source_runs": [
+    "EXP-Q2-ND-R5-20260924-v1",
+    "SCEN-Q2-R5-20260924-v3"
+  ],
+  "evidence_status": "Restricted use accepted; not universal or final",
+  "Q3_authorized": true,
+  "Q3_executed": false,
+  "reopen_Q2_only_for_P0": true
+}

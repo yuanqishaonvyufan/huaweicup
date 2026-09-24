@@ -1,5 +1,7 @@
 # FIGURE_REGISTRY
 
+**当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
+
 当前：Q1四图 + Q2四图为CHECKED候选；Round5单图QA通过，最终正文嵌入待审。
 
 Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受其受限 Q1 证据用途，仍保留论文候选状态。PDF 向量文件与 PNG 预览、脚本哈希见 `03_models/modeling_phase1/q1/round4/figures/figure_manifest.json`。正式嵌入仍须按论文版面检查中文字形和实际尺寸。

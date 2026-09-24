@@ -76,3 +76,7 @@ DA-02/DA-05/DA-07 的识别或外部来源缺口、DA-10 规模转移失败和 Q
 | R5-TAKE-04 | P2 | QA verdict 用语不在本次要求枚举内；需明确暂定关闭的候选范围 | 改为 PASS WITH DOCUMENT CORRECTIONS，补15项证据表、当前状态及交接；CLOSED |
 
 已有 registry 顶部已经区分当前 Round5 与历史 Round4，接管未发现漏登数值/图形；本次仅附加完整性复核记录。
+
+## Gate3 decision — 2026-09-24
+
+G3-SINGLE-001 本次新发现 P0=0、P1=0、P2=0，阻断0。Gate3 Verdict A — PASS，Q2 PROVISIONALLY CLOSED。DA-02/05/07/10、B8 与实际成本/供给缺口继续保留；不是模型通过即已解决。历史 Round5 问题计数不混入本 Gate。

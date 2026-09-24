@@ -1,0 +1,459 @@
+{
+  "status": "PASS",
+  "decision_id": "G3-SINGLE-001",
+  "basis_commit": "808565ddd10bde7bf8c30f89d8c0a7dadd098a80",
+  "scope": "Read saved evidence and split membership; no fit or scenario rerun",
+  "checks": [
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B10_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B1_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B2_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B4_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B5_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B6_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B7_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/B9_v1.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:01_data/raw/real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "sha:03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/modeling_phase2/round5_fit.py",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/modeling_phase2/round5_package.py",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/modeling_phase2/round5_prepare.py",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/modeling_phase2/round5_qa.py",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/modeling_phase2/round5_scenarios.py",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/modeling_phase2/round5_takeover_audit.py",
+      "passed": true
+    },
+    {
+      "check": "sha:04_code/visualization/round5_figures.py",
+      "passed": true
+    },
+    {
+      "check": "sha:05_experiments/configs/Q2_R5_SCEN_v3.json",
+      "passed": true
+    },
+    {
+      "check": "sha:05_experiments/configs/Q2_R5_v1.json",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-001.pdf",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-001.png",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-002.pdf",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-002.png",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-003.pdf",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-003.png",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-004.pdf",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/figures/round5/FIG-Q2-R5-004.png",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/fold_parameters.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/illustrative_derivative_bootstrap.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/parameter_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/residual_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/splits.json",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/training_predictions.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_predictions.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/B10_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/B2_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/B4_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/B5_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/B9_extrapolation_scope.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/ND_finite_substitution.json",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/external_shape_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_domain_evidence.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_scale_evidence.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/mixture_tangent_scenarios.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_cell_slopes.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_centered_LONO.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_fold_coefficients.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_substitution_scenarios.csv",
+      "passed": true
+    },
+    {
+      "check": "sha:06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json",
+      "passed": true
+    },
+    {
+      "check": "split_counts",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N0.070542",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N0.162405",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N0.409009",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N1.040867",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N1.416184",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N2.782831",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N6.86104",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:LONO:N11.965825",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:FORWARD:Drank73",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:FORWARD:Drank110",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N0.070542_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N0.162405_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N0.409009_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N1.040867_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N1.416184_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N2.782831_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N6.86104_D98",
+      "passed": true
+    },
+    {
+      "check": "split_isolation:BLOCK2D:N11.965825_D98",
+      "passed": true
+    },
+    {
+      "check": "12_starts_and_no_boundary",
+      "passed": true
+    },
+    {
+      "check": "200_bootstrap_and_no_boundary",
+      "passed": true
+    },
+    {
+      "check": "prior_arithmetic_QA",
+      "passed": true
+    },
+    {
+      "check": "report_table_matches_machine",
+      "passed": true
+    },
+    {
+      "check": "saved_example_consistent",
+      "passed": true
+    },
+    {
+      "check": "quality_grade_and_no_Q3",
+      "passed": true
+    }
+  ],
+  "example": {
+    "N": 1,
+    "D": 100,
+    "loss": 2.385578185264076,
+    "dL_dN": -0.12034501947730104,
+    "dL_dD": -0.0009566242876902147,
+    "elasticity_N": -0.05044689803951206,
+    "elasticity_D": -0.04010031168122539,
+    "log_substitution": -1.2580176044649263,
+    "N_new": 0.8,
+    "D_new": 135.55858088564557
+  },
+  "validation": {
+    "LONO": {
+      "S1": {
+        "macro_rmse": 0.00014688818680258544,
+        "worst_rmse": 0.0002202303704479108,
+        "macro_mae": 0.0001078781705102824
+      },
+      "S0": {
+        "macro_rmse": 0.3513060875921693,
+        "worst_rmse": 0.5870402590132381,
+        "macro_mae": 0.27704581341768975
+      },
+      "Slog": {
+        "macro_rmse": 0.11798721364351741,
+        "worst_rmse": 0.19734817854553582,
+        "macro_mae": 0.09073943254723343
+      },
+      "pass": true
+    },
+    "FORWARD": {
+      "S1": {
+        "macro_rmse": 0.00011164198178839331,
+        "worst_rmse": 0.00017650889732141414,
+        "macro_mae": 9.009869567404256e-05
+      },
+      "S0": {
+        "macro_rmse": 0.2712738766118454,
+        "worst_rmse": 0.4662329409381822,
+        "macro_mae": 0.2708190837989295
+      },
+      "Slog": {
+        "macro_rmse": 0.12038632428086248,
+        "worst_rmse": 0.23759445245265123,
+        "macro_mae": 0.11837514268223667
+      },
+      "pass": true
+    },
+    "BLOCK2D": {
+      "S1": {
+        "macro_rmse": 0.00011413398023678218,
+        "worst_rmse": 0.00018962980941470892,
+        "macro_mae": 9.080098143561844e-05
+      },
+      "S0": {
+        "macro_rmse": 0.2900686162949237,
+        "worst_rmse": 0.46326310634989826,
+        "macro_mae": 0.28987922740524774
+      },
+      "Slog": {
+        "macro_rmse": 0.12291922923259953,
+        "worst_rmse": 0.2864105808587308,
+        "macro_mae": 0.12144096755123493
+      },
+      "pass": true
+    }
+  },
+  "conditional_intervals": {
+    "E": [
+      1.6896305427433702,
+      1.689812228707329,
+      1.6899674533448488
+    ],
+    "A": [
+      0.35375822727794193,
+      0.3539738180034533,
+      0.3541190890645844
+    ],
+    "B": [
+      1.2401726066429883,
+      1.2402968638266105,
+      1.2404303828429686
+    ],
+    "alpha": [
+      0.33980790884596923,
+      0.3399801655290178,
+      0.340136856419515
+    ],
+    "beta": [
+      0.2798238331994284,
+      0.27988173531860866,
+      0.27993444220400676
+    ]
+  }
+}
