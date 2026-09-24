@@ -1,0 +1,420 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-24T14:06:45.155580+00:00",
+  "scope": "Takeover integrity only; no Gate3 decision",
+  "source_commit": "47b88843c43b55e1fd822ac0b5344ba1387e9fb9",
+  "script_sha256": "06a01a01b64c822164c9c3e9ddc87648ea65ad72345d69a511dcfaf89209b151",
+  "strict_hash_count": 64,
+  "checks": [
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B10_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B1_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B2_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B4_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B5_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B6_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B7_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/B9_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:01_data/raw/real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/modeling_phase2/round5_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/modeling_phase2/round5_package.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/modeling_phase2/round5_prepare.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/modeling_phase2/round5_qa.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/modeling_phase2/round5_scenarios.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/modeling_phase2/round5_takeover_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:04_code/visualization/round5_figures.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:05_experiments/configs/Q2_R5_SCEN_v3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:05_experiments/configs/Q2_R5_v1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-001.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-001.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-002.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-002.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-003.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-003.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-004.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/figures/round5/FIG-Q2-R5-004.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/fold_parameters.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/illustrative_derivative_bootstrap.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/parameter_sensitivity.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/residual_diagnostics.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/splits.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/training_predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_metrics.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/B10_source_diagnostic.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/B2_source_diagnostic.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/B4_source_diagnostic.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/B5_source_diagnostic.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/B9_extrapolation_scope.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/ND_finite_substitution.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/external_shape_diagnostics.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_domain_evidence.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_scale_evidence.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/mixture_tangent_scenarios.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_cell_slopes.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_centered_LONO.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_fold_coefficients.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/quality_substitution_scenarios.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strict_sha256:06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "recorded_freeze_precedes_result",
+      "passed": true,
+      "detail": "Recorded timestamps and frozen hash agreement; not an independently timestamped pre-fit Git commit."
+    },
+    {
+      "check": "existing_numerical_QA_retained",
+      "passed": true,
+      "detail": "Reused saved QA, no repeat fitting or validation."
+    },
+    {
+      "check": "18_saved_splits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "multistart_and_bootstrap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "failed_scenarios_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "valid_scenario_and_guards",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4_figures_and_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "paper_matches_result_report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_parameter_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_promotion_or_Q3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_A_to_J",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figure_table_plan_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "five_table_pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "restored_csv_cells_unchanged:01_data/processed/modeling_phase2/round5/B9_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "restored_csv_cells_unchanged:01_data/processed/modeling_phase2/round5/B10_v1.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "restored_csv_cells_unchanged:06_results/raw/SCEN-Q2-R5-20260924-v3/B9_extrapolation_scope.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "restored_csv_cells_unchanged:06_results/raw/SCEN-Q2-R5-20260924-v3/B10_source_diagnostic.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw_and_caches_not_tracked",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

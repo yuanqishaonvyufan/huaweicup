@@ -1,0 +1,59 @@
+# Exact checkout formats required by frozen Round 5 SHA-256 records.
+# Four mixed-newline CSVs are byte-preserved, including quoted fields.
+# Raw attachments remain ignored and are never rewritten.
+/01_data/processed/modeling_phase2/round5/B10_v1.csv -text whitespace=cr-at-eol
+/01_data/processed/modeling_phase2/round5/B1_v1.csv text eol=crlf
+/01_data/processed/modeling_phase2/round5/B2_v1.csv text eol=crlf
+/01_data/processed/modeling_phase2/round5/B4_v1.csv text eol=crlf
+/01_data/processed/modeling_phase2/round5/B5_v1.csv text eol=crlf
+/01_data/processed/modeling_phase2/round5/B6_v1.csv text eol=crlf
+/01_data/processed/modeling_phase2/round5/B7_v1.csv text eol=crlf
+/01_data/processed/modeling_phase2/round5/B9_v1.csv -text whitespace=cr-at-eol
+/01_data/processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json text eol=crlf
+/03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv text eol=lf
+/03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json text eol=lf
+/03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv text eol=lf
+/03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md text eol=lf
+/04_code/modeling_phase2/round5_fit.py text eol=lf
+/04_code/modeling_phase2/round5_package.py text eol=lf
+/04_code/modeling_phase2/round5_prepare.py text eol=lf
+/04_code/modeling_phase2/round5_qa.py text eol=lf
+/04_code/modeling_phase2/round5_scenarios.py text eol=lf
+/04_code/visualization/round5_figures.py text eol=lf
+/05_experiments/configs/Q2_R5_SCEN_v3.json text eol=crlf
+/05_experiments/configs/Q2_R5_v1.json text eol=crlf
+/06_results/figures/round5/FIG-Q2-R5-001.pdf -text
+/06_results/figures/round5/FIG-Q2-R5-001.png -text
+/06_results/figures/round5/FIG-Q2-R5-002.pdf -text
+/06_results/figures/round5/FIG-Q2-R5-002.png -text
+/06_results/figures/round5/FIG-Q2-R5-003.pdf -text
+/06_results/figures/round5/FIG-Q2-R5-003.png -text
+/06_results/figures/round5/FIG-Q2-R5-004.pdf -text
+/06_results/figures/round5/FIG-Q2-R5-004.png -text
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/fold_parameters.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/illustrative_derivative_bootstrap.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/parameter_sensitivity.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/residual_diagnostics.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/splits.json text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/training_predictions.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_metrics.csv text eol=crlf
+/06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_predictions.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/B10_source_diagnostic.csv -text whitespace=cr-at-eol
+/06_results/raw/SCEN-Q2-R5-20260924-v3/B2_source_diagnostic.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/B4_source_diagnostic.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/B5_source_diagnostic.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/B9_extrapolation_scope.csv -text whitespace=cr-at-eol
+/06_results/raw/SCEN-Q2-R5-20260924-v3/ND_finite_substitution.json text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/external_shape_diagnostics.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_domain_evidence.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_scale_evidence.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/mixture_tangent_scenarios.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/quality_cell_slopes.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/quality_centered_LONO.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/quality_fold_coefficients.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/quality_substitution_scenarios.csv text eol=crlf
+/06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json text eol=crlf
+/04_code/modeling_phase2/round5_takeover_audit.py text eol=lf

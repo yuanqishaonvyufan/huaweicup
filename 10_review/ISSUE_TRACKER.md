@@ -63,3 +63,16 @@ DA-02/DA-05/DA-07 的识别或外部来源缺口、DA-10 规模转移失败和 Q
 ## Round5 current audit
 
 新增P0=0。R5-INPUT-01：B9四个D=0已标无效且不插补（CLOSED）。R5-CODE-01/02：情景v1/v2序列化及空分组处理失败已修复，有效v3，旧运行隔离（CLOSED）。R5-VIS-01：图中文字缺字与外界刻度已修复（CLOSED）。DA-07外部来源仍OPEN，附件内部主拟合现为1且受限验证通过；DA-02 TYPE E=0、DA-05跨来源量尺、DA-10 1B失败不变。不得用窄bootstrap区间声称外部保证。Gate3待审。
+
+## Round 5 takeover closeout — 2026-09-24
+
+本次发现 P0=0、P1=1、P2=3；下列均 CLOSED，本次未解决项为 0。历史 DA-02/05/07/10、B8 与现实成本/供给边界未因此消失。
+
+| ID | Severity | 问题 | 修正及状态 |
+|---|---|---|---|
+| R5-TAKE-01 | P1 | Git checkout 换行导致冻结代码/spec/Q1输入及四个含换行字段 CSV 的严格哈希不匹配 | 只接受精确命中既有 SHA 的字节恢复；逐路径 gitattributes 防止再变，原始附件不写；CLOSED — NO NUMERIC CHANGE |
+| R5-TAKE-02 | P2 | 缺接管 A–Q 状态清单与显式合并图表/交付导航 | 新增 recovery check 与 delivery figure/table plan，引用已有等价报告；CLOSED |
+| R5-TAKE-03 | P2 | Q2→Q3 尚未逐项给出 A–J 四类准入标签和成本缺口 | Markdown/JSON 同步准入规则，仍以 Gate3 批准为前提；CLOSED |
+| R5-TAKE-04 | P2 | QA verdict 用语不在本次要求枚举内；需明确暂定关闭的候选范围 | 改为 PASS WITH DOCUMENT CORRECTIONS，补15项证据表、当前状态及交接；CLOSED |
+
+已有 registry 顶部已经区分当前 Round5 与历史 Round4，接管未发现漏登数值/图形；本次仅附加完整性复核记录。

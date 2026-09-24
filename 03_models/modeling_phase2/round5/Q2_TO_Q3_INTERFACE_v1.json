@@ -42,7 +42,14 @@
       1,
       1.5
     ],
-    "requires_explicit_transport_assumption": true
+    "requires_explicit_transport_assumption": true,
+    "default_rho": 0,
+    "scenario_rho": [
+      0,
+      0.5,
+      1
+    ],
+    "local_rho_calibration_sensitivity_only": 1.8920452410283752
   },
   "mixture": {
     "default_AB_transport": 0,
@@ -63,5 +70,81 @@
     "EXP-Q2-ND-R5-20260924-v1",
     "SCEN-Q2-R5-20260924-v3"
   ],
-  "active_final": false
+  "active_final": false,
+  "admission_effective_after": "Gate3 approval",
+  "admission": [
+    {
+      "category": "A",
+      "item": "N/D baseline parameters",
+      "classification": "ENTER Q3",
+      "evidence_level": "ATTACHMENT-INTERNAL ESTIMATED"
+    },
+    {
+      "category": "B",
+      "item": "conditional bootstrap ensemble and LONO ranges",
+      "classification": "SENSITIVITY ONLY",
+      "evidence_level": "DIAGNOSTIC ONLY"
+    },
+    {
+      "category": "C",
+      "item": "N/D marginal effects and elasticities",
+      "classification": "ENTER Q3",
+      "evidence_level": "ATTACHMENT-INTERNAL ESTIMATED"
+    },
+    {
+      "category": "D",
+      "item": "N/D iso-loss substitution with domain checks",
+      "classification": "ENTER Q3",
+      "evidence_level": "ATTACHMENT-INTERNAL ESTIMATED"
+    },
+    {
+      "category": "E",
+      "item": "quality g and effective-data rho",
+      "classification": "ENTER Q3 AS SCENARIO",
+      "evidence_level": "SEMI-SYNTHETIC CALIBRATED / SCENARIO-CONDITIONAL"
+    },
+    {
+      "category": "F",
+      "item": "centered mixture effects with external transport k",
+      "classification": "ENTER Q3 AS SCENARIO",
+      "evidence_level": "EMPIRICALLY ESTIMATED within A / SCENARIO-CONDITIONAL across sources"
+    },
+    {
+      "category": "G",
+      "item": "N/D support and p support evidence",
+      "classification": "ENTER Q3",
+      "evidence_level": "ATTACHMENT-INTERNAL ESTIMATED / EMPIRICALLY ESTIMATED"
+    },
+    {
+      "category": "H",
+      "item": "source, Run, evidence and candidate labels",
+      "classification": "ENTER Q3",
+      "evidence_level": "MANDATORY METADATA"
+    },
+    {
+      "category": "I",
+      "item": "B8, universal/causal quality, absolute pooling, 1B M1 transport and unsupported guarantees",
+      "classification": "DO NOT ENTER Q3",
+      "evidence_level": "QUARANTINED / UNIDENTIFIED / UNSUPPORTED"
+    },
+    {
+      "category": "J",
+      "item": "unavailable measured cost and supply coefficients",
+      "classification": "DO NOT ENTER Q3",
+      "evidence_level": "MISSING INPUTS"
+    }
+  ],
+  "missing_cost_inputs": [
+    "budget and currency/time units",
+    "hardware throughput and utilization",
+    "training compute coefficients and precision assumptions",
+    "data procurement, cleaning and filtering costs",
+    "domain supply limits and effective deduplicated token counts",
+    "measured quality investment response or explicit scenario ranges"
+  ],
+  "finite_substitution_guards": [
+    "L_target-E-A*N_new**(-alpha)>0",
+    "N_new and D_new inside declared support for restricted use",
+    "outside support is sensitivity only, never deployable guarantee"
+  ]
 }

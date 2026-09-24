@@ -28,3 +28,7 @@
 | SCEN-Q2-R5-20260924-v3 | Frozen scenario design, unavailable grouped metric handled explicitly | configs/Q2_R5_SCEN_v3.json | 04_code/modeling_phase2/round5_scenarios.py | same frozen input hashes | DETERMINISTIC | 06_results/raw/SCEN-Q2-R5-20260924-v3 | COMPLETED — v3 VALID / NUMERICAL QA PASS |
 
 当前Round5新增1正式N-D主运行、1有效情景v3、2隔离失败情景v1/v2。上方Round4计数是历史范围；当前正式N-D拟合=1，FINAL模型=0。运行原始终端输出见本任务记录；summary与output_manifest为持久运行证据。
+
+## Round 5 takeover closeout
+
+QA-R5-TAKEOVER-20260924-v1：`04_code/modeling_phase2/round5_takeover_audit.py`，只核既有产物、SHA、保存格式、接口和交付完整性；输出 `10_review/ROUND5_TAKEOVER_INTEGRITY_v1.json`。字节恢复记录见 ROUND5_CHECKOUT_BYTE_RESTORATION_v1.json。无新模型 Run，无重训/重验/重画，随机种子不适用。既有原 59 项数值 QA 保持原文件与时间戳。新增审计与实验运行分开计数。Round5 COMPLETE，Q2 暂定关闭（受限候选），Gate3 READY / NOT PASSED。

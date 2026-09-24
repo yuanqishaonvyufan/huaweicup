@@ -37,6 +37,13 @@
       "sha256": "4e9b74e346555d767a856dbf6ff6c89e62d6a24243cda957cd5c74dc115714b3",
       "lines": 73,
       "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase2/round5_takeover_audit.py",
+      "sha256": "06a01a01b64c822164c9c3e9ddc87648ea65ad72345d69a511dcfaf89209b151",
+      "lines": 187,
+      "core_appendix": false,
+      "purpose": "Takeover integrity only; no model execution"
     }
   ]
 }

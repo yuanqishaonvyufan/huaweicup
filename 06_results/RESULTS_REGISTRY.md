@@ -41,3 +41,5 @@ Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 
 | CAND-Q2-R5-MIX-001 | 继承M1与136切向示例 | 1M限定; 60M部分; 1B失败; 支持未核 | EMPIRICALLY ESTIMATED / SCENARIO-CONDITIONAL | SCEN-Q2-R5-20260924-v3 | mixture_tangent_scenarios.csv | CHECKED CANDIDATE; NOT FINAL |
 
 数值来源：06_results/raw/<Run>/<Artifact>，规格/代码/输入哈希见配置与summary。当前全项目14项Q1+9项Q2候选，VALIDATED FINAL仍0。
+
+接管收口：原 9 项 Q2 Result ID、数值、Run 和证据级别不变；Q2 PROVISIONALLY CLOSED 只指受限研究包完成，不升格 VALIDATED FINAL。新增导航见 `03_models/modeling_phase2/round5/Q2_DELIVERY_FIGURE_TABLE_PLAN_v1.md`；Q3 准入见接口 A–J。QA 和字节修复不新增科学结果。Gate3 仍未通过。

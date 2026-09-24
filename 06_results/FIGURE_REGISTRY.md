@@ -21,3 +21,5 @@ Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受�
 | FIG-Q2-R5-002 | 三类无随机拆行验证中，加性幂律优于两个透明对照。 | CAND-Q2-R5-VAL-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
 | FIG-Q2-R5-003 | 幂指数为常数，总Loss弹性随N-D状态变化。 | CAND-Q2-R5-MARG-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
 | FIG-Q2-R5-004 | 上图为半合成表内斜率；下图为假定Q从0.5增至0.6的替代情景，不能解释为真实收益。 | CAND-Q2-R5-QUAL-001, SCEN-Q2-R5-SUB-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
+
+接管完整性复核：4 张 Q2 PNG 与 4 张 PDF 均命中既有 manifest SHA-256；脚本及有效 Run 的源数据齐全。未重画、未新增目视审查；沿用原 R5_VISUAL_QA。合并图表计划见 `03_models/modeling_phase2/round5/Q2_DELIVERY_FIGURE_TABLE_PLAN_v1.md`。候选身份及最终模板嵌入复核要求不变。

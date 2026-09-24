@@ -1,0 +1,566 @@
+{
+  "status": "PASS",
+  "scope": "Git index checkout filters, both core.autocrlf=true and false; strict frozen SHA",
+  "checks": [
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B10_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B1_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B2_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B4_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B5_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B6_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B7_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/B9_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "01_data/processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/modeling_phase2/round5_fit.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/modeling_phase2/round5_package.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/modeling_phase2/round5_prepare.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/modeling_phase2/round5_qa.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/modeling_phase2/round5_scenarios.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/modeling_phase2/round5_takeover_audit.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "04_code/visualization/round5_figures.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "05_experiments/configs/Q2_R5_SCEN_v3.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "05_experiments/configs/Q2_R5_v1.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-001.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-001.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-002.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-002.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-003.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-003.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-004.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/figures/round5/FIG-Q2-R5-004.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/fold_parameters.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/illustrative_derivative_bootstrap.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/parameter_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/residual_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/splits.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/training_predictions.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_metrics.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_predictions.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B10_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B2_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B4_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B5_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B9_extrapolation_scope.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/ND_finite_substitution.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/external_shape_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_domain_evidence.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_scale_evidence.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/mixture_tangent_scenarios.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_cell_slopes.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_centered_LONO.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_fold_coefficients.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_substitution_scenarios.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "true",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B10_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B1_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B2_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B4_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B5_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B6_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B7_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/B9_v1.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "01_data/processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/modeling_phase2/round5_fit.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/modeling_phase2/round5_package.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/modeling_phase2/round5_prepare.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/modeling_phase2/round5_qa.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/modeling_phase2/round5_scenarios.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/modeling_phase2/round5_takeover_audit.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "04_code/visualization/round5_figures.py",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "05_experiments/configs/Q2_R5_SCEN_v3.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "05_experiments/configs/Q2_R5_v1.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-001.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-001.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-002.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-002.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-003.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-003.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-004.pdf",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/figures/round5/FIG-Q2-R5-004.png",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/fold_parameters.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/illustrative_derivative_bootstrap.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/parameter_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/residual_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/splits.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/training_predictions.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_metrics.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/validation_predictions.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B10_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B2_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B4_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B5_source_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/B9_extrapolation_scope.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/ND_finite_substitution.json",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/external_shape_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_domain_evidence.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/inherited_mixture_scale_evidence.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/mixture_tangent_scenarios.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_cell_slopes.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_centered_LONO.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_fold_coefficients.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/quality_substitution_scenarios.csv",
+      "passed": true
+    },
+    {
+      "autocrlf": "false",
+      "path": "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json",
+      "passed": true
+    }
+  ]
+}

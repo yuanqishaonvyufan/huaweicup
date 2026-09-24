@@ -35,3 +35,7 @@
 ## 2026-09-24 Round5 Lead execution
 
 从main 052ba706恢复并遵照用户直接研究授权完成Q2；无Opus复审宣称。R5-SPEC-001→两有效Run→数值QA/候选图→结果登记→Gate3包。当前共同事实以PROJECT_STATE为准。
+
+## 2026-09-24 Round5 takeover closeout
+
+从 main 47b88843c43b55e1fd822ac0b5344ba1387e9fb9 接续；接管清单 checkpoint f838ca4 已推送。确认上一账号已完成主拟合、18 splits、200 bootstrap、有效 SCEN v3、4图5表、论文候选、原数值QA及Gate3包。本次只补保存格式完整性、交付导航、接口分类与状态用语；无模型新运行，不调用其他账号或冒称双方共识。Q1 PROVISIONALLY CLOSED；Q2 PROVISIONALLY CLOSED（附件内受限候选）；Round5 COMPLETE；Gate3 READY / NOT PASSED；Q3 NOT STARTED。
