@@ -1,0 +1,11 @@
+source,coverage,evidence_level,permitted_use,restriction
+B1,8 N × 147 D,ATTACHMENT-INTERNAL ESTIMATED,受限N-D参数/导数,外部原始loss锚未恢复
+B2,7 N × 147 D,SEMI-SYNTHETIC CALIBRATED,中心化形状压力测试,非独立真实轨迹验证
+B3,插值轨迹,DIAGNOSTIC ONLY,不额外使用；已选择B2,派生自B1，不增独立证据
+B4/B5,57/44行，12/9族,DIAGNOSTIC ONLY,族内形状/偏序检查,loss量尺未共标；单行族不算相关
+B6/B7,360⊂450，同一生成表系,SEMI-SYNTHETIC CALIBRATED,Q表内条件斜率与规模调节,生成器/真实质量干预未知
+B8,不读取,QUARANTINED,无,GENERATOR UNKNOWN / SEARCH PAUSED
+B9/B10,132元数据/128估算loss,SCENARIO-CONDITIONAL,大规模外推范围讨论,B9四行D=0禁用；B10非验证真值
+B11/B12,元数据/检查点索引,DIAGNOSTIC ONLY,沿用既有来源核查,不重新打开来源搜索
+Q1 M1,1M验证、60M部分、1B失败,EMPIRICALLY ESTIMATED,A来源内配比关联，R0+R3,非因果；不运输A/B绝对Loss
+跨A/B的g、rho、k,外生情景假设,SCENARIO-CONDITIONAL,机制与替代敏感性,TYPE E=0；运输系数未识别

@@ -31,3 +31,7 @@
 2026-09-24，按用户授权完成六项单次 Gate 2 决策。[GATE2_CONSENSUS_v1](GATE2_CONSENSUS_v1.md)为 ACTIVE，G2-SINGLE-001，Verdict B — PASS WITH DOCUMENT-ONLY CORRECTIONS。无另一账号/Opus 参与声明，无新建模 Round、训练或验证运行。Q1 PROVISIONALLY CLOSED，M1 PROVISIONAL PREFERRED Q1 p-RESPONSE MODEL；TYPE E=0；B1 只获附件内受限 baseline 入口，外部 Alert v4 保持 PARTIALLY RESOLVED。
 
 文档修正说明 A7 参与冻结候选的预定比较，未用于结构/超参数搜索或参数回填；修正 Alert v4 规格链接并同步门槛状态。P0=0，两项 P2 已关闭，不要求模型重跑。[Round 5 交接](../../09_handoff/GATE2_TO_ROUND5_HANDOFF_v1.md)已建立；Round 5 READY TO START，N–D 拟合仍 0。60M 部分形状转移、1B 失败、support-aware 约束和 B8 隔离继续有效。
+
+## 2026-09-24 Round5 Lead execution
+
+从main 052ba706恢复并遵照用户直接研究授权完成Q2；无Opus复审宣称。R5-SPEC-001→两有效Run→数值QA/候选图→结果登记→Gate3包。当前共同事实以PROJECT_STATE为准。

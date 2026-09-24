@@ -1,0 +1,1 @@
+SCEN v1 failed serializing numpy.bool in finite substitution feasibility. Partial outputs quarantined here; not used for reporting/model choice. Fix converts numpy scalars to native JSON types only. All substantive spec and B1 results unchanged. Rerun as SCEN-Q2-R5-20260924-v2.

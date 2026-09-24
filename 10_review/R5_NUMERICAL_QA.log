@@ -1,0 +1,303 @@
+{
+  "status": "PASS",
+  "scope": "Round 5 numerical and lineage QA; not Gate 3",
+  "created_utc": "2026-09-24T11:31:17.172933+00:00",
+  "checks": [
+    {
+      "check": "EXP-Q2-ND-R5-20260924-v1_output_hashes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "SCEN-Q2-R5-20260924-v3_output_hashes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "spec_frozen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fit_code_frozen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "scenario_code_and_inputs_frozen",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw_and_processed_hashes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "full_predictions_recomputed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "positive_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fold_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N0.070542",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N0.070542",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N0.162405",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N0.162405",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N0.409009",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N0.409009",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N1.040867",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N1.040867",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N1.416184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N1.416184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N2.782831",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N2.782831",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N6.86104",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N6.86104",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_LONO_N11.965825",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_LONO_N11.965825",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_FORWARD_Drank73",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_FORWARD_Drank73",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_FORWARD_Drank110",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_FORWARD_Drank110",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N0.070542_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N0.070542_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N0.162405_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N0.162405_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N0.409009_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N0.409009_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N1.040867_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N1.040867_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N1.416184_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N1.416184_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N2.782831_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N2.782831_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N6.86104_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N6.86104_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "split_BLOCK2D_N11.965825_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_BLOCK2D_N11.965825_D98",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all_validation_metrics_recomputed",
+      "passed": true,
+      "detail": "4.440892098500626e-16"
+    },
+    {
+      "check": "macro_LONO",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "macro_FORWARD",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "macro_BLOCK2D",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "derivatives_finite_difference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "elasticity_definitions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monotonicity_and_substitution_signs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "finite_ND_equal_loss",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "quality_substitution_inverse_equations",
+      "passed": true,
+      "detail": "4.440892098500626e-16"
+    },
+    {
+      "check": "quality_common_slope_independent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "bootstrap_whole_groups",
+      "passed": true,
+      "detail": "min unique groups=3"
+    },
+    {
+      "check": "no_quality_identification_no_Q3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_B8_input",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "failed_runs_isolated",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "script_sha256": "9f9a8b0545ac459cde33268d9d7bb7a4cdaea97fe099577b1e5e579458d27bda"
+}

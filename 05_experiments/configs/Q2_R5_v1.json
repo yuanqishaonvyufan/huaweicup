@@ -1,0 +1,21 @@
+{
+  "run_id": "EXP-Q2-ND-R5-20260924-v1",
+  "created_utc": "2026-09-24T11:25:20.741438+00:00",
+  "spec": "03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md",
+  "spec_sha256": "e408a7f386d9b1d9b9749c7fe31f42329bf2544444406dc72889b35bbdfe1ecc",
+  "fit_code_sha256": "f453b37cb7784ce4c34701343e5a2d5038d1521cc1ab126c261429cce21b7c1d",
+  "input_manifest_sha256": "a1cefb6a1a26c1a135c851c2db968d3857707026e648911bb9d1d0ef72ba07c5",
+  "seed": 20260924,
+  "bootstrap": 200,
+  "forward_cuts": [
+    73,
+    110
+  ],
+  "blocked_cut": 98,
+  "candidate_set": [
+    "S0",
+    "Slog",
+    "S1"
+  ],
+  "selection": "frozen spec; no final promotion"
+}

@@ -1,5 +1,7 @@
 # RESULTS_REGISTRY
 
+当前：14项Q1 + 9项Q2候选；Round5数值QA通过，Gate3待审，VALIDATED FINAL=NONE。以下Round4统计保留历史范围。
+
 论文唯一允许直接引用的定量结果源。MODELING PHASE 1 ROUND 4 累计 14 项**候选/诊断数值及模型选择状态**（Round 3 的 5 项及 Round 4 的 9 项）；VALIDATED FINAL RESULTS：NONE。Round 4 的 A7 留出证据已通过本地 QA，Gate 2 已接受 Q1 暂定关闭与受限用途，模型仍为 PROVISIONAL；不得提前标为 VALIDATED FINAL RESULT。
 
 | Result ID | Question | Variable / Metric | Value | Unit | Confidence interval | Source experiment | Source dataset | Source model | Source code | Validation status | Paper location | Figure / Table ID | Notes |
@@ -23,3 +25,19 @@
 证据审查链为 RAW → CHECKED → VALIDATED，不合格为 REJECTED；当前 Phase 1 候选性可另标 CANDIDATE。只有经过后续相应 Gate 的 VALIDATED 结果可以支撑正式正文核心结论；每个结果 ID 同时追到配置、数据、响应、模型和代码版本。
 
 Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 不变。A7 用于冻结候选的预定验收与偏好判定，未用于结构/超参数搜索或参数回填；表列成对 bootstrap 区间不是完整选择过程校正的区间。VALIDATED FINAL RESULTS 仍为 NONE。
+
+## Round5 Q2 — CHECKED CANDIDATES, Gate3 pending
+
+| Result ID | Metric | Value | Evidence level | Run | Artifact under run | Status |
+|---|---|---|---|---|---|---|
+| CAND-Q2-R5-ND-001 | 五参数S1 | {"E": 1.6897975629393145, "A": 0.3539803206519287, "B": 1.2403055835398427, "alpha": 0.3399765819061934, "beta": 0.27987812854708494} | ATTACHMENT-INTERNAL ESTIMATED | EXP-Q2-ND-R5-20260924-v1 | summary.json | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-VAL-001 | 轨迹验证宏RMSE | LONO .000146888; forward .000111642; blocked .000114134 | ATTACHMENT-INTERNAL ESTIMATED | EXP-Q2-ND-R5-20260924-v1 | validation_metrics.csv | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-UNC-001 | 200整轨迹区间/稳定性 | 200成功; boundary 0; rank 5; condition 33.8347 | DIAGNOSTIC ONLY | EXP-Q2-ND-R5-20260924-v1 | cluster_bootstrap.csv | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-MARG-001 | N=1,D=100总Loss弹性 | N -0.050447; D -0.040100; substitution -1.258018 | ATTACHMENT-INTERNAL ESTIMATED | EXP-Q2-ND-R5-20260924-v1 | marginal_effects.csv | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-QUAL-001 | B7条件质量共同斜率 | -0.361995; negative 45/45; centered LONO .052964→.043679 | SEMI-SYNTHETIC CALIBRATED | SCEN-Q2-R5-20260924-v3 | quality_cell_slopes.csv | CHECKED CANDIDATE; NOT FINAL |
+| SCEN-Q2-R5-SUB-001 | Q .5→.6, lambda=1条件替代 | N减少24.903%; D减少30.210%; 非真实节省 | SCENARIO-CONDITIONAL | SCEN-Q2-R5-20260924-v3 | quality_substitution_scenarios.csv | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-EXT-001 | B2/B4/B5中位中心化误差比 | .855084 / .436601 / .555135 | DIAGNOSTIC ONLY | SCEN-Q2-R5-20260924-v3 | external_shape_diagnostics.csv | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-EXT-002 | B9/B10外推 | 132元数据; 4个D=0; 128估算; 非验证真值 | SCENARIO-CONDITIONAL | SCEN-Q2-R5-20260924-v3 | B9_extrapolation_scope.csv | CHECKED CANDIDATE; NOT FINAL |
+| CAND-Q2-R5-MIX-001 | 继承M1与136切向示例 | 1M限定; 60M部分; 1B失败; 支持未核 | EMPIRICALLY ESTIMATED / SCENARIO-CONDITIONAL | SCEN-Q2-R5-20260924-v3 | mixture_tangent_scenarios.csv | CHECKED CANDIDATE; NOT FINAL |
+
+数值来源：06_results/raw/<Run>/<Artifact>，规格/代码/输入哈希见配置与summary。当前全项目14项Q1+9项Q2候选，VALIDATED FINAL仍0。

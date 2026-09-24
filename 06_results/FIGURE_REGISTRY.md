@@ -1,5 +1,7 @@
 # FIGURE_REGISTRY
 
+当前：Q1四图 + Q2四图为CHECKED候选；Round5单图QA通过，最终正文嵌入待审。
+
 Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受其受限 Q1 证据用途，仍保留论文候选状态。PDF 向量文件与 PNG 预览、脚本哈希见 `03_models/modeling_phase1/q1/round4/figures/figure_manifest.json`。正式嵌入仍须按论文版面检查中文字形和实际尺寸。
 
 | Figure ID | Question | Purpose / claim | Source Run | Source data | Result ID | Generation script | Filename | Axes / unit | Limitation | Paper location | Status |
@@ -10,3 +12,12 @@ Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受�
 | FIG-Q1-R4-004 | Q1 | 显示经验凸包和训练近邻的验证配比分层 | VAL-Q1-PRESP-A6A11-R4-20260924-v2 | `P_SUPPORT_VALIDATION_ROWS_v2.csv` | CAND-Q1-R4-SUPPORT-001 | `04_code/modeling_phase1/round4_q1_figures.py` | `figures/FIG-Q1-R4-004_support_strata.pdf`；同名 PNG | 横轴配比组数；纵轴规模；堆叠 IN/NEAR/OUT | A6/A8 同一 p；经验支持不等于现实供给或最终 Q3 域 | 附录候选 | CHECKED PAPER CANDIDATE — GATE2 ACCEPTED — PROVISIONAL USE |
 
 图形宣称、来源、SHA-256 与 PNG 分辨率由 Round 4 QA 检查；四张 PNG 亦已人工查看无明显裁切。论文最终位图参考至少 300 dpi；当前优先采用 PDF 向量文件。
+
+## Round5 Q2 figures
+
+| ID | Purpose | Result IDs | Source/paths | Script | Status |
+|---|---|---|---|---|---|
+| FIG-Q2-R5-001 | 八条附件轨迹与幂律吻合；微小残差不证明外部真实性。 | CAND-Q2-R5-ND-001, CAND-Q2-R5-UNC-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
+| FIG-Q2-R5-002 | 三类无随机拆行验证中，加性幂律优于两个透明对照。 | CAND-Q2-R5-VAL-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
+| FIG-Q2-R5-003 | 幂指数为常数，总Loss弹性随N-D状态变化。 | CAND-Q2-R5-MARG-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
+| FIG-Q2-R5-004 | 上图为半合成表内斜率；下图为假定Q从0.5增至0.6的替代情景，不能解释为真实收益。 | CAND-Q2-R5-QUAL-001, SCEN-Q2-R5-SUB-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |

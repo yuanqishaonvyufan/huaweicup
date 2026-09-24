@@ -1,0 +1,9 @@
+{
+  "status": "PASS_STANDALONE_CANDIDATES",
+  "figures": 4,
+  "all_text_inside": true,
+  "minimum_effective_pt": 9.525019,
+  "human_visual_review": "assistant inspected all 4 PNGs; 001-003 after rerender,004 layout before tick-only fix",
+  "full_manuscript_compilation": "NOT_PERFORMED",
+  "final_embedding_review_required": true
+}

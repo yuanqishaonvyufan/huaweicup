@@ -1,0 +1,17 @@
+{
+  "B10_source_diagnostic.csv": "7e06a5fa17f6a642796fb2b165ba6e1af9d7b9d7f4b0e16da949ea88f30e381e",
+  "B2_source_diagnostic.csv": "a65eb576b7d79405142fd1014bfb841a37d932a3c544d9af9326e046538af808",
+  "B4_source_diagnostic.csv": "fb04a5a36cfb1e18b36c8040524f2054921a4c5b5a185aa263f7505ca8a2cd00",
+  "B5_source_diagnostic.csv": "563a7f2394dba50733d8b3388b61a45dd2e3231af80ead2b2c8a0cffbb853817",
+  "B9_extrapolation_scope.csv": "d104eefb04858366fb2e012769a502b14aa92a255ddb34988415cd97d38a230d",
+  "external_shape_diagnostics.csv": "2cbb0d947ca9e9b163b1bba1a0f95918f816c0367720e375675ca6ca79f620a6",
+  "inherited_mixture_domain_evidence.csv": "2759627b52b864277f5edf1de8f47a4774ea6c7947369081e8efbb1a56785af3",
+  "inherited_mixture_scale_evidence.csv": "ed1cb958eb72daa5c2d6631162df0489250c7641c36a5f0dd3f45913740cc4df",
+  "mixture_tangent_scenarios.csv": "d54558db9ef6b5de7d00f1bfe07bf35d6277900600c3c1194a05d2ec05606cb2",
+  "ND_finite_substitution.json": "35466f64e94b2c555295a93e1384c0e4131b8d4862ce82d3010c68c0b4bff654",
+  "quality_cell_slopes.csv": "1b5dbd848fe78be9e6770ac3dc52003b6a82821dc840b08ec16b4bd30f634c76",
+  "quality_centered_LONO.csv": "5629a161a6a516f0769c8f1e3dd53ef918f4b09eddaa45721be4e5d4fee39bb8",
+  "quality_fold_coefficients.csv": "20ad6ade865f21891f2681129b4ed5c6875db8e3258fe24d2195e8d5912273d2",
+  "quality_substitution_scenarios.csv": "9fd168f7ffdea042ce45c1e2de351c6ecb5cfc5c4c9966d0240e84aa8e2a2db0",
+  "summary.json": "ee7c02886d66bbec56e583613aa46f1ba627de38780245079762ac0b1622ebb2"
+}

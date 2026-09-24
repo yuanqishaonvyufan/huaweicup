@@ -1,0 +1,42 @@
+{
+  "scope": "Round5 Q2; not full four-question completion",
+  "entry": "04_code/modeling_phase2/round5_fit.py",
+  "files": [
+    {
+      "path": "04_code/modeling_phase2/round5_fit.py",
+      "sha256": "f453b37cb7784ce4c34701343e5a2d5038d1521cc1ab126c261429cce21b7c1d",
+      "lines": 134,
+      "core_appendix": true
+    },
+    {
+      "path": "04_code/modeling_phase2/round5_package.py",
+      "sha256": "6bd2e3746b789f6ddfaf02fe895f71660e678afbdf6703f0acdabcf036193145",
+      "lines": 219,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase2/round5_prepare.py",
+      "sha256": "95f447c2ab8d57c2a8465b05395de62b40acb2b190dca0e7b49e471aec595d68",
+      "lines": 64,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase2/round5_qa.py",
+      "sha256": "9f9a8b0545ac459cde33268d9d7bb7a4cdaea97fe099577b1e5e579458d27bda",
+      "lines": 73,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase2/round5_scenarios.py",
+      "sha256": "4c672869959d36a971be809c91a8eacb388010cb5b1e2cc6b6889e421191aa01",
+      "lines": 126,
+      "core_appendix": true
+    },
+    {
+      "path": "04_code/visualization/round5_figures.py",
+      "sha256": "4e9b74e346555d767a856dbf6ff6c89e62d6a24243cda957cd5c74dc115714b3",
+      "lines": 73,
+      "core_appendix": false
+    }
+  ]
+}

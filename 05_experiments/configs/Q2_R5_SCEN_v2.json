@@ -1,0 +1,33 @@
+{
+  "run_id": "SCEN-Q2-R5-20260924-v2",
+  "created_utc": "2026-09-24T11:28:46.201934+00:00",
+  "code_sha256": "5ef29e10a23a2009d75faef5f48cf938148010379b62b6a1a895f1978fb09d74",
+  "inputs": {
+    "01_data/processed/modeling_phase2/round5/B10_v1.csv": "5003385b6b33e54ec29c0821ab4be5ca1086a6ec78387b59c119db7b2517af53",
+    "01_data/processed/modeling_phase2/round5/B1_v1.csv": "6d1151fead73230583817a565401f1d14b197f7faa01d00f72f2e885abb066e6",
+    "01_data/processed/modeling_phase2/round5/B2_v1.csv": "7b66f790d1064c0ca593e64b06bc48d4022c360dfb96534d437a5630045b82ae",
+    "01_data/processed/modeling_phase2/round5/B4_v1.csv": "f7c29164b7636f48ba0f7919326d68a8bd0e23631acefcedc3701217b2c0574b",
+    "01_data/processed/modeling_phase2/round5/B5_v1.csv": "886a9e3c865c914e90174defc2caa464324b87026af93fc0f03920e2ef889234",
+    "01_data/processed/modeling_phase2/round5/B6_v1.csv": "f67093dec3f673e023b27bdfd21c433dc6588b01a420f95eec34a3f1f18f4f35",
+    "01_data/processed/modeling_phase2/round5/B7_v1.csv": "68f862b63f6bc4ff5a8c2c04e3317f13faad1170f7acab7fde67ff51ca9b5eb1",
+    "01_data/processed/modeling_phase2/round5/B9_v1.csv": "3cba5a8b7aa7142b21420e16d08fb70772ea842d345e351ea7f28b14653711fd",
+    "01_data/processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json": "a1cefb6a1a26c1a135c851c2db968d3857707026e648911bb9d1d0ef72ba07c5",
+    "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json": "e92a1e7c9c280f665ebf50e870d2dc332101b8cde8f8255b954a841e58821a35",
+    "06_results/raw/EXP-Q2-ND-R5-20260924-v1/training_predictions.csv": "bfcbe9bb33f5757c0af413c6fc311cc20dedd12cdb94486467ad0b655838c5b9",
+    "03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json": "37c39bb691fc73de8bfb56eb09f2985aefd9667035292dbeafdd25fb5cab1124",
+    "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.csv": "c2bac006fcc785db90d3a19dd3bc0685e4af4112f5433607718fc2d815883d21",
+    "03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv": "688513ab1afc6d22f36b8736d8e8d4b844a2e3488af3f1b91e6c306c2aa3aa2c"
+  },
+  "quality_factors": [
+    0,
+    0.5,
+    1,
+    1.5
+  ],
+  "Q_ref": 0.5,
+  "delta_Q": 0.1,
+  "mixture_transfer_default": 0,
+  "B8": "UNREAD",
+  "TYPE_E": 0,
+  "repair": "JSON scalar conversion only"
+}

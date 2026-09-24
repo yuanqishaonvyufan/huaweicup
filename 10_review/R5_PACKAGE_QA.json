@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "report_controls_absent": true,
+    "latex_commands": true,
+    "paper_matches_report": true,
+    "4_figures": true,
+    "5_tables": true,
+    "fig_hashes": true,
+    "fig_text_inside": true,
+    "code_manifest": true,
+    "current_state": true
+  }
+}

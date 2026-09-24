@@ -27,3 +27,11 @@
 | G2-SINGLE-001 | Q1/Q2 | Gate 2 六项单次决策及 Round 5 受限入口 | 因描述/来源限制重复打开 Q1 | 接受限定用途并明确留出选择角色 | 用户授权的 single-pass 裁决：B，P0=0，两项文档修正完成 | 本轮未调用另一账号或 Opus，不冒称其审查 | Full-22/五维/DQ0 分层、16D p 模型、R0+R3、TYPE E=0 与支持限制成立 | 复用 Round 4 QA PASS 与冻结训练/验证 v2；A7 13/13 改善，M2 无稳定增益，M3 未触发，1B 失败；B1 内部一致性通过 | 只用本地既有证据，无新来源搜索 | GATE2_CONSENSUS_v1 ACTIVE；Q1 PROVISIONALLY CLOSED；B1 附件内部 baseline ALLOWED FOR ROUND 5 | 留出按预定规则参与候选验收，未回填模型；外部 B1 来源缺口限制用途但不阻断附件内入口 | Gate2 共识、Round5 handoff、状态/接口/登记与 B1 资格 | 冻结代码与结果不改，无新模型运行 | 原 Q1 训练 v1、有效验证 v2；本轮新 Run=0 | 原 14 项 CHECKED/CANDIDATE，VALIDATED FINAL=0 | PASS WITH DOCUMENT-ONLY CORRECTIONS — ACTIVE / ROUND 5 READY |
 
 后续数学决策必须保留候选、双方意见、可核验证据、影响模块和版本；有实质分歧先建 02_analysis/debates/DEBATE_XXX.md，不以投票代替验证。
+
+## R5-SPEC-001 — 2026-09-24
+
+用户本轮授权Lead研究者冻结并直接执行Q2；继承G2-SINGLE-001，冻结03_models/modeling_phase2/round5/Q2_ROUND5_SPEC_v1.md及配置哈希。无Opus审查宣称；Gate3仍待审。Q1不重开、B8隔离、TYPE E=0、Q3/Q4不启动。
+
+## R5-CLOSE-001 — 2026-09-24
+
+受限Q2计算/分析/材料完成，数值与候选图QA通过。S1升级触发未满足，保持五参数；跨来源仅诊断，质量/配比运输仅情景。有效SCEN v3，v1/v2隔离。准备Gate3，不自动晋升最终模型、不执行Q3。用户明确要求额度耗尽前上传，授权commit/push本轮成果。

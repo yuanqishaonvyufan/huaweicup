@@ -1,11 +1,9 @@
 # NEXT_ACTION
 
-**Gate 2 已通过：Verdict B — PASS WITH DOCUMENT-ONLY CORRECTIONS。**[GATE2_CONSENSUS_v1](../02_analysis/consensus/GATE2_CONSENSUS_v1.md)为 ACTIVE，文档修正已完成。Round 4 COMPLETE；Q1 PROVISIONALLY CLOSED；Round 5 **READY TO START / NOT EXECUTED**；Q2 **BASELINE MODELING AUTHORIZED**。
+Round5已完成Q2受限研究包；下一真实断点为Gate3预审，不是重新拟合B1。先读10_review/GATE3_PRE_REVIEW_PACKAGE_v1.md、03_models/modeling_phase2/round5/Q2_RESULTS_REPORT_v1.md和Q2_LIMITATIONS_v1.md。
 
-下一轮执行[Gate 2→Round 5 交接 v1](GATE2_TO_ROUND5_HANDOFF_v1.md)：基于[已有 Q2 规格](../03_models/modeling_phase1/q2/Q2_BASELINE_MODEL_SPEC_v1.md)，先固定附件 B1 内部 N–D baseline 的模型、单位、参数约束、轨迹分组/D 段检验和选择规则，登记新 Run 后开始受限拟合。当前正式 N–D 拟合仍为 0，本次 Gate 2 决策未启动计算。
+请裁决：B1仅附件内部参数/导数是否足以作为Q3条件目标；极窄区间的解释是否到位；B2/B4/B5中心化诊断是否被正确降级；B7半合成与A/B运输是否保持情景身份；Q3接口是否保留N-D支持、p经验支持和现实供给/成本分离。允许有限文档整改；遇到真正P0再回到相应运行，不重新膨胀Round。
 
-B1 **ATTACHMENT-INTERNAL RESTRICTED BASELINE ALLOWED FOR ROUND 5**；权威[Alert v4](../01_data/audits/modeling_phase1/q2/EVIDENCE_ALERT_B1_SOURCE_METADATA_v4.md)外部来源仍 PARTIALLY RESOLVED。核心只用 N、D、val_loss，异常元数据隔离；八条轨迹分组，不能把检查点随机按行拆分冒称独立验证。失败时允许无可靠附件内基线或局部描述。
+当前Gate3 NOT PASSED；Q3/Q4未启动。禁止自动作预算配置、KKT最终解或full-simplex可部署最优。Q1仍暂定关闭、1B配比转移失败、TYPE E=0、B8隔离。有效Run为EXP-Q2-ND-R5-20260924-v1与SCEN-Q2-R5-20260924-v3；情景v1/v2失败隔离。
 
-Q1 接口 TYPE E=0；DQ0 不作独立质量系数；A/B 绝对 Loss 不池化。M1 仍暂定，A7 用于冻结候选的预定比较，未用于结构/超参数搜索；60M 部分形状转移、1B 失败与 support-aware 边界必须携带。B8 保持 QUARANTINED / SEARCH PAUSED；Q3/Q4 未启动。Q1 训练和验证不重新运行，历史失败 v1 持续隔离。
-
-当前结果/图形仍 CHECKED/CANDIDATE，ACTIVE FINAL MODEL 与 VALIDATED FINAL RESULT 均为 0。原件只读，OFFICIAL_MAPPING_FIRST 与 PDF 干扰隔离持续有效。
+后续节奏保持Round6=Q3，Round7=Q4，Round8=全文/图表/摘要/附录/最终QA。新窗口先git fetch并比较HEAD/main、保护dirty worktree，按远端ACTIVE状态续接。

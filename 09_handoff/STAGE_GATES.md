@@ -1,5 +1,7 @@
 # 阶段门槛与当前状态
 
+当前：Round5 Q2研究包及候选QA完成，Gate3待审，Q3/Q4未启动；下表Round4阶段记录由末尾Round5更新补充。
+
 本表吸收 meta-model-agent 的阶段证据逻辑，并以本项目路径表达。门槛分两层：stage_gate.py 的结构预检，以及对数学、数据、运行、图表和文字的实质审查。DISCOVERY 已 COMPLETE；CONSENSUS_F_PROBLEM_ANALYSIS_v1.md 为 ACTIVE 研究设计共识。GATE1_CONSENSUS_v1.md 已经 Opus Final Confirmation 晋升为 ACTIVE / CONDITIONAL PASS (ROUTE LEVEL)；Phase 1 七项路线审计为 CHECKED AUDIT RESULT，完整 Data Audit 尚未完成。Modeling Phase 1 Round 4 已本地 QA PASS，Gate 2 PASS WITH DOCUMENT-ONLY CORRECTIONS（G2-SINGLE-001）；Q1 PROVISIONALLY CLOSED；Round 5 READY / NOT EXECUTED。
 
 | 阶段 | 结构证据 | 实质门槛 | 当前 |
@@ -15,3 +17,7 @@
 | ASSURANCE | 最终 PDF、交付清单、编译/渲染报告及哈希 | 当届格式与匿名、文件可打开、版面、支撑附件、最终结果/代码一致 | NOT_STARTED |
 
 原 Skill 的字节阈值和固定中文文件名属于原生工作区的机器契约；本项目不伪称原生 gate_contracts.py 已通过。这里用可复核证据与项目本地检查器执行适配门槛。阶段完成或返工需同步 PROJECT_STATE.md、DECISION_LOG.md 和相关登记表。
+
+## Round5 superseding status update
+
+Q2 FORMULATION/COMPUTATION/VALIDATION/EVIDENCE候选研究已完成，数值与单图QA PASS；Gate3预审就绪，未裁决。先前表中Q2 N-D=0为Round4/Gate2历史状态，当前=1主运行。Q3/Q4未开始，完整四问COMPUTATION与最终MANUSCRIPT/ASSURANCE未完成。

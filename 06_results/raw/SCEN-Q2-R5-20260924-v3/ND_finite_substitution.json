@@ -1,0 +1,42 @@
+[
+  {
+    "N0": 1.0,
+    "D0": 100.0,
+    "N_new": 0.5,
+    "D_new": 315.82752795628505,
+    "finite_solution": true,
+    "within_B1_rectangle": false
+  },
+  {
+    "N0": 1.0,
+    "D0": 100.0,
+    "N_new": 0.8,
+    "D_new": 135.55858088564557,
+    "finite_solution": true,
+    "within_B1_rectangle": true
+  },
+  {
+    "N0": 1.0,
+    "D0": 100.0,
+    "N_new": 1.0,
+    "D_new": 100.00000000000009,
+    "finite_solution": true,
+    "within_B1_rectangle": true
+  },
+  {
+    "N0": 1.0,
+    "D0": 100.0,
+    "N_new": 1.25,
+    "D_new": 77.05921890793718,
+    "finite_solution": true,
+    "within_B1_rectangle": true
+  },
+  {
+    "N0": 1.0,
+    "D0": 100.0,
+    "N_new": 2.0,
+    "D_new": 49.51234182477067,
+    "finite_solution": true,
+    "within_B1_rectangle": true
+  }
+]

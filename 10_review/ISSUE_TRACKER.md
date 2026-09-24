@@ -59,3 +59,7 @@ Round 4 Opus Verify 提出 1 个 P0、实际列明 6 个 P1、5 个 P2；报告�
 | G2-DOC-02 | P2 | 活跃入口状态需从待审同步为已授权；B1 Alert v4 到 Q2 规格链接少一级目录 | 修正链接并同步共识、接口、B1、登记与交接状态；外部 Alert 仍未解除 | CLOSED — DOCUMENT ONLY |
 
 DA-02/DA-05/DA-07 的识别或外部来源缺口、DA-10 规模转移失败和 Q3 实际供给限制继续携带；Gate 2 限定用途通过不把它们改写成已解决。
+
+## Round5 current audit
+
+新增P0=0。R5-INPUT-01：B9四个D=0已标无效且不插补（CLOSED）。R5-CODE-01/02：情景v1/v2序列化及空分组处理失败已修复，有效v3，旧运行隔离（CLOSED）。R5-VIS-01：图中文字缺字与外界刻度已修复（CLOSED）。DA-07外部来源仍OPEN，附件内部主拟合现为1且受限验证通过；DA-02 TYPE E=0、DA-05跨来源量尺、DA-10 1B失败不变。不得用窄bootstrap区间声称外部保证。Gate3待审。

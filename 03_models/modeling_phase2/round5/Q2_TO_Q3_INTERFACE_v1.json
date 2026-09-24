@@ -1,0 +1,67 @@
+{
+  "status": "CHECKED CANDIDATE — GATE3 PENDING",
+  "version": 1,
+  "model_id": "Q2-S1-R5-v1",
+  "evidence_level": "ATTACHMENT-INTERNAL ESTIMATED",
+  "equation": "E+A*N_B**(-alpha)+B*D_B**(-beta)",
+  "parameters": {
+    "E": 1.6897975629393145,
+    "A": 0.3539803206519287,
+    "B": 1.2403055835398427,
+    "alpha": 0.3399765819061934,
+    "beta": 0.27987812854708494
+  },
+  "units": {
+    "N": "billion parameters",
+    "D": "billion tokens",
+    "Loss": "B1 attachment scale"
+  },
+  "support": {
+    "N_B": [
+      0.070542,
+      11.965825
+    ],
+    "D_B": [
+      0.134,
+      299.893
+    ],
+    "interpolation_not_guarantee": true
+  },
+  "uncertainty": {
+    "ensemble": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+    "coverage": "conditional numeric only; no calibrated external prediction interval"
+  },
+  "derivatives": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv",
+  "quality": {
+    "identified_coefficients": 0,
+    "default_g": 0,
+    "scenario_common_g": 0.36199528619528604,
+    "scenario_factors": [
+      0,
+      0.5,
+      1,
+      1.5
+    ],
+    "requires_explicit_transport_assumption": true
+  },
+  "mixture": {
+    "default_AB_transport": 0,
+    "1B_transport": "FORBIDDEN_WITH_CURRENT_M1",
+    "R3_required": true,
+    "feasible_region": "DEFERRED_SUPPORT_AND_REAL_SUPPLY"
+  },
+  "B8": "QUARANTINED",
+  "requirements_before_Q3": [
+    "Gate3 decision",
+    "actual costs/supply constraints",
+    "support-aware p domain",
+    "scenario labels",
+    "dimensionally consistent cost formulas"
+  ],
+  "Q3_started": false,
+  "source_runs": [
+    "EXP-Q2-ND-R5-20260924-v1",
+    "SCEN-Q2-R5-20260924-v3"
+  ],
+  "active_final": false
+}

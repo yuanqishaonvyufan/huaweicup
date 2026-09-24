@@ -9,3 +9,7 @@
 Q1 质量表示另见[规格](../03_models/modeling_phase1/q1/round4/Q1_MODEL_SPEC_v1.md)与[限制](../03_models/modeling_phase1/q1/round4/Q1_LIMITATIONS_v1.md)：Full-22 画像与五维描述并行、语义冲突确认 0、TYPE E=0；该描述不是同运行质量弹性验证。失败验证 v1 的 JSON 序列化异常已隔离，不用于结论。Q2 重视来源内整轨迹留出及外部来源边界；Q3/Q4 仍待后续正式验证，不在 Round 4 范围。
 
 留出角色：A7 未用于结构/超参数搜索或参数回填，但用于冻结候选的预定验收与偏好判定；其成对区间不视为完整选择过程校正的最终泛化区间。
+
+## Round5 Q2 current update
+
+07_validation/round5/Q2_VALIDATION_REPORT_v1.md为当前Q2验证报告。三类轨迹验证与数值QA PASS，四候选图已检查；只支持附件内部候选。Gate3待裁决，VALIDATED FINAL=0。

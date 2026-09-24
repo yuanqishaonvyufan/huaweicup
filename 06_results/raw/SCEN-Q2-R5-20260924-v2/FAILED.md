@@ -1,0 +1,1 @@
+v2 failed JSON finite check: B10 family labels are individual model names, so there are zero multirow groups and median(empty) was NaN. No valid summary; partial artifacts excluded. v3 returns null for unavailable grouped metrics and separately reports estimate differences without claiming validation. B1 fit and scenario formulas unchanged.

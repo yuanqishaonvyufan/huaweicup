@@ -1,0 +1,180 @@
+{
+  "created_utc": "2026-09-24T11:23:17.259372+00:00",
+  "specification_sha256": "e408a7f386d9b1d9b9749c7fe31f42329bf2544444406dc72889b35bbdfe1ecc",
+  "preprocessing_code_sha256": "95f447c2ab8d57c2a8465b05395de62b40acb2b190dca0e7b49e471aec595d68",
+  "inputs": [
+    {
+      "id": "B1",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "raw_sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+      "processed": "01_data/processed/modeling_phase2/round5/B1_v1.csv",
+      "processed_sha256": "6d1151fead73230583817a565401f1d14b197f7faa01d00f72f2e885abb066e6",
+      "rows_before": 1176,
+      "rows_after": 1176,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "ATTACHMENT-INTERNAL ESTIMATED",
+      "N_range": [
+        0.070542,
+        11.965825
+      ],
+      "D_range": [
+        0.134,
+        299.893
+      ]
+    },
+    {
+      "id": "B2",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "raw_sha256": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+      "processed": "01_data/processed/modeling_phase2/round5/B2_v1.csv",
+      "processed_sha256": "7b66f790d1064c0ca593e64b06bc48d4022c360dfb96534d437a5630045b82ae",
+      "rows_before": 1029,
+      "rows_after": 1029,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "SEMI-SYNTHETIC CALIBRATED",
+      "N_range": [
+        0.111,
+        13.0
+      ],
+      "D_range": [
+        14.0,
+        2050.0
+      ]
+    },
+    {
+      "id": "B4",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "raw_sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+      "processed": "01_data/processed/modeling_phase2/round5/B4_v1.csv",
+      "processed_sha256": "f7c29164b7636f48ba0f7919326d68a8bd0e23631acefcedc3701217b2c0574b",
+      "rows_before": 57,
+      "rows_after": 57,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "DIAGNOSTIC ONLY",
+      "N_range": [
+        0.07,
+        72.0
+      ],
+      "D_range": [
+        6.0,
+        33739.0
+      ]
+    },
+    {
+      "id": "B5",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "raw_sha256": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+      "processed": "01_data/processed/modeling_phase2/round5/B5_v1.csv",
+      "processed_sha256": "886a9e3c865c914e90174defc2caa464324b87026af93fc0f03920e2ef889234",
+      "rows_before": 44,
+      "rows_after": 44,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "DIAGNOSTIC ONLY",
+      "N_range": [
+        0.125,
+        540.0
+      ],
+      "D_range": [
+        5.0,
+        2000.0
+      ]
+    },
+    {
+      "id": "B6",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "raw_sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+      "processed": "01_data/processed/modeling_phase2/round5/B6_v1.csv",
+      "processed_sha256": "f67093dec3f673e023b27bdfd21c433dc6588b01a420f95eec34a3f1f18f4f35",
+      "rows_before": 360,
+      "rows_after": 360,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "SEMI-SYNTHETIC CALIBRATED",
+      "N_range": [
+        0.07,
+        11.97
+      ],
+      "D_range": [
+        10.0,
+        600.0
+      ]
+    },
+    {
+      "id": "B7",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "raw_sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+      "processed": "01_data/processed/modeling_phase2/round5/B7_v1.csv",
+      "processed_sha256": "68f862b63f6bc4ff5a8c2c04e3317f13faad1170f7acab7fde67ff51ca9b5eb1",
+      "rows_before": 450,
+      "rows_after": 450,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "SEMI-SYNTHETIC CALIBRATED",
+      "N_range": [
+        0.07,
+        11.97
+      ],
+      "D_range": [
+        10.0,
+        600.0
+      ]
+    },
+    {
+      "id": "B9",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "raw_sha256": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e",
+      "processed": "01_data/processed/modeling_phase2/round5/B9_v1.csv",
+      "processed_sha256": "3cba5a8b7aa7142b21420e16d08fb70772ea842d345e351ea7f28b14653711fd",
+      "rows_before": 132,
+      "rows_after": 132,
+      "required_missing": 0,
+      "nonpositive_D": 4,
+      "imputed": 0,
+      "evidence_level": "DIAGNOSTIC ONLY",
+      "N_range": [
+        100.0,
+        10000.0
+      ],
+      "D_range": [
+        0.0,
+        36000.0
+      ]
+    },
+    {
+      "id": "B10",
+      "source": "01_data/raw/real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "raw_sha256": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb",
+      "processed": "01_data/processed/modeling_phase2/round5/B10_v1.csv",
+      "processed_sha256": "5003385b6b33e54ec29c0821ab4be5ca1086a6ec78387b59c119db7b2517af53",
+      "rows_before": 128,
+      "rows_after": 128,
+      "required_missing": 0,
+      "nonpositive_D": 0,
+      "imputed": 0,
+      "evidence_level": "SCENARIO-CONDITIONAL",
+      "N_range": [
+        100.0,
+        10000.0
+      ],
+      "D_range": [
+        0.1,
+        36000.0
+      ]
+    }
+  ],
+  "B6_exact_subset_B7": 360,
+  "python": "3.13.14",
+  "numpy": "2.5.1",
+  "pandas": "3.0.3",
+  "leakage_control": "No learned transforms; deterministic trajectory and D rank splits; B8 unread"
+}

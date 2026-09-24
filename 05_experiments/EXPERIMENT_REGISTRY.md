@@ -1,5 +1,7 @@
 # EXPERIMENT_REGISTRY
 
+当前：Round5已新增1次N-D主拟合、1次有效情景v3、2次隔离失败情景v1/v2；详本文件Round5区。以下Round4统计保留历史范围。
+
 状态：MODELING PHASE 1 ROUND 4 COMPLETE — 本地 QA PASS，累计 **2 个非最终 MODEL COMPARISON RUN、4 个 DIAGNOSTIC RUN、1 个正式 Q1 p 响应训练 RUN、1 个成功的 A6–A11 留出验证 RUN、1 个失败并隔离的验证 RUN**；正式 N–D Scaling Law 拟合 0、ACTIVE FINAL MODEL 0。本次接管只运行 `QA-MODELING-PHASE1-R4-20260924-v1` 只读产物核查（见 `10_review/MODELING_PHASE1_R4_QA_20260924.json`），没有新训练或验证 Run。来源审计另见 `01_data/audits/modeling_phase1/AUDIT_RUN_REGISTRY.md`。每次真实候选模型运行/比较须先登记 Experiment ID，指向可复现配置、数据/预处理/模型/响应版本、代码、种子、日志和输出；同名重跑创建新 ID。CANDIDATE/诊断条目不得冒充 VALIDATED FINAL RESULT。
 
 | Experiment ID | Question | Research purpose | Dataset version | Preprocessing version | Model version | Response definition | Parameter configuration | Random seed | Code entry | Runtime | Output directory | Metrics | Results | Validation | Conclusion | Status |
@@ -15,3 +17,14 @@
 | VAL-Q1-PRESP-A6A11-R4-20260924-v2 | Q1 | 相同冻结模型/合同的 A6–A11 正式留出与支持域分层 | A6–A11 官方路径/哈希见 P_RESPONSE_VALIDATION_METRICS_v2.json | P_RESPONSE_PREFIT_CONTRACT_v1 + validation addendum；哈希冻结 | M0/M1/M2 冻结；M3 未激活 | A7 同尺度绝对 Loss；A9/A11 中心化形状/秩 | 凸包 LP、训练留一 NN q95/q99；B=500 | 20260924 | round4_validate_p_response.py；SHA `0839b12b...` | Python/numpy/pandas/scipy；详机器 JSON | 03_models/modeling_phase1/q1/round4/ | A7 M1 R0 RMSE 0.2278<M0 0.2846，13/13 域改善；60M 部分、1B 失败；支持分层 | P_RESPONSE_VALIDATION_A6_A11_v1.md、逐行 CSV、机器 JSON | 失败 v1 隔离；v2 无参数回填，A6/A8 同 p 只算一次支持 | M1 PROVISIONAL PREFERRED，待 Gate 2；非跨规模通用 | COMPLETED — OUT-OF-SAMPLE VALIDATION |
 
 状态建议：PLANNED、RUNNING、COMPLETED、FAILED、SUPERSEDED。正式结果只能来自真实运行，不以手填数字代替。
+
+## Round 5 preregistration
+
+| Run | Purpose | Config | Code | Input | Seed | Output | Status |
+|---|---|---|---|---|---|---|---|
+| EXP-Q2-ND-R5-20260924-v1 | B1 restricted N–D fit + trajectory validation + stability | configs/Q2_R5_v1.json | 04_code/modeling_phase2/round5_fit.py | processed/modeling_phase2/round5/INPUT_MANIFEST_v1.json | 20260924 | 06_results/raw/EXP-Q2-ND-R5-20260924-v1 | COMPLETED — NUMERICAL QA PASS / RESTRICTED CANDIDATE |
+| SCEN-Q2-R5-20260924-v1 | source-separated shape checks, B7 quality calibration, conditional substitution, inherited mixture | configs/Q2_R5_SCEN_v1.json | 04_code/modeling_phase2/round5_scenarios.py | frozen B inputs + Q1 immutable artifacts + B1 run | DETERMINISTIC | 06_results/raw/SCEN-Q2-R5-20260924-v1 | FAILED — numpy.bool serialization; excluded from results |
+| SCEN-Q2-R5-20260924-v2 | Same frozen scenario design; native JSON scalar repair only | configs/Q2_R5_SCEN_v2.json | 04_code/modeling_phase2/round5_scenarios.py | frozen B + Q1 + B1 run, same hashes as v1 | DETERMINISTIC | 06_results/raw/SCEN-Q2-R5-20260924-v2 | FAILED — B10 has no multirow families; empty summary excluded |
+| SCEN-Q2-R5-20260924-v3 | Frozen scenario design, unavailable grouped metric handled explicitly | configs/Q2_R5_SCEN_v3.json | 04_code/modeling_phase2/round5_scenarios.py | same frozen input hashes | DETERMINISTIC | 06_results/raw/SCEN-Q2-R5-20260924-v3 | COMPLETED — v3 VALID / NUMERICAL QA PASS |
+
+当前Round5新增1正式N-D主运行、1有效情景v3、2隔离失败情景v1/v2。上方Round4计数是历史范围；当前正式N-D拟合=1，FINAL模型=0。运行原始终端输出见本任务记录；summary与output_manifest为持久运行证据。

@@ -1,0 +1,13 @@
+{
+  "cluster_bootstrap.csv": "205b5206fea9a0089070896d2c5fe3bbc74e635edacee034386a13fb10bbdfef",
+  "fold_parameters.csv": "50e4c1c3ec860968fede0708d449b1e616a2ff94eb824c5765173dac2ecdb64e",
+  "illustrative_derivative_bootstrap.csv": "a27433a55f6b0e4c0c082867933935036bedd01af5b937a31cad474382b34ef4",
+  "marginal_effects.csv": "bc2852ad56302a2dbc333a1754f310884d26dd6615953f735084c5fd67875249",
+  "parameter_sensitivity.csv": "5caa2b3c6013ad8ae45752b5c9d97275b29e3afbe9c2e52b06733bc44c507a44",
+  "residual_diagnostics.csv": "cfc7f77d5fe9a8ac747fdd71ae8541dcd062d86b73496b4378618f999841b376",
+  "splits.json": "f0fc8e2bc751a5181e74e979696e2de2e3a31fd9214ae566acf0b5b273d51841",
+  "summary.json": "e92a1e7c9c280f665ebf50e870d2dc332101b8cde8f8255b954a841e58821a35",
+  "training_predictions.csv": "bfcbe9bb33f5757c0af413c6fc311cc20dedd12cdb94486467ad0b655838c5b9",
+  "validation_metrics.csv": "5eeb5feec5cb52500febb3d56eb3d93b2b4e25ca36ab1fac2941d5487f745706",
+  "validation_predictions.csv": "1a0cfb8da771da32d0e6f9794f5d9df5137d633f222cbdb5b010947cdbddadb4"
+}

@@ -1,0 +1,661 @@
+{
+  "script_sha256": "4e9b74e346555d767a856dbf6ff6c89e62d6a24243cda957cd5c74dc115714b3",
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "figures": [
+    {
+      "id": "FIG-Q2-R5-001",
+      "paths": [
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-001.png",
+          "sha256": "03a1bf6ca1d0d80ca9edc5952d60f929ba476d6e3d15120f6a999cb012207c61"
+        },
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-001.pdf",
+          "sha256": "486f07e3d3f0133cb25731fc5a9df2821b7062e62e824e3c974dfefd72804921"
+        }
+      ],
+      "claim": "八条附件轨迹与幂律吻合；微小残差不证明外部真实性。",
+      "source": [
+        "06_results\\raw\\EXP-Q2-ND-R5-20260924-v1\\training_predictions.csv"
+      ],
+      "result_ids": [
+        "CAND-Q2-R5-ND-001",
+        "CAND-Q2-R5-UNC-001"
+      ],
+      "reader_task": "八条附件轨迹与幂律吻合；微小残差不证明外部真实性。",
+      "publish": true,
+      "placement": "Q2 candidate section; gate3 pending",
+      "width_cm": 15.748,
+      "recommended_insert_cm": 15.0,
+      "min_effective_font_pt": 9.5250190500381,
+      "text_checks": [
+        {
+          "text": "附件 B1 Loss",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "1.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "3.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "3.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "4.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "4.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "5.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.0705B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.162B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.409B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "1.04B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "1.42B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.78B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "6.86B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "12B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "数据规模 D（十亿 token，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "预测 - 观测（$\\times 10^{-4}$）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "-7.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "-5.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "-2.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "5.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "7.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "10.0",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q2-R5-002",
+      "paths": [
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-002.png",
+          "sha256": "5581f65b5893e1a85ccaa9f14fa18298406e5b0af41f392103e56aada11aac10"
+        },
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-002.pdf",
+          "sha256": "3efded6fc66d0f0670b7c193f047e3fb5f62ea5ffa4473986d0d22154899e645"
+        }
+      ],
+      "claim": "三类无随机拆行验证中，加性幂律优于两个透明对照。",
+      "source": [
+        "06_results\\raw\\EXP-Q2-ND-R5-20260924-v1\\validation_metrics.csv"
+      ],
+      "result_ids": [
+        "CAND-Q2-R5-VAL-001"
+      ],
+      "reader_task": "三类无随机拆行验证中，加性幂律优于两个透明对照。",
+      "publish": true,
+      "placement": "Q2 candidate section; gate3 pending",
+      "width_cm": 15.748,
+      "recommended_insert_cm": 15.0,
+      "min_effective_font_pt": 9.5250190500381,
+      "text_checks": [
+        {
+          "text": "整规模留出",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "向前预测",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "双维分块",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "轨迹宏平均 RMSE（Loss，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-4}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-3}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "训练均值",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "对数线性",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "加性幂律",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q2-R5-003",
+      "paths": [
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-003.png",
+          "sha256": "14379e13d28574571a267ff5765a015f8b208cc615ebd07673b8c50c7913c4cd"
+        },
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-003.pdf",
+          "sha256": "c740d3e8930d707010e1668de62586c4cb89b604d1b57922d259cc01f0d16721"
+        }
+      ],
+      "claim": "幂指数为常数，总Loss弹性随N-D状态变化。",
+      "source": [
+        "06_results\\raw\\EXP-Q2-ND-R5-20260924-v1\\marginal_effects.csv"
+      ],
+      "result_ids": [
+        "CAND-Q2-R5-MARG-001"
+      ],
+      "reader_task": "幂指数为常数，总Loss弹性随N-D状态变化。",
+      "publish": true,
+      "placement": "Q2 candidate section; gate3 pending",
+      "width_cm": 15.748,
+      "recommended_insert_cm": 15.0,
+      "min_effective_font_pt": 9.5250190500381,
+      "text_checks": [
+        {
+          "text": "N（十亿参数）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D（十亿 token，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{3}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "N（十亿参数）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "|总 Loss 规模弹性|",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.00",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.02",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.04",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.06",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.08",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.10",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "|总 Loss 数据弹性|",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.02",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.04",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.06",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.08",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.10",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.12",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.14",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.16",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q2-R5-004",
+      "paths": [
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-004.png",
+          "sha256": "fed3a80cdfabfdc34fe876181d3f8f3541d63ffd13ce92fddd9513abea7f95fc"
+        },
+        {
+          "path": "06_results/figures/round5/FIG-Q2-R5-004.pdf",
+          "sha256": "e45df02fdbbabc9e68a2eb89a1f5aff3cb8c5a9b7f3b061c533c85ee4bdce1bc"
+        }
+      ],
+      "claim": "上图为半合成表内斜率；下图为假定Q从0.5增至0.6的替代情景，不能解释为真实收益。",
+      "source": [
+        "06_results\\raw\\SCEN-Q2-R5-20260924-v3\\quality_cell_slopes.csv",
+        "06_results\\raw\\SCEN-Q2-R5-20260924-v3\\quality_substitution_scenarios.csv"
+      ],
+      "result_ids": [
+        "CAND-Q2-R5-QUAL-001",
+        "SCEN-Q2-R5-SUB-001"
+      ],
+      "reader_task": "上图为半合成表内斜率；下图为假定Q从0.5增至0.6的替代情景，不能解释为真实收益。",
+      "publish": true,
+      "placement": "Q2 candidate section; gate3 pending",
+      "width_cm": 15.748,
+      "recommended_insert_cm": 15.0,
+      "min_effective_font_pt": 9.5250190500381,
+      "text_checks": [
+        {
+          "text": "N（十亿参数，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "B7 条件质量改善斜率 g",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.1",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.2",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.3",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.4",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.6",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.7",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D=10B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D=50B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D=150B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D=300B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D=600B",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "假定跨来源质量斜率倍数（情景参数）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "1.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "1.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "等 Loss 减少比例（%）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "-10",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "10",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "20",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "30",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "40",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "50",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "参数规模 N",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "数据规模 D",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    }
+  ]
+}

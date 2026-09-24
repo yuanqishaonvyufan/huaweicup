@@ -1,0 +1,70 @@
+{
+  "run_id": "SCEN-Q2-R5-20260924-v3",
+  "created_utc": "2026-09-24T11:29:34.872684+00:00",
+  "code_sha256": "4c672869959d36a971be809c91a8eacb388010cb5b1e2cc6b6889e421191aa01",
+  "config_sha256": "aa9307c0a38bf3a746f639c910d4b96a21ec2855b55e2a64397b61b8c1abfa0b",
+  "quality_fits": {
+    "Qcommon": {
+      "coefficients": [
+        -0.36199528619528604
+      ],
+      "rank": 1,
+      "rmse": 0.05261332332689302,
+      "mae": 0.040095110961466514,
+      "bias": -8.696747026230393e-18
+    },
+    "Qscale": {
+      "coefficients": [
+        -0.3701474729433346,
+        0.05951601544647535,
+        0.015760508292479693
+      ],
+      "rank": 3,
+      "rmse": 0.04408390504851151,
+      "mae": 0.03416272324127974,
+      "bias": -9.436895709313831e-18
+    }
+  },
+  "quality_centered_LOO_macro_RMSE": {
+    "Qcommon": 0.05296418456178245,
+    "Qscale": 0.0436788725990616
+  },
+  "quality_common_g": 0.36199528619528604,
+  "quality_cell_slope_range": [
+    -0.6072181818181818,
+    -0.19307878787878796
+  ],
+  "quality_negative_cells": 45,
+  "quality_cells": 45,
+  "effective_data_rho_local_calibration": 1.8920452410283752,
+  "B9_zero_D": 4,
+  "external_summary": {
+    "B2": {
+      "groups": 7,
+      "median_centered_ratio": 0.8550844812499261
+    },
+    "B4": {
+      "groups": 11,
+      "median_centered_ratio": 0.4366006942971866
+    },
+    "B5": {
+      "groups": 8,
+      "median_centered_ratio": 0.5551350436939388
+    },
+    "B10": {
+      "groups": 0,
+      "median_centered_ratio": null
+    }
+  },
+  "rounded_parameter_diagnostic": {
+    "rmse": 0.0001585752853357132,
+    "mae": 0.00011566103529025191,
+    "bias": -3.4005563524727855e-05
+  },
+  "source_generator_recovered": false,
+  "TYPE_E": 0,
+  "B8": "QUARANTINED_UNREAD",
+  "empirical_quality_coefficient": null,
+  "empirical_AB_transport_coefficient": null,
+  "Q3_started": false
+}

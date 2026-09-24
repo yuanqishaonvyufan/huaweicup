@@ -1,5 +1,7 @@
 # 2026 年中国研究生数学建模竞赛 F 题研究工程
 
+当前进度：Round5 Q2受限研究包完成，Gate3预审就绪；请先读09_handoff/PROJECT_STATE.md。Q3/Q4未启动，FINAL模型/结果仍无。
+
 题目：算力约束下提升大语言模型能力的资源配置建模。
 
 ## 当前状态
@@ -28,3 +30,7 @@ Sol 和 Opus 是内部双核心研究接口。项目文件并不代表已调用�
 ## 来源与可信度
 
 原件与 SHA256 见 00_problem/original/SOURCE_MANIFEST.md。赛题 DOCX 与数据说明 PDF 由用户提供；当届格式、模板和上传手册来自竞赛平台公开附件。数据说明 PDF 的页边存在极浅色附加文字，已在 01_data/DATA_AUDIT.md 中隔离；不得把这些文字当作官方题意或真实结果。
+
+## Current: Round5 Q2 complete, Gate3 review ready
+
+Read [PROJECT_STATE](09_handoff/PROJECT_STATE.md), [Q2 results](03_models/modeling_phase2/round5/Q2_RESULTS_REPORT_v1.md), [Gate3 package](10_review/GATE3_PRE_REVIEW_PACKAGE_v1.md). B1 restricted candidate fitted/validated; quality and mixture remain evidence-tiered scenarios. Q3/Q4 not started. No final model/result promotion. User-authorized Round5 sync to GitHub. Prior Round4 summaries below/above retain historical context.
