@@ -1,6 +1,6 @@
 # Gate3 pre-review package v1
 
-STATUS: READY FOR REVIEW / NO DECISION。Round5研究包完成，Lead数值QA PASS；不是Opus审查或Gate3通过。
+STATUS: READY FOR PRE-REVIEW / NO DECISION。Round5研究包 COMPLETE，原数值QA PASS；接管收口 QA 为 PASS WITH DOCUMENT CORRECTIONS（修正已完成）。Q2 PROVISIONALLY CLOSED，仅附件内部受限候选；不是Opus审查或Gate3通过。
 
 ## Minimal reading order
 
@@ -9,6 +9,7 @@ STATUS: READY FOR REVIEW / NO DECISION。Round5研究包完成，Lead数值QA PA
 3. 同目录Q2_RESULTS_REPORT_v1.md、Q2_LIMITATIONS_v1.md、Q2_COVERAGE_MATRIX_v1.md。
 4. 07_validation/round5/Q2_VALIDATION_REPORT_v1.md与10_review/MODELING_PHASE2_R5_NUMERICAL_QA_20260924.json。
 5. 02_analysis/consensus/Q2_TO_Q3_INTERFACE_v1.md和机器JSON。
+6. 09_handoff/ROUND5_TAKEOVER_RECOVERY_CHECK_v1.md；03_models/modeling_phase2/round5/Q2_DELIVERY_FIGURE_TABLE_PLAN_v1.md；10_review/MODELING_PHASE2_R5_QA_20260924.md。
 
 ## Decision questions
 
@@ -26,3 +27,13 @@ STATUS: READY FOR REVIEW / NO DECISION。Round5研究包完成，Lead数值QA PA
 ## Artifacts
 
 有效主运行：06_results/raw/EXP-Q2-ND-R5-20260924-v1/；有效情景：06_results/raw/SCEN-Q2-R5-20260924-v3/。情景v1/v2失败目录禁止引用。4图在06_results/figures/round5/，5表在06_results/tables/round5/；论文候选08_paper/sections/Q2_ROUND5_PAPER_CANDIDATE_v1.md。当前所有结果CHECKED CANDIDATE，FINAL数为0。
+
+## Takeover readiness evidence
+
+实质收口 checkpoint：`056499b50ad707209e670d94971a0cc385cf08c4`，已 push 并由 `git ls-remote origin refs/heads/main` 确认。接管前 Round5 计算/图表/论文包基准为 `47b88843c43b55e1fd822ac0b5344ba1387e9fb9`。本次只修 checkout 字节保存与文档接口，不重算模型。
+
+- A–Q 恢复清单已收口；模型/弹性/质量/配比采用已有合并报告的等价正式章节，不重复创建。
+- 82 项接管检查 PASS（64 项严格 SHA），112 项 Git 换行配置检出检查 PASS；原 59 项数值 QA 保留不重跑。
+- Q2→Q3 A–J 分别明确 ENTER Q3 / ENTER Q3 AS SCENARIO / SENSITIVITY ONLY / DO NOT ENTER Q3，均待 Gate3 用途批准。
+- 新问题 P0=0；P1=1、P2=3 均关闭。B1 外部来源、TYPE E=0、A/B 量尺、B8、1B 失败与实际成本/供给缺口仍保留。
+- 本次不作 Gate3 裁决。Q3 NOT STARTED；无预算优化、KKT 或最终 N/D/Q/p。
