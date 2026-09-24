@@ -24,3 +24,6 @@ G3-SINGLE-001 六项裁决 PASS；新发现 P0=0/P1=0/P2=0，技术阻断0。89 
 本轮同步起点 main 808565ddd10bde7bf8c30f89d8c0a7dadd098a80；提交后以 HEAD/origin/main 为准。旧 Round5 预审包、QA、结果报告中的“Gate3 待审”是形成时状态，当前门槛只以本页和 GATE3_CONSENSUS 为准。除非 Q3 发现具体 P0，不重开 Q2。
 
 本次为用户授权的 single-pass decision，不冒称双方新增共识。Q1 Full-22/五维描述、DQ0 仅描述摘要及 R0+R3 规则继续有效。
+
+
+Round6 CP0 recovered; CP1 R6-SPEC-001 frozen with problem-provided FLOPs proxies. B1 minimum70.542M does not overlap1M/60M mixture support; main transport0. Q4 NOT STARTED.

@@ -7,3 +7,6 @@ CHECKPOINT 0: Q3 authorized and now initiated. Official C1–C10 role matrix is 
 Preflight note: first audit stopped before data extraction because RAW_SHA256.csv has a UTF-8 BOM; fixed reader to utf-8-sig. No scientific result from failed preflight; original files unchanged.
 
 Policy: every completed core module is committed/pushed/remote-verified before proceeding. Each verified hash is recorded immediately here and included in the next checkpoint; final receipt is committed separately.
+
+
+CP0 remote confirmed f253450b31dccfe6670e719836840acbe909010c; CP0 RECOVERED — NO RE-RUN. CP1 R6-SPEC-001: targeted cost audit, cost model, baseline/generalized optimization and support specs frozen. No optimizer executed. Commit/push required before baseline.

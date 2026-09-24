@@ -43,3 +43,6 @@
 ## Gate3 decision — 2026-09-24
 
 G3-SINGLE-001：用户授权 single-pass Gate3 Verdict A — PASS。六项用途裁决通过，Q2 正式暂定关闭；冻结 Q2→Q3 v1，support-aware 强制，quality/mixture 分级、默认零；区间仅敏感性。新 P0/P1/P2=0/0/0。无新模型 Run、无 Q3 求解；Round6 READY / Q3 AUTHORIZED TO START。除非 Q3 发现 P0，不重开 Q2。
+
+
+R6-SPEC-001: user-authorized Round6 CP1 freeze; supplied compute proxies, inherited N/D support, quality/mixture OFF baseline, source-separated scenarios. No additional review claimed.

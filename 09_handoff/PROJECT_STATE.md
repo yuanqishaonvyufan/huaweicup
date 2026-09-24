@@ -22,3 +22,6 @@ B1 外部 Alert v4 仍 PARTIALLY RESOLVED。TYPE E=0；B7 表内 SEMI-SYNTHETIC 
 G3-SINGLE-001 六项裁决 PASS；新发现 P0=0/P1=0/P2=0，技术阻断0。89 项只读证据核验 PASS，见 10_review/GATE3_DECISION_CHECK_v1.json；原数值 QA 与接管 QA 保留。未重拟合、未来源搜索、未新增情景计算、未调用另一账号或冒称 Opus 审查。无预算优化、KKT 或最优配置。Q1–Q4 ACTIVE FINAL MODEL=NONE，VALIDATED FINAL RESULTS=NONE；本 Gate 只确认受限用途。
 
 本轮同步起点 main 808565ddd10bde7bf8c30f89d8c0a7dadd098a80；提交后以 HEAD/origin/main 为准。旧 Round5 预审包、QA、结果报告中的“Gate3 待审”是形成时状态，当前门槛只以本页和 GATE3_CONSENSUS 为准。除非 Q3 发现具体 P0，不重开 Q2。
+
+
+CURRENT ROUND6 UPDATE: CP1 specifications frozen, numerical optimization NOT EXECUTED. Gate3 PASS, Q1/Q2 closed, Q4 NOT STARTED. Continue only after CP1 remote verified.

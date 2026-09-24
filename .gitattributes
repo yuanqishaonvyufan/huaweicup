@@ -61,3 +61,11 @@
 # Gate3 frozen interface byte formats.
 /02_analysis/consensus/Q2_TO_Q3_INTERFACE_v1.md text eol=lf
 /03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json text eol=lf
+
+# Round6 frozen artifacts: preserve exact bytes across hosts.
+/03_models/modeling_phase3/** -text
+/04_code/modeling_phase3/** -text
+/01_data/audits/modeling_phase3/** -text
+/05_experiments/configs/Q3_R6* -text
+/06_results/raw/*Q3*/* -text
+/06_results/figures/round6/** -text
