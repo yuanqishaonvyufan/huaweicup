@@ -1,0 +1,9 @@
+{
+  "status": "PASS_STANDALONE_CANDIDATES",
+  "figures": 6,
+  "all_text_inside": true,
+  "minimum_effective_font_pt": 9.525,
+  "visual_inspection": "all6 inspected;006 legend/data overlap repaired, then long ylabel shortened to satisfy bbox;003 unused negative axis range removed",
+  "final_template_compilation": "NOT_PERFORMED",
+  "final_embedding_recheck_required": true
+}

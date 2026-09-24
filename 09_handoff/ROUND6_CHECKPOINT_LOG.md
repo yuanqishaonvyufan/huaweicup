@@ -20,3 +20,8 @@ CP2 REMOTE VERIFIED: bc038cce1604259e78020fea0fd776f299da7965. CP3 scenarios now
 
 
 CP3 complete: quality/context/local mixture/supply/active-set diagnostics saved. Four failed SLSQP starts and17 inferior local starts explicitly retained; all1377 cases have successful independent numerical agreement. Await remote verification before uncertainty.
+
+CP3 REMOTE VERIFIED: 7ff9b6dd19ddf0affe491bc46c2a48d7a7172397. CP4 propagation/validation/figures authorized.
+
+
+CP4 complete: 200 joint draws/51000 configs, scenario envelope NOT CI, shadow validation, numerical QA PASS, six figures inspected. Initial visual checkpoint assertion stopped before staging;006 ylabel fixed. Await remote before CP5.

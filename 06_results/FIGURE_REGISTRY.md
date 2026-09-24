@@ -25,3 +25,14 @@ Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受�
 | FIG-Q2-R5-004 | 上图为半合成表内斜率；下图为假定Q从0.5增至0.6的替代情景，不能解释为真实收益。 | CAND-Q2-R5-QUAL-001, SCEN-Q2-R5-SUB-001 | 06_results/figures/round5/figure_manifest.json | 04_code/visualization/round5_figures.py | CHECKED CANDIDATE; Gate3 pending |
 
 接管完整性复核：4 张 Q2 PNG 与 4 张 PDF 均命中既有 manifest SHA-256；脚本及有效 Run 的源数据齐全。未重画、未新增目视审查；沿用原 R5_VISUAL_QA。合并图表计划见 `03_models/modeling_phase2/round5/Q2_DELIVERY_FIGURE_TABLE_PLAN_v1.md`。候选身份及最终模板嵌入复核要求不变。
+
+## Round6 Q3 figures — CHECKED CANDIDATES
+
+| ID | Purpose | Result IDs | Manifest | Status |
+|---|---|---|---|---|
+| FIG-Q3-R6-001 | 基线预算路径：虚线为统计支持边界触发，后段平台不代表现实扩展失效。 | CAND-Q3-R6-BASE-001, CAND-Q3-R6-SHIFT-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
+| FIG-Q3-R6-002 | 同一REFERENCE质量收益假设下，三类题面成本导致不同质量投入路径。 | SCEN-Q3-R6-QUAL-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
+| FIG-Q3-R6-003 | 对数成本的局部与全局质量激活门槛分离，不能只用一阶条件判断投入。 | SCEN-Q3-R6-BREAK-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
+| FIG-Q3-R6-004 | C7最大上下文档位仅用作外生情景；30000是成本代理等值点。 | SCEN-Q3-R6-CTX-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
+| FIG-Q3-R6-005 | 给定附件的参数带极窄，机制情景范围更宽；两者均不保证外部覆盖。 | SENS-Q3-R6-UNC-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
+| FIG-Q3-R6-006 | 预算影子价在统计支持饱和后为零；质量上限价值仍只属收益假设。 | SENS-Q3-R6-SHADOW-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |

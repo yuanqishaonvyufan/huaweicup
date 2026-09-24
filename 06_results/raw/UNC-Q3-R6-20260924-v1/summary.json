@@ -1,0 +1,16 @@
+{
+  "run_id": "UNC-Q3-R6-20260924-v1",
+  "status": "PASS",
+  "joint_draws": 200,
+  "conditional_configurations": 51000,
+  "quantile_rows": 765,
+  "shadow_rows": 1632,
+  "shadow_max_absolute_error": 8.971914669531067e-10,
+  "max_draw_loss_increase": 0.0,
+  "scenario_envelope_is_CI": false,
+  "external_uncertainty_covered": false,
+  "Q4_started": false,
+  "code_sha256": "8cc0816e3fd02486aaafca75ff5e0cfa041d6f8374d972a0d83b2db66b902bac",
+  "core_sha256": "01f2639b9ec59eb7f97f20e459a2427b84d189247dc649d234c2a373b349b152",
+  "config_sha256": "c6c7c747b0887c6610729c830d2f58b03c1bab715b9da9ebd7aeebdd7b86b9ba"
+}

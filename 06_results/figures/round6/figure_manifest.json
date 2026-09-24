@@ -1,0 +1,834 @@
+{
+  "script_sha256": "6f90e2246324f8f168f020286ef25a2ae5d4903b3ae4a1247960d8ae703e2298",
+  "figures": [
+    {
+      "id": "FIG-Q3-R6-001",
+      "claim": "基线预算路径：虚线为统计支持边界触发，后段平台不代表现实扩展失效。",
+      "reader_task": "基线预算路径：虚线为统计支持边界触发，后段平台不代表现实扩展失效。",
+      "source": [
+        "06_results\\raw\\EXP-Q3-BASE-R6-20260924-v1\\budget_path.csv"
+      ],
+      "result_ids": [
+        "CAND-Q3-R6-BASE-001",
+        "CAND-Q3-R6-SHIFT-001"
+      ],
+      "paths": [
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-001.png",
+          "sha256": "79f2185030024f5995dbab89019365bb72a08eb30459a8aa20d215e4cd999e4c"
+        },
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-001.pdf",
+          "sha256": "bf5ecc47ca7a9a2670d68fefc11c958d621cba332ab16ab425bbac82250ec372"
+        }
+      ],
+      "publish": true,
+      "placement": "Q3 paper candidate, Gate4 pending",
+      "insert_width_cm": 15,
+      "minimum_effective_font_pt": 9.525,
+      "text_checks": [
+        {
+          "text": "条件配置（对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "N（十亿参数）",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "D（十亿 token）",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "算力代理预算 C（FLOPs，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{19}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{20}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{21}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{22}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{23}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{24}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "附件内预测 Loss",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "2.2",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.4",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.6",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.8",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "3.0",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q3-R6-002",
+      "claim": "同一REFERENCE质量收益假设下，三类题面成本导致不同质量投入路径。",
+      "reader_task": "同一REFERENCE质量收益假设下，三类题面成本导致不同质量投入路径。",
+      "source": [
+        "06_results\\raw\\SCEN-Q3-R6-20260924-v1\\quality_context_path.csv"
+      ],
+      "result_ids": [
+        "SCEN-Q3-R6-QUAL-001"
+      ],
+      "paths": [
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-002.png",
+          "sha256": "fe325c45871e56652b337097564d37feb9f5ceda8d24ec0bfa6d9bb38e3a54a4"
+        },
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-002.pdf",
+          "sha256": "3b746d28c297427e3c6618db43e5a85796c6fa84a720974c4a9a047d3e45200e"
+        }
+      ],
+      "publish": true,
+      "placement": "Q3 paper candidate, Gate4 pending",
+      "insert_width_cm": 15,
+      "minimum_effective_font_pt": 9.525,
+      "text_checks": [
+        {
+          "text": "最优质量 Q（情景刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.5",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.6",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.7",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.8",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.9",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "1.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "指数成本",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "幂函数成本",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "对数成本",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "预算 C（FLOPs，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{19}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{20}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{21}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{22}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{23}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{24}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "相对 OFF 的 Loss 改善",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.000",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.025",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.050",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.075",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.100",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.125",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.150",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.175",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q3-R6-003",
+      "claim": "对数成本的局部与全局质量激活门槛分离，不能只用一阶条件判断投入。",
+      "reader_task": "对数成本的局部与全局质量激活门槛分离，不能只用一阶条件判断投入。",
+      "source": [
+        "06_results\\raw\\SCEN-Q3-R6-20260924-v1\\quality_break_even.csv"
+      ],
+      "result_ids": [
+        "SCEN-Q3-R6-BREAK-001"
+      ],
+      "paths": [
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-003.png",
+          "sha256": "b18ea4a825d4ca13ae299a61ad11cc801e09f82aac7af0c6a9f44e973e0b674d"
+        },
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-003.pdf",
+          "sha256": "66a86efcfe08309b32c293c2caa8dc69dc62d4ebad1bca683386cec220c9e875"
+        }
+      ],
+      "publish": true,
+      "placement": "Q3 paper candidate, Gate4 pending",
+      "insert_width_cm": 15,
+      "minimum_effective_font_pt": 9.525,
+      "text_checks": [
+        {
+          "text": "预算 C（FLOPs，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{19}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{20}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{21}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{22}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{23}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{24}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "质量投入门槛 h（对称对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{0}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-3}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "指数成本：局部",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "指数成本：全局",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "幂函数成本：局部",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "幂函数成本：全局",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "对数成本：局部",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "对数成本：全局",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "REFERENCE 收益系数",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q3-R6-004",
+      "claim": "C7最大上下文档位仅用作外生情景；30000是成本代理等值点。",
+      "reader_task": "C7最大上下文档位仅用作外生情景；30000是成本代理等值点。",
+      "source": [
+        "06_results\\raw\\SCEN-Q3-R6-20260924-v1\\context_baseline.csv"
+      ],
+      "result_ids": [
+        "SCEN-Q3-R6-CTX-001"
+      ],
+      "paths": [
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-004.png",
+          "sha256": "3e93a08f0afd5fec0de7b5fd6c990851e97436395add66035b5241323ceb8900"
+        },
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-004.pdf",
+          "sha256": "61d29c39fbeaa3448864b54490854acfd9752e7468289d2154eddc6abe6e89dd"
+        }
+      ],
+      "publish": true,
+      "placement": "Q3 paper candidate, Gate4 pending",
+      "insert_width_cm": 15,
+      "minimum_effective_font_pt": 9.525,
+      "text_checks": [
+        {
+          "text": "预算 C（FLOPs，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{19}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{20}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{21}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{22}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{23}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{24}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "基线预测 Loss",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "2.25",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.50",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.75",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "3.00",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "3.25",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "架构上下文档位情景（token）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "2048",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "4096",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "8192",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "32768",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "131072",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "外生 L（token，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{4}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{5}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "注意力 / 基础训练成本比",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-1}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{0}}$",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q3-R6-005",
+      "claim": "给定附件的参数带极窄，机制情景范围更宽；两者均不保证外部覆盖。",
+      "reader_task": "给定附件的参数带极窄，机制情景范围更宽；两者均不保证外部覆盖。",
+      "source": [
+        "06_results\\raw\\UNC-Q3-R6-20260924-v1\\conditional_quantiles.csv",
+        "06_results\\raw\\UNC-Q3-R6-20260924-v1\\scenario_envelope_NOT_CI.csv"
+      ],
+      "result_ids": [
+        "SENS-Q3-R6-UNC-001"
+      ],
+      "paths": [
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-005.png",
+          "sha256": "a94336da23ee6e99ba2de0594a5485bb1021a82814739f6e4851e6d6e1d1482e"
+        },
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-005.pdf",
+          "sha256": "f2deb582248f228097f8cb96917f6e42ca0e034b9778f691d39c13f8eaa22bd2"
+        }
+      ],
+      "publish": true,
+      "placement": "Q3 paper candidate, Gate4 pending",
+      "insert_width_cm": 15,
+      "minimum_effective_font_pt": 9.525,
+      "text_checks": [
+        {
+          "text": "条件参数分位带宽（Loss × $10^5$）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "4",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "6",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "8",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "10",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "12",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "预算 C（FLOPs，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{19}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{20}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{21}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{22}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{23}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{24}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "预测 Loss",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "1.8",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.2",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.4",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.6",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "2.8",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "3.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "情景范围（非置信区间）",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "quality OFF",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "id": "FIG-Q3-R6-006",
+      "claim": "预算影子价在统计支持饱和后为零；质量上限价值仍只属收益假设。",
+      "reader_task": "预算影子价在统计支持饱和后为零；质量上限价值仍只属收益假设。",
+      "source": [
+        "06_results\\raw\\UNC-Q3-R6-20260924-v1\\shadow_prices.csv"
+      ],
+      "result_ids": [
+        "SENS-Q3-R6-SHADOW-001"
+      ],
+      "paths": [
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-006.png",
+          "sha256": "f9cebd495fd6e9e4ebb6874d73ac4b60d13ede8660bb7efa2f10bb30671350a3"
+        },
+        {
+          "path": "06_results/figures/round6/FIG-Q3-R6-006.pdf",
+          "sha256": "349cb6230266a9b0cf0606e192c2a371fe2a256232d6a0334e998bce51bf6912"
+        }
+      ],
+      "publish": true,
+      "placement": "Q3 paper candidate, Gate4 pending",
+      "insert_width_cm": 15,
+      "minimum_effective_font_pt": 9.525,
+      "text_checks": [
+        {
+          "text": "$\\mu$（Loss / $10^{18}$ FLOPs）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{0}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-5}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-4}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-3}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{-2}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "预算 C（FLOPs，对数刻度）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{19}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{20}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{21}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{22}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{23}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "$\\mathdefault{10^{24}}$",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "质量上限放松价值（Loss / Q）",
+          "font_pt": 11.0,
+          "inside": true
+        },
+        {
+          "text": "0.0",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.1",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.2",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "0.3",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "指数成本",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "幂函数成本",
+          "font_pt": 10.0,
+          "inside": true
+        },
+        {
+          "text": "对数成本",
+          "font_pt": 10.0,
+          "inside": true
+        }
+      ]
+    }
+  ]
+}

@@ -31,3 +31,6 @@ LATEST: Round6 CP2 BASELINE COMPLETE / QA PASS. CP3 quality/mixture/context scen
 
 
 LATEST ROUND6: CP3 complete, no material numerical failure; local-optimizer limitations documented. CP4 uncertainty/plots next after remote verification. Q1/Q2 remain closed, Q4 NOT STARTED.
+
+
+LATEST: Round6 CP4 COMPLETE — uncertainty/shadow/numerical/standalone figure QA PASS. CP5 paper/interface/Gate4 preparation remains. Q4 NOT STARTED.

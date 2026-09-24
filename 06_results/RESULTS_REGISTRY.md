@@ -63,3 +63,11 @@ Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 
 | SCEN-Q3-R6-BREAK-001 | 同上quality_break_even | 1e19对数local .472240/global .235678 | 条件break-even，非实测 |
 | SCEN-Q3-R6-MIX-001 | 同上mixture_scenarios | 513 hull候选；候选136 R0 -.353773，10改善/3恶化 | A源局部，禁止B1联合运输 |
 | SCEN-Q3-R6-CTX-001 | 同上context_baseline | 5架构情景档位，30000仅代理交点 | SCENARIO-CONDITIONAL |
+
+
+## Round6 CP4 sensitivity
+
+| Result ID | Source | Value | Level |
+|---|---|---|---|
+| SENS-Q3-R6-UNC-001 | UNC-Q3-R6-20260924-v1 | 200联合向量,51000配置,765分位行 | 条件数值敏感性，非外部CI |
+| SENS-Q3-R6-SHADOW-001 | 同上shadow_prices | 1632导数,max FD error8.97e-10 | 条件值，非市场价格 |
