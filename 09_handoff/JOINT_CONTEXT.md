@@ -30,3 +30,6 @@ Round6 CP0 recovered; CP1 R6-SPEC-001 frozen with problem-provided FLOPs proxies
 
 
 CP2完成：题面算力代理+Q2源内支持基线；51预算/204数值全PASS。下一CP3，只在CP2远端确认后执行。
+
+
+CP3质量出现局部/全局break-even分离，不能用单初值或局部激活替代全局情景判断。1377解已核，mixture只在独立A源有限凸包内。

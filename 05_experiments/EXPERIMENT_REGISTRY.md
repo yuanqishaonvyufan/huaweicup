@@ -40,3 +40,4 @@ QA-R5-TAKEOVER-20260924-v1：`04_code/modeling_phase2/round5_takeover_audit.py`�
 | Run | Purpose | Config | Code | Status |
 |---|---|---|---|---|
 | EXP-Q3-BASE-R6-20260924-v1 | 51 budgets analytic/SLSQP baseline, quality/mix OFF | Q3_R6_FROZEN_v1.json | round6_baseline.py + round6_core.py | COMPLETED CP2 — PASS |
+| SCEN-Q3-R6-20260924-v1 | frozen quality/context/local-mixture/supply scenarios | Q3_R6_FROZEN_v1.json | round6_scenarios.py + frozen core | COMPLETED CP3 — PASS WITH LOCAL-SOLVER DIAGNOSTIC |

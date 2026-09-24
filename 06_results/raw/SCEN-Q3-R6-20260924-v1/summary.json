@@ -1,0 +1,32 @@
+{
+  "run_id": "SCEN-Q3-R6-20260924-v1",
+  "quality_rows": 1377,
+  "numeric_starts": 4131,
+  "failed_starts": 4,
+  "max_all_start_loss_gap": 0.08284708745491853,
+  "max_best_start_gap": 1.2918555114538322e-12,
+  "best_case_count": 1377,
+  "max_dense_grid_difference": 4.440892098500626e-16,
+  "max_kkt": 1.7835586618719645e-08,
+  "max_budget_violation": 2.220446049250313e-16,
+  "max_loss_increase": 0.0,
+  "mixture_candidates": 513,
+  "simplex_max_error": 3.3306690738754696e-16,
+  "min_p": 0.0011055165217031127,
+  "main_mix_transport": 0,
+  "local_mix_not_joint_B1": true,
+  "context_levels": [
+    2048,
+    4096,
+    8192,
+    32768,
+    131072
+  ],
+  "context_is_architecture_scenario": true,
+  "quality_causal": false,
+  "Q4_started": false,
+  "code_sha256": "37ff3a43fb607859106921fb9b22c70b658477ca4efa34efe1424f4ae02e8437",
+  "core_sha256": "01f2639b9ec59eb7f97f20e459a2427b84d189247dc649d234c2a373b349b152",
+  "config_sha256": "c6c7c747b0887c6610729c830d2f58b03c1bab715b9da9ebd7aeebdd7b86b9ba",
+  "status": "PASS"
+}

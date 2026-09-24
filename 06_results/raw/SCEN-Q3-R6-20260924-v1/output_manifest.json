@@ -1,0 +1,11 @@
+{
+  "context_baseline.csv": "71be6ad560e222058e4a52048fdaf4a728d06898c6bfc5341a07ca195218d622",
+  "mixture_local_candidates.csv": "2942d0548772bd3cf569ca2d92a38fd74ca953ad4ece922ab10061ed0b66c6c5",
+  "mixture_scenarios.csv": "ad2130c3de3bc31a19552a1bd3a6a58ebdc22b9691ee84e438986324a33c3ddc",
+  "quality_break_even.csv": "a22a5bedceff335f4c6bb48e99505c0069dc7eeb8c2b952935a5c936ad53b224",
+  "quality_context_path.csv": "af233db2b4932e54a36b72318caea5007cc54ed64d6160c0d8a5463be7bbe4cb",
+  "quality_grid_refinement.csv": "be2668cdc1036b90972293d5998ebd5137138dd6fa63a8fb7da6dd227d0070ba",
+  "quality_multistart.csv": "d885bc2e697f614e7589162050bcba801a83cfbce9c1d8d7ff7ba5b4fa09e8f6",
+  "summary.json": "0ecda67df79647f44278ecc4025d6a6dcd12ca85cf0c7551a2a2d5b4134f116b",
+  "supply_stress.csv": "152b5a25ee1eb1adef26192bea6cec3f34ed60fc2b3b8dd2feba828442c9ec84"
+}

@@ -28,3 +28,6 @@ CURRENT ROUND6 UPDATE: CP1 specifications frozen, numerical optimization NOT EXE
 
 
 LATEST: Round6 CP2 BASELINE COMPLETE / QA PASS. CP3 quality/mixture/context scenarios NOT EXECUTED. Gate3 PASS; Q1/Q2 closed; Q4 NOT STARTED.
+
+
+LATEST ROUND6: CP3 complete, no material numerical failure; local-optimizer limitations documented. CP4 uncertainty/plots next after remote verification. Q1/Q2 remain closed, Q4 NOT STARTED.

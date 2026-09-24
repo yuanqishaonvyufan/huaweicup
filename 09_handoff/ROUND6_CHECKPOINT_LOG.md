@@ -15,3 +15,8 @@ CP1 REMOTE VERIFIED: bb8b01561b75b4a23ef0ae8ec6385fe113376203 (local HEAD == rem
 
 
 CP2 complete: baseline analytical/SLSQP verification PASS; no quality scenario run yet. Await CP2 remote verification before CP3.
+
+CP2 REMOTE VERIFIED: bc038cce1604259e78020fea0fd776f299da7965. CP3 scenarios now authorized. CSV CRLF bytes preserved by -text; diff whitespace warnings refer only to CR line ends, no numeric changes.
+
+
+CP3 complete: quality/context/local mixture/supply/active-set diagnostics saved. Four failed SLSQP starts and17 inferior local starts explicitly retained; all1377 cases have successful independent numerical agreement. Await remote verification before uncertainty.

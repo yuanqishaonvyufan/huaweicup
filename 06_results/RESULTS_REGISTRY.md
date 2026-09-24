@@ -53,3 +53,13 @@ Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 
 |---|---|---|---|
 | CAND-Q3-R6-BASE-001 | EXP-Q3-BASE-R6-20260924-v1 | 51预算解析/204数值全部PASS，gap4.86e-13 | CHECKED，附件内部+题面proxy |
 | CAND-Q3-R6-SHIFT-001 | 同上summary/budget_path | D cap9.325359e21，两cap2.300064e22 | 支持限制转移，非现实阈值 |
+
+
+## Round6 CP3 CHECKED SCENARIOS
+
+| Result ID | Run | Finding | Level |
+|---|---|---|---|
+| SCEN-Q3-R6-QUAL-001 | SCEN-Q3-R6-20260924-v1 | 1377解/4131起点；逐情景最佳gap1.29e-12 | SCENARIO-CONDITIONAL |
+| SCEN-Q3-R6-BREAK-001 | 同上quality_break_even | 1e19对数local .472240/global .235678 | 条件break-even，非实测 |
+| SCEN-Q3-R6-MIX-001 | 同上mixture_scenarios | 513 hull候选；候选136 R0 -.353773，10改善/3恶化 | A源局部，禁止B1联合运输 |
+| SCEN-Q3-R6-CTX-001 | 同上context_baseline | 5架构情景档位，30000仅代理交点 | SCENARIO-CONDITIONAL |

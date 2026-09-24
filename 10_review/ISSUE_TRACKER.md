@@ -80,3 +80,8 @@ DA-02/DA-05/DA-07 的识别或外部来源缺口、DA-10 规模转移失败和 Q
 ## Gate3 decision — 2026-09-24
 
 G3-SINGLE-001 本次新发现 P0=0、P1=0、P2=0，阻断0。Gate3 Verdict A — PASS，Q2 PROVISIONALLY CLOSED。DA-02/05/07/10、B8 与实际成本/供给缺口继续保留；不是模型通过即已解决。历史 Round5 问题计数不混入本 Gate。
+
+
+## Round6 CP3 numerical diagnostic
+
+R6-NUM-01：17个对数质量成本初值停较差局部解；4次线搜索失败。已保存所有起点，通过预冻结嵌套搜索、加密网格和逐情景最佳成功对照消解；不声称全部初值一致，无新P0。该限制进入论文，不调改数学规格。
