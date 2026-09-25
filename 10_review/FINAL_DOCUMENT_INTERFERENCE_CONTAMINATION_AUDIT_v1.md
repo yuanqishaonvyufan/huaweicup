@@ -8,7 +8,7 @@
 
 **A. PASS — NO MATERIAL CONTAMINATION**
 
-原件中20类隐藏/近白/小字号干扰内容、96处出现得到复核。没有完整隐藏句、独特公式、方法+参数+结果组合进入正式模型或论文，也没有正式核心结果只能追溯到隐藏文本。仓库筛查表记录726行指纹相关命中：3个是明确的反泄漏审计引用，723个是经字段/数据/Run ID追溯的独立数值巧合。CLASS C=0、CLASS D=0。
+原件中20类隐藏/近白/小字号干扰内容、96处出现得到复核。没有完整隐藏句、独特公式、方法+参数+结果组合进入正式模型或论文，也没有正式核心结果只能追溯到隐藏文本。仓库筛查表记录727行指纹相关命中：4个是明确的反泄漏/审计范围引用，723个是经字段/数据/Run ID追溯的独立数值巧合。CLASS C=0、CLASS D=0。
 
 | 问题 | 隐藏文本相关命中 | 核心结果有独立证据链 | 实质污染 |
 |---|---|---|---|
@@ -17,7 +17,7 @@
 | Q3 | 10²²是题面预算；Q=1只在部分情景最优 | YES | NO |
 | Q4 | .32/.18/.68是原始任务分数/家族份额；桥接被验证拒绝 | YES | NO |
 
-20个完整canonical隐藏文本均未复制到活动模型、结果或论文中。3个短片段只出现在防泄漏QA断言中；没有进入核心模型输入。完整详情见[Inventory](INTERFERENCE_INVENTORY_v1.csv)、[Fingerprints](INTERFERENCE_FINGERPRINTS_v1.csv)、[Repo Hits](INTERFERENCE_REPO_HITS_v1.csv)、[Temporal Trace](INTERFERENCE_TEMPORAL_TRACE_v1.csv)和[Core Result Provenance](CORE_RESULT_PROVENANCE_AUDIT_v1.csv)。
+20个完整canonical隐藏文本均未复制到活动模型、结果或论文中。3个短片段只出现在防泄漏QA断言中，另有1条后续稿件审查仅复述20/96审计范围；没有进入核心模型输入。完整详情见[Inventory](INTERFERENCE_INVENTORY_v1.csv)、[Fingerprints](INTERFERENCE_FINGERPRINTS_v1.csv)、[Repo Hits](INTERFERENCE_REPO_HITS_v1.csv)、[Temporal Trace](INTERFERENCE_TEMPORAL_TRACE_v1.csv)和[Core Result Provenance](CORE_RESULT_PROVENANCE_AUDIT_v1.csv)。
 
 ## 2. 20类隐藏内容 / 96处出现
 
@@ -31,7 +31,7 @@
 
 **先例与信任边界。** 复用仓库DOCUMENT_INTERFERENCE_AUDIT_v1的RGB/字号/位置与哈希核对规则。D:\work document\codex_work中未发现同题可直接复用审计；另一个论文合规审计仅作记录方式参考。公开安全先例只核对了OWASP GenAI LLM01:2025关于不可见/间接输入及隔离外部内容的说明：[OWASP LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)。该页面只支持信任边界方法，不作为竞赛模型证据；没有上传项目文件或原PDF。
 
-**检索覆盖。** baseline包含719个tracked文件。纳入686个可搜索文本/表格文件：Markdown/TXT/Python/Notebook/JSON/YAML/CSV/TeX/log/SVG、5个DOCX、15个非指纹源PDF、4个本地解压CSV.GZ和2个仓库配置文本。DOCX用本地python-docx，PDF用本地文本层。原数据说明PDF只作指纹源单独审计、不加入命中目标；未纳入检索的33项是该源PDF、旧式官方.doc模板和31张PNG二进制图。终稿PDF、DOCX和Markdown均纳入文本检索。
+**检索覆盖。** baseline包含719个tracked文件。纳入686个可搜索文本/表格文件：Markdown/TXT/Python/Notebook/JSON/YAML/CSV/TeX/log/SVG、5个DOCX、15个非指纹源PDF、4个本地解压CSV.GZ和2个仓库配置文本。DOCX用本地python-docx，PDF用本地文本层。原数据说明PDF只作指纹源单独审计、不加入命中目标；未纳入检索的33项是该源PDF、旧式官方.doc模板和31张PNG二进制图。终稿PDF、DOCX和Markdown均纳入文本检索。 静态基线之后main上出现review commit 0b945763；该单文件另作增量检索，除一条全局20/96范围引用外，没有隐藏句、参数或方法组合，计入CLASS A。
 
 **指纹检索。** 逐项筛精确句、NFKC/大小写/空白规范化短语、特别数值、数值组合、算法组合、公式结构、阈值/超参数。单一数字要结合字段与结果语境；单一方法名不自动判污染。检索快照固定在baseline HEAD，新增指纹和结果文件没有回流进自己的静态搜索。首次出现信息使用Git blame或文件首次入库commit proxy，并在核心结果中继续追Run、代码和输出。
 
@@ -41,14 +41,14 @@
 
 | 类别 | 行数 | 判读 |
 |---|---:|---|
-| CLASS A：QA反泄漏片段 | 3 | guard检查活动题目/共识/状态/handoff没有这些片段 |
+| CLASS A：QA反泄漏/审计范围引用 | 4 | 3条逐项guard片段 + 1条后续review对20/96范围的引用 |
 | CLASS B：数字单点巧合 | 723 | 已追到独立字段、数据、题面预算或机器输出 |
 | CLASS C：确认的短暂提示暴露 | 0 | 没有隐藏建议的独特文本/组合进入模型prompt/handoff |
 | CLASS D：材料性污染 | 0 | 无核心结果只能由隐藏文本解释 |
 | 完整隐藏句/高特异性数值组合/方法+参数+结果组合 | 0 | 正式模型、结果、handoff和终稿无此类命中 |
 | 低特异性方法词命中 | 519行 | 规范、模型、代码和handoff文本；原始数据行不计作方法命中；逐项按语义核查，不计作污染命中 |
 
-723条独立数值行中，650条来自C8的raw_accuracy任务分数，29条来自Q1 training_p_matrix，另2条来自压缩的A1/A3质量特征表；其余主要是官方预算文本、图轴、Q4家族份额或派生量。.32/.18/.68等单点数字不是隐藏弹性/相关系数。方法名也须结合用途核查：Pythia是数据/模型家族名，complementarity是Q3的KKT检查，Softmax在Q1处理列表型信号。 词级出现数：complementarity 264、Pythia 150、PCA 61、OLS 19、Softmax 15、Aitchison 6、decision tree 3、Kendall 1；共519条不同文本行，均无方法+隐藏参数/结果组合。
+723条独立数值行中，650条来自C8的raw_accuracy任务分数，29条来自Q1 training_p_matrix，另2条来自压缩的A1/A3质量特征表；其余主要是官方预算文本、图轴、Q4家族份额或派生量。.32/.18/.68等单点数字不是隐藏弹性/相关系数。方法名也须结合用途核查：Pythia是数据/模型家族名，complementarity是Q3的KKT检查，Softmax在Q1处理列表型信号。词级出现数：complementarity 264、Pythia 150、PCA 61、OLS 19、Softmax 15、Aitchison 6、decision tree 3、Kendall 1；共519条不同文本行，均无方法+隐藏参数/结果组合。
 
 ## 5. Q1 audit
 
@@ -96,7 +96,7 @@ EXP-Q4-R7-20260925-v1的最终桥接 verdict 是NO RELIABLE BRIDGE，操作分�
 
 逐类提交与Run时间见Temporal Trace CSV。关键机器时间线为：文档span屏蔽审计记录时间2026-09-24T00:07:19Z；Q1冻结训练bundle创建时间05:40:48Z；Q2 B1 summary创建时间11:25:34Z；Q3规格于9月24日23:43 +08冻结，baseline/scenario/uncertainty在23:47/23:50/23:58 +08写入；Q4 bridge/forecast/validation在9月25日10:26/10:30/10:45 +08入库。Q1正式拟合和Q2–Q4计算都有输入、规格、代码、Run与机器输出。
 
-Round2 QA代码后来加入三个anti-leak断言并通过；它们只检查活动题目/共识/状态/handoff不含片段。Aitchison/PCA候选与screen记录同处一个Git同步commit，无法判定commit内部顺序；这类泛用方法候选最终受到零值约束/数据诊断限制，未造成正式结果依赖。
+Round2 QA代码后来加入三个anti-leak断言并通过；它们只检查活动题目/共识/状态/handoff不含片段。随后新增的review commit 0b945763在16:50 +08复述20/96审计范围、并明确不下污染结论；只作为一条全局CLASS A引用。Aitchison/PCA候选与screen记录同处一个Git同步commit，无法判定commit内部顺序；这类泛用方法候选最终受到零值约束/数据诊断限制，未造成正式结果依赖。
 
 ## 10. Numerical coincidence analysis
 
@@ -117,6 +117,7 @@ Round2 QA代码后来加入三个anti-leak断言并通过；它们只检查活�
 | 候选 | 可核验证据 | 分类 |
 |---|---|---|
 | 0.3为界 / 冲突率约为0% / E=3.52 | 只在Round2 QA里作为negative guard检查活动source文本是否含该片段；QA输出记录PASS和96个span排除 | CLASS A containment |
+| 后续稿件审查的20/96范围说明 | review commit 0b945763复述源审计范围并声明不下污染Verdict；未引入隐藏句/模型建议 | CLASS A global audit reference |
 | Aitchison / PCA候选 | 候选讨论及数据诊断中有这些通用方法名；完整K-means/类别比例/PC加权recipe未匹配；最终规格拒绝Aitchison ILR、PCA不作唯一Q | CLASS B method-level coincidence |
 | Pythia参数 | B1实际拟合值不同；已有12初值与3类holdout输出 | CLASS B independent fit |
 | Q3预填最优tuple / Q*=1 | tuple超出支持且值不同；Q=1只在部分质量成本/预算情景出现 | CLASS B independent optimization |
@@ -152,7 +153,7 @@ Checkpoint 1已推送：fb78d31be8d012688520cc43c5f12d94fe302314。本报告与p
 
 ## 15. Residual uncertainty
 
-1. 仓库没有完整保存早期LLM对话/agent prompt日志；不能证明隐藏文本从未短暂进入任何未落盘上下文。现存唯一精确短片段是CLASS A反泄漏guard，未发现结果依赖。
+1. 仓库没有完整保存早期LLM对话/agent prompt日志；不能证明隐藏文本从未短暂进入任何未落盘上下文。现存三条逐项短片段在CLASS A反泄漏guard；另有一条全局20/96审计范围引用，均无结果依赖。
 2. Aitchison/PCA候选与source-screen记录同处一个Git同步commit，Git不能还原commit内编辑顺序；它们有独立数据结构解释，最终Q1规格限缩/拒绝，按CLASS B处理。
 3. 未OCR 31张PNG和旧式官方.doc模板；终稿PDF、DOCX、Markdown及图表SVG/manifest均已检查。原数据说明PDF只作为指纹源。
 4. PROJECT_STATE/STAGE_GATES反映Round7到Round8交接，而Round8终稿及139/139一致性QA在后续commit完成；这是状态文档滞后，不是模型证据。
