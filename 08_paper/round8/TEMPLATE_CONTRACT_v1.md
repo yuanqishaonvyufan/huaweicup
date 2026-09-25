@@ -1,0 +1,8 @@
+# Official template execution contract
+Reference: 08_paper/round8/template_reference.docx, converted from retained official .doc.
+Original .doc remains unchanged. Template render has 4 pages, one section. Its blank abstract heading leaks onto cover in LibreOffice; replace blank abstract/body slots with a section break to keep the official cover intact.
+Cover preserve-only: body elements 0..6, including four logo image parts, title typography and blank identity table. Preserve the four image byte streams, positions and table structure.
+Page system: A4 portrait, margins and footer distances inherited exactly from reference (top 3.0021cm, bottom 1.8486cm, left 2.2507cm, right 2.2472cm). No header; no cover page number. A new section starts abstract page number 1; body starts on next page after abstract.
+Editable slots: all blank abstract/body content after body element 6. Repeating identity/event headings on abstract slots are removed in favor of official-required paper title, abstract and keywords. Body sections use 12pt Song, single spacing; title 16pt Hei; H1 14pt Hei centered. Equations are OMML, numbered 1..24. Tables repeat header rows; frozen figures are embedded unchanged.
+Metadata, legacy footer and blank-page filler are editable; remove author/last editor/comments/identity. Required scientific AI disclosure is retained as body content, not hidden metadata.
+QA: compare four media hashes, inspect cover and all manuscript pages, validate page numbers, OMML, captions, text bounds, references, hidden revisions and metadata. Field caching updated by rendering; no TOC is imposed by the official template.
