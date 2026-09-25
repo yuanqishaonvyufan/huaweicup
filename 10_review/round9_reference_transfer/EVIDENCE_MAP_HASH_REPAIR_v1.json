@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "entries_checked": 27,
+  "hashes_repaired": [
+    {
+      "claim_id": "E01",
+      "source_file": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json",
+      "previous_recorded_sha256": "b9362e2f82dd04c7f8086a0d644e55b3c67c708b94f51988f6c42341ceb9fda2",
+      "current_tracked_sha256": "dc889fbf357a85bbae6f5e5df18446032539b9aba6b936402c8bc3ee27058f71",
+      "numerical_selector_unchanged": true
+    },
+    {
+      "claim_id": "E02",
+      "source_file": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json",
+      "previous_recorded_sha256": "b9362e2f82dd04c7f8086a0d644e55b3c67c708b94f51988f6c42341ceb9fda2",
+      "current_tracked_sha256": "dc889fbf357a85bbae6f5e5df18446032539b9aba6b936402c8bc3ee27058f71",
+      "numerical_selector_unchanged": true
+    },
+    {
+      "claim_id": "E03",
+      "source_file": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json",
+      "previous_recorded_sha256": "b9362e2f82dd04c7f8086a0d644e55b3c67c708b94f51988f6c42341ceb9fda2",
+      "current_tracked_sha256": "dc889fbf357a85bbae6f5e5df18446032539b9aba6b936402c8bc3ee27058f71",
+      "numerical_selector_unchanged": true
+    },
+    {
+      "claim_id": "E04",
+      "source_file": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json",
+      "previous_recorded_sha256": "b9362e2f82dd04c7f8086a0d644e55b3c67c708b94f51988f6c42341ceb9fda2",
+      "current_tracked_sha256": "dc889fbf357a85bbae6f5e5df18446032539b9aba6b936402c8bc3ee27058f71",
+      "numerical_selector_unchanged": true
+    },
+    {
+      "claim_id": "E05",
+      "source_file": "03_models/modeling_phase1/q1/round4/Q1_QUALITY_CLOSURE_METRICS_v1.json",
+      "previous_recorded_sha256": "b6ad755f153017b09b23473c401bce8da66d3402b6f3689e76092c90831c9aac",
+      "current_tracked_sha256": "262d85f38ff00c5b5fd6b7c7b465045c850e75a020f33df013dbbc66559c68d6",
+      "numerical_selector_unchanged": true
+    }
+  ]
+}

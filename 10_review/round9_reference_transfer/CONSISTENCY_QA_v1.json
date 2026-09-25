@@ -1,0 +1,1057 @@
+{
+  "status": "PASS",
+  "passed": 146,
+  "total": 146,
+  "checks": [
+    {
+      "check": "Q1_R0_M0",
+      "pass_": true,
+      "detail": {
+        "display": "0.2846",
+        "value": 0.2846149798599803,
+        "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json"
+      }
+    },
+    {
+      "check": "Q1_R0_M1",
+      "pass_": true,
+      "detail": {
+        "display": "0.2278",
+        "value": 0.2277652126109652,
+        "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json"
+      }
+    },
+    {
+      "check": "Q1_transfer_60M",
+      "pass_": true,
+      "detail": {
+        "display": "0.8876",
+        "value": 0.8875744816416311,
+        "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json"
+      }
+    },
+    {
+      "check": "Q1_transfer_1B",
+      "pass_": true,
+      "detail": {
+        "display": "3.108",
+        "value": 3.108487461713722,
+        "source": "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json"
+      }
+    },
+    {
+      "check": "Q1_13_of_13",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q1_support_2_of_256",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q2_parameter_E",
+      "pass_": true,
+      "detail": {
+        "display": "1.68979756",
+        "value": 1.6897975629393145,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_parameter_A",
+      "pass_": true,
+      "detail": {
+        "display": "0.35398032",
+        "value": 0.3539803206519287,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_parameter_B",
+      "pass_": true,
+      "detail": {
+        "display": "1.24030558",
+        "value": 1.2403055835398427,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_parameter_alpha",
+      "pass_": true,
+      "detail": {
+        "display": "0.33997658",
+        "value": 0.3399765819061934,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_parameter_beta",
+      "pass_": true,
+      "detail": {
+        "display": "0.27987813",
+        "value": 0.27987812854708494,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_validation_LONO",
+      "pass_": true,
+      "detail": {
+        "display": "0.000146888187",
+        "value": 0.00014688818680258544,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_validation_FORWARD",
+      "pass_": true,
+      "detail": {
+        "display": "0.000111641982",
+        "value": 0.00011164198178839331,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_validation_BLOCK2D",
+      "pass_": true,
+      "detail": {
+        "display": "0.000114133980",
+        "value": 0.00011413398023678218,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_E",
+      "pass_": true,
+      "detail": {
+        "display": "1.68963",
+        "value": 1.6896305427433702,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_E",
+      "pass_": true,
+      "detail": {
+        "display": "1.68997",
+        "value": 1.6899674533448488,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_A",
+      "pass_": true,
+      "detail": {
+        "display": "0.353758",
+        "value": 0.35375822727794193,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_A",
+      "pass_": true,
+      "detail": {
+        "display": "0.354119",
+        "value": 0.3541190890645844,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_B",
+      "pass_": true,
+      "detail": {
+        "display": "1.24017",
+        "value": 1.2401726066429883,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_B",
+      "pass_": true,
+      "detail": {
+        "display": "1.24043",
+        "value": 1.2404303828429686,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_alpha",
+      "pass_": true,
+      "detail": {
+        "display": "0.339808",
+        "value": 0.33980790884596923,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_alpha",
+      "pass_": true,
+      "detail": {
+        "display": "0.340137",
+        "value": 0.340136856419515,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_beta",
+      "pass_": true,
+      "detail": {
+        "display": "0.279824",
+        "value": 0.2798238331994284,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_interval_beta",
+      "pass_": true,
+      "detail": {
+        "display": "0.279934",
+        "value": 0.27993444220400676,
+        "source": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json"
+      }
+    },
+    {
+      "check": "Q2_quality_slope",
+      "pass_": true,
+      "detail": {
+        "display": "-0.361995",
+        "value": -0.36199528619528604,
+        "source": "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json"
+      }
+    },
+    {
+      "check": "Q2_45_negative_cells",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q2_external_B2",
+      "pass_": true,
+      "detail": {
+        "display": "0.855084",
+        "value": 0.8550844812499261,
+        "source": "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json"
+      }
+    },
+    {
+      "check": "Q2_external_B4",
+      "pass_": true,
+      "detail": {
+        "display": "0.436601",
+        "value": 0.4366006942971866,
+        "source": "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json"
+      }
+    },
+    {
+      "check": "Q2_external_B5",
+      "pass_": true,
+      "detail": {
+        "display": "0.555135",
+        "value": 0.5551350436939388,
+        "source": "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json"
+      }
+    },
+    {
+      "check": "Q3_1e+19_N_B",
+      "pass_": true,
+      "detail": {
+        "display": "0.221309",
+        "value": 0.22130872721718978,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_1e+19_D_B",
+      "pass_": true,
+      "detail": {
+        "display": "7.049698",
+        "value": 7.049698310488851,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_1e+19_loss",
+      "pass_": true,
+      "detail": {
+        "display": "2.998935",
+        "value": 2.998934933219959,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_saved_target_arithmetic_1e+19",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q3_1e+22_N_B",
+      "pass_": true,
+      "detail": {
+        "display": "5.202388",
+        "value": 5.202388052937084,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_1e+22_D_B",
+      "pass_": true,
+      "detail": {
+        "display": "299.893",
+        "value": 299.893,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_1e+22_loss",
+      "pass_": true,
+      "detail": {
+        "display": "2.143211",
+        "value": 2.143211279482246,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_saved_target_arithmetic_1e+22",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q3_1e+24_N_B",
+      "pass_": true,
+      "detail": {
+        "display": "11.965825",
+        "value": 11.965825,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_1e+24_D_B",
+      "pass_": true,
+      "detail": {
+        "display": "299.893",
+        "value": 299.893,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_1e+24_loss",
+      "pass_": true,
+      "detail": {
+        "display": "2.093379",
+        "value": 2.093379471494165,
+        "source": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+      }
+    },
+    {
+      "check": "Q3_saved_target_arithmetic_1e+24",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q3_quality_exponential_N_B",
+      "pass_": true,
+      "detail": {
+        "display": "0.276246",
+        "value": 0.2762455166883272,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_exponential_D_B",
+      "pass_": true,
+      "detail": {
+        "display": "4.666434",
+        "value": 4.66643412645979,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_exponential_Q",
+      "pass_": true,
+      "detail": {
+        "display": "0.674774",
+        "value": 0.6747737801564068,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_exponential_loss",
+      "pass_": true,
+      "detail": {
+        "display": "2.980638",
+        "value": 2.9806379505855882,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_power_N_B",
+      "pass_": true,
+      "detail": {
+        "display": "0.224408",
+        "value": 0.22440809492971614,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_power_D_B",
+      "pass_": true,
+      "detail": {
+        "display": "6.869602",
+        "value": 6.8696017385449375,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_power_Q",
+      "pass_": true,
+      "detail": {
+        "display": "0.506789",
+        "value": 0.5067893916970492,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_power_loss",
+      "pass_": true,
+      "detail": {
+        "display": "2.998908",
+        "value": 2.998908419400818,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_logarithmic_N_B",
+      "pass_": true,
+      "detail": {
+        "display": "0.361029",
+        "value": 0.3610285376694669,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_logarithmic_D_B",
+      "pass_": true,
+      "detail": {
+        "display": "2.835817",
+        "value": 2.835817411210671,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_logarithmic_Q",
+      "pass_": true,
+      "detail": {
+        "display": "1.000000",
+        "value": 1.0,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q3_quality_logarithmic_loss",
+      "pass_": true,
+      "detail": {
+        "display": "2.935776",
+        "value": 2.9357760882804236,
+        "source": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+      }
+    },
+    {
+      "check": "Q4_target_2027-09-25",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q4_2027-09-25_central_0",
+      "pass_": true,
+      "detail": {
+        "display": "79.76",
+        "value": 79.75536356779305,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2027-09-25_PI_0",
+      "pass_": true,
+      "detail": {
+        "display": "61.24",
+        "value": 61.24204722669209,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2027-09-25_PI_1",
+      "pass_": true,
+      "detail": {
+        "display": "90.40",
+        "value": 90.40150198993967,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2027-09-25_model_range_0",
+      "pass_": true,
+      "detail": {
+        "display": "52.17",
+        "value": 52.16859687691628,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2027-09-25_model_range_1",
+      "pass_": true,
+      "detail": {
+        "display": "83.77",
+        "value": 83.77111309771917,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_target_2028-09-25",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q4_2028-09-25_central_0",
+      "pass_": true,
+      "detail": {
+        "display": "87.13",
+        "value": 87.12751211384048,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2028-09-25_PI_0",
+      "pass_": true,
+      "detail": {
+        "display": "69.58",
+        "value": 69.58018633055818,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2028-09-25_PI_1",
+      "pass_": true,
+      "detail": {
+        "display": "95.57",
+        "value": 95.56880507036963,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2028-09-25_model_range_0",
+      "pass_": true,
+      "detail": {
+        "display": "52.33",
+        "value": 52.33272228155908,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_2028-09-25_model_range_1",
+      "pass_": true,
+      "detail": {
+        "display": "97.11",
+        "value": 97.11295319946106,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json"
+      }
+    },
+    {
+      "check": "Q4_560_day_gap",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q4_decomposition_delta_S",
+      "pass_": true,
+      "detail": {
+        "display": "2.703245",
+        "value": 2.703245149939386,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv"
+      }
+    },
+    {
+      "check": "Q4_decomposition_delta_R",
+      "pass_": true,
+      "detail": {
+        "display": "13.176404",
+        "value": 13.17640404572799,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv"
+      }
+    },
+    {
+      "check": "Q4_decomposition_beta_logN",
+      "pass_": true,
+      "detail": {
+        "display": "4.595943",
+        "value": 4.595943203340986,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv"
+      }
+    },
+    {
+      "check": "Q4_decomposition_parameter_share",
+      "pass_": true,
+      "detail": {
+        "display": "17.0233",
+        "value": 17.023330406297283,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv"
+      }
+    },
+    {
+      "check": "Q4_decomposition_residual_share",
+      "pass_": true,
+      "detail": {
+        "display": "82.9767",
+        "value": 82.97666959370272,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv"
+      }
+    },
+    {
+      "check": "Q4_additive_identity",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "Q4_bridge_linear",
+      "pass_": true,
+      "detail": {
+        "display": "0.552834",
+        "value": 0.5528338936058493,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/bridge_validation.csv"
+      }
+    },
+    {
+      "check": "Q4_bridge_mean",
+      "pass_": true,
+      "detail": {
+        "display": "0.424448",
+        "value": 0.42444846214318305,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/bridge_validation.csv"
+      }
+    },
+    {
+      "check": "Q4_bridge_monotone",
+      "pass_": true,
+      "detail": {
+        "display": "0.436635",
+        "value": 0.436634672876873,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/bridge_validation.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_linear_4",
+      "pass_": true,
+      "detail": {
+        "display": "1.763472",
+        "value": 1.7634724874598422,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_linear_13",
+      "pass_": true,
+      "detail": {
+        "display": "1.564437",
+        "value": 1.5644368549580696,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_local_logit_4",
+      "pass_": true,
+      "detail": {
+        "display": "1.914621",
+        "value": 1.9146212907565645,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_local_logit_13",
+      "pass_": true,
+      "detail": {
+        "display": "2.867412",
+        "value": 2.8674115761426915,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_logit_4",
+      "pass_": true,
+      "detail": {
+        "display": "1.756586",
+        "value": 1.7565863122322334,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_logit_13",
+      "pass_": true,
+      "detail": {
+        "display": "1.529283",
+        "value": 1.529282882571689,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_persistence_4",
+      "pass_": true,
+      "detail": {
+        "display": "1.995689",
+        "value": 1.995688831218732,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_rolling_persistence_13",
+      "pass_": true,
+      "detail": {
+        "display": "3.683316",
+        "value": 3.683315719802216,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv"
+      }
+    },
+    {
+      "check": "Q4_reversal_known_families",
+      "pass_": true,
+      "detail": {
+        "display": "-15.92",
+        "value": -15.917073477234162,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/robustness_variants.csv"
+      }
+    },
+    {
+      "check": "Q4_reversal_strict_license",
+      "pass_": true,
+      "detail": {
+        "display": "-26.82",
+        "value": -26.817452643723623,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/robustness_variants.csv"
+      }
+    },
+    {
+      "check": "Q4_reversal_start_2024_09",
+      "pass_": true,
+      "detail": {
+        "display": "-75.89",
+        "value": -75.88576197218802,
+        "source": "06_results/raw/EXP-Q4-R7-20260925-v1/robustness_variants.csv"
+      }
+    },
+    {
+      "check": "evidence_sources_unchanged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "all_frozen_models_results_and_data_unchanged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "no_model_code_modified",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "equations_1_to_24",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_count_and_sources",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "tables_15_main_2_appendix",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_1",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_2",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_3",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_4",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_5",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_6",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_7",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_8",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_9",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_10",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_11",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_12",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_reference_13",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_1",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_2",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_3",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_4",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_5",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_6",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_7",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_8",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_9",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_10",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_11",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_12",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_13",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_14",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "table_reference_15",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_1B迁移失败",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_桥接未通过",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_统计支持上限",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_半合成",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_560",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_不能解释为",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_不能推出真实算力放缓",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_不具有抽样置信区间",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_没有概率覆盖含义",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "no_internal_workflow_prose",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "reference_order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "reference_cited_1",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "reference_cited_2",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "reference_cited_3",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "reference_cited_4",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "OMML_no_empty_nary_operands",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "no_track_changes_or_comments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata_author_empty",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "no_template_hidden_docvars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "no_personal_paths_in_package",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "official_cover_four_media_unchanged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "no_header_content",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF_no_empty_pages",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF_no_formula_placeholders",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF_cover_unidentified",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF_numbering_from_abstract",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "counts": {
+    "total_pages": 32,
+    "cover_pages": 1,
+    "abstract_pages": 1,
+    "body_pages_including_references": 27,
+    "appendix_pages": 3,
+    "body_physical_page_range": [
+      3,
+      29
+    ],
+    "equations": 24,
+    "figures": 13,
+    "tables": 17
+  },
+  "visual_qa": "separate visual review required",
+  "submission_readiness": "FINAL CANDIDATE; team identity and AI version/date records still require team completion"
+}

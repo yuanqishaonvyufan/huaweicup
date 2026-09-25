@@ -1,0 +1,106 @@
+[
+  {
+    "number": 1,
+    "caption": "图1 五维质量在抽样及扩展领域中的描述画像。横向比较依赖相同参考分布，不能解释为真实训练收益排序。",
+    "source": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-001_core_domain_profile.png",
+    "sha256": "2aa55b2326465008738dc817dc6fccd1e86d1a1048ebabde76412434da576577",
+    "width_cm": 16.502944444444445,
+    "paper_section": "5.1 从完整质量画像到可解释的描述坐标"
+  },
+  {
+    "number": 2,
+    "caption": "图2 1M留出样本的逐领域预测误差。全13域改善仍伴随不同的误差水平，完整数值见附录B。",
+    "source": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-002_domain_validation_gain.png",
+    "sha256": "9091c7cad9632f210a6c11cd758dd6f6d5d8aae08a9546674fc4bd1fd71d43ee",
+    "width_cm": 12.0,
+    "paper_section": "5.3 单纯形约束下的配比响应"
+  },
+  {
+    "number": 3,
+    "caption": "图3 幂律模型与两类基准的分组验证。纵轴量尺和对数刻度见原图；极小误差只对应本附件内部。",
+    "source": "06_results/figures/round5/FIG-Q2-R5-002.png",
+    "sha256": "5581f65b5893e1a85ccaa9f14fa18298406e5b0af41f392103e56aada11aac10",
+    "width_cm": 16.502944444444445,
+    "paper_section": "6.2 轨迹验证与跨来源诊断"
+  },
+  {
+    "number": 4,
+    "caption": "图4 参数 数据的边际与替代关系。所有数量采用十亿单位；示例局部导数不能直接外推为有限变化。",
+    "source": "06_results/figures/round5/FIG-Q2-R5-003.png",
+    "sha256": "14379e13d28574571a267ff5765a015f8b208cc615ebd07673b8c50c7913c4cd",
+    "width_cm": 12.0,
+    "paper_section": "6.3 边际效用 弹性与规模替代"
+  },
+  {
+    "number": 5,
+    "caption": "图5 参考上下文下的预算配置及Loss路径。高预算平台反映统计支持上限，非真实训练收益终极饱和。",
+    "source": "06_results/figures/round6/FIG-Q3-R6-001.png",
+    "sha256": "79f2185030024f5995dbab89019365bb72a08eb30459a8aa20d215e4cd999e4c",
+    "width_cm": 12.0,
+    "paper_section": "7.2 解析最优配置与结构转移"
+  },
+  {
+    "number": 6,
+    "caption": "图6 不同质量成本下的条件配置路径。收益假设来自半合成质量校准，曲线不是实测投资回报。",
+    "source": "06_results/figures/round6/FIG-Q3-R6-002.png",
+    "sha256": "fe325c45871e56652b337097564d37feb9f5ceda8d24ec0bfa6d9bb38e3a54a4",
+    "width_cm": 12.0,
+    "paper_section": "7.3 质量成本选择与投入门槛"
+  },
+  {
+    "number": 7,
+    "caption": "图7 联合参数传播与机制情景范围。参数条件分位和情景包络分别解释，不把两者合称95%置信区间。",
+    "source": "06_results/figures/round6/FIG-Q3-R6-005.png",
+    "sha256": "a94336da23ee6e99ba2de0594a5485bb1021a82814739f6e4851e6d6e1d1482e",
+    "width_cm": 12.0,
+    "paper_section": "7.6 影子价格与不确定性"
+  },
+  {
+    "number": 8,
+    "caption": "图8 前沿变化的参数关联与调整残差分解。两分量相加等于前沿，不表示完整规模与因果技术贡献。",
+    "source": "06_results/figures/round7/FIG-Q4-R7-002.png",
+    "sha256": "320f731bb115441531624446a7e497f1a38d41243fde08727af8604be3940474",
+    "width_cm": 16.502944444444445,
+    "paper_section": "8.3 参数规模关联与剩余性能分量"
+  },
+  {
+    "number": 9,
+    "caption": "图9 有界logit前沿的条件预测扇形。统计区间未包含模型选择 来源误差及缺失训练量的不确定性，两期限均为长期外推。",
+    "source": "06_results/figures/round7/FIG-Q4-R7-005.png",
+    "sha256": "8abf85b81f9ad25d78e078169da80e81370f8da8261183d353b10fd9904318d7",
+    "width_cm": 16.502944444444445,
+    "paper_section": "8.5 日期明确的预测与三类不确定性"
+  },
+  {
+    "number": 10,
+    "caption": "图10 跨规模配比迁移的中心化误差比。60M仅部分保持形状，1B失败；该图不评价绝对Loss。",
+    "source": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-003_scale_transfer_failure.png",
+    "sha256": "3902e58725a9f76046cead62a1dfbf06f0097fa423dd4f2ab4b20a4adea16a0a",
+    "width_cm": 16.502944444444445,
+    "paper_section": "9.2 留出验证与负结果"
+  },
+  {
+    "number": 11,
+    "caption": "图11 条件预算影子价格路径。支持上界同时活跃后乘子为零，仅对应给定目标与统计支持约束。",
+    "source": "06_results/figures/round6/FIG-Q3-R6-006.png",
+    "sha256": "f9cebd495fd6e9e4ebb6874d73ac4b60d13ede8660bb7efa2f10bb30671350a3",
+    "width_cm": 12.0,
+    "paper_section": "9.2 留出验证与负结果"
+  },
+  {
+    "number": 12,
+    "caption": "图12 Loss与能力桥接的失败诊断。高可比组的留一规模误差未优于均值基准，不能将Loss转成榜单能力。",
+    "source": "06_results/figures/round7/FIG-Q4-R7-003.png",
+    "sha256": "38d5b89601e3215f9894afe6c180a4323b56dbb1d960f2eaec8692a3dd65e4ca",
+    "width_cm": 16.502944444444445,
+    "paper_section": "9.2 留出验证与负结果"
+  },
+  {
+    "number": 13,
+    "caption": "图13 能力前沿四种动态模型的回溯滚动比较。只存在4周和13周的可用验证折，长期覆盖仍未知。",
+    "source": "06_results/figures/round7/FIG-Q4-R7-004.png",
+    "sha256": "39bcd5c665256bba0fb50faadea86b17290dd564bdcd0610a80b261125d45cb6",
+    "width_cm": 16.502944444444445,
+    "paper_section": "9.2 留出验证与负结果"
+  }
+]
