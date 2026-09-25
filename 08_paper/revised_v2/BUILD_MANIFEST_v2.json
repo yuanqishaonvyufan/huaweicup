@@ -1,0 +1,41 @@
+{
+  "equations": 24,
+  "figures": 9,
+  "tables": 18,
+  "table_captions": [
+    "表1 主要符号与单位",
+    "表2 数据用途与限制",
+    "表3 22项综合评分的领域结果及五维摘要对照",
+    "表4 配比模型的留出验证及适用边界",
+    "表5 A12—A15估算外推压力检验",
+    "表6 幂律参数与200次整轨迹重抽样区间",
+    "表7 三类轨迹验证的宏平均 RMSE",
+    "表8 质量与跨来源证据的可解释范围",
+    "表9 题设预算下的基线资源配置",
+    "表10 相同收益假设下的三类质量成本比较",
+    "表11 高可比桥接组的留一规模预测误差",
+    "表12 分解的控制规格与敏感性",
+    "表13 C4训练数据与算力字段的识别范围",
+    "表14 前沿模型的回溯滚动验证",
+    "表15 未来能力的条件预测及独立的模型范围",
+    "表16 外生算力增长保留情景下的条件中心",
+    "表A1 完整22项信号的含义与使用方式",
+    "表B1 1M留出逐领域预测误差"
+  ],
+  "template_media_preservation": {
+    "word/media/image1.png": true,
+    "word/media/image2.png": true,
+    "word/media/image4.png": true,
+    "word/media/image3.jpeg": true
+  },
+  "template_sha256": "c894b67eb7415f9d7b4836afbfb30e6b76b5f0cf6b4defacdca9e8f060b4b780",
+  "source_files": [
+    "00_front.md",
+    "05_Q1.md",
+    "06_Q2.md",
+    "07_Q3.md",
+    "08_Q4.md",
+    "09_back.md"
+  ],
+  "render_pending": true
+}

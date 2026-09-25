@@ -1,5 +1,9 @@
 # JOINT_CONTEXT
 
+## CURRENT 2稿修订上下文 / 2026-09-25
+
+Q1/Q4按最新审查补足：Q1新增22项用途限定`Q_full`和10B/70B估算表成对外推检查；Q4新增六条可比N/D子样本诊断与外生增长保留比例ρ=1/0.5/0的能力分数条件情景。Q2/Q3冻结，旧Q1 M1与Q4历史前沿、旧条件预测及区间保留。完成的2稿位于 `11_delivery/revised_v2/`，旧1稿原字节保留。题意QA逐条见 `10_review/paper_repair/FINAL_TASK_FULFILLMENT_REPAIR_QA_v1.md`。完整scale/技术因果比例、可靠Loss–Benchmark运输、真实算力放缓效应及30—42月经验覆盖仍未识别；候选稿不是官方提交完成。
+
 ## 当前唯一权威状态 — Round7 / 2026-09-25
 
 Q1/Q2/Q3/Q4: PROVISIONALLY CLOSED。Round7 COMPLETE；MODELING COMPLETE **WITH RESTRICTED EVIDENCE SCOPE**。Round8 PAPER INTEGRATION READY，仅允许受限结论进入正文。无Gate5流程；本轮不启动完整论文排版。

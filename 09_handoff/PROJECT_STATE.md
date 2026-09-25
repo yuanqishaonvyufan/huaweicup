@@ -1,5 +1,9 @@
 # PROJECT_STATE
 
+## CURRENT — 2稿题意修复 / 2026-09-25
+
+依据最新主分支独立审查完成Q1/Q4局部补分析与2稿整合。Q1 `Q_full` 覆盖22项272505条物理记录，是用途规则构造分；A12—A15成对估算外推10B/70B均不支持冻结M1的跨尺度形状。Q4仅六条主样本有可用训练D，完整N–D/技术贡献仍不可识别；给出了分数空间外生正增长参照下ρ=1/0.5/0的条件放缓路径。原Q1模型、Q2和Q3全部机器结果、Q4主样本前沿/旧条件中心及区间未重拟合。2稿与旧1稿并存，状态 `REVISED FINAL PAPER CANDIDATE WITH RESTRICTED SCIENTIFIC SCOPE`，不是官方上传完成。技术QA见 `10_review/paper_repair/FINAL_TASK_FULFILLMENT_REPAIR_QA_v1.json`，逐题题意清单见同目录Markdown。最终提交仍需队伍核实AI历史工具/版本/日期、填写官方模板身份和终PDF文件名，按比赛系统规则操作。
+
 ## 当前唯一权威状态 — Round7 / 2026-09-25
 
 Q1/Q2/Q3/Q4: PROVISIONALLY CLOSED。Round7 COMPLETE；MODELING COMPLETE **WITH RESTRICTED EVIDENCE SCOPE**。Round8 PAPER INTEGRATION READY，仅允许受限结论进入正文。无Gate5流程；本轮不启动完整论文排版。

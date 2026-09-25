@@ -1,0 +1,510 @@
+{
+  "verdict": "PASS_WITH_RESTRICTED_SCIENTIFIC_SCOPE",
+  "passed": 121,
+  "total": 121,
+  "failed": [],
+  "checks": [
+    {
+      "check": "Q1_TASK_REPAIR_20260925_v1:A12_A15_EXTRAPOLATION_CHECK_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q1_TASK_REPAIR_20260925_v1:A12_A15_PREDICTIONS_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q1_TASK_REPAIR_20260925_v1:Q_FULL_A1_RANKS_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q1_TASK_REPAIR_20260925_v1:Q_FULL_DOMAIN_RESULTS_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q1_TASK_REPAIR_20260925_v1:Q_FULL_FIELD_CONTRACT_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q1_TASK_REPAIR_20260925_v1:Q_FULL_SAMPLE_SCORES_v1.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "Q4_TASK_REPAIR_20260925_v1:C4_COMPUTE_DIAGNOSTIC_ENTITIES_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q4_TASK_REPAIR_20260925_v1:EXOGENOUS_COMPUTE_SLOWDOWN_SCENARIOS_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q4_TASK_REPAIR_20260925_v1:FULL_SCALE_SUBSET_ENTITIES_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q4_TASK_REPAIR_20260925_v1:FULL_SCALE_SUBSET_LOO_v1.csv",
+      "pass": true
+    },
+    {
+      "check": "Q1 full records and distinct IDs",
+      "pass": true
+    },
+    {
+      "check": "Q1 22 weights normalized",
+      "pass": true
+    },
+    {
+      "check": "Q1 coverage",
+      "pass": true
+    },
+    {
+      "check": "Q1 extrapolation matched 63/63 hull",
+      "pass": true
+    },
+    {
+      "check": "Q1 estimated extrapolation adverse",
+      "pass": true
+    },
+    {
+      "check": "Q1 number 0.7600",
+      "pass": true
+    },
+    {
+      "check": "Q1 number 0.7356",
+      "pass": true
+    },
+    {
+      "check": "Q1 number 0.7338",
+      "pass": true
+    },
+    {
+      "check": "Q1 number 0.5780",
+      "pass": true
+    },
+    {
+      "check": "Q1 number 2.3452",
+      "pass": true
+    },
+    {
+      "check": "Q1 number 2.2672",
+      "pass": true
+    },
+    {
+      "check": "Q1 number −0.4494",
+      "pass": true
+    },
+    {
+      "check": "Q1 number −0.5122",
+      "pass": true
+    },
+    {
+      "check": "Q4 full scale not identified",
+      "pass": true
+    },
+    {
+      "check": "Q4 leave-one-out unstable",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown distinct 2027-09-25",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown number 2027-09-25 79.76",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown number 2027-09-25 77.93",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown number 2027-09-25 76.11",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown distinct 2028-09-25",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown number 2028-09-25 87.13",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown number 2028-09-25 83.48",
+      "pass": true
+    },
+    {
+      "check": "Q4 slowdown number 2028-09-25 79.84",
+      "pass": true
+    },
+    {
+      "check": "old Q4 forecast unchanged 2027-09-25",
+      "pass": true
+    },
+    {
+      "check": "old Q4 PI retained 2027-09-25",
+      "pass": true
+    },
+    {
+      "check": "old Q4 forecast unchanged 2028-09-25",
+      "pass": true
+    },
+    {
+      "check": "old Q4 PI retained 2028-09-25",
+      "pass": true
+    },
+    {
+      "check": "old Q1 M1 RMSE retained",
+      "pass": true
+    },
+    {
+      "check": "old Q1 M0 RMSE retained",
+      "pass": true
+    },
+    {
+      "check": "Q2 frozen alpha",
+      "pass": true
+    },
+    {
+      "check": "Q2 frozen beta",
+      "pass": true
+    },
+    {
+      "check": "Q2 frozen A",
+      "pass": true
+    },
+    {
+      "check": "Q2 frozen B",
+      "pass": true
+    },
+    {
+      "check": "Q2 frozen E",
+      "pass": true
+    },
+    {
+      "check": "Q3 frozen budget 1e+19",
+      "pass": true
+    },
+    {
+      "check": "Q3 frozen budget 1e+22",
+      "pass": true
+    },
+    {
+      "check": "Q3 frozen budget 1e+24",
+      "pass": true
+    },
+    {
+      "check": "Q1-Q4 original data/model/code tracked files frozen",
+      "pass": true
+    },
+    {
+      "check": "final figure/table/equation counts",
+      "pass": true
+    },
+    {
+      "check": "table order 1",
+      "pass": true
+    },
+    {
+      "check": "table order 2",
+      "pass": true
+    },
+    {
+      "check": "table order 3",
+      "pass": true
+    },
+    {
+      "check": "table order 4",
+      "pass": true
+    },
+    {
+      "check": "table order 5",
+      "pass": true
+    },
+    {
+      "check": "table order 6",
+      "pass": true
+    },
+    {
+      "check": "table order 7",
+      "pass": true
+    },
+    {
+      "check": "table order 8",
+      "pass": true
+    },
+    {
+      "check": "table order 9",
+      "pass": true
+    },
+    {
+      "check": "table order 10",
+      "pass": true
+    },
+    {
+      "check": "table order 11",
+      "pass": true
+    },
+    {
+      "check": "table order 12",
+      "pass": true
+    },
+    {
+      "check": "table order 13",
+      "pass": true
+    },
+    {
+      "check": "table order 14",
+      "pass": true
+    },
+    {
+      "check": "table order 15",
+      "pass": true
+    },
+    {
+      "check": "table order 16",
+      "pass": true
+    },
+    {
+      "check": "figure source 1",
+      "pass": true
+    },
+    {
+      "check": "figure source 2",
+      "pass": true
+    },
+    {
+      "check": "figure source 3",
+      "pass": true
+    },
+    {
+      "check": "figure source 4",
+      "pass": true
+    },
+    {
+      "check": "figure source 5",
+      "pass": true
+    },
+    {
+      "check": "figure source 6",
+      "pass": true
+    },
+    {
+      "check": "figure source 7",
+      "pass": true
+    },
+    {
+      "check": "figure source 8",
+      "pass": true
+    },
+    {
+      "check": "figure source 9",
+      "pass": true
+    },
+    {
+      "check": "Figure 4 truthful caption",
+      "pass": true
+    },
+    {
+      "check": "Figures 4-7 re-exported from machine data",
+      "pass": true
+    },
+    {
+      "check": "table cited 1",
+      "pass": true
+    },
+    {
+      "check": "table cited 2",
+      "pass": true
+    },
+    {
+      "check": "table cited 3",
+      "pass": true
+    },
+    {
+      "check": "table cited 4",
+      "pass": true
+    },
+    {
+      "check": "table cited 5",
+      "pass": true
+    },
+    {
+      "check": "table cited 6",
+      "pass": true
+    },
+    {
+      "check": "table cited 7",
+      "pass": true
+    },
+    {
+      "check": "table cited 8",
+      "pass": true
+    },
+    {
+      "check": "table cited 9",
+      "pass": true
+    },
+    {
+      "check": "table cited 10",
+      "pass": true
+    },
+    {
+      "check": "table cited 11",
+      "pass": true
+    },
+    {
+      "check": "table cited 12",
+      "pass": true
+    },
+    {
+      "check": "table cited 13",
+      "pass": true
+    },
+    {
+      "check": "table cited 14",
+      "pass": true
+    },
+    {
+      "check": "table cited 15",
+      "pass": true
+    },
+    {
+      "check": "table cited 16",
+      "pass": true
+    },
+    {
+      "check": "figure cited 1",
+      "pass": true
+    },
+    {
+      "check": "figure cited 2",
+      "pass": true
+    },
+    {
+      "check": "figure cited 3",
+      "pass": true
+    },
+    {
+      "check": "figure cited 4",
+      "pass": true
+    },
+    {
+      "check": "figure cited 5",
+      "pass": true
+    },
+    {
+      "check": "figure cited 6",
+      "pass": true
+    },
+    {
+      "check": "figure cited 7",
+      "pass": true
+    },
+    {
+      "check": "figure cited 8",
+      "pass": true
+    },
+    {
+      "check": "figure cited 9",
+      "pass": true
+    },
+    {
+      "check": "citation list 1-7",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 1",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 2",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 3",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 4",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 5",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 6",
+      "pass": true
+    },
+    {
+      "check": "citation appears in text 7",
+      "pass": true
+    },
+    {
+      "check": "claim boundaries present",
+      "pass": true
+    },
+    {
+      "check": "no causal overclaim",
+      "pass": true
+    },
+    {
+      "check": "v1 draft untouched",
+      "pass": true
+    },
+    {
+      "check": "no formula placeholder",
+      "pass": true
+    },
+    {
+      "check": "no tracked edits/comments",
+      "pass": true
+    },
+    {
+      "check": "official four cover logos byte preserved",
+      "pass": true
+    },
+    {
+      "check": "anonymous metadata",
+      "pass": true
+    },
+    {
+      "check": "PDF no empty pages",
+      "pass": true
+    },
+    {
+      "check": "PDF no formula glyph defects",
+      "pass": true
+    },
+    {
+      "check": "PDF page numbers continuous",
+      "pass": true
+    },
+    {
+      "check": "PDF anonymous",
+      "pass": true
+    },
+    {
+      "check": "abstract at most two pages",
+      "pass": true
+    }
+  ],
+  "pdf": {
+    "total_pages": 30,
+    "cover": 1,
+    "abstract": 1,
+    "body_including_references": 25,
+    "appendix": 3,
+    "figures": 9,
+    "tables": 18,
+    "equations": 24
+  },
+  "scientific_limits": [
+    "Q_full is a declared purpose-dependent rubric, not true causal quality",
+    "full 853-model N-D/technology contribution remains unidentified",
+    "Loss-to-benchmark bridge rejected",
+    "C4 compute growth unavailable; slowdown pathways are exogenous",
+    "30-42 month empirical forecast coverage unavailable"
+  ],
+  "submission_status": "REVISED FINAL PAPER CANDIDATE, NOT OFFICIAL UPLOAD READY: team number and verified AI disclosure pending"
+}

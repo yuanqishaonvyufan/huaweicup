@@ -2,6 +2,7 @@
 AI-assisted code: Codex / GPT-6, OpenAI; release date independently unverified.
 """
 from pathlib import Path
+import argparse
 from copy import deepcopy
 from zipfile import ZipFile
 import re, json, csv, hashlib, shutil
@@ -18,7 +19,12 @@ from latex2mathml.converter import convert
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[2]
-SRC=ROOT/'08_paper/round8'; OUT=ROOT/'11_delivery/round8'
+args=argparse.ArgumentParser()
+args.add_argument('--revision',choices=['v1','v2'],default='v1')
+opt=args.parse_args()
+SRC=ROOT/('08_paper/revised_v2' if opt.revision=='v2' else '08_paper/round8')
+OUT=ROOT/('11_delivery/revised_v2' if opt.revision=='v2' else '11_delivery/round8')
+STEM='F_revised_draft_v2' if opt.revision=='v2' else 'F_final_manuscript'
 OUT.mkdir(exist_ok=True,parents=True)
 TEMPLATE=SRC/'template_reference.docx'
 def jwrite(path,x): path.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -37,7 +43,7 @@ for r in dom:
  if r['scale']=='1M' and r['model']=='M1':
   domain_table+=f'|{r["domain"]}|{float(dom0[r["domain"]]["RMSE_raw"]):.4f}|{float(r["RMSE_raw"]):.4f}|{float(r["RMSE_ratio_to_M0_raw"]):.4f}|\n'
 raw=raw.replace('@TABLE_SIGNALS',signals).replace('@TABLE_DOMAINS',domain_table)
-(OUT/'F_final_manuscript.md').write_text(raw,encoding='utf-8')
+(OUT/(STEM+'.md')).write_text(raw,encoding='utf-8')
 doc=Document(TEMPLATE)
 cover_nodes=list(doc.element.body)[:7]
 cover_xml=[etree.tostring(x) for x in cover_nodes]
@@ -147,7 +153,12 @@ while i<len(lines):
    mm=etree.fromstring(convert(part).encode());om=xsl(mm).getroot();p._p.append(om)
    if pi==len(parts)-1:p.add_run('    （'+str(num)+'）')
   q=1 if num<=5 else 2 if num<=12 else 3 if num<=19 else 4
-  eqs.append(dict(equation_id=label,number=num,question=q,formula=tex,rendered_parts=parts,symbol_definitions='FINAL_SYMBOL_TABLE_v1.md及公式前后定义',units='N十亿参数，D十亿token；Q4分数0—100；其他见符号表',source_model={1:'Q1_MODEL_SPEC_v1 / fixed diagnostic definitions',2:'Q2_ROUND5_SPEC_v1',3:'Q3_MODEL_SPEC_v1 / Q3_COST_MODEL_v1',4:'Q4_FRONTIER_MODEL_SPEC_v1'}[q],paper_section=current_section,assumptions={1:'固定参考及局部欧氏配比关联；非质量因果效应',2:'来源内加性幂律；质量与运输仅条件情景',3:'题设成本、外生上下文、统计支持域；预算可闲置',4:'同口径评测群体；描述性回归；趋势与条件扩散'}[q]))
+  modelsrc={1:'Q1_MODEL_SPEC_v1 / fixed diagnostic definitions',2:'Q2_ROUND5_SPEC_v1',3:'Q3_MODEL_SPEC_v1 / Q3_COST_MODEL_v1',4:'Q4_FRONTIER_MODEL_SPEC_v1'}[q]
+  assumption={1:'固定参考及局部欧氏配比关联；非质量因果效应',2:'来源内加性幂律；质量与运输仅条件情景',3:'题设成本、外生上下文、统计支持域；预算可闲置',4:'同口径评测群体；描述性回归；趋势与条件扩散'}[q]
+  if label=='E24' and opt.revision=='v2':
+   modelsrc='03_models/paper_repair/Q4_REPAIR_PREFIT_SPEC_v1.md'
+   assumption='外生正增长参考、训练D固定、C≈6ND；参数关联系数仅作情景敏感性，不识别真实效应'
+  eqs.append(dict(equation_id=label,number=num,question=q,formula=tex,rendered_parts=parts,symbol_definitions='全文符号表及公式前后定义',units='N十亿参数，D十亿token；Q4分数0—100；其他见符号表',source_model=modelsrc,paper_section=current_section,assumptions=assumption))
   continue
  if line.startswith('!['):
   m=re.match(r'!\[(.*?)\]\((.*?)\)',line);caption,path=m.groups();im=Image.open(ROOT/path)
@@ -174,15 +185,15 @@ settings=doc.settings.element
 for e in settings.findall(qn('w:docVars')):settings.remove(e)
 for e in settings.findall(qn('w:trackRevisions')):settings.remove(e)
 uf=OxmlElement('w:updateFields');uf.set(qn('w:val'),'true');settings.append(uf)
-target=OUT/'F_final_manuscript.docx';doc.save(target)
+target=OUT/(STEM+'.docx');doc.save(target)
 with ZipFile(TEMPLATE) as a,ZipFile(target) as b:
  media=[p for p in a.namelist() if p.startswith('word/media/')]
  preservation={p:a.read(p)==b.read(p) for p in media}
 assert all(preservation.values())
-jwrite(SRC/'FINAL_EQUATION_REGISTRY_v1.json',eqs)
-(SRC/'FINAL_EQUATION_REGISTRY_v1.md').write_text('# 最终公式登记\n\n'+'\n\n'.join('## 式（'+str(e['number'])+'）\n'+'\n'.join(f'- {k}: {v}' for k,v in e.items()) for e in eqs),encoding='utf-8')
-jwrite(SRC/'FINAL_FIGURE_SELECTION_v1.json',figs)
-jwrite(SRC/'BUILD_MANIFEST_v1.json',dict(equations=len(eqs),figures=len(figs),tables=len(tables),table_captions=tables,template_media_preservation=preservation,template_sha256=hashlib.sha256(TEMPLATE.read_bytes()).hexdigest(),source_files=source_files,render_pending=True))
+jwrite(SRC/('FINAL_EQUATION_REGISTRY_'+opt.revision+'.json'),eqs)
+(SRC/('FINAL_EQUATION_REGISTRY_'+opt.revision+'.md')).write_text('# 最终公式登记\n\n'+'\n\n'.join('## 式（'+str(e['number'])+'）\n'+'\n'.join(f'- {k}: {v}' for k,v in e.items()) for e in eqs),encoding='utf-8')
+jwrite(SRC/('FINAL_FIGURE_SELECTION_'+opt.revision+'.json'),figs)
+jwrite(SRC/('BUILD_MANIFEST_'+opt.revision+'.json'),dict(equations=len(eqs),figures=len(figs),tables=len(tables),table_captions=tables,template_media_preservation=preservation,template_sha256=hashlib.sha256(TEMPLATE.read_bytes()).hexdigest(),source_files=source_files,render_pending=True))
 (ROOT/'tmp/round8/artifact.md').write_text('''# Official template execution contract
 Reference: 08_paper/round8/template_reference.docx, converted from retained official .doc.
 Original .doc remains unchanged. Template render has 4 pages, one section. Its blank abstract heading leaks onto cover in LibreOffice; replace blank abstract/body slots with a section break to keep the official cover intact.

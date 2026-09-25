@@ -1,5 +1,7 @@
 # FIGURE_REGISTRY
 
+> 二稿图4—7仅按既有机器表重新导出打印版式，未修改数值：`FIG4_Q2_TOTAL_LOSS_ELASTICITY_REEXPORT`、`FIG5_Q3_BUDGET_REEXPORT`、`FIG6_Q3_QUALITY_REEXPORT`、`FIG7_Q3_UNCERTAINTY_REEXPORT`，图源和SHA256见 `08_paper/revised_v2/figures/REEXPORT_MANIFEST_v1.json`。原图及原结果保留。图4图注现在仅描述N/D总Loss弹性热图，有限替代由公式和正文示例承担。
+
 > CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.
 
 **当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
@@ -55,4 +57,3 @@ Gate4 G4-SINGLE-001已接受六张Q3图的限定内容用途；行内Gate4待审
 | FIG-Q4-R7-006 | Q4-R7-006 | Family and population selection affect decomposition and forecast | same_family_trajectories.csv,robustness_variants.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-006.png;06_results/figures/round7/FIG-Q4-R7-006.svg |
 | FIG-Q4-R7-007 | Q4-R7-007 | Long-horizon model spread is separate from statistical intervals | forecast_all_models_scenarios.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-007.png;06_results/figures/round7/FIG-Q4-R7-007.svg |
 | FIG-Q4-R7-008 | Q4-R7-008 | Collapsed scenarios do not establish robustness to real compute slowdown | scenario_decomposition.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-008.png;06_results/figures/round7/FIG-Q4-R7-008.svg |
-

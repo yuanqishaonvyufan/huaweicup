@@ -1,0 +1,56 @@
+[
+  {
+    "name": "FIG4_Q2_TOTAL_LOSS_ELASTICITY_REEXPORT",
+    "source_files": [
+      "06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv"
+    ],
+    "source_sha256": {
+      "06_results/raw/EXP-Q2-ND-R5-20260924-v1/marginal_effects.csv": "bc2852ad56302a2dbc333a1754f310884d26dd6615953f735084c5fd67875249"
+    },
+    "png_sha256": "1f847070fbd014c19d218257406be576d47749ed1613c6a1b5ff94336c2eee19",
+    "pdf_sha256": "ece5553279a904f363879c46c10533f38ccb0a4bba84da853220231ccfe86cc3",
+    "intended_print_width_cm": 12,
+    "base_font_pt": 12
+  },
+  {
+    "name": "FIG5_Q3_BUDGET_REEXPORT",
+    "source_files": [
+      "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv"
+    ],
+    "source_sha256": {
+      "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv": "a114bc9a6dd66519c8e57c76644b515169eae5524ef9778235563015a5382a94"
+    },
+    "png_sha256": "28c174de70513cbb0e0cb23402410745a0eb4a3f9a254002fa0487125cbe4736",
+    "pdf_sha256": "0ca7172638240f492e11374f66acc26801a5830835e49595676b94a425d1888d",
+    "intended_print_width_cm": 12,
+    "base_font_pt": 12
+  },
+  {
+    "name": "FIG6_Q3_QUALITY_REEXPORT",
+    "source_files": [
+      "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv"
+    ],
+    "source_sha256": {
+      "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv": "af233db2b4932e54a36b72318caea5007cc54ed64d6160c0d8a5463be7bbe4cb"
+    },
+    "png_sha256": "e1e4180168817af8d5f62dbae525dcdb9a60f31c6ff5ace5b6e2d1a6067731ed",
+    "pdf_sha256": "29df9b1ac7b77e4b08b6a7ef03c460c61c62aa9582fa1552d23d105758fd76cd",
+    "intended_print_width_cm": 12,
+    "base_font_pt": 12
+  },
+  {
+    "name": "FIG7_Q3_UNCERTAINTY_REEXPORT",
+    "source_files": [
+      "06_results/raw/UNC-Q3-R6-20260924-v1/conditional_quantiles.csv",
+      "06_results/raw/UNC-Q3-R6-20260924-v1/scenario_envelope_NOT_CI.csv"
+    ],
+    "source_sha256": {
+      "06_results/raw/UNC-Q3-R6-20260924-v1/conditional_quantiles.csv": "a18f304e37866b2b92c715d50f5ac1e962b1815252de5feb45147309fa04a5d2",
+      "06_results/raw/UNC-Q3-R6-20260924-v1/scenario_envelope_NOT_CI.csv": "b58284c25a207c694141c452699ac47c06e3239d4796b4da19bb0b2977746439"
+    },
+    "png_sha256": "ad5e3c5c121f92e6310c81e800fb4d88915adac2efce3060b173bcf1e89a683b",
+    "pdf_sha256": "d5d4defce76941b428eac5d0bf0675c43bd47bc593399c17b92ee8b843784010",
+    "intended_print_width_cm": 12,
+    "base_font_pt": 12
+  }
+]
