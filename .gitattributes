@@ -80,3 +80,9 @@
 /01_data/audits/modeling_phase3/round6/Q3_COST_AUDIT_METRICS_v1.json text eol=crlf
 /04_code/modeling_phase3/round6_audit.py text eol=crlf
 /08_paper/sections/Q3_ROUND6_PAPER_CANDIDATE_v1.md -text
+
+
+# Gate4 frozen interface and audit byte contracts.
+/02_analysis/consensus/Q3_TO_Q4_INTERFACE_v1.md text eol=lf
+/02_analysis/consensus/Q3_TO_Q4_INTERFACE_FREEZE_v1.json text eol=lf
+/10_review/GATE4_DECISION_CHECK_v1.json text eol=lf

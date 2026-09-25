@@ -36,3 +36,6 @@ Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受�
 | FIG-Q3-R6-004 | C7最大上下文档位仅用作外生情景；30000是成本代理等值点。 | SCEN-Q3-R6-CTX-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
 | FIG-Q3-R6-005 | 给定附件的参数带极窄，机制情景范围更宽；两者均不保证外部覆盖。 | SENS-Q3-R6-UNC-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
 | FIG-Q3-R6-006 | 预算影子价在统计支持饱和后为零；质量上限价值仍只属收益假设。 | SENS-Q3-R6-SHADOW-001 | 06_results/figures/round6/figure_manifest.json | CHECKED，Gate4待审 |
+
+
+Gate4 G4-SINGLE-001已接受六张Q3图的限定内容用途；行内Gate4待审为形成时状态。未重画/新增视觉审查，沿用Round6图哈希及视觉QA；最终模板嵌入仍待全文阶段，不晋升FINAL。

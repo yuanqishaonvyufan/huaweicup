@@ -49,3 +49,6 @@ R6-SPEC-001: user-authorized Round6 CP1 freeze; supplied compute proxies, inheri
 
 
 R6-CLOSE-001 — 2026-09-25：按用户Round6目标，CP1–CP4真实计算及QA后Q3 PROVISIONALLY CLOSED；Gate4预审准备，未自动裁决。非凸初值局限/统计支持/成本proxy/质量与配比场景边界保留。Q4未启动。
+
+
+G4-SINGLE-001 — 2026-09-25：用户授权single-pass裁决，七项PASS、68只读检查PASS，新P0/P1/P2=0。Gate4 Verdict A，Q3暂定关闭，Q4授权未执行；冻结接口A–J及机器JSON。数值/模型/规格/成本/原实验不变，未晋升FINAL。

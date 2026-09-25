@@ -98,6 +98,13 @@
       "sha256": "4c5ff0e20dd3793daa61ea197087c871cacea5c5c1c1666b614ed4a2567ab9b4",
       "lines": 32,
       "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase3/gate4_review.py",
+      "sha256": "36664ed0c9beb199fa3b1c4a52370514eac0eb0a3c093e91e05782e37a5fa98f",
+      "lines": 64,
+      "core_appendix": false,
+      "purpose": "Gate4 read-only evidence decision; no model execution"
     }
   ],
   "round6_scope": "Q3 complete conditional candidate; Q4 not started"

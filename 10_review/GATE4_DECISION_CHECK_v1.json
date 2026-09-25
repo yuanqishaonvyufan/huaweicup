@@ -1,0 +1,431 @@
+{
+  "status": "PASS",
+  "decision": "G4-SINGLE-001 evidence check, verdict recorded separately",
+  "base_commit": "45c44ede65c7078054424e2d39821359d5d2a5a2",
+  "created_utc": "2026-09-25T01:57:39.138199+00:00",
+  "code_sha256": "36664ed0c9beb199fa3b1c4a52370514eac0eb0a3c093e91e05782e37a5fa98f",
+  "checks": [
+    {
+      "name": "frozen:03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "frozen:06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "frozen:03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "frozen:01_data/audits/modeling_phase3/round6/Q3_COST_AUDIT_METRICS_v1.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "frozen:03_models/modeling_phase3/round6/Q3_COST_MODEL_v1.md",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "frozen:03_models/modeling_phase3/round6/Q3_MODEL_SPEC_v1.md",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "frozen:03_models/modeling_phase3/round6/Q3_SUPPORT_CONSTRAINTS_v1.md",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/EXP-Q3-BASE-R6-20260924-v1/multistart_checks.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/EXP-Q3-BASE-R6-20260924-v1/summary.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "run_status:EXP-Q3-BASE-R6-20260924-v1",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/context_baseline.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/mixture_local_candidates.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/mixture_scenarios.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/quality_break_even.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/quality_grid_refinement.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/quality_multistart.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/summary.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/SCEN-Q3-R6-20260924-v1/supply_stress.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "run_status:SCEN-Q3-R6-20260924-v1",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/UNC-Q3-R6-20260924-v1/conditional_draw_paths.csv.gz",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/UNC-Q3-R6-20260924-v1/conditional_quantiles.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/UNC-Q3-R6-20260924-v1/scenario_envelope_NOT_CI.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/UNC-Q3-R6-20260924-v1/shadow_prices.csv",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "output:06_results/raw/UNC-Q3-R6-20260924-v1/summary.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "run_status:UNC-Q3-R6-20260924-v1",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "existing_QA:MODELING_PHASE3_R6_NUMERICAL_QA_20260924.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "existing_QA:R6_PACKAGE_QA_v1.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "existing_QA:R6_GIT_CHECKOUT_INTEGRITY_v1.json",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "existing_visual_QA",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "official_proxy_constants",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "architecture_not_training",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "context_proxy_intersection",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "baseline_51_and_204",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "all_baseline_starts_success",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "baseline_saved_objective_agreement",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "baseline_feasibility_KKT",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "baseline_OFF_reference",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "representative:1e+19",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "saved_point_arithmetic:1e+19",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "representative:1e+22",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "saved_point_arithmetic:1e+22",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "representative:1e+24",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "saved_point_arithmetic:1e+24",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "high_budget_support_not_scale_saturation",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "quality_scope_counts",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "local_solver_limits_retained",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "all_quality_scenario_labels",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "no_mixture_joint_transport",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "mixture_no_1B",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "uncertainty_separation",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "saved_draw_counts",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "saved_shadow_validation",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "no_Q4_in_existing_runs",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-001.png",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-001.pdf",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-002.png",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-002.pdf",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-003.png",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-003.pdf",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-004.png",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-004.pdf",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-005.png",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-005.pdf",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-006.png",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "figure:06_results/figures/round6/FIG-Q3-R6-006.pdf",
+      "pass_check": true,
+      "detail": null
+    },
+    {
+      "name": "report_scope_statements",
+      "pass_check": true,
+      "detail": null
+    }
+  ],
+  "representative_baseline": [
+    {
+      "Budget_FLOPs": "1e+19",
+      "L_ctx": "2048",
+      "N_B": "0.22130872721718978",
+      "D_B": "7.049698310488851",
+      "Q": "0.5",
+      "loss": "2.998934933219959",
+      "quality": "OFF",
+      "mixture": "OFF",
+      "total_FLOPs": "1e+19",
+      "budget_slack_FLOPs": "0.0",
+      "budget_relative_violation": "0.0",
+      "mu_per_1e18": "0.020096169212695393",
+      "dLoss_dBudget_FLOPs": "-2.0096169212695393e-20",
+      "kkt_projected_max": "2.7755575615628914e-17",
+      "complementarity": "0.0",
+      "active_constraints": "BUDGET_ACTIVE",
+      "quality_cap_value": "0.0",
+      "support_status": "B1_RECTANGLE_CONDITIONAL",
+      "train_FLOPs": "9.360958562156763e+18",
+      "attention_FLOPs": "6.390414378432351e+17",
+      "quality_FLOPs": "0.0"
+    },
+    {
+      "Budget_FLOPs": "1e+22",
+      "L_ctx": "2048",
+      "N_B": "5.202388052937084",
+      "D_B": "299.893",
+      "Q": "0.5",
+      "loss": "2.143211279482246",
+      "quality": "OFF",
+      "mixture": "OFF",
+      "total_FLOPs": "1e+22",
+      "budget_slack_FLOPs": "0.0",
+      "budget_relative_violation": "0.0",
+      "mu_per_1e18": "6.869671353280326e-06",
+      "dLoss_dBudget_FLOPs": "-6.869671353280325e-24",
+      "kkt_projected_max": "0.0",
+      "complementarity": "0.0",
+      "active_constraints": "D_HIGH;BUDGET_ACTIVE",
+      "quality_cap_value": "0.0",
+      "support_status": "B1_RECTANGLE_CONDITIONAL",
+      "train_FLOPs": "9.360958562156765e+21",
+      "attention_FLOPs": "6.390414378432351e+20",
+      "quality_FLOPs": "0.0"
+    },
+    {
+      "Budget_FLOPs": "1e+24",
+      "L_ctx": "2048",
+      "N_B": "11.965825",
+      "D_B": "299.893",
+      "Q": "0.5",
+      "loss": "2.093379471494165",
+      "quality": "OFF",
+      "mixture": "OFF",
+      "total_FLOPs": "2.300063908774456e+22",
+      "budget_slack_FLOPs": "9.769993609122555e+23",
+      "budget_relative_violation": "0.0",
+      "mu_per_1e18": "0.0",
+      "dLoss_dBudget_FLOPs": "-0.0",
+      "kkt_projected_max": "0.0",
+      "complementarity": "0.0",
+      "active_constraints": "N_HIGH;D_HIGH;BUDGET_SLACK",
+      "quality_cap_value": "0.0",
+      "support_status": "B1_RECTANGLE_CONDITIONAL",
+      "train_FLOPs": "2.1530802940349996e+22",
+      "attention_FLOPs": "1.46983614739456e+21",
+      "quality_FLOPs": "0.0"
+    }
+  ],
+  "source_document_hashes": {
+    "03_models/modeling_phase3/round6/Q3_RESULTS_REPORT_v1.md": "9b25994dd75457587ed141fcf223dba0cf4d53d443ffe7f5744d51ec589ef365",
+    "03_models/modeling_phase3/round6/Q3_LIMITATIONS_v1.md": "ec94e2337b96385a107bd5500c40975a1454338a978733da997a4b9bb0837d5b",
+    "03_models/modeling_phase3/round6/Q3_COST_MODEL_v1.md": "a72e2c12b99f31824a31614a531b5217f99026e5d6e8f092b49c50f7f3410a68",
+    "03_models/modeling_phase3/round6/Q3_MODEL_SPEC_v1.md": "16843fe05e6e8266be497986859d7b1d62ac7653aab538539faf1844f96ca6aa",
+    "07_validation/round6/Q3_VALIDATION_REPORT_v1.md": "1605692e6e43a81237ee74fcfd0747546ff3c51f7909e411d87a3245c4f7e410",
+    "10_review/MODELING_PHASE3_R6_QA_20260924.md": "14cfa265e476a69df1ead96b4e399b3ae9f2129fee257387089ba7d271990fa8"
+  },
+  "optimizer_called": false,
+  "Q2_refit": false,
+  "Q4_started": false
+}

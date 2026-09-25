@@ -1,0 +1,16 @@
+{
+  "decision": "G4-SINGLE-001",
+  "status": "ACTIVE / FROZEN",
+  "frozen_utc": "2026-09-25T02:04:32.530467+00:00",
+  "base_commit": "45c44ede65c7078054424e2d39821359d5d2a5a2",
+  "files": {
+    "02_analysis/consensus/Q3_TO_Q4_INTERFACE_v1.md": "0fc3f2215357ff94fd3a1d60823ff6f5673ebdefe3935c8b084e08e04ba4b35a",
+    "03_models/modeling_phase3/round6/Q3_TO_Q4_INTERFACE_v1.json": "a88de50ec2b4cdd234be422220b3655427c34cc32ca3363b786801b149be9c3d"
+  },
+  "source_runs": [
+    "EXP-Q3-BASE-R6-20260924-v1",
+    "SCEN-Q3-R6-20260924-v1",
+    "UNC-Q3-R6-20260924-v1"
+  ],
+  "Q4_started": false
+}

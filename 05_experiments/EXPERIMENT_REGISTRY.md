@@ -42,3 +42,8 @@ QA-R5-TAKEOVER-20260924-v1：`04_code/modeling_phase2/round5_takeover_audit.py`�
 | EXP-Q3-BASE-R6-20260924-v1 | 51 budgets analytic/SLSQP baseline, quality/mix OFF | Q3_R6_FROZEN_v1.json | round6_baseline.py + round6_core.py | COMPLETED CP2 — PASS |
 | SCEN-Q3-R6-20260924-v1 | frozen quality/context/local-mixture/supply scenarios | Q3_R6_FROZEN_v1.json | round6_scenarios.py + frozen core | COMPLETED CP3 — PASS WITH LOCAL-SOLVER DIAGNOSTIC |
 | UNC-Q3-R6-20260924-v1 | 200 joint Q2 vectors, scenario envelopes, shadow derivatives | Q3_R6_FROZEN_v1.json | round6_uncertainty.py + frozen core | COMPLETED CP4 — PASS |
+
+
+## Gate4 evidence decision
+
+G4-SINGLE-001：04_code/modeling_phase3/gate4_review.py仅标准库只读/哈希/既有点算术，68项PASS，输出10_review/GATE4_DECISION_CHECK_v1.json。无新Experiment、无优化/重拟合/重跑验证。既有三Q3 Run及状态不变，Q4未执行。

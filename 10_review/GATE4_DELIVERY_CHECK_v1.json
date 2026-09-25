@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "decision": "G4-SINGLE-001",
+  "checks": {
+    "frozen_interface_hashes": true,
+    "ten_unique_admissions": true,
+    "valid_admission_labels": true,
+    "Q4_authorized_not_started": true,
+    "G4_id_and_status": true,
+    "no_final_promotion": true,
+    "68_evidence_checks": true,
+    "original_scientific_docs_unchanged": true,
+    "source_runs_unchanged": true,
+    "current_state:09_handoff/PROJECT_STATE.md": true,
+    "current_state:09_handoff/NEXT_ACTION.md": true,
+    "current_state:09_handoff/JOINT_CONTEXT.md": true,
+    "current_state:09_handoff/GATE4_TO_ROUND7_HANDOFF_v1.md": true,
+    "verdict_A": true,
+    "consensus_local_links": true,
+    "no_raw_or_model_code_change": true
+  },
+  "Q4_started": false
+}

@@ -92,3 +92,8 @@ Round6 closeout：新增P0=0/P1=0/P2=3（R6-VIS-01，006图例遮线与ylabel越
 R6-DOC-01（P2 CLOSED）：论文候选LaTeX写入转义异常被包QA拦截；仅修复生成脚本与派生文字，数值/冻结规格未变，初始失败QA保留，复检后上传。新缺陷总计P0=0/P1=0/P2=3，均已关闭。
 
 R6-GIT-01（P2 CLOSED）：Round6目录属性会影响继承CP0的CRLF冻结哈希；增加两条精确eol=crlf覆盖并保留论文候选LF。科学内容/原始字节未改，Git模拟checkout哈希检查PASS。最终新缺陷P0=0/P1=0/P2=3，全部关闭。
+
+
+## Gate4 decision — 2026-09-25
+
+G4-SINGLE-001 新发现P0=0/P1=0/P2=0、阻断0。Gate4 Verdict A；Round6三项P2保持历史关闭。B1外部来源/真实质量/供给/1B等限制继续携带，不因Gate通过宣布解决。D语义与A–J为正常接口冻结，非新的模型错误。

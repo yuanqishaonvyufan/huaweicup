@@ -10,3 +10,6 @@ Takeover integrity entry: `python -X utf8 04_code/modeling_phase2/round5_takeove
 
 
 Round6只读复核：python -X utf8 04_code/modeling_phase3/round6_qa.py。配置Q3_R6_FROZEN_v1.json；core+baseline/scenarios/uncertainty为冻结计算入口，已有Run拒绝覆盖。figure/package脚本只派生图文，不重估参数。依赖同Round5，固定raw/config/source hashes；正式复现须新Run或隔离副本，禁止覆盖现有输出。
+
+
+Gate4只读证据入口：python -X utf8 04_code/modeling_phase3/gate4_review.py。只检查既有结果/哈希/代表点算术，不调用求解器、Q2拟合或Q4。裁决与接口以GATE4_CONSENSUS_v1和freeze manifest为准。

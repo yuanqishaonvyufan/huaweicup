@@ -71,3 +71,8 @@ Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 
 |---|---|---|---|
 | SENS-Q3-R6-UNC-001 | UNC-Q3-R6-20260924-v1 | 200联合向量,51000配置,765分位行 | 条件数值敏感性，非外部CI |
 | SENS-Q3-R6-SHADOW-001 | 同上shadow_prices | 1632导数,max FD error8.97e-10 | 条件值，非市场价格 |
+
+
+## Gate4 limited-use acceptance
+
+G4-SINGLE-001 Verdict A：现有Q3结果按Q3_TO_Q4_INTERFACE的A–J获限定用途准入；数值/Run/证据等级不变。参数与影子值仅敏感性，quality/mix/context仅场景。没有新增数值Result ID或VALIDATED FINAL晋升；Q4未执行。
