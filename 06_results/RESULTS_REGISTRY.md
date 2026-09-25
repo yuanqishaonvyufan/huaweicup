@@ -1,5 +1,7 @@
 # RESULTS_REGISTRY
 
+> Q1新增受限结果：`Q1-REPAIR-001`（22项规则构造评分；A1、A2、A3样本与领域表；来源 `Q1_TASK_REPAIR_20260925_v1/Q_FULL_DOMAIN_RESULTS_v1.csv`），`Q1-REPAIR-002`（A12/A13 10B和A14/A15 70B的估算配比-Loss成对外推；来源同Run `A12_A15_EXTRAPOLATION_CHECK_v1.csv`）。后者 M1/M0 中心化误差比2.3452/2.2672、秩相关−0.4494/−0.5122，均只作 ESTIMATED EXTRAPOLATION CHECK。旧数值未变；不得称新 `Q_full` 为真实因果质量弹性。
+
 > CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.
 
 **当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**

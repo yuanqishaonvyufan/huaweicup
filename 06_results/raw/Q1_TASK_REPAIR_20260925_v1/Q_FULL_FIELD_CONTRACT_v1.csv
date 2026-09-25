@@ -1,0 +1,23 @@
+field,rule,target_percentile,weight_W0,weight_W1,missing_n,source_role
+fineweb_edu,source-supported increasing description,,0.045454545454545456,0.058379409907104024,0,CORE
+fluency_en,source-supported increasing description,,0.045454545454545456,0.04955465375333197,0,CORE
+modernbert_cleanliness,source-supported increasing description,,0.045454545454545456,0.046160172447000714,0,CORE
+modernbert_readability,source-supported increasing description,,0.045454545454545456,0.0438737304419843,0,CORE
+modernbert_reasoning,high-core-reference proximity; no universal raw direction,0.7230789911037248,0.045454545454545456,0.059094975470759176,13,SENSITIVITY
+modernbert_professionalism,high-core-reference proximity; no universal raw direction,0.5182664581398758,0.045454545454545456,0.059094975470759176,6,SENSITIVITY
+dsir_books,high-core-reference proximity; no universal raw direction,0.38861603870400235,0.045454545454545456,0.021002082677335502,0,UNKNOWN
+dsir_wiki,high-core-reference proximity; no universal raw direction,0.3940771147925524,0.045454545454545456,0.02100295199295485,0,REDUNDANT
+dsir_math,high-core-reference proximity; no universal raw direction,0.38291061916630015,0.045454545454545456,0.020460324170668707,0,REDUNDANT
+qurater,"four-facet median-target proximity, then mean","[0.788642916483409, 0.7224197331769535, 0.8310426134975322, 0.8341885354053657]",0.045454545454545456,0.04735693157107749,0,SENSITIVITY
+ad_en,source-supported increasing description,,0.045454545454545456,0.059094975470759176,0,CORE
+rps_doc_word_count,high-core-reference proximity; no universal raw direction,0.693568880418316,0.045454545454545456,0.022769676029050213,0,SECONDARY
+rps_doc_num_sentences,high-core-reference proximity; no universal raw direction,0.6006817182231344,0.045454545454545456,0.028289459957989975,0,SECONDARY
+rps_doc_unigram_entropy,high-core-reference proximity; no universal raw direction,0.6788960562967308,0.045454545454545456,0.02711522570284551,0,SENSITIVITY
+rps_doc_frac_unique_words,high-core-reference proximity; no universal raw direction,0.33647925524116695,0.045454545454545456,0.03573465875564175,0,SENSITIVITY
+rps_doc_frac_no_alph_words,high-core-reference proximity; no universal raw direction,0.3584029712163417,0.045454545454545456,0.059094975470759176,0,SENSITIVITY
+rps_doc_frac_chars_top_2gram,high-core-reference proximity; no universal raw direction,0.41551825245565166,0.045454545454545456,0.05660300173019908,0,SENSITIVITY
+rps_doc_frac_chars_top_3gram,high-core-reference proximity; no universal raw direction,0.46707472022675073,0.045454545454545456,0.048937917096742514,0,SENSITIVITY
+rps_lines_uppercase_letter_fraction,high-core-reference proximity; no universal raw direction,0.3774006743879197,0.045454545454545456,0.059094975470759176,0,SENSITIVITY
+rps_lines_ending_with_terminal_punctution_mark,high-core-reference proximity; no universal raw direction,0.6203391487074231,0.045454545454545456,0.059094975470759176,0,SENSITIVITY
+rps_lines_numerical_chars_fraction,high-core-reference proximity; no universal raw direction,0.5828812979524018,0.045454545454545456,0.059094975470759176,0,SENSITIVITY
+rps_doc_mean_word_length,high-core-reference proximity; no universal raw direction,0.39127938229976056,0.045454545454545456,0.059094975470759176,0,SENSITIVITY

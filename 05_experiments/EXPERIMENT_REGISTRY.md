@@ -1,5 +1,7 @@
 # EXPERIMENT_REGISTRY
 
+> Q1题意补足新增运行 `Q1_TASK_REPAIR_20260925_v1`：`04_code/paper_round8/q1_task_repair.py` 只读取冻结质量特征与 M1；输出 `06_results/raw/Q1_TASK_REPAIR_20260925_v1/`。22项 `Q_full` 为明示用途规则的构造评分，10B/70B配比-Loss检验为估算外推，不改变旧Q1/Q2/Q3/Q4模型或验证数值。详情 `03_models/paper_repair/Q1_TASK_REPAIR_RESULTS_v1.md`。
+
 > CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.
 
 **当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
@@ -59,4 +61,3 @@ EXP-Q4-R7-20260925-v1 PLANNED: Q4_R7_FROZEN_v1.json; seed 20260925; processed/mo
 ## Round7 completed execution
 
 EXP-Q4-R7-20260925-v1 COMPLETED: bridge/decomposition/rolling/forecast/robustness; Python 3.13.14; seed20260925;400 family-cluster coefficient replicates,1000 forecast blocks,200 rolling blocks. Frozen Q4_R7_FROZEN_v1.json; INPUT_MANIFEST; code/output hashes in ROUND7_REPRODUCIBILITY_MANIFEST_v1.json. Numerical outputs unchanged by document fixes. Audit/read-only recomputation QA-Q4-R7-20260925-v1 separate from model run. See QA verdict for reporting scope.
-
