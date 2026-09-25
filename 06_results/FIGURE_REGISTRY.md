@@ -57,3 +57,12 @@ Gate4 G4-SINGLE-001已接受六张Q3图的限定内容用途；行内Gate4待审
 | FIG-Q4-R7-006 | Q4-R7-006 | Family and population selection affect decomposition and forecast | same_family_trajectories.csv,robustness_variants.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-006.png;06_results/figures/round7/FIG-Q4-R7-006.svg |
 | FIG-Q4-R7-007 | Q4-R7-007 | Long-horizon model spread is separate from statistical intervals | forecast_all_models_scenarios.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-007.png;06_results/figures/round7/FIG-Q4-R7-007.svg |
 | FIG-Q4-R7-008 | Q4-R7-008 | Collapsed scenarios do not establish robustness to real compute slowdown | scenario_decomposition.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-008.png;06_results/figures/round7/FIG-Q4-R7-008.svg |
+
+## v5 supplementary visualizations
+
+The following figures are visual derivations from already frozen outputs. Their Run manifests record input, code, and output SHA-256 hashes. They add no new fitted model or Result ID.
+
+| ID | Run | Reader task and boundary | Figure and machine source |
+| --- | --- | --- | --- |
+| FIG-Q1-V5-001 | SUPP-Q1-VIS-20260925-v1 | Compare A1 W0/W1/DQ0 ranks; constructed scores are not observed training returns | `06_results/figures/paper_v5/FIG-Q1-V5-001_rank_rules.png`; `Q_FULL_A1_RANKS_v1.csv` and `Q_FULL_DOMAIN_RESULTS_v1.csv` |
+| FIG-Q1-V5-002 | SUPP-Q1-VIS-20260925-v1 | Show six preregistered signed Spearman pairs; correlation is not semantic conflict or causality | `06_results/figures/paper_v5/FIG-Q1-V5-002_fixed_pair_correlations.png`; `QUALITY_CORRELATION_PAIRS_v1.csv` |

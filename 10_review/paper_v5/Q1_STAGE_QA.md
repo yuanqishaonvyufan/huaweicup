@@ -1,0 +1,7 @@
+# v5 Q1 stage checkpoint
+
+- Baseline: user supplied v3 DOCX copied without modification to `08_paper/v5/baseline_v3_user.docx`, SHA-256 `a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353`. The 32 page reference transfer manuscript remains an archival pre-draft.
+- New visualization Run: `SUPP-Q1-VIS-20260925-v1`. Seven A1 W0 and W1 ranks were independently recomputed from domain means and matched the frozen rank table. Six signal pairs were fixed before plotting; all 18 displayed Spearman values are finite and within [-1, 1]. Input, code, and output hashes are in the Run manifest. No model was refitted.
+- Added to Q1: a fixed pair correlation heatmap, a seven domain W0/W1/DQ0 rank comparison, the pre-existing cross-scale transfer failure figure, a candidate comparison table, and an explicit target utility equation with interpretation. A1 versus non-overlapping A2/A3 and 1M versus 60M/1B/estimated 10B/70B boundaries are stated in prose.
+- Rendered checkpoint: 38 A4 pages; 12 sequential numbered figures, 17 sequential body tables, 25 sequential numbered equations. The source DOCX's embedded media bytes are preserved. Figure captions, table rendering, source references, and the Q1 page images were inspected; no clipping or missing glyphs were found in the changed pages.
+- Remaining final integration: Q2–Q4, unified model validation and sensitivity tables, refreshed contents page numbers, full-page final review, v5 versus reference metrics, and 43-Result-ID coverage ledger.

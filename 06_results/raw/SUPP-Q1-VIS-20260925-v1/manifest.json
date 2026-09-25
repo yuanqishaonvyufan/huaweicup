@@ -1,0 +1,27 @@
+{
+  "run_id": "SUPP-Q1-VIS-20260925-v1",
+  "purpose": "Visualization derivation from frozen Q1 outputs; no model refit",
+  "evidence_boundary": "Constructed score ranks and within-layer correlations; no causal quality effect",
+  "inputs_sha256": {
+    "06_results\\raw\\Q1_TASK_REPAIR_20260925_v1\\Q_FULL_DOMAIN_RESULTS_v1.csv": "a7f50aa2705e16d4355dc69899e9c62b303b695ef284ebe163ce9709f7efb345",
+    "06_results\\raw\\Q1_TASK_REPAIR_20260925_v1\\Q_FULL_A1_RANKS_v1.csv": "987d8d065a12b1f20a5d67bbe9329975d7f3873d932b51966d898cd5179fd1df",
+    "01_data\\audits\\modeling_phase1\\q1\\QUALITY_CORRELATION_PAIRS_v1.csv": "ee6f4b203888df0bab7ff70680374948b31075f9411eb23714c1c372654d0b93"
+  },
+  "code_sha256": "cdf99a1bf1044cf5c60dfd6cf97bacdbcfd51a4ac8a79c0a36ac03fb60b67957",
+  "outputs_sha256": {
+    "06_results\\figures\\paper_v5\\FIG-Q1-V5-001_rank_rules.png": "1d9982ceb726abcdcc9cdfa3e2314c4ac6ae307d55147d38829febc1341e3d1b",
+    "06_results\\figures\\paper_v5\\FIG-Q1-V5-002_fixed_pair_correlations.png": "144cbe9a7da6a66c24801714dcfd2b90a476c4c19ac185f9c4226def67c4a126",
+    "06_results\\raw\\SUPP-Q1-VIS-20260925-v1\\fixed_six_pairs.csv": "79979cd02e763034611a4cb4bedc03c94e504abb1bbae165e2100e728148c89e"
+  },
+  "checks": {
+    "seven_ranked_domains": 7,
+    "fixed_pairs": 6,
+    "rank_matches_upstream": true,
+    "coefficient_bounds": true,
+    "unordered_pair_lookup_unique": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "pillow": "12.3.0"
+  }
+}

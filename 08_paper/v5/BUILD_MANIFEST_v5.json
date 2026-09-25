@@ -1,0 +1,106 @@
+{
+  "stage": "q1",
+  "baseline": "08_paper/v5/baseline_v3_user.docx",
+  "baseline_sha256": "a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353",
+  "source_files": [
+    {
+      "phase": "q1",
+      "source": "05_Q1_additions.md",
+      "sha256": "86fbb5f8f1a623f7dc88a736a1723decda04591e8acf340402e0fd908b48895d"
+    }
+  ],
+  "figures": 12,
+  "tables_body": 17,
+  "equations": 25,
+  "figure_sources_new": [
+    {
+      "source": "06_results/figures/paper_v5/FIG-Q1-V5-002_fixed_pair_correlations.png",
+      "sha256": "144cbe9a7da6a66c24801714dcfd2b90a476c4c19ac185f9c4226def67c4a126",
+      "caption": "六组预先固定的信号对在 A1、A2、A3 中的有符号 Spearman 相关。相关诊断用于识别冗余和长度混杂，不能单独确认语义冲突。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/paper_v5/FIG-Q1-V5-001_rank_rules.png",
+      "sha256": "1d9982ceb726abcdcc9cdfa3e2314c4ac6ae307d55147d38829febc1341e3d1b",
+      "caption": "A1 七域的 Q_full 等权、去冗余 W1 与五维 DQ0 独立排序。A2、A3 非重叠扩展均值与对应领域接近；这些均属标注体系内的描述结果。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-003_scale_transfer_failure.png",
+      "sha256": "3902e58725a9f76046cead62a1dfbf06f0097fa423dd4f2ab4b20a4adea16a0a",
+      "caption": "冻结 M1 相对于 M0 的跨规模中心化误差比。1M 有局部留出收益，60M 仅部分迁移，1B 失败；10B、70B 估算表另作压力检查。",
+      "width_cm": 15.5
+    }
+  ],
+  "old_figure_number_map": {
+    "1": 2,
+    "2": 4,
+    "4": 6,
+    "3": 7,
+    "5": 8,
+    "6": 9,
+    "7": 10,
+    "8": 11,
+    "9": 12
+  },
+  "old_table_number_map": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 5,
+    "5": 6,
+    "6": 7,
+    "7": 8,
+    "8": 9,
+    "9": 10,
+    "10": 11,
+    "11": 12,
+    "12": 13,
+    "13": 14,
+    "14": 15,
+    "15": 16,
+    "16": 17
+  },
+  "old_equation_number_map": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 7,
+    "7": 8,
+    "8": 9,
+    "9": 10,
+    "10": 11,
+    "11": 12,
+    "12": 13,
+    "13": 14,
+    "14": 15,
+    "15": 16,
+    "16": 17,
+    "17": 18,
+    "18": 19,
+    "19": 20,
+    "20": 21,
+    "21": 22,
+    "22": 23,
+    "23": 24,
+    "24": 25
+  },
+  "baseline_media_preserved": {
+    "word/media/image1.png": true,
+    "word/media/image2.png": true,
+    "word/media/image3.jpeg": true,
+    "word/media/image4.png": true,
+    "word/media/image5.png": true,
+    "word/media/image6.png": true,
+    "word/media/image7.png": true,
+    "word/media/image8.png": true,
+    "word/media/image9.png": true,
+    "word/media/image10.png": true,
+    "word/media/image11.png": true,
+    "word/media/image12.png": true,
+    "word/media/image13.png": true
+  },
+  "docx_sha256": "4c5143be8b315c229acb4e2daf4afcc28b963161600c25b977e20bb6e7c3ee7b"
+}
