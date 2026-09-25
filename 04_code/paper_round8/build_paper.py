@@ -20,11 +20,11 @@ from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[2]
 args=argparse.ArgumentParser()
-args.add_argument('--revision',choices=['v1','v2'],default='v1')
+args.add_argument('--revision',choices=['v1','v2','v3'],default='v1')
 opt=args.parse_args()
-SRC=ROOT/('08_paper/revised_v2' if opt.revision=='v2' else '08_paper/round8')
-OUT=ROOT/('11_delivery/revised_v2' if opt.revision=='v2' else '11_delivery/round8')
-STEM='F_revised_draft_v2' if opt.revision=='v2' else 'F_final_manuscript'
+SRC=ROOT/({'v1':'08_paper/round8','v2':'08_paper/revised_v2','v3':'08_paper/final_v3'}[opt.revision])
+OUT=ROOT/({'v1':'11_delivery/round8','v2':'11_delivery/revised_v2','v3':'11_delivery/final_v3'}[opt.revision])
+STEM={'v1':'F_final_manuscript','v2':'F_revised_draft_v2','v3':'F_final_candidate_v3'}[opt.revision]
 OUT.mkdir(exist_ok=True,parents=True)
 TEMPLATE=SRC/'template_reference.docx'
 def jwrite(path,x): path.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -34,8 +34,34 @@ raw='\n\n'.join((SRC/p).read_text(encoding='utf-8') for p in source_files)
 names=['教育价值','英语流畅度','清洁度','可读性','推理复杂度','专业性','书籍相似性','百科相似性','数学相似性','四面向质量评级','无广告程度','词数','句数','一元熵','不重复词比例','非字母词比例','最高频二元组字符占比','最高频三元组字符占比','大写字母比例','行尾标点比例','数字字符比例','平均词长']
 processing=['原评分；正向主坐标','正负logit差；正向主坐标','概率加权等级；正向主坐标','概率加权等级；正向主坐标','保留等级；依用途分析','保留等级；依用途分析','尺度未核；不进入总分','与书籍列近重复；单列诊断','与书籍列近重复；单列诊断','保留四分量；不强行平均','无广告减有广告logit；主坐标','log1p长度协变量','log1p长度协变量','原值/秩；基数未核','原值/秩；依语言与用途','原值/秩；代码域另析','原值保留；不裁剪超界','原值保留；不裁剪超界','原值/秩；用途敏感','原值/秩；用途敏感','原值/秩；用途敏感','字符/词；用途敏感']
 roles=csvrows('03_models/modeling_phase1/q1/round4/Q1_FULL22_ROLE_MAP_v1.csv')
-signals='表A1 完整22项信号的含义与使用方式\n\n|序号及字段族|含义|处理与限制|\n|---|---|---|\n'
-for i,(r,n,p) in enumerate(zip(roles,names,processing),1): signals+=f'|{i}. {r["signal_id"]}|{n}|{p}|\n'
+if opt.revision=='v3':
+ contract=csvrows('06_results/raw/Q1_TASK_REPAIR_20260925_v1/Q_FULL_FIELD_CONTRACT_v1.csv')
+ assert len(roles)==len(contract)==len(names)==22
+ assert all(a['signal_id']==b['field'] for a,b in zip(roles,contract))
+ raw_roles=[
+  '教育价值原评分','流畅与不流畅logit差','清洁等级的概率加权值','可读等级的概率加权值',
+  '推理复杂度等级','专业性等级','书籍目标域相似性','百科目标域相似性','数学目标域相似性',
+  '四项原始质量评级','无广告与有广告logit差','文档词数','文档句数','一元词分布熵',
+  '不重复词比例','非字母词比例','最高频二元组字符比','最高频三元组字符比',
+  '大写字母比例','行尾终止标点比例','数字字符比例','平均词长']
+ limits=[
+  '标注描述；非训练因果证据','英语适用；非跨语言真值','模型标注；非训练因果证据','模型标注；非训练因果证据',
+  '用途依赖；无通用原值方向','用途依赖；无通用原值方向','原始尺度未核，受长度混杂','与书籍列近重复，尺度未核','与书籍列近重复，尺度未核',
+  '原四面向仍需分别解释','广告目标依赖用途和语言','长度不是单调质量','长度不是单调质量','熵基数未核；用途依赖',
+  '语言和用途敏感','代码等语料用途敏感','原始超界值不裁剪；来源链未全核','原始超界值不裁剪；来源链未全核',
+  '语言及排版用途敏感','文体和用途敏感','题材及用途敏感','语言及分词方式敏感']
+ signals='表A1 22项信号的原始角色、Q_full处理与解释限制\n\n|序号及字段族|原始含义及解释角色|Q_full中的处理|限制|\n|---|---|---|---|\n'
+ for i,(r,c,meaning,limit) in enumerate(zip(roles,contract,raw_roles,limits),1):
+  assert abs(float(c['weight_W0'])-1/22)<1e-12
+  if c['rule']=='source-supported increasing description': treatment='A1固定中秩分位；正向效用，作为1项计入W0'
+  elif c['field']=='qurater': treatment='四面向各取A1分位和参考目标接近效用，平均为1项计入W0'
+  else:
+   prefix='先作log(1+x)，再取' if c['field'] in ('rps_doc_word_count','rps_doc_num_sentences') else '取'
+   treatment=prefix+'A1固定中秩分位及参考目标接近效用，作为1项计入W0'
+  signals+=f'|{i}. {c["field"]}|{meaning}|{treatment}|{limit}|\n'
+else:
+ signals='表A1 完整22项信号的含义与使用方式\n\n|序号及字段族|含义|处理与限制|\n|---|---|---|\n'
+ for i,(r,n,p) in enumerate(zip(roles,names,processing),1): signals+=f'|{i}. {r["signal_id"]}|{n}|{p}|\n'
 dom=csvrows('03_models/modeling_phase1/q1/round4/P_RESPONSE_DOMAIN_VALIDATION_v2.csv')
 dom0={r['domain']:r for r in dom if r['scale']=='1M' and r['model']=='M0'}
 domain_table='表B1 1M留出逐领域预测误差\n\n|验证领域|M0 RMSE|M1 RMSE|M1/M0|\n|---|---|---|---|\n'
@@ -100,7 +126,7 @@ def table(data):
  t=doc.add_table(rows=1,cols=len(data[0]));t.alignment=WD_TABLE_ALIGNMENT.CENTER;t.autofit=False
  # More room for long descriptions and appendix field names.
  weights={3:[.32,.25,.43],4:[.31,.23,.23,.23],5:[.18,.17,.18,.18,.29]}.get(len(data[0]),[1/len(data[0])]*len(data[0]))
- if '字段族' in data[0][0]:weights=[.42,.20,.38]
+ if '字段族' in data[0][0]:weights=[.29,.20,.28,.23] if len(data[0])==4 else [.42,.20,.38]
  if '验证方式' in data[0][0]:weights=[.19,.16,.16,.29,.20]
  for c,w in zip(t.columns,weights):c.width=Cm(width_cm*w)
  for ri,row in enumerate(data):
@@ -113,7 +139,8 @@ def table(data):
    p.alignment=WD_ALIGN_PARAGRAPH.LEFT if ci==0 or len(value)>18 else WD_ALIGN_PARAGRAPH.CENTER
    if len(data)<=7:p.paragraph_format.keep_with_next=ri<len(data)-1
    # Soft break opportunities in machine field names preserve literal content.
-   p.add_run(value.replace('_','_\u200b'))
+   run=p.add_run(value.replace('_','_\u200b'))
+   if '字段族' in data[0][0] and len(data[0])==4:run.font.size=Pt(10)
    if ri==0:
     for r in p.runs:r.bold=True
    tc=cell._tc.get_or_add_tcPr();shade=OxmlElement('w:shd');shade.set(qn('w:fill'),'EFEFEF' if ri==0 else 'FFFFFF');tc.append(shade)
@@ -155,7 +182,7 @@ while i<len(lines):
   q=1 if num<=5 else 2 if num<=12 else 3 if num<=19 else 4
   modelsrc={1:'Q1_MODEL_SPEC_v1 / fixed diagnostic definitions',2:'Q2_ROUND5_SPEC_v1',3:'Q3_MODEL_SPEC_v1 / Q3_COST_MODEL_v1',4:'Q4_FRONTIER_MODEL_SPEC_v1'}[q]
   assumption={1:'固定参考及局部欧氏配比关联；非质量因果效应',2:'来源内加性幂律；质量与运输仅条件情景',3:'题设成本、外生上下文、统计支持域；预算可闲置',4:'同口径评测群体；描述性回归；趋势与条件扩散'}[q]
-  if label=='E24' and opt.revision=='v2':
+  if label=='E24' and opt.revision in ('v2','v3'):
    modelsrc='03_models/paper_repair/Q4_REPAIR_PREFIT_SPEC_v1.md'
    assumption='外生正增长参考、训练D固定、C≈6ND；参数关联系数仅作情景敏感性，不识别真实效应'
   eqs.append(dict(equation_id=label,number=num,question=q,formula=tex,rendered_parts=parts,symbol_definitions='全文符号表及公式前后定义',units='N十亿参数，D十亿token；Q4分数0—100；其他见符号表',source_model=modelsrc,paper_section=current_section,assumptions=assumption))
