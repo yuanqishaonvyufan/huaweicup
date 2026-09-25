@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "passed": 19,
+  "total": 19,
+  "failed": [],
+  "reference_sha256": "e6205f40ce3b8f278bf0ebded26f2fb030394935ae719469a35199b21fb3656b",
+  "baseline_v3_sha256": "a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353",
+  "file_scan_count": 2907
+}

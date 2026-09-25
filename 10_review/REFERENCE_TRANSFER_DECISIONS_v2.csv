@@ -1,0 +1,47 @@
+﻿Reference item ID,Reference page,Reference section,Idea,Transfer type,Local evidence needed,Local evidence found?,Decision,Reason
+F01,6,总体分析/符号说明,问题分析总体流程图,STRUCTURE,08_paper/round8/FINAL_PAPER_OUTLINE_v1.md,YES,ADOPT_STRUCTURE,可按本项目实际证据链重绘；参考流程的可靠桥接等节点不直接采用
+T01,7,总体分析/符号说明,符号说明,STRUCTURE,08_paper/round8/00_front.md,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F02,8,5.1,问题一分析流程图,STRUCTURE,03_models/modeling_phase1/q1/round4/Q1_MODEL_SPEC_v1.md,YES,ADOPT_STRUCTURE,可按本项目实际证据链重绘；参考流程的可靠桥接等节点不直接采用
+F03,8,5.1,数据预处理前后对比与指标方向统一,VISUALIZATION,06_results/raw/Q1_TASK_REPAIR_20260925_v1/Q_FULL_FIELD_CONTRACT_v1.csv,YES,INDEPENDENTLY_TEST_PENDING,需按本地原始数据另立补充Run；只转图形问题类型，不转参考数值
+T02,9,5.1,综合评价算法对比,STYLE,03_models/modeling_phase1/q1/round3/Q1_DESCRIPTIVE_QUALITY_COMPARISON_v1.md,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+T03,11,5.1,抽样集各域综合质量分,STYLE,06_results/raw/Q1_TASK_REPAIR_20260925_v1/Q_FULL_DOMAIN_RESULTS_v1.csv,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F04,11,5.1,抽样集各域综合质量分分布,VISUALIZATION,06_results/raw/Q1_TASK_REPAIR_20260925_v1/Q_FULL_DOMAIN_RESULTS_v1.csv,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F05,12,5.1,抽样集与扩展集域级质量分对照及冲突分析,VISUALIZATION,06_results/raw/Q1_TASK_REPAIR_20260925_v1/Q_FULL_DOMAIN_RESULTS_v1.csv,YES,INDEPENDENTLY_TEST_PENDING,需按本地原始数据另立补充Run；只转图形问题类型，不转参考数值
+F06,12,5.1,配比模型拟合优度与跨尺度稳健性,VISUALIZATION,03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F07,13,5.2,问题二分析流程图,STRUCTURE,03_models/modeling_phase2/round5/Q2_LIMITATIONS_v1.md,YES,ADOPT_STRUCTURE,可按本项目实际证据链重绘；参考流程的可靠桥接等节点不直接采用
+T04,13,5.2,标度律拟合算法对比,STYLE,06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+T05,15,5.2,广义标度律参数估计结果,STYLE,06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F08,15,5.2,经典标度律拟合（双对数）,VISUALIZATION,06_results/figures/round5/FIG-Q2-R5-001.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F09,16,5.2,质量因子拟合与 Loss–Q曲线,VISUALIZATION,06_results/figures/round5/FIG-Q2-R5-004.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F10,16,5.2,各要素边际弹性与质量—参数替代等价面,VISUALIZATION,06_results/figures/round5/FIG-Q2-R5-003.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F11,17,5.2,跨族收敛点与文献数据的验证,VISUALIZATION,06_results/raw/SCEN-Q2-R5-20260924-v3/external_shape_diagnostics.csv,YES,INDEPENDENTLY_TEST_PENDING,需按本地原始数据另立补充Run；只转图形问题类型，不转参考数值
+F12,17,5.3,问题三分析流程图,STRUCTURE,03_models/modeling_phase3/round6/Q3_MODEL_SPEC_v1.md,YES,ADOPT_STRUCTURE,可按本项目实际证据链重绘；参考流程的可靠桥接等节点不直接采用
+T06,17,5.3,优化算法对比,STYLE,07_validation/round6/Q3_VALIDATION_REPORT_v1.md,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+T07,19,5.3,三档预算下的最优资源配置,STYLE,06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F13,19,5.3,三档预算成本构成与结构转移识别,VISUALIZATION,06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv,YES,INDEPENDENTLY_TEST_PENDING,需按本地原始数据另立补充Run；只转图形问题类型，不转参考数值
+F14,20,5.3,最优参数、数据与质量随预算的变化,VISUALIZATION,06_results/figures/round6/FIG-Q3-R6-001.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F15,20,5.3,三类成本函数对比与上下文长度敏感性,VISUALIZATION,06_results/figures/round6/FIG-Q3-R6-004.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F16,21,5.4,问题四分析流程图,STRUCTURE,03_models/modeling_phase4/round7/Q4_FRONTIER_MODEL_SPEC_v1.md,YES,ADOPT_STRUCTURE,可按本项目实际证据链重绘；参考流程的可靠桥接等节点不直接采用
+T08,21,5.4,演进分析方法对比,STYLE,06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F17,23,5.4,综合能力与参数规模的关系,VISUALIZATION,06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F18,23,5.4,规模与技术贡献分解及 Loss–Benchmark桥接映射,VISUALIZATION,06_results/figures/round7/FIG-Q4-R7-003.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F19,24,5.4,能力前沿演进与 12/24个月预测,VISUALIZATION,06_results/figures/round7/FIG-Q4-R7-005.png,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+F20,24,5.4,C8逐任务聚合与六维汇总对照,VISUALIZATION,06_results/raw/EXP-Q4-R7-20260925-v1/frontier_family.csv,YES,INDEPENDENTLY_TEST_PENDING,需按本地原始数据另立补充Run；只转图形问题类型，不转参考数值
+T09,25,6.1,模型误差分析结果,STYLE,07_validation/VALIDATION_REPORT.md,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+T10,25,6.2,灵敏度分析结果,STYLE,07_validation/round7/Q4_VALIDATION_REPORT_v1.md,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+T11,29,附录,附件说明表,STRUCTURE,04_code/paper_round8/build_paper.py,YES,ADAPT_PRESENTATION,已有对应结果或设计空间；只用本地验证数据，按证据边界重写图题/表题
+S01,"4,7–24",5.1–5.4,每问先具体分析、模型准备、模型建立、模型求解,STRUCTURE,四问冻结规格及结果,YES,ADOPT_STRUCTURE,v5分问重组，但不强造额外模型
+S02,"8–9,12–13,16–17,20–21",5.1.2–5.4.2,模型准备解释数据、变量、量纲与候选方法,STYLE,本地候选比较与单位审计,YES,ADOPT_STYLE,补理由和适用范围，不照抄句子
+S03,"9,13,17,21",5.1–5.4,逐问用方法比较表说明取舍,STYLE,Q1 M0/M1/M2、Q2基准、Q3求解、Q4动态比较,YES,ADAPT_PRESENTATION,只列已运行的方法与实测验证表现
+S04,"11–12,15–16,19–20,23–24",5.1.4–5.4.4,结果结合数值、图形和机制解释,STYLE,正式运行与图形清单,YES,ADOPT_STYLE,每个核心结果写现象、机制、后续意义
+S05,24–25,6.1/6.2,集中展示误差与灵敏度,STRUCTURE,四问验证报告,YES,ADOPT_STRUCTURE,本地检验更丰富，明确非同一误差量尺
+S06,25–26,7/8,优缺点和改进推广对应具体数据限制,STRUCTURE,Q1–Q4限制和未来数据条件,YES,ADOPT_STRUCTURE,保留负结果，不写空泛优点或无条件推广
+S07,29,附录,代码、结果、图形按清单组织,STRUCTURE,本项目代码入口和Result ID,YES,ADAPT_PRESENTATION,附件目录结构可借鉴；不暴露本机账号路径
+M01,9–10,5.1,PCA作为唯一综合质量主轴,METHOD CANDIDATE,Q1 DQ1与多维表示比较,YES,REJECT_METHOD_UPGRADE,本地PC1只解释约48.11%，冻结主表示仍为多维
+M02,14–16,5.2,统一可运输质量因子,METHOD CANDIDATE,同运行Q-N-D-p-Loss,NO,REJECT_METHOD_UPGRADE,本地B7仅半合成；跨来源量尺与同运行键缺失
+M03,21–23,5.4,可靠Loss–Benchmark数值桥接,METHOD CANDIDATE,跨规模及跨家族留出,YES,REJECT_METHOD_UPGRADE,本地桥接检验失败，仅可转失败诊断的展示方式
+R01,"2,11–12",摘要/5.1,参考质量分、领域排名与配比最优比例,RESULT — FORBIDDEN,本地Q1原始运行,YES,REJECT_RESULT_TRANSFER,参考PCA分和配比最优不进入本项目
+R02,"2,15–17",摘要/5.2,参考规模律系数、质量因子和跨族拟合指标,RESULT — FORBIDDEN,本地Q2 Run与验证,YES,REJECT_RESULT_TRANSFER,所有系数与R²/RMSE均须从本地独立估计
+R03,"2,19–20",摘要/5.3,参考最优N/D/Q、预算阈值与平台解释,RESULT — FORBIDDEN,本地Q3预算路径,YES,REJECT_RESULT_TRANSFER,参考配置与真实产业阈值推断不采用
+R04,"3,22–24",摘要/5.4,参考规模/技术贡献比例、可靠桥接与未来分数,RESULT — FORBIDDEN,本地Q4受限结果,YES,REJECT_RESULT_TRANSFER,本地桥接失败、比例反号、远外推；参考结论不适用
+R05,24–26,6–8,参考误差、灵敏度数值和优劣判断,RESULT — FORBIDDEN,本地四问验证报告,YES,REJECT_RESULT_TRANSFER,仅借分类和写法，不借任何检测数值与判断
