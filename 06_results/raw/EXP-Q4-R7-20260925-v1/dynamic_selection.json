@@ -1,0 +1,19 @@
+{
+  "selected": "logit",
+  "scores": {
+    "linear": 1.663954671208956,
+    "local_logit": 2.3910164334496278,
+    "logit": 1.6429345974019611,
+    "persistence": 2.839502275510474
+  },
+  "horizons_available": [
+    4,
+    13
+  ],
+  "horizons_unavailable": [
+    26,
+    52
+  ],
+  "selection": "equal-horizon MAE; persistence within 5% retained",
+  "independent_live_backtest": false
+}

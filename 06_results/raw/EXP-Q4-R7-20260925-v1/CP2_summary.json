@@ -1,0 +1,89 @@
+{
+  "bridge": {
+    "verdict": "NO RELIABLE BRIDGE",
+    "operational": "B0 no quantitative transport into forecast",
+    "high_n": 7,
+    "high_families": 1,
+    "high_rank_rho": 0.6071428571428572,
+    "passing_methods": [],
+    "family_diagnostics": [
+      {
+        "family": "HIGH_pythia",
+        "n": 7,
+        "spearman_minus_loss": 0.6071428571428572,
+        "loss_sd": 0.1640119059889325
+      },
+      {
+        "family": "gemma",
+        "n": 11,
+        "spearman_minus_loss": 0.8730933131221966,
+        "loss_sd": 0.17602122336349155
+      },
+      {
+        "family": "llama",
+        "n": 8,
+        "spearman_minus_loss": 0.11048143863155317,
+        "loss_sd": 0.03708099243547835
+      },
+      {
+        "family": "phi",
+        "n": 6,
+        "spearman_minus_loss": 0.8116794499134278,
+        "loss_sd": 0.1593389120362283
+      },
+      {
+        "family": "qwen",
+        "n": 22,
+        "spearman_minus_loss": 0.87408727483505,
+        "loss_sd": 0.3539344969046865
+      }
+    ],
+    "leave_one_family_out": "UNAVAILABLE: only one high-comparability family",
+    "temporal_holdout": "UNAVAILABLE: paired loss/evaluation dates absent",
+    "raw6_high_overlap": 7,
+    "raw6_bridge": "requires separate holdout, not transported",
+    "loss_provenance": "attachment-internal; external validation anchors remain unverified"
+  },
+  "decomposition": [
+    {
+      "model": "N_only",
+      "start": "2024-06-16",
+      "end": "2025-03-14",
+      "delta_F": 15.879649195667376,
+      "delta_S": 2.8229293999150844,
+      "delta_R": 13.056719795752292,
+      "parameter_share": 0.17777026212174107,
+      "residual_share": 0.8222297378782589,
+      "beta_logN": 4.799425309000221,
+      "time_score_per_year": null
+    },
+    {
+      "model": "pooled",
+      "start": "2024-06-16",
+      "end": "2025-03-14",
+      "delta_F": 15.879649195667376,
+      "delta_S": 2.6540696316991923,
+      "delta_R": 13.225579563968184,
+      "parameter_share": 0.16713654054922902,
+      "residual_share": 0.832863459450771,
+      "beta_logN": 4.512337064685062,
+      "time_score_per_year": 5.144881632444912
+    },
+    {
+      "model": "family",
+      "start": "2024-06-16",
+      "end": "2025-03-14",
+      "delta_F": 15.879649195667376,
+      "delta_S": 2.703245149939386,
+      "delta_R": 13.17640404572799,
+      "parameter_share": 0.17023330406297282,
+      "residual_share": 0.8297666959370272,
+      "beta_logN": 4.595943203340986,
+      "time_score_per_year": 4.5740374294677855
+    }
+  ],
+  "selected_dynamic": "logit",
+  "main_beta_logN": 4.595943203340986,
+  "n_frontier": 40,
+  "code_sha256": "0518d5664d61977d457ce781eee68b2a49778fd29e00e2caaff4c3948075168e"
+}

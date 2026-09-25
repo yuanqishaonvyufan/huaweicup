@@ -1,0 +1,9 @@
+{
+  "midpoint_week": 19.0,
+  "global_slope_per_week": 0.24606994862494488,
+  "pre_slope": 0.262276109003295,
+  "post_slope": 0.2298637882465949,
+  "linear_AIC": 45.61284301364953,
+  "broken_AIC": 47.50086936811376,
+  "interpretation": "descriptive fixed-midpoint change; dependent overlapping windows; not causal break identification"
+}

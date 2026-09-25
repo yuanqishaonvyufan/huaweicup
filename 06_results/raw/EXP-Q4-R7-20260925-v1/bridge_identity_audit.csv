@@ -1,0 +1,8 @@
+canonical,C1_rows,identity_N_match,C1_score_min_abs_diff,B1_final_rows,B1_loss_abs_diff
+eleutherai/pythia-160m,1,False,0.0,1,0.0
+eleutherai/pythia-410m,1,False,0.0,1,0.0
+eleutherai/pythia-1b,1,False,0.0,1,0.0
+eleutherai/pythia-1.4b,1,False,0.0,1,0.0
+eleutherai/pythia-2.8b,1,False,0.0,1,0.0
+eleutherai/pythia-6.9b,1,True,0.0,1,0.0
+eleutherai/pythia-12b,1,True,0.0,1,0.0

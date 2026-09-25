@@ -1,0 +1,45 @@
+{
+  "verdict": "NO RELIABLE BRIDGE",
+  "operational": "B0 no quantitative transport into forecast",
+  "high_n": 7,
+  "high_families": 1,
+  "high_rank_rho": 0.6071428571428572,
+  "passing_methods": [],
+  "family_diagnostics": [
+    {
+      "family": "HIGH_pythia",
+      "n": 7,
+      "spearman_minus_loss": 0.6071428571428572,
+      "loss_sd": 0.1640119059889325
+    },
+    {
+      "family": "gemma",
+      "n": 11,
+      "spearman_minus_loss": 0.8730933131221966,
+      "loss_sd": 0.17602122336349155
+    },
+    {
+      "family": "llama",
+      "n": 8,
+      "spearman_minus_loss": 0.11048143863155317,
+      "loss_sd": 0.03708099243547835
+    },
+    {
+      "family": "phi",
+      "n": 6,
+      "spearman_minus_loss": 0.8116794499134278,
+      "loss_sd": 0.1593389120362283
+    },
+    {
+      "family": "qwen",
+      "n": 22,
+      "spearman_minus_loss": 0.87408727483505,
+      "loss_sd": 0.3539344969046865
+    }
+  ],
+  "leave_one_family_out": "UNAVAILABLE: only one high-comparability family",
+  "temporal_holdout": "UNAVAILABLE: paired loss/evaluation dates absent",
+  "raw6_high_overlap": 7,
+  "raw6_bridge": "requires separate holdout, not transported",
+  "loss_provenance": "attachment-internal; external validation anchors remain unverified"
+}
