@@ -1,5 +1,5 @@
 {
-  "stage": "q1",
+  "stage": "q2",
   "baseline": "08_paper/v5/baseline_v3_user.docx",
   "baseline_sha256": "a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353",
   "source_files": [
@@ -7,11 +7,16 @@
       "phase": "q1",
       "source": "05_Q1_additions.md",
       "sha256": "86fbb5f8f1a623f7dc88a736a1723decda04591e8acf340402e0fd908b48895d"
+    },
+    {
+      "phase": "q2",
+      "source": "06_Q2_additions.md",
+      "sha256": "9b57727e5e9d022ec988ef5c5cace1e00f5aaad816abaa72a97dbb5428501997"
     }
   ],
-  "figures": 12,
+  "figures": 15,
   "tables_body": 17,
-  "equations": 25,
+  "equations": 26,
   "figure_sources_new": [
     {
       "source": "06_results/figures/paper_v5/FIG-Q1-V5-002_fixed_pair_correlations.png",
@@ -30,18 +35,36 @@
       "sha256": "3902e58725a9f76046cead62a1dfbf06f0097fa423dd4f2ab4b20a4adea16a0a",
       "caption": "冻结 M1 相对于 M0 的跨规模中心化误差比。1M 有局部留出收益，60M 仅部分迁移，1B 失败；10B、70B 估算表另作压力检查。",
       "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round5/FIG-Q2-R5-001.png",
+      "sha256": "03a1bf6ca1d0d80ca9edc5952d60f929ba476d6e3d15120f6a999cb012207c61",
+      "caption": "B1 八条完整训练轨迹的观测、拟合与残差。检查点之间相关；图形只核验当前附件内部的加性幂律形状。",
+      "width_cm": 13.7
+    },
+    {
+      "source": "06_results/figures/paper_v5/FIG-Q2-V5-001_bootstrap_joint.png",
+      "sha256": "3a83510a6ff470ab1e95655e62fc3ae71c9b8e1d4d73156affc9653bf7056cb5",
+      "caption": "二百次整轨迹重抽样的五参数相对主估计条件分位及 α—β 联合散点。每点为一次整轨迹重抽样，区间不覆盖来源和模型错误。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round5/FIG-Q2-R5-004.png",
+      "sha256": "fed3a80cdfabfdc34fe876181d3f8f3541d63ffd13ce92fddd9513abea7f95fc",
+      "caption": "B7 半合成单元的质量改善斜率及假定质量运输下的有限替代。上图是半合成表内形状，下图是条件情景，不是观测训练回报。",
+      "width_cm": 13.7
     }
   ],
   "old_figure_number_map": {
     "1": 2,
     "2": 4,
     "4": 6,
-    "3": 7,
-    "5": 8,
-    "6": 9,
-    "7": 10,
-    "8": 11,
-    "9": 12
+    "3": 8,
+    "5": 11,
+    "6": 12,
+    "7": 13,
+    "8": 14,
+    "9": 15
   },
   "old_table_number_map": {
     "1": 1,
@@ -71,21 +94,21 @@
     "7": 8,
     "8": 9,
     "9": 10,
-    "10": 11,
-    "11": 12,
-    "12": 13,
-    "13": 14,
-    "14": 15,
-    "15": 16,
-    "16": 17,
-    "17": 18,
-    "18": 19,
-    "19": 20,
-    "20": 21,
-    "21": 22,
-    "22": 23,
-    "23": 24,
-    "24": 25
+    "10": 12,
+    "11": 13,
+    "12": 14,
+    "13": 15,
+    "14": 16,
+    "15": 17,
+    "16": 18,
+    "17": 19,
+    "18": 20,
+    "19": 21,
+    "20": 22,
+    "21": 23,
+    "22": 24,
+    "23": 25,
+    "24": 26
   },
   "baseline_media_preserved": {
     "word/media/image1.png": true,
@@ -102,5 +125,5 @@
     "word/media/image12.png": true,
     "word/media/image13.png": true
   },
-  "docx_sha256": "4c5143be8b315c229acb4e2daf4afcc28b963161600c25b977e20bb6e7c3ee7b"
+  "docx_sha256": "8b0198261b40e36621453fdf942aff9f98808243b92d524fca342a2042109d6b"
 }

@@ -66,3 +66,4 @@ The following figures are visual derivations from already frozen outputs. Their 
 | --- | --- | --- | --- |
 | FIG-Q1-V5-001 | SUPP-Q1-VIS-20260925-v1 | Compare A1 W0/W1/DQ0 ranks; constructed scores are not observed training returns | `06_results/figures/paper_v5/FIG-Q1-V5-001_rank_rules.png`; `Q_FULL_A1_RANKS_v1.csv` and `Q_FULL_DOMAIN_RESULTS_v1.csv` |
 | FIG-Q1-V5-002 | SUPP-Q1-VIS-20260925-v1 | Show six preregistered signed Spearman pairs; correlation is not semantic conflict or causality | `06_results/figures/paper_v5/FIG-Q1-V5-002_fixed_pair_correlations.png`; `QUALITY_CORRELATION_PAIRS_v1.csv` |
+| FIG-Q2-V5-001 | SUPP-Q2-VIS-20260925-v1 | Display five parameter conditional quantiles and the joint α–β draws; eight-trajectory numerical stability is not external generalization | `06_results/figures/paper_v5/FIG-Q2-V5-001_bootstrap_joint.png`; `cluster_bootstrap.csv` and `summary.json` |

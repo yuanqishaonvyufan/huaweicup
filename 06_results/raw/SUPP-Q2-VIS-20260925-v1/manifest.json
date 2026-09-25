@@ -1,0 +1,25 @@
+{
+  "run_id": "SUPP-Q2-VIS-20260925-v1",
+  "purpose": "Display the frozen 200 whole-trajectory bootstrap draws without refitting",
+  "evidence_boundary": "Eight attachment trajectories and one selected additive law only",
+  "inputs_sha256": {
+    "06_results\\raw\\EXP-Q2-ND-R5-20260924-v1\\cluster_bootstrap.csv": "205b5206fea9a0089070896d2c5fe3bbc74e635edacee034386a13fb10bbdfef",
+    "06_results\\raw\\EXP-Q2-ND-R5-20260924-v1\\summary.json": "e92a1e7c9c280f665ebf50e870d2dc332101b8cde8f8255b954a841e58821a35"
+  },
+  "code_sha256": "d09b3c44698c27027fb8487ea940c9d320132350c17265f26c9f8b42b74a98a5",
+  "outputs_sha256": {
+    "06_results\\figures\\paper_v5\\FIG-Q2-V5-001_bootstrap_joint.png": "3a83510a6ff470ab1e95655e62fc3ae71c9b8e1d4d73156affc9653bf7056cb5",
+    "06_results\\raw\\SUPP-Q2-VIS-20260925-v1\\parameter_conditional_quantiles.csv": "1a0d48b209be0170cf3d3741268c3000b9506acc5639e407f267497897c6992f"
+  },
+  "checks": {
+    "rows": 200,
+    "all_finite": true,
+    "boundary_draws": 0,
+    "quantiles_match_upstream": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0"
+  }
+}
