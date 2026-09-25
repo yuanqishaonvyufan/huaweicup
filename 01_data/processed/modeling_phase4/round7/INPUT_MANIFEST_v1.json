@@ -1,0 +1,11 @@
+{
+  "raw_mapping_sha": "25b835e30ecf67526df729d303410d6fb2e0949551d4c10ecc75b5a2414b9b95",
+  "code_sha": "165fa2f5dabef38feefc67c859fe97ed1472954c14d8356dbd213c554951ee66",
+  "files": {
+    "01_data/processed/modeling_phase4/round7/C6_bridge_v1.csv": "747b6dff81a0bf79299ad6dba5ee2328f49182a1cbeb92dbbc4594498af59f40",
+    "01_data/processed/modeling_phase4/round7/C8_all_versions.csv": "fbb528892d91f4be4ae7f6a8999d0453d3847facd9889c2ff751b9bdba0b6164",
+    "01_data/processed/modeling_phase4/round7/C8_BBH_subtasks_all.csv": "790cc173f6cdcb99d3719ae5acf8b08088208c301f942dd6b4d0dab04529b023",
+    "01_data/processed/modeling_phase4/round7/Q4_MODEL_ENTITY_RESOLUTION_v1.csv": "810d0c28591ffcd225884332d2c9d4a5ba4e3ad3ef962e5b9a5022258132ddac",
+    "01_data/processed/modeling_phase4/round7/Q4_PRIMARY_v1.csv": "08636136cbb040ba10d4d224744323c287ab0b68ecab5bbc06a57cb84f716187"
+  }
+}

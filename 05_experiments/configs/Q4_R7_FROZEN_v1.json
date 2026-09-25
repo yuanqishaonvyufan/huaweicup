@@ -1,0 +1,39 @@
+{
+  "decision": "R7-SPEC-001",
+  "run_id": "EXP-Q4-R7-20260925-v1",
+  "seed": 20260925,
+  "run_date": "2026-09-25",
+  "targets": [
+    "2027-09-25",
+    "2028-09-25"
+  ],
+  "quantile": 0.9,
+  "window_days": 28,
+  "minimum_models": 15,
+  "rolling_min_train": 16,
+  "rolling_horizons_weeks": [
+    4,
+    13,
+    26,
+    52
+  ],
+  "models": [
+    "persistence",
+    "linear",
+    "logit",
+    "local_logit"
+  ],
+  "bootstrap": 1000,
+  "rolling_bootstrap": 200,
+  "block_weeks": 4,
+  "scenario_retained_scale": [
+    0,
+    0.5,
+    1
+  ],
+  "spec_sha256": {
+    "Q4_BRIDGE_MODEL_SPEC_v1.md": "f085741cb68e788c524d998826e06ccf625bbfb275510aae2ccfd54caf9974d0",
+    "Q4_FRONTIER_MODEL_SPEC_v1.md": "876163dab850c0bb79ae285a9a7e810559bc9a6d2973b6bd0ad1169cdd7b100c"
+  },
+  "input_manifest_sha256": "e2af4320567eb72863b5191def02dda3f28cffdc11b2d2dbacb42adf7aa89b16"
+}

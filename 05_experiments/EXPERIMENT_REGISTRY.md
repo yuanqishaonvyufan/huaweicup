@@ -47,3 +47,8 @@ QA-R5-TAKEOVER-20260924-v1：`04_code/modeling_phase2/round5_takeover_audit.py`�
 ## Gate4 evidence decision
 
 G4-SINGLE-001：04_code/modeling_phase3/gate4_review.py仅标准库只读/哈希/既有点算术，68项PASS，输出10_review/GATE4_DECISION_CHECK_v1.json。无新Experiment、无优化/重拟合/重跑验证。既有三Q3 Run及状态不变，Q4未执行。
+
+## Round7 preregistration
+
+AUDIT-Q4-R7-20260925-v1 COMPLETED: round7_mapping.py + round7_audit.py, all C hashes, entities/C8 tasks/C3/C4.
+EXP-Q4-R7-20260925-v1 PLANNED: Q4_R7_FROZEN_v1.json; seed 20260925; processed/modeling_phase4/round7 INPUT_MANIFEST; code/modeling_phase4; outputs 06_results/raw/EXP-Q4-R7-20260925-v1. Model fitting starts only after CP1 freeze.

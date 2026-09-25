@@ -1,0 +1,353 @@
+canonical,C4_model,N_C1_B,N_C4_B,dataset_size,dataset_notes,compute_notes,open_weights
+01-ai/yi-1.5-34b,Yi-1.5-34B,34.389,34.0,nan,"3.6T
+""Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a high-quality corpus of 500B tokens and fine-tuned on 3M diverse fine-tuning samples.""
+
+3.6T total pre-trained tokens ",6 FLOP / parameter / token * 34*10^9 parameters * 3.6*10^12 tokens = 7.344e+23 FLOP,Yes
+01-ai/yi-1.5-9b,Yi-1.5-9B,8.829,8.83,nan,3.6T pre-trained tokens,6 FLOP / parameter / token * 8.83*10^9 parameters * 3.6*10^12 tokens = 1.90728e+23 FLOP,Yes
+01-ai/yi-34b,Yi-34B,34.389,34.0,3100000000000,"""language models pretrained from scratch on 3.1T highly-engineered large amount of data, and finetuned on a small but meticulously polished alignment data.""","""The dataset we use contains Chinese & English only. We used approximately 3T tokens"" sounds like this means it was trained on 3T tokens, not necessarily that the dataset contains 3T tokens?
+
+If so, 34b * 3T * 6 = 6.1e23",Yes
+01-ai/yi-6b,Yi 6B,6.061,6.0,nan,"""language models pretrained from scratch on 3.1T highly-engineered large amount of
+data, and finetuned on a small but meticulously polished alignment data.""",6*7*10^9*3*10^12 = 1.26e+23,Yes
+ai-sweden-models/gpt-sw3-40b,gpt-sw3-40b,39.927,40.0,nan,"320B tokens
+""GPT-SW3 has been trained on a dataset containing 320B tokens in Swedish, Norwegian, Danish, Icelandic, English, and programming code.""""","aproximation 6ND = 6*320E9*40e9 = 7.68e22
+""GPT-SW3 has been trained on a dataset containing 320B tokens in Swedish, Norwegian, Danish, Icelandic, English, and programming code.""",Yes
+aidc-ai/marco-o1,Marco-o1,7.616,7.0,nan,nan,nan,Yes
+cohereforai/aya-expanse-32b,Aya Expanse 32B,32.296,32.3,34513333333,155GB * 167M words per GB (assuming on average across languages) * 4/3 tokens per word on average = 34513333333 tokens,"'Likely' confidence for dataset size and epochs
+
+34513333333*32300000000*6 = 6.688684e+21",Yes
+cohereforai/aya-expanse-8b,Aya Expanse 8B,8.028,8.0,34513333333,155GB * 167M words per GB (assuming on average across languages) * 4/3 tokens per word on average = 34513333333 tokens,"'Likely' confidence for dataset size and epochs
+
+34513333333*8000000000*6 = 1.65664e+21",Yes
+eleutherai/gpt-j-6b,GPT-J-6B,6.0,6.053381344,400000000000,"""The model was trained on 400B tokens from The Pile dataset with 800GB text.""
+
+1 GB ~ 200M words",source: zero shot evaluation table in GitHub,Yes
+eleutherai/gpt-neo-1.3b,GPT-Neo-1.3B,1.366,1.3,nan,nan,nan,Yes
+eleutherai/gpt-neo-2.7b,GPT-Neo-2.7B,2.718,2.7,420000000000,"""In aggregate, the Pile consists of over 825GiB of raw text data""
+
+(see GPT-NeoX)
+
+""This model was trained for 420 billion tokens over 400,000 steps. It was trained as a masked autoregressive language model, using cross-entropy loss.""
+
+https://huggingface.co/EleutherAI/gpt-neo-2.7B","source: https://www.aitracker.org/
+
+6 FLOP / token / parameter * 2.7 * 10^9 parameters * 420000000000 tokens [see dataset size notes] = 6.804e+21 FLOP",Yes
+eleutherai/gpt-neox-20b,GPT-NeoX-20B,20.739,20.0,341173367965,"""In aggregate, the Pile consists of over 825GiB of raw text data""
+
+Figure 4",Trained for 3 months on 96 A100s (according to correspondence with author). Let's say 0.4 utilization rate.,Yes
+eleutherai/pythia-1.4b,Pythia-1.4b,1.515,1.4,299892736000,"""We train all models for 299,892,736,000 ≈ 300B tokens""",https://www.wolframalpha.com/input?i=6+FLOP+*+1.4+billion+*+299892736000,Yes
+eleutherai/pythia-12b,Pythia-12b,12.0,12.0,299892736000,"""We train all models for 299,892,736,000 ≈ 300B tokens""",https://www.wolframalpha.com/input?i=6+FLOP+*+12+billion+*+299892736000,Yes
+eleutherai/pythia-1b,Pythia-1b,1.079,1.0,299892736000,"""We train all models for 299,892,736,000 ≈ 300B tokens""",https://www.wolframalpha.com/input?i=6+FLOP+*+1+billion+*+299892736000,Yes
+eleutherai/pythia-2.8b,Pythia-2.8b,2.909,2.8,299892736000,"""We train all models for 299,892,736,000 ≈ 300B tokens""",https://www.wolframalpha.com/input?i=6+FLOP+*+2.8+billion+*+299892736000,Yes
+eleutherai/pythia-6.9b,Pythia-6.9b,6.9,6.9,299892736000,The Pile contains 300B tokens,https://www.wolframalpha.com/input?i=6+FLOP+*+6.9+billion+*+299892736000,Yes
+huggingfacetb/smollm-1.7b,SmolLM-1.7B,1.71,1.71,nan,Pretraining tokens: 1T,"""Therefore, we decided to train the 1.7B model on 1 trillion tokens"" (https://huggingface.co/blog/smollm#experiments). The model doesn't have any CNNs or RNNs (https://huggingface.co/blog/smollm#hyperparameters-choice), so I will approximate it to be dense. Then assuming the model saw 1 trillion tokens during training, the 6ND approximation yields
+Training compute
+= # of active parameters / forward pass * # of tokens * 6 FLOPs / token
+= 1.71e9 parameters * 1e12 tokens * 6 FLOPs / token
+~= 1.03e22 FLOPS
+
+""We also instruction tuned the models using publicly available permissive instruction datasets. We trained all three models for one epoch on the permissive subset of the WebInstructSub dataset, combined with StarCoder2-Self-OSS-Instruct. Following this, we performed DPO (Direct Preference Optimization) for one epoch: using HelpSteer for the 135M and 1.7B models... We followed the training parameters from the Zephyr-Gemma recipe in the alignment handbook, but adjusted the SFT (Supervised Fine-Tuning) learning rate to 3e-4"" (https://huggingface.co/blog/smollm#evaluation).",Yes
+mtsair/multiverse_70b,MultiVerse 70B,72.289,72.0,nan,nan,nan,Yes
+qwen/qwq-32b,QwQ-32B,32.764,32.5,nan,Speculatively: might be similar to Qwen2.5 models (18T tokens),"Assuming the same dataset size as for Qwen2.5 training (18T tokens):
+
+6ND = 6 * 32500000000 parameters * 18 * 10^12 tokens =  3.51 × 10^24
+
+'Speculative' confidence",Yes
+qwen/qwen1.5-110b,Qwen1.5-110B,111.21,110.0,nan,"A Qwen developer gave token counts for other models in the series at this github issue: https://github.com/QwenLM/Qwen2/issues/97
+110B was asked but got no response.
+7B, 14B, and 72B got 4T, 4T, and 3T tokens respectively.
+
+In another issue from Qwen2: ""We are not authorized to share the details right now but the rough number is over 3T tokens for Qwen1.5 and over 7T tokens for Qwen2."" https://github.com/QwenLM/Qwen2/issues/562",lower bound is taken from Qwen1.5 72B training compute estimation,Yes
+qwen/qwen1.5-14b,Qwen1.5-14B,14.167,14.0,nan,4 trillion tokens from this response https://github.com/QwenLM/Qwen2/issues/97,6 FLOP / parameter / token * 14*10^9 parameters * 4*10^12 tokens =  3.36e+23 FLOP,Yes
+qwen/qwen1.5-32b,Qwen1.5-32B,32.512,32.0,nan,nan,"upper bound is taken from Qwen1.5 72B training compute estimation
+
+lower bound is taken from Qwen1.5 14B training compute estimation",Yes
+qwen/qwen1.5-7b,Qwen1.5-7B,7.721,7.0,nan,4 trillion tokens from this response https://github.com/QwenLM/Qwen2/issues/97,6 FLOP / parameter / token * 7*10^9 parameters * 4*10^12 tokens =  1.68e+23 FLOP,Yes
+qwen/qwen2-0.5b,Qwen2-0.5B,0.494,0.5,12000000000000,Table 1,6 FLOP/parameter/token * 500000000 parameters * 12000000000000 tokens = 3.6e+22 FLOP,Yes
+qwen/qwen2-1.5b,Qwen2-1.5B,1.544,1.5,7000000000000,"""All models were pre-trained on a high-quality, large-scale dataset comprising over 7 trillion tokens, covering a wide range of domains and languages.""",6 FLOP / parameter / token * 1.5 * 10^9  parameters * 7 * 10^12 tokens = 6.3e+22 FLOP,Yes
+qwen/qwen2-57b-a14b,Qwen2-57B-A14B,57.409,57.0,nan,"""All models were pre-trained on a high-quality, large-scale dataset comprising over 7 trillion tokens, covering a wide range of domains and languages.""
+
+57B-A14B model was trained with a 4.5T subset of the 7T overall dataset. (table 1)","""For MoE models, 57B-A14B denotes that the model has 57B parameters in total and for each token 14B parameters are active"" (page 5)
+
+C ~= 6 FLOP * 14e9 * 4.5e12 = 3.78e23",Yes
+qwen/qwen2-72b,Qwen2-72B,72.706,72.71,7000000000000,"""All models were pre-trained on a high-quality, large-scale dataset comprising over 7 trillion tokens, covering a wide range of domains and languages.""","72 billion params, 7 trillion tokens
+
+6 * 72 billion * 7 trillion ~= 3.02e24",Yes
+qwen/qwen2-7b,Qwen2-7B,7.616,7.0,7000000000000,"""All models were pre-trained on a high-quality, large-scale dataset comprising over 7 trillion tokens, covering a wide range of domains and languages.""","7 billion params, 7 trillion tokens
+
+6 FLOP * 7 billion * 7 trillion ~= 2.94e23 FLOP",Yes
+qwen/qwen2-math-7b,Qwen2-Math-7B,7.616,7.0,nan,nan,nan,Yes
+qwen/qwen2.5-1.5b,Qwen2.5-1.5B,1.5,1.54,nan,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""","Training dataset size was 18 trillion
+
+6ND = 6 * 1.54B billion parameters * 18 trillion tokens = 1.6632e+23",Yes
+qwen/qwen2.5-14b,Qwen2.5-14B,14.77,14.7,nan,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""","Training dataset size was 18 trillion
+
+6ND = 6 * 14.7 billion parameters * 18 trillion tokens = 1.59e24",Yes
+qwen/qwen2.5-32b,Qwen2.5-32B,32.764,32.5,18000000000000,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""",6 FLOP / parameter / token * 32.5B parameters * 18 trillion tokens = 3.51 × 10^24 FLOP,Yes
+qwen/qwen2.5-3b,Qwen2.5-3B,3.086,3.09,nan,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""","Training dataset size was 18 trillion
+
+6 FLOP/parameter/token * 3090000000 parameters * 18000000000000 tokens = 3.3372e+23 FLOP",Yes
+qwen/qwen2.5-72b,Qwen2.5-72B,72.706,72.7,18000000000000,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""","Training dataset size was 18 trillion
+
+6ND = 6 * 72.7 billion parameters * 18 trillion tokens = 7.8e24",Yes
+qwen/qwen2.5-7b,Qwen2.5-7B,7.616,7.61,nan,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""","Training dataset size was 18 trillion
+
+6ND = 6 * 7.61 billion parameters * 18 trillion tokens = 8.2188e+23",Yes
+qwen/qwen2.5-coder-32b,Qwen2.5-Coder (32B),32.764,32.5,nan,"""As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens.""","Assuming 1 epoch
+
+6ND = 6*32.5 parameters *10^9*5.5*10^12 tokens = 1.0725e+24",Yes
+qwen/qwen2.5-coder-7b,Qwen2.5-Coder (7B),7.616,7.61,nan,nan,6ND = 6 FLOP / token / parameter *7610000000 parameters *5.5T tokens =2.5113e+23 FLOP,Yes
+seallms/seallm-7b-v2,SeaLLM-7B-v2,7.376,7.38,nan,not enough detail,nan,Yes
+seallms/seallm-7b-v2.5,SeaLLM-7B-v2.5,8.538,8.54,nan,nan,nan,Yes
+wizardlmteam/wizardlm-13b-v1.2,WizardLM 13B v1.2,13.0,13.0,nan,"~70K rows (instruction + output)
+~7K chars each 
+(https://huggingface.co/datasets/WizardLMTeam/WizardLM_evol_instruct_70k)
+
+assuming avg 5 characters per word, 4/3 tokens per word:
+
+(70000 * 7000 * 4/3) / 5 ~130M tokens 
+number of epochs is unknown",nan,Yes
+allknowingroger/yi-1.5-34b,Yi-1.5-34B,34.389,34.0,nan,"3.6T
+""Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a high-quality corpus of 500B tokens and fine-tuned on 3M diverse fine-tuning samples.""
+
+3.6T total pre-trained tokens ",6 FLOP / parameter / token * 34*10^9 parameters * 3.6*10^12 tokens = 7.344e+23 FLOP,Yes
+alpindale/wizardlm-2-8x22b,WizardLM-2 8x22B,140.621,141.0,nan,nan,nan,Yes
+apple/dclm-7b,DCLM 7B,7.0,7.0,2500000000000,Total Training Tokens: 2.5T,6 FLOP / parameter / token * 7 * 10^9 parameters * 2.5 * 10^12 tokens = 1.05e+23 FLOP,Yes
+berkeley-nest/starling-lm-7b-alpha,Starling-LM-7B-alpha,7.242,7.0,138133333,"'We release Nectar, a GPT-4 labeled ranking dataset composed of 183K chat prompts' size on https://huggingface.co/datasets/berkeley-nest/Nectar is 518MB
+
+",nan,Yes
+bigcode/starcoder2-15b,StarCoder 2 15B,15.958,15.0,913230000000,from Table 4,estimation is given in Table 6 ,Yes
+bigcode/starcoder2-3b,StarCoder 2 3B,3.03,3.0,622090000000,from Table 4,estimation is given in Table 6 ,Yes
+bigcode/starcoder2-7b,StarCoder 2 7B,7.174,7.0,658580000000,from Table 4,estimation is given in Table 6 ,Yes
+bigscience/bloom-3b,BLOOM-3B,3.003,3.0,354000000000,"Table 3.5 https://arxiv.org/pdf/2211.05100
+
+341B (pretrain) + 13B (finetune) = 354B  tokens total ",nan,Yes
+bigscience/bloom-560m,BLOOM-560M,0.559,0.56,354000000000,"Table 3.5 https://arxiv.org/pdf/2211.05100
+
+341B (pretrain) + 13B (finetune) = 354B  tokens total ",nan,Yes
+braindao/deepseek-r1-distill-qwen-14b,DeepSeek-R1-Distill-Qwen-14B,14.77,14.8,24000000000,"""finetuned with 800k samples curated with DeepSeek-R1""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)",nan,Yes
+braindao/deepseek-r1-distill-qwen-7b,DeepSeek-R1-Distill-Qwen-7B,7.616,7.0,nan,"""To equip more efficient smaller models with reasoning capabilities like DeepSeek-R1, we directly fine-tuned open-source models like Qwen (Qwen, 2024b) and Llama (AI@Meta, 2024) using the 800k samples curated with DeepSeek-R1, as detailed in §2.3.3""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)","Qwen2.5-7B: 8.2188e+23 FLOP
+Fine-tune compute: 2.01e21 FLOP",Yes
+braindao/qwen2.5-14b,Qwen2.5-14B,14.77,14.7,nan,"""In terms of Qwen2.5, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens""","Training dataset size was 18 trillion
+
+6ND = 6 * 14.7 billion parameters * 18 trillion tokens = 1.59e24",Yes
+deepseek-ai/deepseek-r1-distill-llama-70b,DeepSeek-R1-Distill-Llama-70B,70.554,70.0,24000000000,"""To equip more efficient smaller models with reasoning capabilities like DeepSeek-R1, we directly fine-tuned open-source models like Qwen (Qwen, 2024b) and Llama (AI@Meta, 2024) using the 800k samples curated with DeepSeek-R1, as detailed in §2.3.3""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)","base model compute: 6.8649768e+24 FLOP
+fine tune compute: 2.016e+22 FLOP",Yes
+deepseek-ai/deepseek-r1-distill-llama-8b,DeepSeek-R1-Distill-Llama-8B,8.03,8.0,nan,"800k samples * 30,000 tokens per sample we've chosen to assume for this series = 24,000,000,000 tokens","LLaMA 3.1-8B training compute = 1.224e+24 FLOP
+Fine-tuning compute = 2.3e21FLOP",Yes
+deepseek-ai/deepseek-r1-distill-qwen-1.5b,DeepSeek-R1-Distill-Qwen-1.5B,1.777,1.78,24000000000,"""finetuned with 800k samples curated with DeepSeek-R1""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)",nan,Yes
+deepseek-ai/deepseek-r1-distill-qwen-14b,DeepSeek-R1-Distill-Qwen-14B,14.77,14.8,24000000000,"""finetuned with 800k samples curated with DeepSeek-R1""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)",nan,Yes
+deepseek-ai/deepseek-r1-distill-qwen-32b,DeepSeek-R1-Distill-Qwen-32B,32.764,32.0,nan,"""To equip more efficient smaller models with reasoning capabilities like DeepSeek-R1, we directly fine-tuned open-source models like Qwen (Qwen, 2024b) and Llama (AI@Meta, 2024) using the 800k samples curated with DeepSeek-R1, as detailed in §2.3.3""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)","Qwen2.5-32B: 3.51e+24 FLOP
+Fine-tune compute: 9.22e21 FLOP",Yes
+deepseek-ai/deepseek-r1-distill-qwen-7b,DeepSeek-R1-Distill-Qwen-7B,7.616,7.0,nan,"""To equip more efficient smaller models with reasoning capabilities like DeepSeek-R1, we directly fine-tuned open-source models like Qwen (Qwen, 2024b) and Llama (AI@Meta, 2024) using the 800k samples curated with DeepSeek-R1, as detailed in §2.3.3""
+
+assuming ~30000 tokens per sample
+
+30000 * 800000 = 24 000 000 000 tokens (speculative)","Qwen2.5-7B: 8.2188e+23 FLOP
+Fine-tune compute: 2.01e21 FLOP",Yes
+dreamgen/wizardlm-2-7b,WizardLM-2 7B,7.242,7.0,nan,nan,nan,Yes
+facebook/opt-30b,OPT-30B,30.0,30.0,180000000000,"""Our final corpus contains roughly 180B tokens.""",https://www.wolframalpha.com/input?i=6+FLOP+*+30+billion+*+300+billion,Yes
+google/flan-ul2,Flan UL2,19.46,19.5,nan,nan,nan,Yes
+google/gemma-2-27b,Gemma 2 27B,27.227,27.0,13000000000000,"""We train Gemma 2 27B on 13 trillion tokens of primarily-English data""","""For the 27B model, we train on an 8x24x32 configuration of
+TPUv5p, totaling 6144 chips""
+
+trained on 13T tokens
+
+6ND = 6*27000000000*13000000000000=2.106e+24",Yes
+google/gemma-2-9b,Gemma 2 9B,9.0,9.0,8000000000000,"""the 9B model on 8 trillion tokens""","""For the 9B model, we train on an 8x16x32 configuration of TPUv4, totaling 4096 chips""
+
+6ND = 6 FLOP / token / parameter * 9000000000 parameters * 8000000000000 tokens = 4.32e+23 FLOP",Yes
+google/gemma-2b,Gemma 2B,2.506,2.50643456,3000000000000,"""Gemma 2B and 7B are trained on 3T and 6T tokens respectively of primarily-English data from web documents, mathematics, and code.""
+Not explicitly stated that this doesn't involve multiple epochs, but I expect it does not.","6ND = 6*2506434560.00 parameters * 3*10^12 training tokens = 4.5115822e+22
+
+(assuming 1 epoch)",Yes
+google/gemma-7b,Gemma 7B,8.538,8.538074112,6000000000000,"""Gemma 2B and 7B are trained on 2T and 6T tokens respectively of primarily-English data from web documents, mathematics, and code.""
+Not explicitly stated that this doesn't involve multiple epochs, but I expect it does not.","6ND aproximation 6*8.54B*6T = 3.07e23
+""Gemma 2B and 7B are trained on 2T and 6T tokens respectively of primarily-English data from web documents, mathematics, and code.""
+
+As confirmation: ""We estimate the carbon emissions from pretraining the Gemma models to be ∼ 131 𝑡𝐶𝑂2𝑒𝑞. ""
+
+U.S. avg CO2 per kWh is ~0.87lbs 
+131 tCO2 * 2000 lb/t * (1 kWh/0.87lb) = 3.01e5 kWh
+
+Per SemiAnalysis TPU v5e uses ~ 5x less power than H100, so ~140 W TDP
+3.01e5 kWh * 1000 W/kW * 1 TPUv5e/140 W  = 2.15e6 TPUv5e-hours
+
+In bf16 precision, TPUv5e has peak performance of 197 TF/s, so:
+2.15e6 * 3600 * 197e12 * 0.3 = 4.57e23",Yes
+google/mt5-xxl,mT5-XXL,11.9,13.0,1000000000000,"The model was trained on a subset of 1 trillion tokens.
+Full mC4 corpus has data ""totaling 6.6B pages and 6.3T tokens""
+Distribution by language is in Appendix A.","""We pre-train our mT5 model variants for 1 million steps on batches of 1024 length-1024 input sequences, corresponding to roughly 1 trillion input tokens total.""
+
+1 million steps * 1024 batchsize * 1024 length * 13 billion params * 6 = 8.2e22
+
+Ignores fine-tuning compute; this is likely a small fraction of pre-training compute.",Yes
+huggyllama/llama-13b,LLaMA-13B,13.016,13.0,1000000000000,Table 2,"1T tokens * 13B parameters * 6 FLOP/token/parameter = 7.8e22
+
+from paper, Llama-13B took 135,168 GPU hours using A100s
+
+312 trillion * 135,168 * 3600 = 1.518e23 FLOPs at full utilization
+This implies that the actual utilization was:
+MFU = 7.8e22/1.518e23 = 0.514",Yes
+huggyllama/llama-65b,LLaMA-65B,65.286,65.2,1400000000000,"Table 1 indicates that 1.4T tokens involved sampling sub-datasets at more or less than one epoch. Correcting for this:
+
+(1.1 epoch * 3.3TB) + (1.06 epoch * 0.783TB) + ... = 1.4T tokens
+5.24 epoch-TBs = 1.4T tokens
+5.24 epoch-TB * 1000 GB/TB * 200M token/GB = 1.4T tokens
+1.05T epoch*token = 1.4T tokens
+1 epoch = 1.34T tokens
+",1.4e12 tokens * 6.52e10 parameters * 6 FLOP/token/parameter = 5.5e23 FLOP,Yes
+huggyllama/llama-7b,LLaMA-7B,6.738,6.7,1000000000000,1 trillion tokens * 0.75 words/token = 750 billion words,"1T tokens * 6.7B parameters * 6 FLOP/token/parameter = 4e22 FLOP
+",Yes
+jebish7/aya-expanse-8b,Aya Expanse 8B,8.028,8.0,34513333333,155GB * 167M words per GB (assuming on average across languages) * 4/3 tokens per word on average = 34513333333 tokens,"'Likely' confidence for dataset size and epochs
+
+34513333333*8000000000*6 = 1.65664e+21",Yes
+lmsys/vicuna-13b-v1.3,Vicuna-13B-v1.3,13.0,13.0,nan,"""The training data is around 125K conversations collected from ShareGPT.com.""""
+370M tokens (Table 14)
+
+https://arxiv.org/pdf/2306.05685""",nan,Yes
+lmsys/vicuna-7b-v1.3,Vicuna-7B-v1.3,7.0,7.0,nan,"""The training data is around 125K conversations collected from ShareGPT.com.""""
+370M tokens (Table 14)
+
+https://arxiv.org/pdf/2306.05685""",nan,Yes
+lmsys/vicuna-7b-v1.5,Vicuna-7B-v1.5,7.0,7.0,nan,"""The training data is around 125K conversations collected from ShareGPT.com.""""
+370M tokens (Table 14)
+
+https://arxiv.org/pdf/2306.05685""","6*7*10^9*370*10^6 = 1.554e+19
+
+unsure about amount of epochs ->  lower bound, Likely confidence",Yes
+meta-llama/llama-3.1-70b,Llama 3.1-70B,70.554,70.0,15000000000000,nan,"Huggingface page says 3.1-70B used 7.0M H100 hours and trained over 15T tokens. https://huggingface.co/meta-llama/Llama-3.1-70B
+The paper also says that 3.1-405B got MFU of between 38-43%; presumably 70B was around the same or a bit higher. I'll assume utilization of 40%
+
+6ND:
+6 * 15T * 70B = 6.3e24 FLOPs
+
+Hardware:
+7M * 9.9e14 * 3600 * 0.4 = 9.98e24 FLOPs
+
+Geometric mean: sqrt(6.3e24 * 9.98e24) = 7.929e24
+
+Note that Llama 3-70B also said it used 15T tokens, but only 6.4M H100 hours. This suggests 3.1 might have used a bit more than 15T tokens.
+
+Training compute upper bound: 7M H100-hours * 989 TFLOPS * 50% utilization = 1.25e25 FLOP",Yes
+meta-llama/llama-3.1-8b,Llama 3.1-8B,8.03,8.0,nan,nan,"Huggingface page says 3.1-8B used 1.46M H100 hours and trained over 15T tokens. https://huggingface.co/meta-llama/Llama-3.1-70B
+The paper also says that 3.1-405B got MFU of between 38-43%; presumably 8B was around the same or a bit higher. I'll assume utilization of 40%
+
+6ND:
+6 * 15T * 8B = 7.2e23 FLOPs
+
+Hardware:
+1.46M * 9.9e14 * 3600 * 0.4 = 2.08e24 FLOPs
+
+Geometric mean: sqrt(7.2e23 * 2.08e24) = 1.224e24
+
+Note that Llama 3-8B also said it used 15T tokens, but only 1.3M H100 hours. This suggests 3.1 might have used a bit more than 15T tokens.",Yes
+meta-llama/llama-3.2-1b,Llama 3.2 1B,1.24,1.23,9000000000000,"""Llama 3.2 was pretrained on up to 9 trillion tokens of data from publicly available sources.""","6ND = 6*1230000000.00*9000000000000 = 6.642e+22
+
+370000 hours * 3600 s * 133800000000000 FLOPS/s* 0.3 = 5.346648e+22",Yes
+meta-llama/llama-3.2-3b,Llama 3.2 3B,3.213,3.21,9000000000000,"""Llama 3.2 was pretrained on up to 9 trillion tokens of data from publicly available sources.""","6ND = 6*3210000000.00*9000000000000 = 1.7334e+23
+
+460000 hours * 3600 s * 133800000000000 FLOPS/s* 0.3 = 6.647184e+22",Yes
+microsoft/orca-2-13b,Orca 2-13B,13.0,13.0,nan,"817k training instances, ~1000 tokens per instance. See finetune notes",4.55e22 base compute from Llama-13 + 8.6e20 finetune compute ~= 4.6e22 ,Yes
+microsoft/phi-1,Phi-1,1.418,1.3,nan,"A filtered code-language dataset, which is a subset of The Stack and StackOverflow, obtained by using a language model-based classifier (consisting of about 6B tokens).
+• A synthetic textbook dataset consisting of <1B tokens of GPT-3.5 generated Python textbooks.
+• A small synthetic exercises dataset consisting of ∼180M tokens of Python exercises and solutions
+
+For the 1.3B models, phi-1 and phi-1-base are checkpoints
+after training on 51B tokens (770 GPU hours)
+
+Training tokens: 54B tokens (7B unique tokens)","6ND = 6 *1.3*10^9 parameters * 51 * 10^9 tokens = 3.978e+20
+
+312000000000000 FLOP/s * 8 GPUs *103 hours *3600 sec / hour *0.3 [assumed utilization] = 2.7765504e+20
+
+geometric mean sqrt(2.7765504e+20*3.978e+20) = 3.3234195e+20
+",Yes
+microsoft/phi-1_5,Phi-1.5,1.418,1.3,30000000000,"""In a nutshell we build phi-1.5, a 1.3 billion parameter model trained on a dataset of 30 billion tokens""","150B training tokens
+
+150B*1.3B*6 = 1.17e21
+
+also, took 1.5k GPU-hours with A100s, per Table 1
+
+1500 * 312 trillion * 3600 * 0.3 (utilization assumption) = 5.05e20
+
+so utilization was likely ~60%. may be high due to the relatively small cluster.
+",Yes
+microsoft/phi-2,Phi-2,2.78,2.7,250000000000,"""trained on 1.4T tokens from multiple passes on a mixture of Synthetic and Web datasets for NLP and coding""
+From Huggingface Hub: ""Dataset size: 250B tokens, combination of NLP synthetic data created by AOAI GPT-3.5 and filtered web data from Falcon RefinedWeb and SlimPajama, which was assessed by AOAI GPT-4.""","2.7B params, trained on 1.4T tokens
+
+2.7 billion * 1.4 trillion * 6 = 2.27e22
+
+96*14 A100-days
+
+14 * 96 * 312 trillion * 24 * 3600 * 0.3 = 1.09e22",Yes
+migtissera/llama-3-70b-synthia-v3.5,Llama-3-70B-Synthia-v3.5,70.554,70.0,nan,nan,nan,Yes
+mosaicml/mpt-7b,MPT-7B,7.0,7.0,nan,nan,"""As shown in Table 3, nearly all of the training budget was spent on the base MPT-7B model, which took ~9.5 days to train on 440xA100-40GB GPUs, and cost ~$200k.""",Yes
+paloalma/le_triomphant-ece-tw3,Le_Triomphant-ECE-TW3,72.289,72.0,nan,nan,nan,Yes
+paloalma/tw3-jrgl-v2,TW3-JRGL-v2,72.289,72.0,nan,nan,nan,Yes
+rhymes-ai/aria,Aria,25.307,24.9,6800000000000,Data. ARIA is pre-trained on 6.4T language tokens and 400B multimodal tokens. ,"6 FLOP / parameter / token * 3,5 * 10^9 active parameters * 6,8 * 10^12 tokens = 1.428e+23 FLOP",Yes
+speakleash/bielik-11b-v2,Bielik-11B-v2,11.169,11.0,200000000000,"""trained on 400 billion tokens""
+
+""We used 200 billion tokens (over 700 GB of plain text) for two epochs of training""",nan,Yes
+stabilityai/stablebeluga2,Stable Beluga 2,68.977,70.0,nan,nan,nan,Yes
+stabilityai/stablelm-2-1_6b,StableLM-2-1.6B,1.645,1.644417024,2000000000000,"""model pre-trained on 2 trillion tokens of diverse multilingual and code datasets for two epochs.""","6 * 1.6B * 2T = 19200000000000000000000
+",Yes
+stabilityai/stablelm-3b-4e1t,StableLM-3B-4E1T,2.795,2.7954432,1000000000000,Trained on 1T tokens (~750B words),"""StableLM-3B-4E1T was trained on the Stability AI cluster across 256 NVIDIA A100 40GB GPUs (AWS P4d instances). Training began on August 23, 2023, and took approximately 30 days to complete.""
+
+256 * 30 * 24* 3600 * 312 trillion * 0.3 utilization (assumption) = 6.21e22
+
+6ND = 6*2795443200*1000000000000*4 epochs = 6.7090637e+22",Yes
+stabilityai/stablelm-zephyr-3b,StableLM - Zephyr 3B,2.795,3.0,nan,nan,nan,Yes
+tiiuae/falcon-40b,Falcon-40B,40.0,40.0,1000000000000,1000B tokens ~= 750B words,"C = 6ND = 6 * 40B * 1000B = 2.4e+23 FLOP (assuming one epoch)
+
+Table 1 from https://arxiv.org/pdf/2311.16867 Falcon paper
+
+2,800 petaflop-days * 1e15 * 24 * 3600 = 2.4192e+23 FLOPs",Yes
+tiiuae/falcon-7b,Falcon-7B,7.0,7.0,1500000000000,"1125000000000.0 words  assuming 0.75 words per token (1.5T tokens)
+""Falcon-7B is a 7B parameters causal decoder-only model built by TII and trained on 1,500B tokens of RefinedWeb enhanced with curated corpora. It is made available under the Apache 2.0 license.""","6ND = 6 * 7B * 1.5T = 6.3e22
+""Falcon-7B is a 7B parameters causal decoder-only model built by TII and trained on 1,500B tokens of RefinedWeb enhanced with curated corpora. It is made available under the Apache 2.0 license.""
+
+Table 1 from https://arxiv.org/pdf/2311.16867 Falcon paper
+
+730 petaflop-days * 1e15 * 24 * 3600 = 6.3072e+22 FLOPs",Yes
+togethercomputer/redpajama-incite-7b-base,RedPajama-INCITE-7B-Base,7.0,6.9,1001000000000,"Authors collected 1.2 trillion token dataset, but only trained on 1.001T of them.","Trained over 1.001 trillion tokens.
+6.9b * 1 trillion * 6 = 4.1e22
+
+",Yes
+unsloth/phi-4,Phi-4,14.66,14.0,nan,"""The model was pretrained for approximately 10T tokens using linear warm-up and decay schedules with peak learning rate of 0.0003, constant weight decay of 0.1, and global batch size of 5760. ""
+
+Table 5:
+Web 15% 1.3T unique tokens 1.2 epochs
+Web rewrites 15% 290B unique tokens 5.2 epochs
+Synthetic 40% 290B unique tokens 13.8 epochs
+Code data 20% 820B unique tokens 2.4 epochs
+Acquired sources 10% 580B unique tokens  1.7 epochs
+","6ND = 6* 14*10^9 parameters * 10*10^12 tokens = 8.4e+23 FLOP
+
+989500000000000 FLOP / sec [assumed bf16 precision] * 1920 GPUs * 504 hours * 3600 sec / hour * 0.3 [assumed utilization] = 1.0341209e+24 FLOP
+
+geometric mean
+sqrt(8.4e+23 * 1.0341209e+24) = 9.3202015e+23",Yes
