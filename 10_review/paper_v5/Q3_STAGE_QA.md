@@ -1,0 +1,6 @@
+# v5 Q3 stage checkpoint
+
+- The frozen Q2 parameters, Q3 optimizer results, budget grid, quality scenarios, and forecast-related outputs are unchanged. `SUPP-Q3-VIS-20260925-v1` only derives shares from the 51 stored `budget_path.csv` rows. It verifies monotone budgets, training plus attention plus quality equals used FLOPs, and used plus slack equals budget; input, code, and output hashes are in its manifest.
+- The paper now shows the continuous budget path, a cost and unused-budget share figure, an active-set transition table, the three quality-cost paths, local versus global quality thresholds, five context scenarios, parameter versus mechanism uncertainty, and the shadow price. The Q3 body has seven informative figures in total.
+- The Q3 checkpoint rendered to 45 A4 pages. Structural QA confirms 19 sequential numbered figures, 18 sequential body tables, 27 sequential numbered equations, no raw Markdown rows, and preservation of the baseline DOCX media bytes. Changed Q3 figures, captions, table, and page transitions were visually checked.
+- High-budget plateau and zero budget shadow price remain consequences of the B1 statistical support bounds. The quality and mixture results remain conditional, and 51000 configurations are not presented as an external confidence interval.

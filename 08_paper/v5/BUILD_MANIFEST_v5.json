@@ -1,5 +1,5 @@
 {
-  "stage": "q2",
+  "stage": "q3",
   "baseline": "08_paper/v5/baseline_v3_user.docx",
   "baseline_sha256": "a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353",
   "source_files": [
@@ -12,11 +12,16 @@
       "phase": "q2",
       "source": "06_Q2_additions.md",
       "sha256": "9b57727e5e9d022ec988ef5c5cace1e00f5aaad816abaa72a97dbb5428501997"
+    },
+    {
+      "phase": "q3",
+      "source": "07_Q3_additions.md",
+      "sha256": "7c72eb12fd52f165582fd13308dbcd80ccdb1a233f49c92e4d2b6f4fbec45eab"
     }
   ],
-  "figures": 15,
-  "tables_body": 17,
-  "equations": 26,
+  "figures": 19,
+  "tables_body": 18,
+  "equations": 27,
   "figure_sources_new": [
     {
       "source": "06_results/figures/paper_v5/FIG-Q1-V5-002_fixed_pair_correlations.png",
@@ -53,6 +58,30 @@
       "sha256": "fed3a80cdfabfdc34fe876181d3f8f3541d63ffd13ce92fddd9513abea7f95fc",
       "caption": "B7 半合成单元的质量改善斜率及假定质量运输下的有限替代。上图是半合成表内形状，下图是条件情景，不是观测训练回报。",
       "width_cm": 13.7
+    },
+    {
+      "source": "06_results/figures/paper_v5/FIG-Q3-V5-001_budget_composition.png",
+      "sha256": "07b5c4cd7ac2f59c3dc14b9a37f2eb5e4e70b567e1fb06c409c2bb3cf4030cf1",
+      "caption": "冻结 51 档预算路径中基础训练、注意力和未使用预算的份额及两个统计支持转移点。高预算未用份额由支持上界产生，不表示现实算力无收益。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round6/FIG-Q3-R6-003.png",
+      "sha256": "b18ea4a825d4ca13ae299a61ad11cc801e09f82aac7af0c6a9f44e973e0b674d",
+      "caption": "三类题设质量成本的局部与全局投入门槛随预算变化。对数成本在低预算下可出现有限跃迁；半合成收益系数只是情景基准。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round6/FIG-Q3-R6-004.png",
+      "sha256": "3e93a08f0afd5fec0de7b5fd6c990851e97436395add66035b5241323ceb8900",
+      "caption": "五档外生上下文的条件最优 Loss 与注意力/基础训练成本比。30000 token 是题设成本项相等的位置，不是经验性能临界点。",
+      "width_cm": 13.7
+    },
+    {
+      "source": "06_results/figures/round6/FIG-Q3-R6-006.png",
+      "sha256": "f9cebd495fd6e9e4ebb6874d73ac4b60d13ede8660bb7efa2f10bb30671350a3",
+      "caption": "基线预算影子价与三类质量成本下的质量上界边际价值。数值是题设代理和半合成收益条件下的导数，不是市场价格。",
+      "width_cm": 13.7
     }
   ],
   "old_figure_number_map": {
@@ -62,9 +91,9 @@
     "3": 8,
     "5": 11,
     "6": 12,
-    "7": 13,
-    "8": 14,
-    "9": 15
+    "7": 14,
+    "8": 18,
+    "9": 19
   },
   "old_table_number_map": {
     "1": 1,
@@ -77,12 +106,12 @@
     "8": 9,
     "9": 10,
     "10": 11,
-    "11": 12,
-    "12": 13,
-    "13": 14,
-    "14": 15,
-    "15": 16,
-    "16": 17
+    "11": 13,
+    "12": 14,
+    "13": 15,
+    "14": 16,
+    "15": 17,
+    "16": 18
   },
   "old_equation_number_map": {
     "1": 1,
@@ -99,16 +128,16 @@
     "12": 14,
     "13": 15,
     "14": 16,
-    "15": 17,
-    "16": 18,
-    "17": 19,
-    "18": 20,
-    "19": 21,
-    "20": 22,
-    "21": 23,
-    "22": 24,
-    "23": 25,
-    "24": 26
+    "15": 18,
+    "16": 19,
+    "17": 20,
+    "18": 21,
+    "19": 22,
+    "20": 23,
+    "21": 24,
+    "22": 25,
+    "23": 26,
+    "24": 27
   },
   "baseline_media_preserved": {
     "word/media/image1.png": true,
@@ -125,5 +154,5 @@
     "word/media/image12.png": true,
     "word/media/image13.png": true
   },
-  "docx_sha256": "8b0198261b40e36621453fdf942aff9f98808243b92d524fca342a2042109d6b"
+  "docx_sha256": "36811f897e7933ffab97fe4f45618cabf5ea035a0143a0648723ffbc78430c98"
 }

@@ -1,0 +1,27 @@
+{
+  "run_id": "SUPP-Q3-VIS-20260925-v1",
+  "purpose": "Visual derivation of cost shares and support transitions from the frozen 51-budget path",
+  "evidence_boundary": "B1 support rectangle and problem-provided FLOPs proxy; not industry saturation",
+  "inputs_sha256": {
+    "06_results\\raw\\EXP-Q3-BASE-R6-20260924-v1\\budget_path.csv": "a114bc9a6dd66519c8e57c76644b515169eae5524ef9778235563015a5382a94",
+    "06_results\\raw\\EXP-Q3-BASE-R6-20260924-v1\\summary.json": "adb54610b6e2dcb5d0735653d4fe8bea4f398a09584c7728fdcdab76f92c710b"
+  },
+  "code_sha256": "85447bf89da52b2af41fd90054dca3d32be3c8eca65ff4ec7b6108c9be74ea85",
+  "outputs_sha256": {
+    "06_results\\figures\\paper_v5\\FIG-Q3-V5-001_budget_composition.png": "07b5c4cd7ac2f59c3dc14b9a37f2eb5e4e70b567e1fb06c409c2bb3cf4030cf1"
+  },
+  "checks": {
+    "rows": 51,
+    "monotone_budget": true,
+    "cost_components_balance": true,
+    "budget_balance": true,
+    "quality_cost_zero_in_baseline": true,
+    "D_cap_FLOPs": 9.325359035607933e+21,
+    "both_caps_FLOPs": 2.300063908774456e+22,
+    "utilization_at_1e24": 0.023000639087744523
+  },
+  "environment": {
+    "python": "3.12.14",
+    "pillow": "12.3.0"
+  }
+}
