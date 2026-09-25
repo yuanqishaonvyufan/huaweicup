@@ -21,3 +21,8 @@ def family(x):
     if re.search(r'(^|[/_\-])yi([\-./]|$)',s): return 'yi'
     return 'unknown'
 BENCH=['IFEval','BBH','MATH Lvl 5','GPQA','MUSR','MMLU-PRO']
+def mdtable(d,digits=5):
+    def cell(x):
+        if isinstance(x,(float,np.floating)):return f'{x:.{digits}g}' if np.isfinite(x) else 'NA'
+        return str(x).replace('|','/').replace('\n',' ')
+    return '\n'.join(['| '+' | '.join(map(str,d.columns))+' |','| '+' | '.join(['---']*len(d.columns))+' |']+['| '+' | '.join(cell(x) for x in row)+' |' for row in d.itertuples(index=False,name=None)])

@@ -6,3 +6,7 @@ Preflight: preserved local R6 receipt patch at ../round6_local_checkpoint_preser
 
 CP0: state recovery and C1–C10 official mapping. Checkpoint receipt hashes recorded after each remote verification; next commit persists prior receipt.
 `nCP0 VERIFIED: 9c54c3e43aba7fbac38fa01142005d96a73bd212 = remote refs/heads/main.
+
+CP1 VERIFIED: f3f0a4e0dc34782a9f0a00da42fc21a85ca4ce4f = remote main.
+CP2 VERIFIED: 10c30f90549fe85f9ef298d9e965c651dc887e50 = remote main. Numerical outputs complete. Markdown generation lacked optional tabulate; replaced with deterministic local formatter at CP3, no model rerun.
+CP3: run-date 12/24 forecasts, separate uncertainty and robustness completed.

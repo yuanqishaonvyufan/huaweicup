@@ -1,0 +1,58 @@
+{
+  "run_id": "EXP-Q4-R7-20260925-v1",
+  "origin": "2026-09-25",
+  "last_data": "2025-03-14",
+  "gap_days": 560,
+  "selected_model": "logit",
+  "forecast": [
+    {
+      "target": "2027-09-25",
+      "central": 79.75536356779305,
+      "conditional_PI95": [
+        61.24204722669209,
+        90.40150198993967
+      ],
+      "model_range": [
+        52.16859687691628,
+        83.77111309771917
+      ],
+      "scenario_range": [
+        79.75536356779305,
+        79.75536356779305
+      ],
+      "no_slowdown_reference": 79.75536356779305,
+      "removed_scale_component": 0.0
+    },
+    {
+      "target": "2028-09-25",
+      "central": 87.12751211384048,
+      "conditional_PI95": [
+        69.58018633055818,
+        95.56880507036963
+      ],
+      "model_range": [
+        52.33272228155908,
+        97.11295319946106
+      ],
+      "scenario_range": [
+        87.12751211384048,
+        87.12751211384048
+      ],
+      "no_slowdown_reference": 87.12751211384048,
+      "removed_scale_component": 0.0
+    }
+  ],
+  "scale_slope_week": -0.02973937522845124,
+  "residual_slope_week": 0.2849111804530244,
+  "cluster_bootstrap_parameter_share95": [
+    0.13904913694337953,
+    0.2300078380513423
+  ],
+  "cluster_bootstrap_row_time_slope95": [
+    2.6297837687594385,
+    6.508244394313995
+  ],
+  "full_N_D_non_scale_share": "NOT_IDENTIFIED",
+  "empirical_long_horizon_coverage": "UNAVAILABLE",
+  "code_sha256": "04d7035085c749390f5aac29465e874b5061093f220d4e606e34d879e9b5b04c"
+}
