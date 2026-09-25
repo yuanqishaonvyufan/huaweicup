@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "verified_cp5": "a77c405bd472811dc8dcfe42115083d010101424",
+  "remote_main_at_check": "a77c405bd472811dc8dcfe42115083d010101424",
+  "checked_utc": "2026-09-25T01:52:19.973482+00:00",
+  "checks": [
+    {
+      "path": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/multistart_checks.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/summary.json",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/context_baseline.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/mixture_local_candidates.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/mixture_scenarios.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_break_even.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_context_path.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_grid_refinement.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/quality_multistart.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/summary.json",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/SCEN-Q3-R6-20260924-v1/supply_stress.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/UNC-Q3-R6-20260924-v1/conditional_draw_paths.csv.gz",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/UNC-Q3-R6-20260924-v1/conditional_quantiles.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/UNC-Q3-R6-20260924-v1/scenario_envelope_NOT_CI.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/UNC-Q3-R6-20260924-v1/shadow_prices.csv",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/UNC-Q3-R6-20260924-v1/summary.json",
+      "mode": "raw_git_blob",
+      "pass": true
+    },
+    {
+      "path": "03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "06_results/raw/EXP-Q2-ND-R5-20260924-v1/cluster_bootstrap.csv",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "03_models/modeling_phase1/q1/round4/P_RESPONSE_FROZEN_MODEL_BUNDLE_v1.json",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "01_data/audits/modeling_phase3/round6/Q3_COST_AUDIT_METRICS_v1.json",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "03_models/modeling_phase3/round6/Q3_COST_MODEL_v1.md",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "03_models/modeling_phase3/round6/Q3_MODEL_SPEC_v1.md",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "03_models/modeling_phase3/round6/Q3_SUPPORT_CONSTRAINTS_v1.md",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_audit.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_baseline.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_core.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_package.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_qa.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_scenarios.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_uncertainty.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/visualization/round6_figures.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_package_qa.py",
+      "mode": "checkout_filtered_by_declared_gitattributes",
+      "pass": true
+    }
+  ],
+  "note": "New R6 outputs checked as raw blobs. Inherited text files checked after declared checkout filters. CP0 overrides preserve original CRLF hashes. Final receipt commit contains attributes."
+}

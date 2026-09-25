@@ -75,3 +75,8 @@
 /04_code/visualization/round6_figures.py -text
 /06_results/tables/round6/** -text
 /10_review/*R6* -text
+
+# Preserve inherited CP0 checkout-byte contracts (original CRLF hashes).
+/01_data/audits/modeling_phase3/round6/Q3_COST_AUDIT_METRICS_v1.json text eol=crlf
+/04_code/modeling_phase3/round6_audit.py text eol=crlf
+/08_paper/sections/Q3_ROUND6_PAPER_CANDIDATE_v1.md -text

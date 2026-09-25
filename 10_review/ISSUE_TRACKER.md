@@ -87,6 +87,8 @@ G3-SINGLE-001 本次新发现 P0=0、P1=0、P2=0，阻断0。Gate3 Verdict A —
 R6-NUM-01：17个对数质量成本初值停较差局部解；4次线搜索失败。已保存所有起点，通过预冻结嵌套搜索、加密网格和逐情景最佳成功对照消解；不声称全部初值一致，无新P0。该限制进入论文，不调改数学规格。
 
 
-Round6 closeout：新增P0=0/P1=0/P2=2（R6-VIS-01，006图例遮线与ylabel越界已修；关闭）。R6-NUM-01为已解释的局部求解限制，非未解决P0。继承来源/质量/供应/1B风险不冒称关闭。Q3 PROVISIONALLY CLOSED，Gate4 READY，Q4 NOT STARTED。
+Round6 closeout：新增P0=0/P1=0/P2=3（R6-VIS-01，006图例遮线与ylabel越界已修；关闭）。R6-NUM-01为已解释的局部求解限制，非未解决P0。继承来源/质量/供应/1B风险不冒称关闭。Q3 PROVISIONALLY CLOSED，Gate4 READY，Q4 NOT STARTED。
 
-R6-DOC-01（P2 CLOSED）：论文候选LaTeX写入转义异常被包QA拦截；仅修复生成脚本与派生文字，数值/冻结规格未变，初始失败QA保留，复检后上传。新缺陷总计P0=0/P1=0/P2=2，均已关闭。
+R6-DOC-01（P2 CLOSED）：论文候选LaTeX写入转义异常被包QA拦截；仅修复生成脚本与派生文字，数值/冻结规格未变，初始失败QA保留，复检后上传。新缺陷总计P0=0/P1=0/P2=3，均已关闭。
+
+R6-GIT-01（P2 CLOSED）：Round6目录属性会影响继承CP0的CRLF冻结哈希；增加两条精确eol=crlf覆盖并保留论文候选LF。科学内容/原始字节未改，Git模拟checkout哈希检查PASS。最终新缺陷P0=0/P1=0/P2=3，全部关闭。
