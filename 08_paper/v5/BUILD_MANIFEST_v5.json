@@ -1,5 +1,5 @@
 {
-  "stage": "q3",
+  "stage": "q4",
   "baseline": "08_paper/v5/baseline_v3_user.docx",
   "baseline_sha256": "a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353",
   "source_files": [
@@ -17,11 +17,16 @@
       "phase": "q3",
       "source": "07_Q3_additions.md",
       "sha256": "7c72eb12fd52f165582fd13308dbcd80ccdb1a233f49c92e4d2b6f4fbec45eab"
+    },
+    {
+      "phase": "q4",
+      "source": "08_Q4_additions.md",
+      "sha256": "14f2a609f70bb0adc48cf870531a7d2ca5c83c64be79023c422418c716d620f7"
     }
   ],
-  "figures": 19,
+  "figures": 25,
   "tables_body": 18,
-  "equations": 27,
+  "equations": 28,
   "figure_sources_new": [
     {
       "source": "06_results/figures/paper_v5/FIG-Q1-V5-002_fixed_pair_correlations.png",
@@ -82,6 +87,42 @@
       "sha256": "f9cebd495fd6e9e4ebb6874d73ac4b60d13ede8660bb7efa2f10bb30671350a3",
       "caption": "基线预算影子价与三类质量成本下的质量上界边际价值。数值是题设代理和半合成收益条件下的导数，不是市场价格。",
       "width_cm": 13.7
+    },
+    {
+      "source": "06_results/figures/round7/FIG-Q4-R7-001.png",
+      "sha256": "c18903eb879a9fa23f0bae5aad49c479e7c9888da3c23dbed382341a09bbe2c1",
+      "caption": "C8 六项原始任务等权平均的合格模型点与 28 天九成分位前沿。曲线刻画当前筛选群体，不是全生态累计最高分。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/paper_v5/FIG-Q4-V5-002_six_task_deltas.png",
+      "sha256": "e42fb1fb789513ebf202f134e1a47fa3e0f70842e937eb34847cebd45d9407dc",
+      "caption": "六项原始任务前沿的历史端点增量，以及对应的参数关联描述分量。两栏横轴不同；剩余变化不等于纯技术因果作用。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round7/FIG-Q4-R7-003.png",
+      "sha256": "38d5b89601e3215f9894afe6c180a4323b56dbb1d960f2eaec8692a3dd65e4ca",
+      "caption": "高可比 Pythia 候选 Loss—Benchmark 映射及留一规模误差。线性和单调候选未优于均值基准，不能用于 B1 Loss 到 C8 原始六任务得分的数值运输。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round7/FIG-Q4-R7-006.png",
+      "sha256": "524080097a24a76c24a9d66c23646a7d2a0cce4b32806421407a91d12f192b05",
+      "caption": "同家族能力时间斜率及 2027 年条件中心对群体筛选的敏感性。方向与中心可变，不能把主规格参数关联份额解释为普适技术进步率。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/round7/FIG-Q4-R7-004.png",
+      "sha256": "39bcd5c665256bba0fb50faadea86b17290dd564bdcd0610a80b261125d45cb6",
+      "caption": "四种前沿动态模型在四周和十三周的回溯滚动误差及条件覆盖。二十六周、五十二周无可用折次；未来长期区间未取得经验覆盖检验。",
+      "width_cm": 15.5
+    },
+    {
+      "source": "06_results/figures/paper_v5/FIG-Q4-V5-001_exogenous_slowdown.png",
+      "sha256": "e72f97e7b3d166da92fa02d197555ee12057bccb012ab2da037d3de25ef498d0",
+      "caption": "固定训练 D 和外生正增长参考下，两目标日的 ρ=1、0.5、0 条件中心。区间仅属于 ρ=1 原模型，情景差异不是已识别的真实算力放缓效应。",
+      "width_cm": 15.5
     }
   ],
   "old_figure_number_map": {
@@ -92,8 +133,8 @@
     "5": 11,
     "6": 12,
     "7": 14,
-    "8": 18,
-    "9": 19
+    "8": 21,
+    "9": 23
   },
   "old_table_number_map": {
     "1": 1,
@@ -134,10 +175,10 @@
     "18": 21,
     "19": 22,
     "20": 23,
-    "21": 24,
-    "22": 25,
-    "23": 26,
-    "24": 27
+    "21": 25,
+    "22": 26,
+    "23": 27,
+    "24": 28
   },
   "baseline_media_preserved": {
     "word/media/image1.png": true,
@@ -154,5 +195,5 @@
     "word/media/image12.png": true,
     "word/media/image13.png": true
   },
-  "docx_sha256": "36811f897e7933ffab97fe4f45618cabf5ea035a0143a0648723ffbc78430c98"
+  "docx_sha256": "0d03e9540ccd0df896d7137c3ef9a577aa9998eabde067f912e30e79e4837761"
 }

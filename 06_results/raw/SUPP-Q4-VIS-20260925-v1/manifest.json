@@ -1,0 +1,27 @@
+{
+  "run_id": "SUPP-Q4-VIS-20260925-v1",
+  "purpose": "Display six frozen exogenous slowdown scenario centers and reference-only intervals",
+  "evidence_boundary": "Benchmark-space condition under fixed D and C≈6ND; actual compute effect not identified",
+  "inputs_sha256": {
+    "06_results\\raw\\Q4_TASK_REPAIR_20260925_v1\\EXOGENOUS_COMPUTE_SLOWDOWN_SCENARIOS_v1.csv": "3af3451da95cd7af8265efacd418bbe630857e934fc0cdb50833361ff09a2390",
+    "06_results\\raw\\Q4_TASK_REPAIR_20260925_v1\\summary.json": "dc3d5ca92d92f1fde3704c7f4d10ebe62065a76bc7921523a7512f10ae331446",
+    "06_results\\tables\\round7\\TABLE-Q4-R7-007.csv": "e58a6c6bb0b5961581d9c2668d1b4f76b5346f7ab05f4547fa1327290f4a464b"
+  },
+  "code_sha256": "5e94cb9092f3f55ab623761389858affd023f007b2c2b13bf5c7f82cda8544af",
+  "outputs_sha256": {
+    "06_results\\figures\\paper_v5\\FIG-Q4-V5-001_exogenous_slowdown.png": "e72f97e7b3d166da92fa02d197555ee12057bccb012ab2da037d3de25ef498d0",
+    "06_results\\figures\\paper_v5\\FIG-Q4-V5-002_six_task_deltas.png": "e42fb1fb789513ebf202f134e1a47fa3e0f70842e937eb34847cebd45d9407dc"
+  },
+  "checks": {
+    "rows": 6,
+    "two_target_dates": true,
+    "scenario_center_identity": true,
+    "interval_only_reference": true,
+    "positive_exogenous_reference": true,
+    "six_task_rows": 6
+  },
+  "environment": {
+    "python": "3.12.14",
+    "pillow": "12.3.0"
+  }
+}

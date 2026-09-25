@@ -1,0 +1,6 @@
+# v5 Q4 stage checkpoint
+
+- Frozen historical frontiers, bridge candidates, descriptive decomposition, rolling validation, and forecast centers/intervals are unchanged. `SUPP-Q4-VIS-20260925-v1` only plots the six stored exogenous slowdown rows and the six-task endpoint table; its manifest verifies the scenario center identity, reference-only interval rule, six task records, and input/code/output hashes.
+- Q4 now shows the 853-model historical frontier, six task-specific endpoint changes, the failed Loss–Benchmark bridge against a mean baseline, parameter/family sensitivity, rolling validation, the original forecast fan, and positive-reference slowdown centers. Q4 has eight figures in the body.
+- The Q4 checkpoint rendered to 50 A4 pages. Structural QA confirms 25 consecutive numbered figures, 18 consecutive body tables, 28 consecutive numbered equations, no raw Markdown rows, and preservation of the source DOCX media bytes. Changed Q4 figure pages and captions were visually checked.
+- The 17.02% parameter-associated share is descriptive and lacks training-D identification. Only 4/13-week rolling tests exist; 26/52-week and 12/24-month interval coverage remain unverified. The positive-reference slowdown differences are explicitly conditional and are not an identified real compute effect.
