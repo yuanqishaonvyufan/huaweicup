@@ -12,7 +12,7 @@
     "caption": "图2 1M留出样本的逐领域预测误差。全13域改善仍伴随不同的误差水平，完整数值见附录B。",
     "source": "03_models/modeling_phase1/q1/round4/figures/FIG-Q1-R4-002_domain_validation_gain.png",
     "sha256": "9091c7cad9632f210a6c11cd758dd6f6d5d8aae08a9546674fc4bd1fd71d43ee",
-    "width_cm": 12.8,
+    "width_cm": 12.0,
     "paper_section": "5.3 单纯形约束下的配比响应"
   },
   {
@@ -28,7 +28,7 @@
     "caption": "图4 参数 数据的边际与替代关系。所有数量采用十亿单位；示例局部导数不能直接外推为有限变化。",
     "source": "06_results/figures/round5/FIG-Q2-R5-003.png",
     "sha256": "14379e13d28574571a267ff5765a015f8b208cc615ebd07673b8c50c7913c4cd",
-    "width_cm": 12.8,
+    "width_cm": 12.0,
     "paper_section": "6.3 边际效用 弹性与规模替代"
   },
   {
@@ -36,7 +36,7 @@
     "caption": "图5 参考上下文下的预算配置及Loss路径。高预算平台反映统计支持上限，非真实训练收益终极饱和。",
     "source": "06_results/figures/round6/FIG-Q3-R6-001.png",
     "sha256": "79f2185030024f5995dbab89019365bb72a08eb30459a8aa20d215e4cd999e4c",
-    "width_cm": 12.8,
+    "width_cm": 12.0,
     "paper_section": "7.2 解析最优配置与结构转移"
   },
   {
@@ -44,7 +44,7 @@
     "caption": "图6 不同质量成本下的条件配置路径。收益假设来自半合成质量校准，曲线不是实测投资回报。",
     "source": "06_results/figures/round6/FIG-Q3-R6-002.png",
     "sha256": "fe325c45871e56652b337097564d37feb9f5ceda8d24ec0bfa6d9bb38e3a54a4",
-    "width_cm": 12.8,
+    "width_cm": 12.0,
     "paper_section": "7.3 质量成本选择与投入门槛"
   },
   {
@@ -52,7 +52,7 @@
     "caption": "图7 联合参数传播与机制情景范围。参数条件分位和情景包络分别解释，不把两者合称95%置信区间。",
     "source": "06_results/figures/round6/FIG-Q3-R6-005.png",
     "sha256": "a94336da23ee6e99ba2de0594a5485bb1021a82814739f6e4851e6d6e1d1482e",
-    "width_cm": 12.8,
+    "width_cm": 12.0,
     "paper_section": "7.6 影子价格与不确定性"
   },
   {

@@ -56,6 +56,12 @@ section.different_first_page_header_footer=False
 for old in section._sectPr.findall(qn('w:pgNumType')):section._sectPr.remove(old)
 pg=OxmlElement('w:pgNumType'); pg.set(qn('w:start'),'1'); section._sectPr.append(pg)
 for e in list(section.header._element):section.header._element.remove(e)
+# Remove references entirely: LibreOffice can synthesize a bordered Header style
+# even for an empty header part retained by the old binary template.
+for sec in doc.sections:
+ for e in list(sec._sectPr.findall(qn('w:headerReference'))):sec._sectPr.remove(e)
+for rid,rel in list(doc.part.rels.items()):
+ if rel.reltype.endswith('/header'):doc.part.drop_rel(rid)
 p=section.footer.paragraphs[0];p.alignment=WD_ALIGN_PARAGRAPH.CENTER
 r=p.add_run();f=OxmlElement('w:fldSimple');f.set(qn('w:instr'),'PAGE');r._r.addnext(f)
 for c in doc.core_properties.__class__.__dict__:
@@ -146,7 +152,7 @@ while i<len(lines):
  if line.startswith('!['):
   m=re.match(r'!\[(.*?)\]\((.*?)\)',line);caption,path=m.groups();im=Image.open(ROOT/path)
   # Use the frozen assets verbatim; fit tall plots without tiny text.
-  w=min(width_cm,12.8 if im.height/im.width>.78 else width_cm)
+  w=min(width_cm,12.0 if im.height/im.width>.78 else width_cm)
   p=paragraph('','PaperCaption');p.paragraph_format.keep_with_next=True;p.add_run().add_picture(str(ROOT/path),width=Cm(w))
   paragraph(caption,'PaperCaption')
   figs.append(dict(number=len(figs)+1,caption=caption,source=path,sha256=hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),width_cm=w,paper_section=current_section))
