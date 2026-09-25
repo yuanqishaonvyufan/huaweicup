@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "Round6 CP5 package, not Gate4",
+  "checks": {
+    "required_docs": true,
+    "paper_equals_report": true,
+    "latex_commands": true,
+    "no_control_characters": true,
+    "math_block_delimiters": true,
+    "six_figures_hashes": true,
+    "figure_source_hash": true,
+    "visible_text_bounds": true,
+    "nine_paper_tables": true,
+    "r6_code_manifest": true,
+    "Q4_not_started": true,
+    "gate4_not_approved": true,
+    "global_threshold_matches_activation": true,
+    "baseline_quantity_accounting": true
+  },
+  "code_sha256": "4c5ff0e20dd3793daa61ea197087c871cacea5c5c1c1666b614ed4a2567ab9b4"
+}

@@ -1,0 +1,36 @@
+{
+  "workspace": "D:\\work document\\codex\\_work\\mathmodel\\F题\\HuaweiCup_F_2026",
+  "stage": "EVIDENCE",
+  "checked_at_utc": "2026-09-25T01:48:41.525763+00:00",
+  "structural_status": "READY_FOR_MANUAL_REVIEW",
+  "manual_review_required": true,
+  "upstream_stages_checked": false,
+  "completion_decision": "NOT_MADE_BY_PREFLIGHT",
+  "checks": [
+    {
+      "check": "glob_min",
+      "target": "06_results/figures/**/*",
+      "minimum": 1,
+      "found": 24,
+      "pass": true
+    },
+    {
+      "check": "markdown_table_has_data_row",
+      "target": "06_results/FIGURE_REGISTRY.md",
+      "found": 16,
+      "pass": true
+    },
+    {
+      "check": "alternative_globs_min",
+      "target": [
+        "04_code/visualization/*.py",
+        "04_code/visualization/*.R",
+        "04_code/visualization/*.m",
+        "04_code/visualization/*.jl"
+      ],
+      "minimum": 1,
+      "found": 2,
+      "pass": true
+    }
+  ]
+}

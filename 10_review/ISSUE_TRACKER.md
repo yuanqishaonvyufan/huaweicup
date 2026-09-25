@@ -85,3 +85,8 @@ G3-SINGLE-001 本次新发现 P0=0、P1=0、P2=0，阻断0。Gate3 Verdict A —
 ## Round6 CP3 numerical diagnostic
 
 R6-NUM-01：17个对数质量成本初值停较差局部解；4次线搜索失败。已保存所有起点，通过预冻结嵌套搜索、加密网格和逐情景最佳成功对照消解；不声称全部初值一致，无新P0。该限制进入论文，不调改数学规格。
+
+
+Round6 closeout：新增P0=0/P1=0/P2=2（R6-VIS-01，006图例遮线与ylabel越界已修；关闭）。R6-NUM-01为已解释的局部求解限制，非未解决P0。继承来源/质量/供应/1B风险不冒称关闭。Q3 PROVISIONALLY CLOSED，Gate4 READY，Q4 NOT STARTED。
+
+R6-DOC-01（P2 CLOSED）：论文候选LaTeX写入转义异常被包QA拦截；仅修复生成脚本与派生文字，数值/冻结规格未变，初始失败QA保留，复检后上传。新缺陷总计P0=0/P1=0/P2=2，均已关闭。

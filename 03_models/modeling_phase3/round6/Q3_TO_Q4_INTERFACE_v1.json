@@ -1,0 +1,50 @@
+{
+  "status": "Q3 PROVISIONALLY CLOSED / GATE4 PRE-REVIEW READY",
+  "source_runs": [
+    "EXP-Q3-BASE-R6-20260924-v1",
+    "SCEN-Q3-R6-20260924-v1",
+    "UNC-Q3-R6-20260924-v1"
+  ],
+  "cost_type": "PROBLEM-PROVIDED FLOPs PROXIES",
+  "baseline_loss_scope": "ATTACHMENT-INTERNAL B1",
+  "units": {
+    "N": "billion parameters",
+    "D": "billion tokens",
+    "C": "FLOPs",
+    "mu": "Loss per 1e18 FLOPs"
+  },
+  "support": {
+    "N": [
+      0.070542,
+      11.965825
+    ],
+    "D": [
+      0.134,
+      299.893
+    ],
+    "real_supply": "UNKNOWN"
+  },
+  "baseline_quality": "OFF",
+  "main_mixture_transport": 0,
+  "allowed_to_Q4": [
+    "conditional N/D/Loss budget paths",
+    "source-labeled scenarios",
+    "active-support transitions",
+    "budget shadow values",
+    "joint-parameter numerical sensitivity"
+  ],
+  "not_established": [
+    "Loss-to-Benchmark bridge",
+    "causal quality effect",
+    "external prediction coverage",
+    "deployable mixture configuration",
+    "actual training context"
+  ],
+  "quality_scenarios": "SEMI-SYNTHETIC CALIBRATED source; SCENARIO-CONDITIONAL transport",
+  "mixture": "A-source local only; no B1 scale overlap; no1B transport",
+  "B8": "QUARANTINED",
+  "uncertainty": "parameter quantiles are conditional sensitivity; scenario envelope NOT CI",
+  "next_gate": "Gate4 review required",
+  "Q4_started": false,
+  "active_final_model": null
+}

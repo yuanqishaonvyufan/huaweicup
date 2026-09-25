@@ -7,3 +7,6 @@ From project root: `python -X utf8 04_code/modeling_phase2/round5_qa.py` safely 
 Dependencies used: Python3.13.14, numpy2.5.1, pandas3.0.3, scipy1.18.0, matplotlib3.11.1. No Q1 refits or Q3 optimization invoked. Code manifest lists current file hashes; initial failure snapshots are retained in failed run directories.
 
 Takeover integrity entry: `python -X utf8 04_code/modeling_phase2/round5_takeover_audit.py`. It verifies saved SHA-256 records and package consistency without fitting or repeating numerical validation. The one-time `--restore-checkout` repair is already recorded and refuses a second execution; normal audits are read-only except their new audit report. `.gitattributes` preserves original mixed CSV newlines and frozen code formats. Do not rerun the old package generator over the documented takeover interface additions.
+
+
+Round6只读复核：python -X utf8 04_code/modeling_phase3/round6_qa.py。配置Q3_R6_FROZEN_v1.json；core+baseline/scenarios/uncertainty为冻结计算入口，已有Run拒绝覆盖。figure/package脚本只派生图文，不重估参数。依赖同Round5，固定raw/config/source hashes；正式复现须新Run或隔离副本，禁止覆盖现有输出。

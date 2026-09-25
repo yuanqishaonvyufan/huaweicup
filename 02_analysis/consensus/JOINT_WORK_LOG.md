@@ -43,3 +43,6 @@
 ## Gate3 decision — 2026-09-24
 
 G3-SINGLE-001：读取冻结规格/结果/QA/接口/Alert v4，89 项只读核查 PASS，作六项单次裁决 Verdict A。没有独立 Opus 审查；不重拟合、无来源搜索、无 Q3 优化。新增 Gate3 共识、冻结 manifest、Round6 handoff 并同步当前状态。
+
+
+2026-09-25 Round6 closeout：Lead执行CP1–CP5；同一Round内完成，无Opus独立审查宣称。数学/运行/图表/registry齐全，Q3暂定关闭，Gate4待审，Q4未启动。

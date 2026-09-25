@@ -14,3 +14,6 @@
 - OUTPUT TO NEXT QUESTION：预算情景、最优配置、结构性转移和解析临界值
 
 任何正式数学规格须引用 Consensus/Decision ID、版本和验证计划。
+
+
+Round6 ACTIVE候选接口：Q3_COST_MODEL_v1与Q3_MODEL_SPEC_v1（modeling_phase3/round6）已冻结并执行，结果Q3_RESULTS_REPORT_v1，输出Q3_TO_Q4_INTERFACE_v1。Q3暂定关闭，Gate4待审；FINAL MODEL仍NONE。

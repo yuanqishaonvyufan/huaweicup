@@ -44,6 +44,61 @@
       "lines": 187,
       "core_appendix": false,
       "purpose": "Takeover integrity only; no model execution"
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_audit.py",
+      "sha256": "75611fab970e64ed6449c9b660a2bd51d07a121811493d3d32560585792b3024",
+      "lines": 63,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_baseline.py",
+      "sha256": "416630f469d15c38ac8353c59f35b787de6d7ecb1739d3d9aa2d5ea9b7b8829e",
+      "lines": 24,
+      "core_appendix": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_core.py",
+      "sha256": "01f2639b9ec59eb7f97f20e459a2427b84d189247dc649d234c2a373b349b152",
+      "lines": 113,
+      "core_appendix": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_package.py",
+      "sha256": "9969c0e396c804750407b9636d68e74fa4520701870b9a6adf04eb75000a1231",
+      "lines": 200,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_qa.py",
+      "sha256": "a8388367846bd617ed5eedecb0068972b8a5b612203fef6aeaba2643350f9d5e",
+      "lines": 59,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_scenarios.py",
+      "sha256": "37ff3a43fb607859106921fb9b22c70b658477ca4efa34efe1424f4ae02e8437",
+      "lines": 66,
+      "core_appendix": true
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_uncertainty.py",
+      "sha256": "8cc0816e3fd02486aaafca75ff5e0cfa041d6f8374d972a0d83b2db66b902bac",
+      "lines": 44,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/visualization/round6_figures.py",
+      "sha256": "6f90e2246324f8f168f020286ef25a2ae5d4903b3ae4a1247960d8ae703e2298",
+      "lines": 70,
+      "core_appendix": false
+    },
+    {
+      "path": "04_code/modeling_phase3/round6_package_qa.py",
+      "sha256": "4c5ff0e20dd3793daa61ea197087c871cacea5c5c1c1666b614ed4a2567ab9b4",
+      "lines": 32,
+      "core_appendix": false
     }
-  ]
+  ],
+  "round6_scope": "Q3 complete conditional candidate; Q4 not started"
 }

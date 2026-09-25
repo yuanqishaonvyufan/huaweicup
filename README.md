@@ -1,5 +1,7 @@
 # 2026 年中国研究生数学建模竞赛 F 题研究工程
 
+当前：Round6 CP5完成；Q3 PROVISIONALLY CLOSED，Gate4预审就绪，Q4未启动。以[PROJECT_STATE](09_handoff/PROJECT_STATE.md)和[Gate4包](10_review/GATE4_PRE_REVIEW_PACKAGE_v1.md)为准。以下旧阶段摘要保留历史语境。
+
 当前进度：Round5 Q2受限研究包完成，Gate3预审就绪；请先读09_handoff/PROJECT_STATE.md。Q3/Q4未启动，FINAL模型/结果仍无。
 
 题目：算力约束下提升大语言模型能力的资源配置建模。

@@ -1,0 +1,11 @@
+| Budget_FLOPs | cost_family | local_threshold_h | global_threshold_h | global_witness_Q |
+| --- | --- | --- | --- | --- |
+| 1e+19 | exponential | 0.1707334 | 0.1707334 | 0.5 |
+| 1e+22 | exponential | 0.002482773 | 0.002482773 | 0.5 |
+| 1e+24 | exponential | 0 | 0 | 0.5 |
+| 1e+19 | power | 0.3541798 | 0.3541798 | 0.5 |
+| 1e+22 | power | 0.005150416 | 0.005150416 | 0.5 |
+| 1e+24 | power | 0 | 0 | 0.5 |
+| 1e+19 | logarithmic | 0.4722398 | 0.2356776 | 1 |
+| 1e+22 | logarithmic | 0.006867221 | 0.005048989 | 1 |
+| 1e+24 | logarithmic | 0 | 0 | 0.5 |

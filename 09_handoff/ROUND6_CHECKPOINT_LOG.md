@@ -25,3 +25,9 @@ CP3 REMOTE VERIFIED: 7ff9b6dd19ddf0affe491bc46c2a48d7a7172397. CP4 propagation/v
 
 
 CP4 complete: 200 joint draws/51000 configs, scenario envelope NOT CI, shadow validation, numerical QA PASS, six figures inspected. Initial visual checkpoint assertion stopped before staging;006 ylabel fixed. Await remote before CP5.
+
+
+CP4 REMOTE VERIFIED: 06afe5c2c46ecd6089f7e8559017b08823f920d4. CP5 report/QA/interface closeout authorized. Completion date now 2026-09-25T00:05:54.771611+08:00. Run IDs retain original20260924 preregistration date.
+
+
+CP5 complete: Q3 paper-ready/QA/registries/state/interface and Gate4 package prepared. Q3 PROVISIONALLY CLOSED; Gate4 READY; Q4 NOT STARTED. Will commit/push then append verified CP5 hash in a separate receipt commit.

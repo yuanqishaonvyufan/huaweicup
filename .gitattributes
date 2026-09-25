@@ -69,3 +69,9 @@
 /05_experiments/configs/Q3_R6* -text
 /06_results/raw/*Q3*/* -text
 /06_results/figures/round6/** -text
+
+
+# Round6 derived audit and figure code also preserve byte identity.
+/04_code/visualization/round6_figures.py -text
+/06_results/tables/round6/** -text
+/10_review/*R6* -text

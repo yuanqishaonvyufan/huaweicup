@@ -1,36 +1,27 @@
 # PROJECT_STATE
 
-## Round6 当前状态更新
+## 当前权威状态 — Round6 CP5
 
-MODELING PHASE 3 ROUND6 STARTED — Q3 DATA/COST AUDIT；Gate3 G3-SINGLE-001 ACTIVE / PASS，Q1/Q2 暂定关闭。未执行优化，Q4 NOT STARTED。下一步 cost audit + frozen spec，按 ROUND6_CHECKPOINT_LOG.md 逐模块 push。以下 Gate3 记录为上一阶段证据。
+更新日期：2026-09-25。MODELING PHASE 3 ROUND6 COMPLETE — Q3 PROVISIONALLY CLOSED。Round6 scoped QA PASS。GATE4 READY FOR PRE-REVIEW / NOT PASSED。Q4 NOT STARTED。
 
+Discovery COMPLETE；Gate1 ACTIVE / CONDITIONAL PASS；Gate2 ACTIVE/G2-SINGLE-001；Q1 PROVISIONALLY CLOSED；Gate3 ACTIVE/VERDICT A PASS/G3-SINGLE-001；Q2 PROVISIONALLY CLOSED。未重做Q1/Q2、未重新拟合Scaling Law、未重开B1/B8来源搜索。
 
-## 当前权威状态 — Gate3 G3-SINGLE-001 / 2026-09-24
+## Q3 actual work
 
-Gate3 **ACTIVE / VERDICT A — PASS — Q2 PROVISIONALLY CLOSED, Q3 MAY START**。Q1 PROVISIONALLY CLOSED；Gate2 ACTIVE / PASS WITH DOCUMENT-ONLY CORRECTIONS（G2-SINGLE-001）；Round5 COMPLETE；Q2 PROVISIONALLY CLOSED，B1 五参数曲面获准作为 Q3 附件内部受限 baseline；Round6 READY；Q3 AUTHORIZED TO START / NOT EXECUTED；Q4 NOT STARTED。Discovery 与 Gate1 原结论不变。
+CP0 f253450已恢复，不重跑。CP1冻结题面算力成本/单位/基线/质量情景/配比支持与验证规则；CP2完成51预算解析解+204次数值对照；CP3完成1377质量/context/cap配置、513局部配比候选、供应压力和转移分析；CP4完成200联合参数/51000配置、1632影子导数及六图QA；CP5完成论文候选、九表、限制、接口和Gate4预审包。各checkpoint远端确认记录见ROUND6_CHECKPOINT_LOG.md。
 
-当前依据：02_analysis/consensus/GATE3_CONSENSUS_v1.md；冻结接口为 Q2_TO_Q3_INTERFACE_v1.md 与 03_models/modeling_phase2/round5/Q2_TO_Q3_INTERFACE_v1.json，哈希见 Q2_TO_Q3_INTERFACE_FREEZE_v1.json。下一行动由 NEXT_ACTION 与 GATE3_TO_ROUND6_HANDOFF_v1.md 控制。
+有效Run：EXP-Q3-BASE-R6-20260924-v1、SCEN-Q3-R6-20260924-v1、UNC-Q3-R6-20260924-v1。4条SLSQP失败与17条劣局部起点保留，每情景至少一个成功对照；无伪称全部初值一致。
 
-## 数值与证据边界
+基线Lctx=2048、quality/mix OFF：1e19→N=.221309B,D=7.049698B,Loss2.998935；1e22→5.202388B/299.893B/2.143211；1e24→11.965825B/299.893B/2.093379，支持饱和而预算松弛。该平台不是现实算力收益上限。质量与配比只作明确条件情景；低预算对数质量成本局部与全局门槛分离。
 
-B1 主 Run EXP-Q2-ND-R5-20260924-v1；有效情景 SCEN-Q2-R5-20260924-v3，失败 v1/v2 继续隔离。E=1.6897975629393145、A=.3539803206519287、B=1.2403055835398427、alpha=.3399765819061934、beta=.27987812854708494；N/D 均十亿。三类 macro RMSE .000146888187/.000111641982/.000114133980；18 splits、12/12 初值、200/200 bootstrap、无边界。窄区间仅条件数值敏感性。
+## Mandatory evidence boundaries
 
-B1 外部 Alert v4 仍 PARTIALLY RESOLVED。TYPE E=0；B7 表内 SEMI-SYNTHETIC CALIBRATED、跨到 Q3 为 SCENARIO-CONDITIONAL；quality 与 mixture 运输默认0。1M 配比有限、60M 部分 centered shape、1B 失败。B8 QUARANTINED / SEARCH PAUSED。A/B 绝对 Loss 不池化，full simplex 非现实可部署域；support-aware 约束强制进入 Q3，成本与供给在正式优化前取得/显式情景化并冻结。
+B1参数ATTACHMENT-INTERNAL ESTIMATED，外部Alert v4仍PARTIALLY RESOLVED。题面成本为PROBLEM-PROVIDED FLOPs PROXIES，非实际美元/GPU账单。TYPE E=0；质量非零运输SCENARIO-CONDITIONAL，baseline0；B8 QUARANTINED / SEARCH PAUSED / UNREAD。A/B absolute pooling禁止。
 
-## 本 Gate 交付
+主N/D支持最低70.542M与1M/60M配比证据不重合；主配比运输0，1B失败保留。513候选仅A源凸包内关联，13域并行，真实供应UNKNOWN。C7仅architecture maximum，L为外生场景；30000只是两成本代理交点。参数分位为条件数值敏感性；scenario envelope不是CI。
 
-G3-SINGLE-001 六项裁决 PASS；新发现 P0=0/P1=0/P2=0，技术阻断0。89 项只读证据核验 PASS，见 10_review/GATE3_DECISION_CHECK_v1.json；原数值 QA 与接管 QA 保留。未重拟合、未来源搜索、未新增情景计算、未调用另一账号或冒称 Opus 审查。无预算优化、KKT 或最优配置。Q1–Q4 ACTIVE FINAL MODEL=NONE，VALIDATED FINAL RESULTS=NONE；本 Gate 只确认受限用途。
+## Deliverables / next action
 
-本轮同步起点 main 808565ddd10bde7bf8c30f89d8c0a7dadd098a80；提交后以 HEAD/origin/main 为准。旧 Round5 预审包、QA、结果报告中的“Gate3 待审”是形成时状态，当前门槛只以本页和 GATE3_CONSENSUS 为准。除非 Q3 发现具体 P0，不重开 Q2。
+03_models/modeling_phase3/round6/Q3_RESULTS_REPORT_v1.md及Q3_LIMITATIONS_v1.md；Q3_DELIVERY_FIGURE_TABLE_PLAN_v1.md列全部等价文档；08_paper/sections/Q3_ROUND6_PAPER_CANDIDATE_v1.md；6图/9表；07_validation/round6/Q3_VALIDATION_REPORT_v1.md；10_review/MODELING_PHASE3_R6_QA_20260924.md；10_review/GATE4_PRE_REVIEW_PACKAGE_v1.md；02_analysis/consensus/Q3_TO_Q4_INTERFACE_v1.md及机器JSON。
 
-
-CURRENT ROUND6 UPDATE: CP1 specifications frozen, numerical optimization NOT EXECUTED. Gate3 PASS, Q1/Q2 closed, Q4 NOT STARTED. Continue only after CP1 remote verified.
-
-
-LATEST: Round6 CP2 BASELINE COMPLETE / QA PASS. CP3 quality/mixture/context scenarios NOT EXECUTED. Gate3 PASS; Q1/Q2 closed; Q4 NOT STARTED.
-
-
-LATEST ROUND6: CP3 complete, no material numerical failure; local-optimizer limitations documented. CP4 uncertainty/plots next after remote verification. Q1/Q2 remain closed, Q4 NOT STARTED.
-
-
-LATEST: Round6 CP4 COMPLETE — uncertainty/shadow/numerical/standalone figure QA PASS. CP5 paper/interface/Gate4 preparation remains. Q4 NOT STARTED.
+下一断点为Gate4预审，不是再次运行Round6。Q3仅暂定关闭；Q1–Q4 ACTIVE FINAL MODEL=NONE，VALIDATED FINAL RESULTS=NONE。Gate4不得自动PASS；Q4须后续明确启动。本轮用户要求完成后停止。

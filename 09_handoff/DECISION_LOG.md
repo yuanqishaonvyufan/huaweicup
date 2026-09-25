@@ -46,3 +46,6 @@ G3-SINGLE-001：用户授权 single-pass Gate3 Verdict A — PASS。六项用途
 
 
 R6-SPEC-001: user-authorized Round6 CP1 freeze; supplied compute proxies, inherited N/D support, quality/mixture OFF baseline, source-separated scenarios. No additional review claimed.
+
+
+R6-CLOSE-001 — 2026-09-25：按用户Round6目标，CP1–CP4真实计算及QA后Q3 PROVISIONALLY CLOSED；Gate4预审准备，未自动裁决。非凸初值局限/统计支持/成本proxy/质量与配比场景边界保留。Q4未启动。

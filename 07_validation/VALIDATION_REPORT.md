@@ -13,3 +13,6 @@ Q1 质量表示另见[规格](../03_models/modeling_phase1/q1/round4/Q1_MODEL_SP
 ## Round5 Q2 current update
 
 07_validation/round5/Q2_VALIDATION_REPORT_v1.md为当前Q2验证报告。三类轨迹验证与数值QA PASS，四候选图已检查；只支持附件内部候选。Gate3待裁决，VALIDATED FINAL=0。
+
+
+Round6 CURRENT：07_validation/round6/Q3_VALIDATION_REPORT_v1.md及机器QA PASS，仅条件问题求解验证；17劣局部起点/4失败保留，所有1377情景有成功交叉对照；Q3暂定关闭，Gate4待审。
