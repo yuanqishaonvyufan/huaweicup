@@ -1,5 +1,7 @@
 # EXPERIMENT_REGISTRY
 
+> Q4题意补足运行 `Q4_TASK_REPAIR_20260925_v1`：只读 `Q4_PRIMARY_v1.csv`、冻结 `frontier_family.csv`、`decomposition_changes.csv`、`forecast_summary.json`和`rolling_metrics.csv`；输出完整规模子样本诊断与 benchmark-space 外生放缓条件情景，详 `03_models/paper_repair/Q4_TASK_REPAIR_RESULTS_v1.md`。不重拟合Q2/Q3/Q4旧模型，不更新旧中心或95%区间。
+
 > Q1题意补足新增运行 `Q1_TASK_REPAIR_20260925_v1`：`04_code/paper_round8/q1_task_repair.py` 只读取冻结质量特征与 M1；输出 `06_results/raw/Q1_TASK_REPAIR_20260925_v1/`。22项 `Q_full` 为明示用途规则的构造评分，10B/70B配比-Loss检验为估算外推，不改变旧Q1/Q2/Q3/Q4模型或验证数值。详情 `03_models/paper_repair/Q1_TASK_REPAIR_RESULTS_v1.md`。
 
 > CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.

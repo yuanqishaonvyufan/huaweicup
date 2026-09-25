@@ -1,5 +1,7 @@
 # RESULTS_REGISTRY
 
+> Q4新增受限结果：`Q4-REPAIR-001` 为仅6条训练D可用记录的N+D描述敏感性，留一系数大幅变化，完整853条N–D贡献仍 NOT_IDENTIFIED；`Q4-REPAIR-002` 为ρ=1/0.5/0的外生增长保留情景，2027年79.76/77.93/76.11，2028年87.13/83.48/79.84。两项均来自 `Q4_TASK_REPAIR_20260925_v1`，情景不含经验覆盖或真实因果效应。旧Q4结果及区间未改。
+
 > Q1新增受限结果：`Q1-REPAIR-001`（22项规则构造评分；A1、A2、A3样本与领域表；来源 `Q1_TASK_REPAIR_20260925_v1/Q_FULL_DOMAIN_RESULTS_v1.csv`），`Q1-REPAIR-002`（A12/A13 10B和A14/A15 70B的估算配比-Loss成对外推；来源同Run `A12_A15_EXTRAPOLATION_CHECK_v1.csv`）。后者 M1/M0 中心化误差比2.3452/2.2672、秩相关−0.4494/−0.5122，均只作 ESTIMATED EXTRAPOLATION CHECK。旧数值未变；不得称新 `Q_full` 为真实因果质量弹性。
 
 > CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.

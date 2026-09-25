@@ -1,0 +1,170 @@
+{
+  "run_id": "Q4_TASK_REPAIR_20260925_v1",
+  "input_hashes": {
+    "Q4_PRIMARY_v1.csv": "08636136cbb040ba10d4d224744323c287ab0b68ecab5bbc06a57cb84f716187",
+    "frontier_family.csv": "4c0362347e68a0da1481d112c676693ff612b68dc4970dd2b39edbe230ce8a85",
+    "decomposition_changes.csv": "ba603ab9a44fa5588b265d24955686a303f0d0ceb6ee1f0e28b05d29e1bd2699",
+    "forecast_summary.json": "4f9cb379ea8d808884c18123a00a355713370e26f12c0032eccf3f7ab4d0944d",
+    "rolling_metrics.csv": "044e1585338c5cd39d69da02af20ad69acd93a9f3aeb8c7363238947be425c38"
+  },
+  "full_scale_subset": {
+    "n_D_observed": 9,
+    "n_D_primary_usable": 6,
+    "n_strict": 6,
+    "n_compute_consistent": 5,
+    "n_compute_only": 16,
+    "N_plus_D_6": {
+      "coefficients": [
+        12.65511726780616,
+        2.408939726781231,
+        1.180304025969391
+      ],
+      "n": 6,
+      "rank": 3,
+      "condition": 26.8234620829166,
+      "rmse": 4.879704220995407
+    },
+    "N_plus_D_5": {
+      "coefficients": [
+        -24.191064705399615,
+        9.037406052289644,
+        4.677046544561793
+      ],
+      "n": 5,
+      "rank": 3,
+      "condition": 62.19987584268429,
+      "rmse": 1.937085287806558
+    },
+    "LOO_logN_range": [
+      -5.286054978095746,
+      9.037406052289644
+    ],
+    "LOO_logD_range": [
+      -0.4896110899654755,
+      4.677046544561793
+    ],
+    "compute_only_16": {
+      "coefficients": [
+        -109.95204424529805,
+        2.6366452245278698
+      ],
+      "n": 16,
+      "rank": 2,
+      "condition": 1090.5677239062686,
+      "rmse": 4.888925645249694
+    },
+    "full_853_ND_share": "NOT_IDENTIFIED"
+  },
+  "scenario_reference": {
+    "first_date": "2024-06-16",
+    "last_date": "2025-03-14",
+    "first_frontier_logN": 2.1041465277042546,
+    "last_frontier_logN": 2.6923272406369736,
+    "weeks": 38.71428571428572,
+    "delta_logN": 0.588180712932719,
+    "reference_log_growth_per_week": 0.015192859743649565,
+    "theta_N": 4.595943203340986,
+    "compute_assumption": "C≈6ND and D fixed; exogenous benchmark-space scenario"
+  },
+  "scenarios": [
+    {
+      "target": "2027-09-25",
+      "scenario": "NO_SLOWDOWN_REFERENCE",
+      "rho": 1.0,
+      "baseline_dynamic_center": 79.75536356779305,
+      "reference_log_compute_growth_per_week": 0.015192859743649565,
+      "assumed_D_growth": "FIXED_ZERO",
+      "reference_parameter_associated_increment": 3.6409021392172525,
+      "score_shift": 0.0,
+      "conditional_frontier_center": 79.75536356779305,
+      "source_kind": "EXOGENOUS_CONDITIONAL_NOT_IDENTIFIED_EFFECT",
+      "conditional_PI95_only_for_reference": "[61.24204722669209, 90.40150198993967]",
+      "model_center_range_only_for_reference": "[52.16859687691628, 83.77111309771917]"
+    },
+    {
+      "target": "2027-09-25",
+      "scenario": "MODERATE_EXOGENOUS_SLOWDOWN",
+      "rho": 0.5,
+      "baseline_dynamic_center": 79.75536356779305,
+      "reference_log_compute_growth_per_week": 0.015192859743649565,
+      "assumed_D_growth": "FIXED_ZERO",
+      "reference_parameter_associated_increment": 3.6409021392172525,
+      "score_shift": -1.8204510696086262,
+      "conditional_frontier_center": 77.93491249818443,
+      "source_kind": "EXOGENOUS_CONDITIONAL_NOT_IDENTIFIED_EFFECT",
+      "conditional_PI95_only_for_reference": "",
+      "model_center_range_only_for_reference": ""
+    },
+    {
+      "target": "2027-09-25",
+      "scenario": "STRONG_EXOGENOUS_SLOWDOWN",
+      "rho": 0.0,
+      "baseline_dynamic_center": 79.75536356779305,
+      "reference_log_compute_growth_per_week": 0.015192859743649565,
+      "assumed_D_growth": "FIXED_ZERO",
+      "reference_parameter_associated_increment": 3.6409021392172525,
+      "score_shift": -3.6409021392172525,
+      "conditional_frontier_center": 76.11446142857581,
+      "source_kind": "EXOGENOUS_CONDITIONAL_NOT_IDENTIFIED_EFFECT",
+      "conditional_PI95_only_for_reference": "",
+      "model_center_range_only_for_reference": ""
+    },
+    {
+      "target": "2028-09-25",
+      "scenario": "NO_SLOWDOWN_REFERENCE",
+      "rho": 1.0,
+      "baseline_dynamic_center": 87.12751211384048,
+      "reference_log_compute_growth_per_week": 0.015192859743649565,
+      "assumed_D_growth": "FIXED_ZERO",
+      "reference_parameter_associated_increment": 7.291779352788525,
+      "score_shift": 0.0,
+      "conditional_frontier_center": 87.12751211384048,
+      "source_kind": "EXOGENOUS_CONDITIONAL_NOT_IDENTIFIED_EFFECT",
+      "conditional_PI95_only_for_reference": "[69.58018633055818, 95.56880507036963]",
+      "model_center_range_only_for_reference": "[52.33272228155908, 97.11295319946106]"
+    },
+    {
+      "target": "2028-09-25",
+      "scenario": "MODERATE_EXOGENOUS_SLOWDOWN",
+      "rho": 0.5,
+      "baseline_dynamic_center": 87.12751211384048,
+      "reference_log_compute_growth_per_week": 0.015192859743649565,
+      "assumed_D_growth": "FIXED_ZERO",
+      "reference_parameter_associated_increment": 7.291779352788525,
+      "score_shift": -3.6458896763942623,
+      "conditional_frontier_center": 83.48162243744622,
+      "source_kind": "EXOGENOUS_CONDITIONAL_NOT_IDENTIFIED_EFFECT",
+      "conditional_PI95_only_for_reference": "",
+      "model_center_range_only_for_reference": ""
+    },
+    {
+      "target": "2028-09-25",
+      "scenario": "STRONG_EXOGENOUS_SLOWDOWN",
+      "rho": 0.0,
+      "baseline_dynamic_center": 87.12751211384048,
+      "reference_log_compute_growth_per_week": 0.015192859743649565,
+      "assumed_D_growth": "FIXED_ZERO",
+      "reference_parameter_associated_increment": 7.291779352788525,
+      "score_shift": -7.291779352788525,
+      "conditional_frontier_center": 79.83573276105196,
+      "source_kind": "EXOGENOUS_CONDITIONAL_NOT_IDENTIFIED_EFFECT",
+      "conditional_PI95_only_for_reference": "",
+      "model_center_range_only_for_reference": ""
+    }
+  ],
+  "rolling_available": {
+    "4": 20,
+    "13": 11
+  },
+  "unavailable_horizons_weeks": [
+    26,
+    52
+  ],
+  "thirty_to_forty_two_month_validation": "UNAVAILABLE",
+  "outputs": {
+    "C4_COMPUTE_DIAGNOSTIC_ENTITIES_v1.csv": "b917d3cd330991fa83968f4fe49b9fd87ea4d29661ba821f2114924db48d8c59",
+    "EXOGENOUS_COMPUTE_SLOWDOWN_SCENARIOS_v1.csv": "3af3451da95cd7af8265efacd418bbe630857e934fc0cdb50833361ff09a2390",
+    "FULL_SCALE_SUBSET_ENTITIES_v1.csv": "20ca254cbcfa5a11d5baba71f15c7480262820c56561819a4c0447c75e36c8af",
+    "FULL_SCALE_SUBSET_LOO_v1.csv": "ead723cf9ff64f99dd03f730e72d4e095d039f3f2cea1fe7ab05a935cae41807"
+  }
+}
