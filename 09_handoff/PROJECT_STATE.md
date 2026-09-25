@@ -16,5 +16,5 @@ Q3仅条件N/D/源内Loss、活跃约束和等级；没有运输为历史或benc
 
 完成定义：可用数据上的审计、冻结规格、真实运算、负/不确定结论、受限论文包与QA完成；不表示所有题面因果量已识别，不升级为不受限FINAL模型或最终提交。Q4八项结果VALIDATED FOR RESTRICTED REPORTING。下一阶段保持上述限制，不因“MODELING COMPLETE”删除它们。
 
-导航：03_models/modeling_phase4/round7/Q4_RESULTS_REPORT_v1.md；Q4_TO_PAPER_INTERFACE；07_validation/round7/Q4_VALIDATION_REPORT_v1.md；10_review/FINAL_MODELING_PRE_REVIEW_PACKAGE_v1.md；ROUND7_CHECKPOINT_LOG。CP0–CP3已远端核验，CP4及最终收据按日志/最终HEAD为准。
+导航：03_models/modeling_phase4/round7/Q4_RESULTS_REPORT_v1.md；Q4_TO_PAPER_INTERFACE；07_validation/round7/Q4_VALIDATION_REPORT_v1.md；10_review/FINAL_MODELING_PRE_REVIEW_PACKAGE_v1.md；ROUND7_CHECKPOINT_LOG。CP0–CP4均已推送并远端核验；CP4=1f424bb98ed15b05607be31ae1c7b90e5eaef846。84项Git存储字节哈希通过。最终HEAD见后续收据提交和日志。
 

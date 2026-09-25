@@ -16,3 +16,5 @@ CP3: run-date 12/24 forecasts, separate uncertainty and robustness completed.
 CP3 VERIFIED: cc34495a2b1902b3a84adde8241847443161ac44 = remote main.
 
 CP4 ready: paper-ready Q4,42/42 QA,8 figures,7 tables,registries and final-modeling handoff. Final receipt will record verified CP4 hash. Numerical outputs retained; Q3 derived copy corrected for exact decimal preservation only.
+
+CP4 VERIFIED: 1f424bb98ed15b05607be31ae1c7b90e5eaef846 = remote main. Git stored-blob SHA checks 84/84 PASS. Final receipt commit follows; no scientific changes.

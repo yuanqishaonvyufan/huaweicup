@@ -1,0 +1,25 @@
+{
+  "CP4_local_HEAD": "1f424bb98ed15b05607be31ae1c7b90e5eaef846",
+  "CP4_remote_main": "1f424bb98ed15b05607be31ae1c7b90e5eaef846",
+  "verified_equal": true,
+  "tracked_blob_integrity": {
+    "checked": 84,
+    "passed": 84
+  },
+  "checkpoints": {
+    "CP0": "9c54c3e43aba7fbac38fa01142005d96a73bd212",
+    "CP1": "f3f0a4e0dc34782a9f0a00da42fc21a85ca4ce4f",
+    "CP2": "10c30f90549fe85f9ef298d9e965c651dc887e50",
+    "CP3": "cc34495a2b1902b3a84adde8241847443161ac44",
+    "CP4": "1f424bb98ed15b05607be31ae1c7b90e5eaef846"
+  },
+  "QA": "PASS WITH DOCUMENT CORRECTIONS 42/42",
+  "scope": "Q4 PROVISIONALLY CLOSED; MODELING COMPLETE WITH RESTRICTED EVIDENCE SCOPE; Round8 READY",
+  "scientific_limits_retained": [
+    "NO RELIABLE BRIDGE",
+    "full ND and actual compute-slowdown NOT IDENTIFIED",
+    "contribution-share sensitivity fails",
+    "long-horizon forecasts extrapolation-dominated; coverage unvalidated"
+  ],
+  "receipt_commit": "This receipt is committed after CP4; final remote HEAD reported to user."
+}
