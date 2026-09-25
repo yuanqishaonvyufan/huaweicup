@@ -52,3 +52,6 @@ R6-CLOSE-001 — 2026-09-25：按用户Round6目标，CP1–CP4真实计算及QA
 
 
 G4-SINGLE-001 — 2026-09-25：用户授权single-pass裁决，七项PASS、68只读检查PASS，新P0/P1/P2=0。Gate4 Verdict A，Q3暂定关闭，Q4授权未执行；冻结接口A–J及机器JSON。数值/模型/规格/成本/原实验不变，未晋升FINAL。
+
+
+R7-AUTH-001 / CONFIRMED execution authority: explicit user request to carry out supplied Round7 requirements authorizes researcher specification and implementation, using R5/R6 single-agent precedent. No external reviewer claim. Q1–Q3 frozen; all downstream conclusions inherit evidence limitations.

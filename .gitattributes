@@ -86,3 +86,9 @@
 /02_analysis/consensus/Q3_TO_Q4_INTERFACE_v1.md text eol=lf
 /02_analysis/consensus/Q3_TO_Q4_INTERFACE_FREEZE_v1.json text eol=lf
 /10_review/GATE4_DECISION_CHECK_v1.json text eol=lf
+
+# Round7 deterministic artifact bytes
+**/modeling_phase4/** -text
+**/round7/** -text
+06_results/raw/EXP-Q4-R7-20260925-v1/** -text
+05_experiments/configs/Q4_R7_FROZEN_v1.json -text
