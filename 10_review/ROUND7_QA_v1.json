@@ -1,0 +1,295 @@
+{
+  "run_id": "QA-Q4-R7-20260925-v1",
+  "verdict": "PASS WITH DOCUMENT CORRECTIONS",
+  "checks": [
+    {
+      "check": "Official C1-C10 roles complete",
+      "pass": true,
+      "evidence": "visible-body role matrix + rendered page; all fields and SHA in JSON"
+    },
+    {
+      "check": "Every C raw file unchanged",
+      "pass": true,
+      "evidence": {
+        "count": 1973,
+        "bad": []
+      }
+    },
+    {
+      "check": "Frozen mathematical specs unchanged",
+      "pass": true,
+      "evidence": {
+        "Q4_BRIDGE_MODEL_SPEC_v1.md": "f085741cb68e788c524d998826e06ccf625bbfb275510aae2ccfd54caf9974d0",
+        "Q4_FRONTIER_MODEL_SPEC_v1.md": "876163dab850c0bb79ae285a9a7e810559bc9a6d2973b6bd0ad1169cdd7b100c"
+      }
+    },
+    {
+      "check": "Frozen input bytes unchanged",
+      "pass": true,
+      "evidence": 5
+    },
+    {
+      "check": "C1/C2/C9 floating equivalence; not replicated observations",
+      "pass": true,
+      "evidence": {
+        "C2_max_diff": 3.552713678800501e-15,
+        "C9_max_diff": 7.105427357601002e-15
+      }
+    },
+    {
+      "check": "Unique entity, six dimensions and scale eligibility",
+      "pass": true,
+      "evidence": {
+        "primary": 853,
+        "duplicate_primary": 0
+      }
+    },
+    {
+      "check": "Hub/license/flag criteria",
+      "pass": true,
+      "evidence": "reported license research proxy; strict subset separately tested"
+    },
+    {
+      "check": "Types explicitly separated",
+      "pass": true,
+      "evidence": {
+        "instruct_finetuned": 539,
+        "merge": 221,
+        "base": 92,
+        "other": 1
+      }
+    },
+    {
+      "check": "C8 complete all-file handling",
+      "pass": true,
+      "evidence": {
+        "parsed": 1954,
+        "bad": 4
+      }
+    },
+    {
+      "check": "Latest parseable revision retained",
+      "pass": true,
+      "evidence": "latest revision never backdated to earlier evaluation in primary"
+    },
+    {
+      "check": "Raw six-score average arithmetic",
+      "pass": true,
+      "evidence": "unweighted six-group composite, not normalized C1 score"
+    },
+    {
+      "check": "C8 independent metric recomputation",
+      "pass": true,
+      "evidence": {
+        "sample": 40,
+        "max_error": 7.105427357601002e-15
+      }
+    },
+    {
+      "check": "Mandatory C8 subtask aggregation independently matches",
+      "pass": true,
+      "evidence": {
+        "task_count": 24,
+        "raw_rows": 46896
+      }
+    },
+    {
+      "check": "Frontier quantile independently recomputed",
+      "pass": true,
+      "evidence": {
+        "endpoints": 40,
+        "max_error": 1.4210854715202004e-14
+      }
+    },
+    {
+      "check": "Window counts and causal endpoint dates",
+      "pass": true,
+      "evidence": "no future evaluations or centered windows in primary frontier"
+    },
+    {
+      "check": "Same quantile weights for scale/residual",
+      "pass": true,
+      "evidence": {
+        "scale_max_error": 3.552713678800501e-15
+      }
+    },
+    {
+      "check": "Decomposition sums and unclamped shares",
+      "pass": true,
+      "evidence": "negative sensitivity shares preserved"
+    },
+    {
+      "check": "Failed share robustness disclosed",
+      "pass": true,
+      "evidence": "known-family / strict / start / window signs differ"
+    },
+    {
+      "check": "Full ND contribution explicitly unidentified",
+      "pass": true,
+      "evidence": {
+        "known_D": 9,
+        "base_D_usable": 6
+      }
+    },
+    {
+      "check": "Bridge train/test entity disjoint",
+      "pass": true,
+      "evidence": "high stratum has unique scales; medium strata only model-held-out diagnostics"
+    },
+    {
+      "check": "Bridge verdict supported by failed validation",
+      "pass": true,
+      "evidence": "no rejected bridge enters raw6 forecast"
+    },
+    {
+      "check": "B1 source-loss equality does not imply benchmark identity",
+      "pass": true,
+      "evidence": {
+        "B1_pairs": 7,
+        "C1_scale_eligible": 2
+      }
+    },
+    {
+      "check": "Rolling predictions independently recomputed",
+      "pass": true,
+      "evidence": {
+        "rows": 124,
+        "max_error": 3.552713678800501e-14
+      }
+    },
+    {
+      "check": "Rolling origin strictly before target",
+      "pass": true,
+      "evidence": "no time lookahead in fitted dynamics"
+    },
+    {
+      "check": "Long-horizon validation unavailable explicitly",
+      "pass": true,
+      "evidence": "26/52 weeks have no eligible target; not counted PASS"
+    },
+    {
+      "check": "Model selection per frozen criterion",
+      "pass": true,
+      "evidence": {
+        "linear": 1.663954671208956,
+        "local_logit": 2.3910164334496278,
+        "logit": 1.6429345974019611,
+        "persistence": 2.839502275510474
+      }
+    },
+    {
+      "check": "Run-date targets and stale gap explicit",
+      "pass": true,
+      "evidence": "last data2025-03-14; data-to-target horizon includes gap"
+    },
+    {
+      "check": "All central/interval predictions bounded",
+      "pass": true,
+      "evidence": "bounded transform/clipping; mathematical ceiling only"
+    },
+    {
+      "check": "Bootstrap replicates 2027-09-25",
+      "pass": true,
+      "evidence": 1000
+    },
+    {
+      "check": "Bootstrap replicates 2028-09-25",
+      "pass": true,
+      "evidence": 1000
+    },
+    {
+      "check": "Bootstrap replicates 2026-03-14",
+      "pass": true,
+      "evidence": 1000
+    },
+    {
+      "check": "Bootstrap replicates 2027-03-14",
+      "pass": true,
+      "evidence": 1000
+    },
+    {
+      "check": "Saved percentile intervals recompute",
+      "pass": true,
+      "evidence": {
+        "max_error": 7.105427357601002e-15
+      }
+    },
+    {
+      "check": "Requested central forecasts independently recompute",
+      "pass": true,
+      "evidence": {
+        "max_error": 2.842170943040401e-14,
+        "logit_intercept_at_20240616": -0.3974579165226532,
+        "logit_slope_per_week": 0.010350939915048037
+      }
+    },
+    {
+      "check": "Scenario component arithmetic and labels",
+      "pass": true,
+      "evidence": "collapsed positive-scale-growth scenarios; no actual compute slowdown identification"
+    },
+    {
+      "check": "Q3 copied without history/benchmark transport",
+      "pass": true,
+      "evidence": "51 conditional resource rows; input training data never includes Q3"
+    },
+    {
+      "check": "All six task directions reported",
+      "pass": true,
+      "evidence": "no cherry-picked benchmark"
+    },
+    {
+      "check": "Release-date insufficient sample retained",
+      "pass": true,
+      "evidence": "no invented release-date forecast"
+    },
+    {
+      "check": "Required model report package exists",
+      "pass": true,
+      "evidence": [
+        "Q4_BRIDGE_MODEL_SPEC_v1.md",
+        "Q4_BRIDGE_RESULTS_v1.md",
+        "Q4_SCALE_NONSCALE_DECOMPOSITION_v1.md",
+        "Q4_FRONTIER_MODEL_SPEC_v1.md",
+        "Q4_ROLLING_VALIDATION_v1.md",
+        "Q4_FORECAST_12M_24M_v1.md",
+        "Q4_UNCERTAINTY_ANALYSIS_v1.md",
+        "Q4_ROBUSTNESS_v1.md",
+        "Q4_RESULTS_REPORT_v1.md",
+        "Q4_LIMITATIONS_v1.md",
+        "Q4_FIGURE_PLAN_v1.md",
+        "Q4_TABLE_PLAN_v1.md",
+        "Q4_TO_PAPER_INTERFACE_v1.md"
+      ]
+    },
+    {
+      "check": "Eight figure hashes and sources",
+      "pass": true,
+      "evidence": "PNG and SVG; visual inspection logged separately"
+    },
+    {
+      "check": "Run/result/figure registered",
+      "pass": true,
+      "evidence": "eight restricted results and eight figures"
+    },
+    {
+      "check": "Q1-Q3/raw not reopened or mutated",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "pass_count": 42,
+  "total": 42,
+  "new_defects_found": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 3
+  },
+  "unresolved_implementation_defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0
+  },
+  "scope": "restricted descriptive arithmetic and conditional forecasts; no reliable bridge, full ND and real compute-slowdown NOT IDENTIFIED; no long-horizon validation",
+  "reviewer": "single executing researcher; no external reviewer claimed"
+}

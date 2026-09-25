@@ -1,5 +1,7 @@
 # RESULTS_REGISTRY
 
+> CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.
+
 **当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
 
 当前：14项Q1 + 9项Q2候选；Round5数值QA通过，Gate3待审，VALIDATED FINAL=NONE。以下Round4统计保留历史范围。
@@ -76,3 +78,18 @@ Gate 2 状态同步：G2-SINGLE-001 / Verdict B 已生效，数值及 Result ID 
 ## Gate4 limited-use acceptance
 
 G4-SINGLE-001 Verdict A：现有Q3结果按Q3_TO_Q4_INTERFACE的A–J获限定用途准入；数值/Run/证据等级不变。参数与影子值仅敏感性，quality/mix/context仅场景。没有新增数值Result ID或VALIDATED FINAL晋升；Q4未执行。
+
+
+## Round7 restricted result register
+
+| ID | result | source_run | source_file | evidence | validation | paper |
+| --- | --- | --- | --- | --- | --- | --- |
+| Q4-R7-001 | Observed raw6 q90 36.453073 →52.332722 | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/frontier_family.csv | CHECKED/VALIDATED restricted observation | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 2 (history) |
+| Q4-R7-002 | Parameter share17.0233%; residual82.9767%; full ND NOT IDENTIFIED | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/decomposition_changes.csv | VALIDATED arithmetic, unstable descriptive scope | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 4 (decomposition) |
+| Q4-R7-003 | NO RELIABLE BRIDGE; rho0.60714; failed held-out criteria | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/bridge_summary.json | VALIDATED rejection | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 3 |
+| Q4-R7-004 | Logit short rolling MAE1.756586/1.529283 at4/13weeks | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/rolling_metrics.csv | VALIDATED retrospective selection | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 5 (validation) |
+| Q4-R7-005 | 2027/2028 conditional79.75536/87.12751 with separate PI | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json | VALIDATED computation; extrapolation-dominated | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 6 (forecast) |
+| Q4-R7-006 | Family/time/filter contribution instability; six tasks improve | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/robustness_variants.csv | VALIDATED diagnostics | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 sections 4–5 (robustness) |
+| Q4-R7-007 | Model ranges52.16860–83.77111 /52.33272–97.11295 | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/forecast_all_models_scenarios.csv | VALIDATED model envelope; not CI | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 6 (model uncertainty) |
+| Q4-R7-008 | Scale scenarios collapse A(h)=0; full compute effect unknown | EXP-Q4-R7-20260925-v1 | 06_results/raw/EXP-Q4-R7-20260925-v1/scenario_decomposition.csv | VALIDATED conditional scenario | 07_validation/round7/Q4_VALIDATION_REPORT_v1.md | Q4 section 6 (scenario) |
+

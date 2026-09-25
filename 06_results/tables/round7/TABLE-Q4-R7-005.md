@@ -1,0 +1,4 @@
+| variant | model | selected | scenario | target | origin | origin_type | months_ahead | last_data | gap_days | horizon_weeks_from_data | central | lower95_conditional | upper95_conditional | no_slowdown_reference | scale_slope_per_week | parameter_contribution_removed | retained_scale_fraction | status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| main | logit | True | BASELINE | 2027-09-25 | 2026-09-25 | RUN_DATE | 12 | 2025-03-14 | 560 | 132.14 | 79.755 | 61.242 | 90.402 | 79.755 | -0.029739 | 0 | 0.5 | EXTRAPOLATION-DOMINATED; conditional diffusion PI, no calibrated long-horizon coverage |
+| main | logit | True | BASELINE | 2028-09-25 | 2026-09-25 | RUN_DATE | 24 | 2025-03-14 | 560 | 184.43 | 87.128 | 69.58 | 95.569 | 87.128 | -0.029739 | 0 | 0.5 | EXTRAPOLATION-DOMINATED; conditional diffusion PI, no calibrated long-horizon coverage |

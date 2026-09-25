@@ -97,3 +97,17 @@ R6-GIT-01（P2 CLOSED）：Round6目录属性会影响继承CP0的CRLF冻结哈�
 ## Gate4 decision — 2026-09-25
 
 G4-SINGLE-001 新发现P0=0/P1=0/P2=0、阻断0。Gate4 Verdict A；Round6三项P2保持历史关闭。B1外部来源/真实质量/供给/1B等限制继续携带，不因Gate通过宣布解决。D语义与A–J为正常接口冻结，非新的模型错误。
+
+
+## Round7 QA defects and retained limitations
+
+New defects P0=0 / P1=0 / P2=3, all CLOSED after final QA:
+
+| ID | Severity | Finding | Resolution |
+|---|---|---|---|
+| R7-PKG-01 | P2 | Optional markdown formatter unavailable, report literal syntax, and Q3 copy round-trip last-bit drift | Deterministic formatter/literal fix; Q3 copy preserves original decimal strings; fitted/forecast numbers unaffected |
+| R7-DOC-01 | P2 | Seven raw6 name overlaps incorrectly described as insufficient without eligibility distinction | Seven name overlaps but two pass frozen triple-source scale criterion; no model/bridge verdict changed |
+| R7-VIS-01 | P2 | Dense date ticks; absolute S/R bars risk interpretation as identified absolute contributions | Sparse dates and scenario increments from last frontier; visual review repeated |
+
+Retained scientific scope limitations, NOT declared resolved: R7-LIM-01 missing same-stage D prevents full N–D/non-scale and compute-slowdown identification;R7-LIM-02 560-day data gap and no long-horizon coverage;R7-LIM-03 decomposition/filter/family instability;R7-LIM-04 no reliable bridge. These are explicit negative/inconclusive research results, not hidden successful tests. Existing DA-02/05/07/10 and Q1–Q3 provenance/transfer limits remain. DA-04 C8 four damaged files handled/excluded, source damage itself unresolved. No new P0 reopening Q1–Q3.
+

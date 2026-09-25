@@ -49,3 +49,8 @@ G3-SINGLE-001：读取冻结规格/结果/QA/接口/Alert v4，89 项只读核�
 
 
 2026-09-25 Gate4 single-pass：复用Round6证据，G4-SINGLE-001 PASS，接口/交接已冻结；无Opus独立复审宣称，无Q4执行。
+
+
+## Round7 researcher execution
+
+User-authorized end-to-end Round7; no independent Opus call. R7-AUTH-001 → audited data → R7-SPEC-001 freeze → CP2/CP3 runs → 42-item QA and visual checks → R7-CLOSE-001. Negative bridge and robustness results retained; Q1–Q3 frozen. Shared handoff updated for Round8.

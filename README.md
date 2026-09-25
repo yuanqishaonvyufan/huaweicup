@@ -1,5 +1,7 @@
 # 2026 年中国研究生数学建模竞赛 F 题研究工程
 
+**当前 Round7 COMPLETE / Q4 PROVISIONALLY CLOSED（受限）/ MODELING COMPLETE WITH RESTRICTED EVIDENCE SCOPE；Round8 READY。** 42项QA通过，桥接不可靠、完整N–D贡献不可识别、分解不稳健、远期仅条件外推。详[结果](03_models/modeling_phase4/round7/Q4_RESULTS_REPORT_v1.md)和[总交接](10_review/FINAL_MODELING_PRE_REVIEW_PACKAGE_v1.md)。下面旧状态为历史。
+
 当前：Gate4 G4-SINGLE-001 ACTIVE/PASS；Q3 PROVISIONALLY CLOSED，Round7 READY，Q4 AUTHORIZED TO START / NOT EXECUTED。以PROJECT_STATE、GATE4_CONSENSUS和GATE4_TO_ROUND7_HANDOFF为准；以下旧阶段文字保留历史语境。
 
 当前：Round6 CP5完成；Q3 PROVISIONALLY CLOSED，Gate4预审就绪，Q4未启动。以[PROJECT_STATE](09_handoff/PROJECT_STATE.md)和[Gate4包](10_review/GATE4_PRE_REVIEW_PACKAGE_v1.md)为准。以下旧阶段摘要保留历史语境。
@@ -38,3 +40,4 @@ Sol 和 Opus 是内部双核心研究接口。项目文件并不代表已调用�
 ## Current: Gate3 PASS, Round6 READY
 
 [GATE3_CONSENSUS_v1](02_analysis/consensus/GATE3_CONSENSUS_v1.md) is ACTIVE, G3-SINGLE-001 / Verdict A — PASS. Q2 PROVISIONALLY CLOSED; Q3 AUTHORIZED TO START / NOT EXECUTED; Q4 NOT STARTED. Read [PROJECT_STATE](09_handoff/PROJECT_STATE.md), the [frozen interface](02_analysis/consensus/Q2_TO_Q3_INTERFACE_v1.md), and [Round6 handoff](09_handoff/GATE3_TO_ROUND6_HANDOFF_v1.md). B1 is attachment-internal only; quality/mixture remain graded scenarios, parameter uncertainty is sensitivity only, and support-aware constraints are mandatory. No final model/result promotion and no Q3 optimization in this Gate. Earlier gate-pending descriptions are historical.
+

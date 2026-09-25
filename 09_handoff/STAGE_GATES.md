@@ -31,3 +31,8 @@ CURRENT 2026-09-25：Round6 Q3 FORMULATION/COMPUTATION/VALIDATION/EVIDENCE候选
 
 
 CURRENT Gate4 G4-SINGLE-001 ACTIVE / PASS，Q3 PROVISIONALLY CLOSED，Round7 READY，Q4 AUTHORIZED / NOT EXECUTED。只放行限定用途，无FINAL模型/结果晋升；旧阶段记录为历史状态。
+
+
+## Round7 superseding status
+
+Q4 formulation/computation/qualified evidence package COMPLETE; QA42/42. MODELING COMPLETE WITH RESTRICTED EVIDENCE SCOPE; Q1–Q4 PROVISIONALLY CLOSED. Round8 manuscript integration READY, not executed. Negative/unidentified findings remain mandatory; earlier current-status paragraphs are historical.

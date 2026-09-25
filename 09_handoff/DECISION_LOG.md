@@ -57,3 +57,8 @@ G4-SINGLE-001 — 2026-09-25：用户授权single-pass裁决，七项PASS、68�
 R7-AUTH-001 / CONFIRMED execution authority: explicit user request to carry out supplied Round7 requirements authorizes researcher specification and implementation, using R5/R6 single-agent precedent. No external reviewer claim. Q1–Q3 frozen; all downstream conclusions inherit evidence limitations.
 
 R7-SPEC-001 CONFIRMED researcher execution specification: C8 raw6 evaluation-date frontier, C1/C9 screen, C3 comparability audit, C4 scale coverage. N-only decomposition explicitly does not identify full N–D/non-scale causal percentages. Bridge B0 fallback and extrapolation-dominated forecasts precommitted. Specs frozen at CP1 before any fits.
+
+
+## R7-CLOSE-001 — restricted provisional closure
+
+42/42 lineage/arithmetic QA PASS WITH DOCUMENT CORRECTIONS. Q4 PROVISIONALLY CLOSED and MODELING COMPLETE only for the qualified model package; full ND/real compute-slowdown/causal technology remain unidentified. Bridge rejected, share unstable, long forecasts extrapolation-dominated; no unrestricted final-model promotion. Round8 READY, no Gate5. This is researcher execution within explicit user authorization, not external consensus.

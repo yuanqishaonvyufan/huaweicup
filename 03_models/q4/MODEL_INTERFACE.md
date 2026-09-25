@@ -1,16 +1,9 @@
 # Q4 MODEL_INTERFACE
 
-状态：OPEN；仅记录题面任务接口。未选择基准、候选或最终模型。
+ACTIVE / PROVISIONALLY CLOSED, R7-SPEC-001 and R7-CLOSE-001. Source spec: 03_models/modeling_phase4/round7/Q4_FRONTIER_MODEL_SPEC_v1.md and bridge spec. Run EXP-Q4-R7-20260925-v1, 42-check QA PASS WITH DOCUMENT CORRECTIONS.
 
-- INPUT：C1/C2、C3、C4、C8，C5/C6 桥接及前三问适用输出
-- OUTPUT：规模/非规模贡献、能力前沿、预测区间和局限
-- DECISION VARIABLES：待联合分析判定；注意区分决策量与外生情景量。
-- PARAMETERS：待数据审计和数学规格确认。
-- ASSUMPTIONS：待双方提出并验证。
-- BASELINE：OPEN。
-- CANDIDATE MODEL：OPEN。
-- FINAL MODEL：OPEN。
-- VALIDATION：按题面与问题风险设计，当前未运行。
-- OUTPUT TO NEXT QUESTION：规模/非规模贡献、能力前沿、预测区间和局限
+INPUT: audited C1–C10, primary exact-ID C1/C8 and C9 screen; C3 comparability/C4 metadata; restricted Q3 mechanism only.
+MODEL: 28-day raw6 q90 evaluation frontier; OLS parameter/type/family/time descriptive decomposition; logit dynamic selected at4/13week rolling horizons. Bridge B0 after high-stratum validation failure.
+OUTPUT: descriptive N-only parameter share and residual with failed robustness; conditional 2027/2028 forecasts and separate statistical/model/scenario uncertainty. Full ND scale/non-scale and real compute slowdown NOT IDENTIFIED. No reliable Loss transport.
+FINAL STATUS: restricted provisional reporting; no unrestricted causal/final benchmark claim. Paper interface and registry are authoritative. Q4 model package complete, manuscript integration remains Round8.
 
-任何正式数学规格须引用 Consensus/Decision ID、版本和验证计划。

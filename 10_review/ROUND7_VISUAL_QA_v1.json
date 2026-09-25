@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "review": "view_image contact sheet of all8; individual002/008 after repair",
+  "findings_corrected": [
+    "dense date ticks on002",
+    "scenario figure uses increments not arbitrary absolute component partition"
+  ],
+  "limits": "final embedded-paper size not checked until Round8",
+  "figure_manifest_sha256": "65888cd68bb2ece432246479962d1e3f4a1e996e3181b82263226e09efd90a5b"
+}

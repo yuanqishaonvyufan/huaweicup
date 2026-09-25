@@ -1,5 +1,7 @@
 # EXPERIMENT_REGISTRY
 
+> CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.
+
 **当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
 
 当前：Round5已新增1次N-D主拟合、1次有效情景v3、2次隔离失败情景v1/v2；详本文件Round5区。以下Round4统计保留历史范围。
@@ -52,3 +54,9 @@ G4-SINGLE-001：04_code/modeling_phase3/gate4_review.py仅标准库只读/哈希
 
 AUDIT-Q4-R7-20260925-v1 COMPLETED: round7_mapping.py + round7_audit.py, all C hashes, entities/C8 tasks/C3/C4.
 EXP-Q4-R7-20260925-v1 PLANNED: Q4_R7_FROZEN_v1.json; seed 20260925; processed/modeling_phase4/round7 INPUT_MANIFEST; code/modeling_phase4; outputs 06_results/raw/EXP-Q4-R7-20260925-v1. Model fitting starts only after CP1 freeze.
+
+
+## Round7 completed execution
+
+EXP-Q4-R7-20260925-v1 COMPLETED: bridge/decomposition/rolling/forecast/robustness; Python 3.13.14; seed20260925;400 family-cluster coefficient replicates,1000 forecast blocks,200 rolling blocks. Frozen Q4_R7_FROZEN_v1.json; INPUT_MANIFEST; code/output hashes in ROUND7_REPRODUCIBILITY_MANIFEST_v1.json. Numerical outputs unchanged by document fixes. Audit/read-only recomputation QA-Q4-R7-20260925-v1 separate from model run. See QA verdict for reporting scope.
+

@@ -1,4 +1,13 @@
 from round7_models import *
+import csv
+def copy_q3_interface():
+    # Preserve original decimal strings: pandas round-tripping changes last bits.
+    source=ROOT/'06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv'
+    with source.open(encoding='utf-8',newline='') as stream:
+        reader=csv.DictReader(stream);fields=reader.fieldnames;rows=list(reader)
+    with (OUT/'Q3_conditional_interface.csv').open('w',encoding='utf-8',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=fields+['q4_role','benchmark_prediction'],lineterminator='\n');writer.writeheader()
+        for row in rows:writer.writerow(dict(row,q4_role='CONDITIONAL_N_D_SOURCE_LOSS_ONLY',benchmark_prediction='NOT_IDENTIFIED_NO_RELIABLE_BRIDGE'))
 def forecast_rows(f,selected,beta,tag='main'):
     t=f.t_week.to_numpy(); y=f.F.to_numpy();last=pd.Timestamp(f.date.iloc[-1]);origin=pd.Timestamp(CFG['run_date'])
     scale_slope=float(ols(np.column_stack([np.ones(len(t)),t-t[-1]]),f.S)[1])
@@ -44,7 +53,7 @@ def main():
     pd.DataFrame({'date':dates,'central':np.clip(predict_dynamic(fit,t)-remove,0,100),'lower95':lo,'upper95':hi}).to_csv(OUT/'forecast_fan.csv',index=False)
     sensitivity(d,model)
     # Q3 only copied as a conditional mechanism, never a historical feature.
-    q3=pd.read_csv(ROOT/'06_results/raw/EXP-Q3-BASE-R6-20260924-v1/budget_path.csv');q3['q4_role']='CONDITIONAL_N_D_SOURCE_LOSS_ONLY';q3['benchmark_prediction']='NOT_IDENTIFIED_NO_RELIABLE_BRIDGE';q3.to_csv(OUT/'Q3_conditional_interface.csv',index=False)
+    copy_q3_interface()
     summary=[]
     for target,g in pred[pred.origin_type=='RUN_DATE'].groupby('target'):
         base=g[(g.model==model)&(g.scenario=='BASELINE')].iloc[0];models=g[g.scenario=='BASELINE'];scenarios=g[g.model==model]

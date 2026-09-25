@@ -15,3 +15,8 @@
 | OQ-011 | C7 的实际可行 L_ctx 是否覆盖 30,000 token 代理阈值，架构上限与训练长度是否相同？ | P0 C7_AUDIT | OPEN |
 
 以上问题不在初始化阶段代答。
+
+
+## Round7 disposition of Q4 questions
+
+OQ-006 resolved as explicit filtering/evaluation-time/raw6 frontier specification. OQ-009 quantitative bridge rejected for operational forecasting; full source-unified mapping remains unsupported. Full ND contribution, actual compute slowdown and empirical long-horizon coverage remain NOT IDENTIFIED. These are retained paper limitations, not further Round7 fitting promises.

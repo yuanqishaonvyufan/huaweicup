@@ -1,5 +1,20 @@
-# PROJECT_STATE
+# JOINT_CONTEXT
 
-ACTIVE 2026-09-25: MODELING PHASE 4 ROUND 7 / Q4 IN PROGRESS. Q1/Q2/Q3 PROVISIONALLY CLOSED; Gate4 PASS retained. Upstream synchronized to 3562c1294f4355edfa6e5ac13a7724f25fbcef26. CP0 mapping hash audit complete before commit; no Q4 fit yet.
+## 当前唯一权威状态 — Round7 / 2026-09-25
 
-User instruction authorizes end-to-end Round7 including specification, experiments, forecasts and checkpoint pushes. Researcher execution under this authorization follows prior R5/R6 precedent; no external Opus review or joint-model consensus claimed. All Q3 admission restrictions retained.
+Q1/Q2/Q3/Q4: PROVISIONALLY CLOSED。Round7 COMPLETE；MODELING COMPLETE **WITH RESTRICTED EVIDENCE SCOPE**。Round8 PAPER INTEGRATION READY，仅允许受限结论进入正文。无Gate5流程；本轮不启动完整论文排版。
+
+Round7 QA: PASS WITH DOCUMENT CORRECTIONS，42/42实现/证据链核查。新增缺陷P0/P1/P2=0/0/3，全部关闭；未解决实现缺陷0/0/0。无外部Opus/独立审稿者宣称。Gate4 PASS及Q1–Q3模型/接口原字节保持。
+
+Q4主证据：853条C1/C8精确ID与参数核对、C9可用性筛选；C8 raw6等权能力，评测日期，28天窗口q90。历史36.45307→52.33272。主规格参数关联17.0233%、参数调整残差82.9767%，筛选/时间敏感性可反号；不是完整N–D贡献或因果技术比例。
+
+Loss–Benchmark: NO RELIABLE BRIDGE，B0运行。完整N–D/真实compute-slowdown效应NOT IDENTIFIED。C1–C10全部审计，C8任务聚合完成；C3异口径历史不拼接，C4数据/算力/开放权重字段已审计，D覆盖不足。
+
+Forecast origin2026-09-25，last evaluation2025-03-14，gap560天。2027-09-25条件中心79.75536，95%模型区间61.24205–90.40150；2028-09-25为87.12751，69.58019–95.56881。模型中心范围52.16860–83.77111 /52.33272–97.11295；不是CI。两期限EXTRAPOLATION-DOMINATED，只有4/13周回测，12/24月覆盖未经验证。三规模情景因S趋势非正而重合，不是现实算力约束无效的证据。
+
+Q3仅条件N/D/源内Loss、活跃约束和等级；没有运输为历史或benchmark预测。B8、因果质量弹性、通用mix、1B运输、FLOPs货币成本、支持平台产业饱和全部禁入。Q1/Q2/Q3此前来源/识别/外推限制不变。
+
+完成定义：可用数据上的审计、冻结规格、真实运算、负/不确定结论、受限论文包与QA完成；不表示所有题面因果量已识别，不升级为不受限FINAL模型或最终提交。Q4八项结果VALIDATED FOR RESTRICTED REPORTING。下一阶段保持上述限制，不因“MODELING COMPLETE”删除它们。
+
+导航：03_models/modeling_phase4/round7/Q4_RESULTS_REPORT_v1.md；Q4_TO_PAPER_INTERFACE；07_validation/round7/Q4_VALIDATION_REPORT_v1.md；10_review/FINAL_MODELING_PRE_REVIEW_PACKAGE_v1.md；ROUND7_CHECKPOINT_LOG。CP0–CP3已远端核验，CP4及最终收据按日志/最终HEAD为准。
+

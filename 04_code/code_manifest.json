@@ -107,5 +107,67 @@
       "purpose": "Gate4 read-only evidence decision; no model execution"
     }
   ],
-  "round6_scope": "Q3 complete conditional candidate; Q4 not started"
+  "round6_scope": "Q3 complete conditional candidate; Q4 not started",
+  "round7": {
+    "scope": "qualified Q4 completed",
+    "entry": "04_code/modeling_phase4/round7_models.py",
+    "files": [
+      {
+        "path": "04_code/modeling_phase4/common.py",
+        "sha256": "85cacdf34b14b824b39b5ce5cb55d0cbbe4b56f85276f5cbb974972e5e4a1462",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_audit.py",
+        "sha256": "165fa2f5dabef38feefc67c859fe97ed1472954c14d8356dbd213c554951ee66",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_closeout.py",
+        "sha256": "a51be877b3ff88dcc7f640ce63176c57b1dc1b0a061e2e8ed3b3fa828feb1be9",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_figures.py",
+        "sha256": "3fd405a12f9b8da4b18849032ff766f7332a5ffc8dc72176cccef06d330d63f0",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_forecast.py",
+        "sha256": "33e20ca6c3ce728bbe48a87a3bc98daff24ec23d730447318de1b4bdc5ff14ac",
+        "core_appendix": true
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_freeze.py",
+        "sha256": "f474ece2a7c87abdb9f71882a89c93100d78695cd2438eca18aa5643a0cb04c8",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_mapping.py",
+        "sha256": "908ae9709edc8e1b9bc158e9234ff883466b9f76171acbfd0d31046471103c08",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_models.py",
+        "sha256": "0518d5664d61977d457ce781eee68b2a49778fd29e00e2caaff4c3948075168e",
+        "core_appendix": true
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_package.py",
+        "sha256": "afe026d908b19015bcc94d4806ea1456b3846cb9a9ddd38a56a2ac196cfd253f",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_qa.py",
+        "sha256": "6b7572e3749bae422892dcae3204c8947aea8455bae192e069f32a9c21196fe3",
+        "core_appendix": false
+      },
+      {
+        "path": "04_code/modeling_phase4/round7_reports.py",
+        "sha256": "159e3ddb19cb339f3dd1762d1e13ed8931741360759b1c87080bc4bbee67c76f",
+        "core_appendix": false
+      }
+    ],
+    "full_manifest": "10_review/ROUND7_REPRODUCIBILITY_MANIFEST_v1.json"
+  }
 }

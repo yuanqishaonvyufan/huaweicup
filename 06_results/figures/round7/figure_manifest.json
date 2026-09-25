@@ -1,0 +1,111 @@
+[
+  {
+    "id": "FIG-Q4-R7-001",
+    "claim": "Observed evaluation-cohort q90 improves; not an all-time record",
+    "sources": [
+      "Q4_PRIMARY_v1.csv",
+      "frontier_family.csv"
+    ],
+    "result_id": "Q4-R7-001",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-001.png": "c18903eb879a9fa23f0bae5aad49c479e7c9888da3c23dbed382341a09bbe2c1",
+      "06_results/figures/round7/FIG-Q4-R7-001.svg": "cae8c20386547d88c43ebe99f7af40f35156fd35f2a48d77db9f74f8dcd915a6"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-002",
+    "claim": "Parameter/residual decomposition is descriptive and incomplete",
+    "sources": [
+      "decomposition_changes.csv",
+      "frontier_family.csv"
+    ],
+    "result_id": "Q4-R7-002",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-002.png": "320f731bb115441531624446a7e497f1a38d41243fde08727af8604be3940474",
+      "06_results/figures/round7/FIG-Q4-R7-002.svg": "f5a5088fc6a5298148d5eb0c2dc908c9d89a19726bbcdfdf821f096daae9b443"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-003",
+    "claim": "Pythia bridge fails preregistered generalization tests",
+    "sources": [
+      "bridge_residuals.csv",
+      "bridge_validation.csv"
+    ],
+    "result_id": "Q4-R7-003",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-003.png": "38d5b89601e3215f9894afe6c180a4323b56dbb1d960f2eaec8692a3dd65e4ca",
+      "06_results/figures/round7/FIG-Q4-R7-003.svg": "cf056cf72437095ed9421ae80db6bf9951b645007445ba6e816f7843799a7a82"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-004",
+    "claim": "Logit selected at 4 and 13 weeks; long-horizon validation absent",
+    "sources": [
+      "rolling_metrics.csv"
+    ],
+    "result_id": "Q4-R7-004",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-004.png": "39bcd5c665256bba0fb50faadea86b17290dd564bdcd0610a80b261125d45cb6",
+      "06_results/figures/round7/FIG-Q4-R7-004.svg": "e458c9a841ebc36b3f826b48b820fd3cbd717c36b453a1d7909cd7be534761d5"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-005",
+    "claim": "Conditional statistical fan does not include model/source uncertainty",
+    "sources": [
+      "frontier_family.csv",
+      "forecast_fan.csv"
+    ],
+    "result_id": "Q4-R7-005",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-005.png": "8abf85b81f9ad25d78e078169da80e81370f8da8261183d353b10fd9904318d7",
+      "06_results/figures/round7/FIG-Q4-R7-005.svg": "735ae7125657bb20255f3d015267d638eb8027637afdacdc041e0081f3eccdb3"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-006",
+    "claim": "Family and population selection affect decomposition and forecast",
+    "sources": [
+      "same_family_trajectories.csv",
+      "robustness_variants.csv"
+    ],
+    "result_id": "Q4-R7-006",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-006.png": "524080097a24a76c24a9d66c23646a7d2a0cce4b32806421407a91d12f192b05",
+      "06_results/figures/round7/FIG-Q4-R7-006.svg": "261e4195e837812fc0e057d46a8e7ff1d057ba7ecb8cf514abefbbc1572ef64b"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-007",
+    "claim": "Long-horizon model spread is separate from statistical intervals",
+    "sources": [
+      "forecast_all_models_scenarios.csv"
+    ],
+    "result_id": "Q4-R7-007",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-007.png": "c2185578232f1521cc53960b71536e990a12ce0b17fb46275bacf65f22542df5",
+      "06_results/figures/round7/FIG-Q4-R7-007.svg": "9eec47cff55d8ab6bf655ce63ac99be07d11c3b0d19b940609f98bf87d305150"
+    }
+  },
+  {
+    "id": "FIG-Q4-R7-008",
+    "claim": "Collapsed scenarios do not establish robustness to real compute slowdown",
+    "sources": [
+      "scenario_decomposition.csv"
+    ],
+    "result_id": "Q4-R7-008",
+    "generator": "04_code/modeling_phase4/round7_figures.py",
+    "files": {
+      "06_results/figures/round7/FIG-Q4-R7-008.png": "ede8f0fd55b667bcbb484cbc306df02a913f40d493cd89a305e1704f0a5f0acc",
+      "06_results/figures/round7/FIG-Q4-R7-008.svg": "e3b05a1b02f65138b19f56f3c2c1f2ef0708dd44f9bab2610948d32751a7af86"
+    }
+  }
+]

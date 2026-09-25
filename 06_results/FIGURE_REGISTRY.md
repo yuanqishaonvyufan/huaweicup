@@ -1,5 +1,7 @@
 # FIGURE_REGISTRY
 
+> CURRENT ROUND7: Q4 package completed; qualified results only, final QA linked below. Earlier Gate/Round status paragraphs are historical. No unrestricted FINAL-model promotion.
+
 **当前 Gate3：G3-SINGLE-001 / Verdict A — PASS。Q2 PROVISIONALLY CLOSED；Q3 AUTHORIZED TO START / NOT EXECUTED。既有 Run/数值/图与证据等级不变，无新模型运行；下方 Gate3 待审文字保留形成时状态。FINAL 仍为0。**
 
 当前：Q1四图 + Q2四图为CHECKED候选；Round5单图QA通过，最终正文嵌入待审。
@@ -39,3 +41,18 @@ Round 4 有四张已生成并核来源哈希的 Q1 候选图；Gate 2 已接受�
 
 
 Gate4 G4-SINGLE-001已接受六张Q3图的限定内容用途；行内Gate4待审为形成时状态。未重画/新增视觉审查，沿用Round6图哈希及视觉QA；最终模板嵌入仍待全文阶段，不晋升FINAL。
+
+
+## Round7 completed figures
+
+| ID | result | claim | sources | code | files |
+| --- | --- | --- | --- | --- | --- |
+| FIG-Q4-R7-001 | Q4-R7-001 | Observed evaluation-cohort q90 improves; not an all-time record | Q4_PRIMARY_v1.csv,frontier_family.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-001.png;06_results/figures/round7/FIG-Q4-R7-001.svg |
+| FIG-Q4-R7-002 | Q4-R7-002 | Parameter/residual decomposition is descriptive and incomplete | decomposition_changes.csv,frontier_family.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-002.png;06_results/figures/round7/FIG-Q4-R7-002.svg |
+| FIG-Q4-R7-003 | Q4-R7-003 | Pythia bridge fails preregistered generalization tests | bridge_residuals.csv,bridge_validation.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-003.png;06_results/figures/round7/FIG-Q4-R7-003.svg |
+| FIG-Q4-R7-004 | Q4-R7-004 | Logit selected at 4 and 13 weeks; long-horizon validation absent | rolling_metrics.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-004.png;06_results/figures/round7/FIG-Q4-R7-004.svg |
+| FIG-Q4-R7-005 | Q4-R7-005 | Conditional statistical fan does not include model/source uncertainty | frontier_family.csv,forecast_fan.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-005.png;06_results/figures/round7/FIG-Q4-R7-005.svg |
+| FIG-Q4-R7-006 | Q4-R7-006 | Family and population selection affect decomposition and forecast | same_family_trajectories.csv,robustness_variants.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-006.png;06_results/figures/round7/FIG-Q4-R7-006.svg |
+| FIG-Q4-R7-007 | Q4-R7-007 | Long-horizon model spread is separate from statistical intervals | forecast_all_models_scenarios.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-007.png;06_results/figures/round7/FIG-Q4-R7-007.svg |
+| FIG-Q4-R7-008 | Q4-R7-008 | Collapsed scenarios do not establish robustness to real compute slowdown | scenario_decomposition.csv | 04_code/modeling_phase4/round7_figures.py | 06_results/figures/round7/FIG-Q4-R7-008.png;06_results/figures/round7/FIG-Q4-R7-008.svg |
+

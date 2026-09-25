@@ -13,3 +13,8 @@ Round6只读复核：python -X utf8 04_code/modeling_phase3/round6_qa.py。配�
 
 
 Gate4只读证据入口：python -X utf8 04_code/modeling_phase3/gate4_review.py。只检查既有结果/哈希/代表点算术，不调用求解器、Q2拟合或Q4。裁决与接口以GATE4_CONSENSUS_v1和freeze manifest为准。
+
+
+## Round7 reproducibility
+
+Read frozen specs/config first. Source attachments restored by RAW_SHA256 manifest. Python dependencies numpy,pandas,scipy,matplotlib,pymupdf,pyarrow. Run round7_mapping.py, round7_audit.py to reproduce audit; do not rerun round7_freeze.py on an existing frozen experiment. Numeric entries round7_models.py then round7_forecast.py; they reproduce the fixed run in an isolated checkout. Reports/figures/package then round7_qa.py. No network or Q1–Q3 re-fitting required. Use new experiment ID for changed assumptions/data; never overwrite established evidence as a new run.
