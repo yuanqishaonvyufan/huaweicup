@@ -1,0 +1,92 @@
+{
+  "paper": "v7",
+  "baseline": "43d01e2",
+  "section": "Q1",
+  "sources": [
+    {
+      "section": "Q1",
+      "number": 1,
+      "path": "04_code/modeling_phase1/round3_prepare_inputs.py",
+      "purpose": "核对并准备 A 类原始输入，形成描述分析使用的规范输入。",
+      "sha256": "4559dbe136bc4ed892501f039d529c505e6baefd49be87e731e34aa9450dbe6f",
+      "lines": 141,
+      "bytes": 6965
+    },
+    {
+      "section": "Q1",
+      "number": 2,
+      "path": "04_code/modeling_phase1/round3_freeze_signal_set.py",
+      "purpose": "固定质量信号集合、字段语义和后续描述模型的输入口径。",
+      "sha256": "818453bbf622f7e47f4bd7f3778910b9e220f19266e10dbbe83c6199b079d284",
+      "lines": 105,
+      "bytes": 7013
+    },
+    {
+      "section": "Q1",
+      "number": 3,
+      "path": "04_code/modeling_phase1/round3_q1_descriptive.py",
+      "purpose": "计算五维质量画像和 DQ0 等描述性对照。",
+      "sha256": "bd7bb4977bc5120f9931a20ce1f4e166a9ed54f799d0f869a6a40311618c5c77",
+      "lines": 370,
+      "bytes": 19995
+    },
+    {
+      "section": "Q1",
+      "number": 4,
+      "path": "04_code/modeling_phase1/round4_quality_closure.py",
+      "purpose": "核对 22 项信号角色及领域层质量描述，支持最终评分的解释边界。",
+      "sha256": "6384de1adba32e8939e97fc36e6318d5df979b20a412340a3a5cc7eb1b5213fc",
+      "lines": 182,
+      "bytes": 9903
+    },
+    {
+      "section": "Q1",
+      "number": 5,
+      "path": "04_code/modeling_phase1/round4_train_p_response.py",
+      "purpose": "在 A4/A5 上训练 17 域配比到 Loss 的 M0/M1 候选；验证集不参与拟合。",
+      "sha256": "68a6a1b271dccfd60ee4405b8e2ad1b735b58558082f1685ccf35f667d31a813",
+      "lines": 315,
+      "bytes": 14859
+    },
+    {
+      "section": "Q1",
+      "number": 6,
+      "path": "04_code/modeling_phase1/round4_validate_p_response.py",
+      "purpose": "在 A6—A11 上验证冻结配比模型，并检查跨规模迁移和经验支持。",
+      "sha256": "0839b12bd08717049f3511897a09157d89e748359423b722c426cb3312e2701e",
+      "lines": 399,
+      "bytes": 21291
+    },
+    {
+      "section": "Q1",
+      "number": 7,
+      "path": "04_code/paper_round8/q1_task_repair.py",
+      "purpose": "生成 22 项用途规则评分 Q_full，并对 A12—A15 作估算外推压力检验。",
+      "sha256": "79a49739abed1fb34c4c619e5fa40a8c79130900e6cd26c0098632c0c047ed8f",
+      "lines": 121,
+      "bytes": 9353
+    },
+    {
+      "section": "Q1",
+      "number": 8,
+      "path": "04_code/modeling_phase1/round4_q1_figures.py",
+      "purpose": "从已登记结果绘制问题一配比响应和支持范围图。",
+      "sha256": "75f9a130daeef2563d185e0db64b7698740ee56bffd48f87e1acc4350ac0bc03",
+      "lines": 158,
+      "bytes": 8236
+    },
+    {
+      "section": "Q1",
+      "number": 9,
+      "path": "04_code/paper_v5/supplementary_q1_vis.py",
+      "purpose": "从冻结表绘制最终稿使用的质量排序与补充诊断图。",
+      "sha256": "76587747cecde53a8e7aadcb3323632bc62deb09f53a2dc3d4e1e7f5bb25c186",
+      "lines": 162,
+      "bytes": 8332
+    }
+  ],
+  "evidence": [
+    "03_models/modeling_phase1/q1/round4/P_RESPONSE_VALIDATION_METRICS_v2.json",
+    "06_results/raw/Q1_TASK_REPAIR_20260925_v1/summary.json"
+  ]
+}
