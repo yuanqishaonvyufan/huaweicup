@@ -1,0 +1,342 @@
+{
+  "pass": true,
+  "checks": {
+    "v6_baseline_formally_verified": true,
+    "all_paragraph_edits_declared": true,
+    "all_numeric_changes_are_refs_or_removed_internal_ids": true,
+    "all_table_numeric_tokens_unchanged": true,
+    "all_math_objects_unchanged": true,
+    "all_media_assets_unchanged": true,
+    "reference_entries_unchanged": true,
+    "pdf_opens_52_pages": true,
+    "pdf_no_blank_pages": true,
+    "all_23_academic_tables_three_line": true,
+    "figures_1_to_30_sequential": true,
+    "overall_and_four_route_diagrams_present": true,
+    "equations_numbered_by_question": true,
+    "toc_37_entries_match_final_pdf": true,
+    "ai_usage_note_single_and_formal": true,
+    "forbidden_working_draft_language_absent": true,
+    "key_formal_results_present": true,
+    "no_thumbnail_or_dangling_relation": true,
+    "anonymous_docx_properties": true,
+    "anonymous_pdf_metadata": true
+  },
+  "failed": [],
+  "pdf_pages": 52,
+  "v6_sha256": "56508d483c8196ac0b5ecf023681701470e0f6907bbe98020b3efaac3ce7d4e2",
+  "v7_docx_sha256": "2b87fd35d0aae37dc1461cc3dfa9b7c1c22383ede26066b37093f6a9a3d4b63a",
+  "v7_pdf_sha256": "fa7ba363ed809d9799c7355f9461dd36da0440ccda36a32f3418d741a6f711a1",
+  "paragraphs_changed": [
+    53,
+    73,
+    83,
+    134,
+    149,
+    156,
+    164,
+    169,
+    247,
+    278,
+    324,
+    339,
+    373,
+    391,
+    404,
+    435,
+    438,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    448
+  ],
+  "toc_changed": [
+    53
+  ],
+  "numeric_paragraph_changes": [
+    53,
+    164,
+    247,
+    278,
+    404,
+    445,
+    446
+  ],
+  "forbidden_terms_found": [],
+  "missing_key_values": [],
+  "toc": [
+    {
+      "title": "一、引言",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "1.1 问题背景",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "1.2 问题重述",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "二、问题分析与总体思路",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "三、模型假设",
+      "printed": 4,
+      "matches": [
+        4
+      ]
+    },
+    {
+      "title": "四、符号说明",
+      "printed": 4,
+      "matches": [
+        4
+      ]
+    },
+    {
+      "title": "五、模型建立与求解",
+      "printed": 5,
+      "matches": [
+        5
+      ]
+    },
+    {
+      "title": "5.1 问题一模型的建立与求解",
+      "printed": 6,
+      "matches": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.1 问题分析与技术路线",
+      "printed": 6,
+      "matches": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.2 数据与模型准备",
+      "printed": 7,
+      "matches": [
+        7
+      ]
+    },
+    {
+      "title": "5.1.3 模型建立",
+      "printed": 9,
+      "matches": [
+        9
+      ]
+    },
+    {
+      "title": "5.1.4 求解与结果分析",
+      "printed": 13,
+      "matches": [
+        13
+      ]
+    },
+    {
+      "title": "5.2 问题二模型的建立与求解",
+      "printed": 15,
+      "matches": [
+        15
+      ]
+    },
+    {
+      "title": "5.2.1 问题分析与技术路线",
+      "printed": 15,
+      "matches": [
+        15
+      ]
+    },
+    {
+      "title": "5.2.2 数据与模型准备",
+      "printed": 16,
+      "matches": [
+        16
+      ]
+    },
+    {
+      "title": "5.2.3 模型建立",
+      "printed": 16,
+      "matches": [
+        16
+      ]
+    },
+    {
+      "title": "5.2.4 求解与结果分析",
+      "printed": 19,
+      "matches": [
+        19
+      ]
+    },
+    {
+      "title": "5.3 问题三模型的建立与求解",
+      "printed": 23,
+      "matches": [
+        23
+      ]
+    },
+    {
+      "title": "5.3.1 问题分析与技术路线",
+      "printed": 23,
+      "matches": [
+        23
+      ]
+    },
+    {
+      "title": "5.3.2 数据与模型准备",
+      "printed": 24,
+      "matches": [
+        24
+      ]
+    },
+    {
+      "title": "5.3.3 模型建立",
+      "printed": 24,
+      "matches": [
+        24
+      ]
+    },
+    {
+      "title": "5.3.4 求解与结果分析",
+      "printed": 29,
+      "matches": [
+        29
+      ]
+    },
+    {
+      "title": "5.4 问题四模型的建立与求解",
+      "printed": 33,
+      "matches": [
+        33
+      ]
+    },
+    {
+      "title": "5.4.1 问题分析与技术路线",
+      "printed": 33,
+      "matches": [
+        33
+      ]
+    },
+    {
+      "title": "5.4.2 数据与模型准备",
+      "printed": 35,
+      "matches": [
+        35
+      ]
+    },
+    {
+      "title": "5.4.3 模型建立",
+      "printed": 36,
+      "matches": [
+        36
+      ]
+    },
+    {
+      "title": "5.4.4 求解与结果分析",
+      "printed": 40,
+      "matches": [
+        40
+      ]
+    },
+    {
+      "title": "六、模型检验与分析",
+      "printed": 43,
+      "matches": [
+        43
+      ]
+    },
+    {
+      "title": "6.1 误差分析",
+      "printed": 43,
+      "matches": [
+        43
+      ]
+    },
+    {
+      "title": "6.2 灵敏度分析",
+      "printed": 44,
+      "matches": [
+        44
+      ]
+    },
+    {
+      "title": "七、模型评价",
+      "printed": 45,
+      "matches": [
+        45
+      ]
+    },
+    {
+      "title": "7.1 模型的优点",
+      "printed": 45,
+      "matches": [
+        45
+      ]
+    },
+    {
+      "title": "7.2 模型的缺点",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "八、模型改进与推广",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "8.1 模型的改进",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "8.2 模型的推广",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "参考文献",
+      "printed": 47,
+      "matches": [
+        47
+      ]
+    }
+  ],
+  "figure_count": 30,
+  "academic_table_count": 23,
+  "equation_count": 28,
+  "math_object_count": 40,
+  "ai_note": [
+    "人工智能工具使用说明：本文使用OpenAI Codex（OpenAI）辅助论文文字整理、排版、图表编排及程序编写与结果一致性核对。模型、公式、数值和结论由参赛队理解、复核并最终确定。"
+  ],
+  "visual_round_1": "52 pages reviewed; 3 layout errors found in Appendix A/B/D",
+  "visual_round_2": "52 pages reviewed; those 3 layout errors resolved",
+  "final_visual_diff_from_round_2": "Only pages 3 (TOC correction) and 49 (appendix filename cleanup) changed; both enlarged and checked",
+  "officecli_validation": "Success: no OpenXML schema errors"
+}
