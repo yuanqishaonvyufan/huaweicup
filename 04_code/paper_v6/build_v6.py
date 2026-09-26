@@ -1,6 +1,7 @@
 """Editorial v6 of the frozen v5 manuscript; no model is recomputed."""
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
@@ -174,11 +175,19 @@ REWRITES = {
     416: "Q1经验支持分类为：A6/A8各256组配比的IN/NEAR/OUT数量为2/252/2，A10的64组为15/46/3；域外样本不足以单独估计稳定误差。Q2在B2/B4/B5的来源内中心化形状比分别约0.855/0.437/0.555。Q4原非正参数趋势使旧放缓路径重合，正文另用已声明的外生正增长参照。",
 }
 
-DELETE = {
-    67, 68, 88, 89, 96, 109, 152, 156, 160, 166, 207,
-    226, 227, 229, 273, 275, 282, 299, 309, 310, 330, 334,
-    347, 348, 352, 363, 377, 386, 390, 391, 279,
+# The first editorial build over-compressed the paper. Preserve all substantive
+# v5 paragraphs; omit only the duplicate AI-use notice (also in Appendix C).
+DELETE = {390}
+
+CONSERVATIVE_REWRITES = {
+    86: "问题一包含文档评价与训练配比两个测量层次。文档层需将22项异构信号转成可复算的综合评分，辨析指标分歧；训练运行层需估计17域配比与13个验证领域Loss的局部关系。质量、配比和Loss没有在同一次训练中成组观测，因此分别建立评价模型与配比响应模型，再检验二者的适用范围及进入后续问题的条件。",
+    159: "问题二描述参数规模、数据量、质量与领域配比对Loss的作用。B1含同量尺的N—D完整轨迹，可独立估计底值及两项衰减；质量表为半合成校准，A表配比Loss属于另一来源。本文先在B1估计可识别的加性幂律，再把质量和配比置于显式情景层，分别讨论边际收益、有限替代及跨来源运输条件。问题二技术路线见图8。",
+    217: "问题三在固定算力预算下选择参数量、数据量和条件情景中的质量投入。基础训练与长文本注意力开销共同依赖N、D，质量处理另消耗与D相关的成本。先统一FLOPs和十亿单位，再以B1统计支持域限定可解释配置；在此范围内求得预算紧约束内点、单边界解及预算富余平台，并以数值求解核验。问题三技术路线见图14。",
+    286: "问题四以多任务能力而非训练Loss为预测目标。首先用C8同口径六项原始得分构建历史前沿；其次在高可比规模组检验Loss—Benchmark桥接，并描述参数关联及剩余变化；最后比较四种预定动态模型的短期滚动表现，在外生增长路径下给出未来12或24个月的条件投影。桥接的留出检验决定是否能沿用前三问的Loss量尺。问题四技术路线见图22。",
 }
+
+ACTIVE_REWRITES = {i: REWRITES[i] for i in (7, 9, 10, 11, 12, 13, 14, 66, 147, 162)}
+ACTIVE_REWRITES.update(CONSERVATIVE_REWRITES)
 
 FIGURE_TITLES = {
     1: "六组质量信号的相关性",
@@ -209,30 +218,37 @@ FIGURE_TITLES = {
 }
 
 ROUTES = [
-    ("Q1", 90, 1, "问题一技术路线", [
+    ("Q1", 90, 2, "问题一技术路线", [
         ("数据整理", "A1—A3 质量信号\nA4—A5 领域配比"),
         ("模型构造", "固定分位与Q_full\n正交配比响应M1"),
         ("独立检验", "去重扩展与1M留出\n跨规模压力检验"),
         ("输出", "质量画像与局部响应\n证据与支持范围"),
     ]),
-    ("Q2", 161, 7, "问题二技术路线", [
+    ("Q2", 161, 8, "问题二技术路线", [
         ("数据分层", "B1 八条训练轨迹\nB7及A表条件资料"),
         ("模型建立", "N—D加性幂律\n质量与配比情景项"),
         ("模型检验", "整轨迹及前向留出\n联合参数重抽样"),
         ("结果解释", "边际弹性与等Loss替代\n来源内及条件结论"),
     ]),
-    ("Q3", 219, 13, "问题三技术路线", [
+    ("Q3", 219, 14, "问题三技术路线", [
         ("输入", "B1冻结曲面\n题设FLOPs成本"),
         ("约束求解", "统一单位与支持域\n解析内点及活跃界"),
         ("数值核验", "51档预算与204次对照\n质量成本情景"),
         ("配置分析", "基线预算路径\n上下文与参数敏感性"),
     ]),
-    ("Q4", 287, 21, "问题四技术路线", [
+    ("Q4", 287, 22, "问题四技术路线", [
         ("样本构造", "C1/C8/C9身份筛选\n六项原始任务得分"),
         ("历史分析", "28天九成分位前沿\nLoss桥接留出检验"),
         ("动态建模", "参数关联与剩余分量\n四模型短期滚动"),
         ("条件预测", "12与24个月目标\n外生增长保留情景"),
     ]),
+]
+
+OVERALL_ROUTE = [
+    ("问题一", "22项质量评分与画像\n局部领域配比响应"),
+    ("问题二", "B1规模—数据幂律\nB7质量条件校准"),
+    ("问题三", "题设FLOPs成本\n支持域约束配置"),
+    ("问题四", "六任务能力前沿\n桥接检验与条件预测"),
 ]
 
 
@@ -254,11 +270,25 @@ def set_east_asian_font(style, font: str, size: float, bold: bool | None = None)
 
 
 def rewrite_text(doc, originals: list) -> None:
-    for i, replacement in {**HEADING_REWRITES, **REWRITES}.items():
+    for i, replacement in {**HEADING_REWRITES, **ACTIVE_REWRITES}.items():
         originals[i].text = replacement
-    # Give Latin variables, attachment IDs and numerals breathing room in Chinese
-    # prose; leave equation and table XML untouched.
-    for i in REWRITES:
+    # Match the new subsection labels and correct a broken equation reference.
+    originals[80].text = originals[80].text.replace(
+        "具体分析、模型准备、模型建立、模型求解",
+        "问题分析与技术路线、数据与模型准备、模型建立、求解与结果分析")
+    originals[68].text += " 四问的整体技术框架见图1；箭头表示论证顺序，跨来源数值传递仍须通过检验。"
+    originals[87].text += " 问题一技术路线见图2。"
+    originals[180].text = originals[180].text.replace("式（9）—（9）", "式（9）和式（10）")
+    for i, old, new in [(97, "下图", "图3"), (138, "下图", "图5"),
+                        (153, "跨规模图", "图7"), (183, "如下图", "如图10"),
+                        (208, "如下图", "如图12"), (211, "下图", "图13"),
+                        (287, "下图", "图23"), (290, "下图", "图24"),
+                        (302, "下图", "图25"), (331, "下图", "图27"),
+                        (349, "下图", "图29"), (353, "下图", "图30")]:
+        originals[i].text = originals[i].text.replace(old, new)
+    # Give Latin variables, attachment IDs and numerals breathing room only in
+    # actively rewritten prose; all other source runs remain untouched.
+    for i in ACTIVE_REWRITES:
         p = originals[i]
         if p.style and p.style.name == "PaperBody":
             value = re.sub(r"(?<=[\u4e00-\u9fff])(?=[A-Za-z0-9])", " ", p.text)
@@ -276,12 +306,12 @@ def rewrite_text(doc, originals: list) -> None:
 
 def map_figure_number(old: int) -> int:
     if old <= 5:
-        return old + 1
-    if old <= 10:
         return old + 2
-    if old <= 17:
+    if old <= 10:
         return old + 3
-    return old + 4
+    if old <= 17:
+        return old + 4
+    return old + 5
 
 
 def renumber_figures(originals: list) -> None:
@@ -302,6 +332,59 @@ def renumber_figures(originals: list) -> None:
             p.text = updated
 
 
+def equation_number(old: int) -> str:
+    if 1 <= old <= 6:
+        return f"1-{old}"
+    if 7 <= old <= 14:
+        return f"2-{old - 6}"
+    if 15 <= old <= 22:
+        return f"3-{old - 14}"
+    if 23 <= old <= 28:
+        return f"4-{old - 22}"
+    raise ValueError(f"Unexpected source equation number {old}")
+
+
+def renumber_equations_by_problem(doc: Document) -> list[str]:
+    """Renumber display labels and every in-text reference, keeping OMML intact."""
+    labels = []
+    for p in doc.paragraphs:
+        if not p.style or p.style.name != "PaperEquation":
+            continue
+        hit = re.search(r"（(\d+)）", p.text)
+        if not hit:
+            continue
+        old = int(hit.group(1))
+        if old != len(labels) + 1:
+            raise ValueError(f"Equation sequence changed at {old}")
+        new = equation_number(old)
+        old_label, new_label = hit.group(0), f"（{new}）"
+        replaced = False
+        for run in p.runs:
+            if old_label in run.text:
+                run.text = run.text.replace(old_label, new_label)
+                replaced = True
+        if not replaced:
+            raise ValueError(f"Cannot update OMML-adjacent label {old_label}")
+        labels.append(new)
+    if len(labels) != 28:
+        raise ValueError(f"Expected 28 numbered equations, got {len(labels)}")
+    ref = re.compile(r"(式|公式)（(\d+)）")
+    change = lambda m: f"{m.group(1)}（{equation_number(int(m.group(2)))}）"
+    for p in doc.paragraphs:
+        if not p.style or p.style.name == "PaperEquation":
+            continue
+        before = p.text
+        after = ref.sub(change, before)
+        if after == before:
+            continue
+        for run in p.runs:
+            run.text = ref.sub(change, run.text)
+        if p.text != after:
+            # Source citations are plain prose; the fallback handles a split run.
+            p.text = after
+    return labels
+
+
 def remove_paragraph(paragraph) -> None:
     element = paragraph._element
     element.getparent().remove(element)
@@ -309,6 +392,20 @@ def remove_paragraph(paragraph) -> None:
 
 def move_before(paragraph, target) -> None:
     target._element.addprevious(paragraph._element)
+
+
+def restore_caption_detail(doc: Document, old_captions: list[tuple]) -> int:
+    """Move v5's detailed figure captions into normal adjacent prose."""
+    count = 0
+    for caption, old_text in old_captions:
+        detail = re.sub(r"^图\d+\s*", "", old_text)
+        if len(detail) <= len(caption.text) + 12:
+            continue
+        paragraph = doc.add_paragraph(style="PaperBody")
+        paragraph.text = detail
+        caption._p.addnext(paragraph._p)
+        count += 1
+    return count
 
 
 def draw_route(out: Path, boxes: list[tuple[str, str]]) -> None:
@@ -435,11 +532,17 @@ def remove_package_thumbnail(path: Path) -> None:
 
 
 def main() -> None:
-    OUT.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-dir", type=Path, default=OUT)
+    args = parser.parse_args()
+    out_dir = args.output_dir.resolve()
+    out_dir.mkdir(parents=True, exist_ok=True)
     FIG_DIR.mkdir(parents=True, exist_ok=True)
     doc = Document(SOURCE)
     original = list(doc.paragraphs)
     old_title = original[7].text
+    old_captions = [(p, p.text) for p in original if p.style and p.style.name == "PaperCaption"
+                    and re.match(r"^图\d+\s", p.text)]
     renumber_figures(original)
     rewrite_text(doc, original)
     # Put the marginal comparison directly after the elasticity figure. Lead the
@@ -451,6 +554,7 @@ def main() -> None:
     move_before(original[268], original[266])
     for i in sorted(DELETE, reverse=True):
         remove_paragraph(original[i])
+    caption_details = restore_caption_detail(doc, old_captions)
 
     styles = doc.styles
     h3 = styles["PaperH3"] if "PaperH3" in styles else styles.add_style("PaperH3", WD_STYLE_TYPE.PARAGRAPH)
@@ -469,7 +573,7 @@ def main() -> None:
     styles["PaperH2"].paragraph_format.space_after = Pt(4)
     styles["PaperH3"].paragraph_format.space_before = Pt(7)
     styles["PaperH3"].paragraph_format.space_after = Pt(3)
-    styles["PaperBody"].paragraph_format.space_after = Pt(1)
+    styles["PaperBody"].paragraph_format.space_after = Pt(2)
     styles["PaperTOC"].paragraph_format.space_after = Pt(0)
     styles["PaperRef"].paragraph_format.left_indent = Inches(0.28)
     styles["PaperRef"].paragraph_format.first_line_indent = Inches(-0.28)
@@ -492,10 +596,14 @@ def main() -> None:
         elif p.style.name == "PaperBody":
             p.paragraph_format.widow_control = True
 
+    overall_path = FIG_DIR / "SCHEM-ALL-V6-001.png"
+    draw_route(overall_path, OVERALL_ROUTE)
+    insert_route(original[69], overall_path, 1, "论文整体技术框架")
     for qid, anchor_index, number, title, boxes in ROUTES:
         path = FIG_DIR / f"SCHEM-{qid}-V6-001.png"
         draw_route(path, boxes)
         insert_route(original[anchor_index], path, number, title)
+    equation_labels = renumber_equations_by_problem(doc)
 
     # Academic tables only. The official cover information table keeps its template.
     for table in doc.tables[1:]:
@@ -504,21 +612,26 @@ def main() -> None:
     doc.core_properties.title = original[7].text
     for field in ("author", "last_modified_by", "comments", "keywords", "identifier"):
         setattr(doc.core_properties, field, "")
-    out = OUT / (STEM + ".docx")
+    out = out_dir / (STEM + ".docx")
     doc.save(out)
     remove_package_thumbnail(out)
     manifest = {
         "source": str(SOURCE.relative_to(ROOT)), "source_sha256": sha(SOURCE),
-        "docx": str(out.relative_to(ROOT)), "docx_sha256": sha(out),
+        "docx": str(out.relative_to(ROOT)) if out.is_relative_to(ROOT) else str(out),
+        "docx_sha256": sha(out),
         "title_before": old_title, "title_after": original[7].text,
         "removed_redundant_paragraphs": sorted(DELETE),
-        "rewritten_paragraphs": len(REWRITES),
-        "diagram_ids": [f"SCHEM-{qid}-V6-001" for qid, *_ in ROUTES],
+        "rewritten_paragraphs": len(ACTIVE_REWRITES),
+        "figure_caption_details_moved_to_body": caption_details,
+        "diagram_ids": ["SCHEM-ALL-V6-001"] + [f"SCHEM-{qid}-V6-001" for qid, *_ in ROUTES],
         "academic_tables_three_line": len(doc.tables) - 1,
-        "original_figure_count": len(FIGURE_TITLES), "total_figure_captions": 29,
+        "original_figure_count": len(FIGURE_TITLES), "total_figure_captions": 30,
+        "equation_labels_by_problem": equation_labels,
     }
     (ROOT / "08_paper/v6").mkdir(parents=True, exist_ok=True)
-    (ROOT / "08_paper/v6/BUILD_MANIFEST_v6.json").write_text(
+    manifest_path = (ROOT / "08_paper/v6/BUILD_MANIFEST_v6.json"
+                     if out_dir == OUT.resolve() else out_dir / "BUILD_MANIFEST_v6.json")
+    manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
 

@@ -1,6 +1,7 @@
 """Submission checks for editorial v6 against frozen v5."""
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
@@ -65,6 +66,10 @@ def table_is_three_line(table) -> bool:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--word-count", type=int, required=True,
+                        help="Microsoft Word ComputeStatistics(wdStatisticWords) for final DOCX")
+    args = parser.parse_args()
     old = Document(OLD)
     new = Document(DOCX)
     pdf = PdfReader(PDF)
@@ -78,6 +83,13 @@ def main() -> None:
     captions = [p.text for p in new.paragraphs if p.style
                 and p.style.name == "PaperCaption" and re.match(r"^图\d+\s", p.text)]
     fig_numbers = [int(re.match(r"^图(\d+)", text).group(1)) for text in captions]
+    equations = [re.search(r"（(\d+-\d+)）", p.text).group(1)
+                 for p in new.paragraphs if p.style and p.style.name == "PaperEquation"
+                 and re.search(r"（\d+-\d+）", p.text)]
+    expected_equations = ([f"1-{i}" for i in range(1, 7)] +
+                          [f"2-{i}" for i in range(1, 9)] +
+                          [f"3-{i}" for i in range(1, 9)] +
+                          [f"4-{i}" for i in range(1, 7)])
     heading_pages = [set(line.strip() for line in text.splitlines()) for text in texts]
     toc = []
     for p in new.paragraphs:
@@ -89,6 +101,27 @@ def main() -> None:
         thumbnail_parts = [x for x in z.namelist() if "thumbnail" in x.lower()]
         thumbnail_rel = b"metadata/thumbnail" in z.read("_rels/.rels")
     body = '\n'.join(p.text for p in new.paragraphs if p.style and p.style.name == "PaperBody")
+    old_body = '\n'.join(p.text for p in old.paragraphs if p.style and p.style.name == "PaperBody")
+    normalized = lambda s: re.sub(r"\s+", "", s).replace('−', '-').replace('ℓ', 'l')
+    def relabel_ref(match):
+        n = int(match.group(2))
+        if n <= 6:
+            label = f"1-{n}"
+        elif n <= 14:
+            label = f"2-{n - 6}"
+        elif n <= 22:
+            label = f"3-{n - 14}"
+        else:
+            label = f"4-{n - 22}"
+        return f"{match.group(1)}（{label}）"
+
+    old_figure_details = [re.sub(r"(式|公式)（(\d+)）", relabel_ref,
+                                 re.sub(r"^图\d+\s*", "", p.text))
+                          for p in old.paragraphs if p.style and p.style.name == "PaperCaption"
+                          and re.match(r"^图\d+\s", p.text)]
+    details_retained = sum(normalized(detail) in normalized(body)
+                           for detail in old_figure_details)
+    equation_refs = re.findall(r"(?:式|公式)（(\d+(?:-\d+)?)）", body)
     cited = {int(n) for n in re.findall(r"\[([1-7])\]", body)}
     refs = {int(m.group(1)) for p in new.paragraphs if p.style and p.style.name == "PaperRef"
             if (m := re.match(r"\[(\d+)\]", p.text))}
@@ -101,20 +134,28 @@ def main() -> None:
 
     checks = {
         "source_v5_unchanged": sha(OLD) == "698de15a867876e22b9194ef03f0cb6110b9293d1bdd841b077c491b0b683ecc",
-        "pdf_opens_43_pages": len(pdf.pages) == 43 and not pdf.is_encrypted,
+        "pdf_opens_52_pages": len(pdf.pages) == 52 and not pdf.is_encrypted,
         "pdf_no_blank_pages": all(len(text) >= 70 for text in texts),
+        "word_count_restored": 30000 <= args.word_count <= 34000 and args.word_count >= 31469,
+        "body_length_restored": len(body) >= len(old_body),
+        "all_25_caption_details_in_body": details_retained == 25,
         "tables_content_preserved": old_tables == new_tables,
         "all_23_academic_tables_three_line": len(new.tables) == 24 and all(table_is_three_line(t) for t in new.tables[1:]),
-        "original_29_media_preserved": not (media_hashes(OLD) - media_hashes(DOCX)) and len(new.inline_shapes) == 33,
+        "original_29_media_preserved": not (media_hashes(OLD) - media_hashes(DOCX)) and len(new.inline_shapes) == 34,
         "math_content_preserved": math_text(old) == math_text(new),
-        "figures_1_to_29_sequential": fig_numbers == list(range(1, 30)),
-        "four_route_diagrams_present": all(any(f"问题{i}技术路线" in c for c in captions)
-                                           for i in ("一", "二", "三", "四")),
+        "figures_1_to_30_sequential": fig_numbers == list(range(1, 31)),
+        "overall_and_four_route_diagrams_present": (
+            any("论文整体技术框架" in c for c in captions) and
+            all(any(f"问题{i}技术路线" in c for c in captions)
+                for i in ("一", "二", "三", "四"))),
+        "equations_numbered_by_question": equations == expected_equations,
+        "equation_references_updated": all('-' in ref and ref in expected_equations for ref in equation_refs),
         "toc_37_entries_match_final_pdf": len(toc) == 37 and all(row["found"] == [row["printed"] + 1] for row in toc),
         "citation_list_closed": cited == refs == set(range(1, 8)),
         "key_result_values_present": not missing_values,
         "no_thumbnail_or_dangling_relationship": not thumbnail_parts and not thumbnail_rel,
         "anonymous_core_properties": not new.core_properties.author and not new.core_properties.last_modified_by,
+        "anonymous_pdf_metadata": not pdf.metadata or not pdf.metadata.get('/Author'),
         "no_reference_advertisement": "anjia211014" not in flat and "代充服务" not in flat,
         "single_ai_usage_notice": body.count("AI辅助使用说明") == 1,
         "fixed_equation_reference": "式（9）—（9）" not in body,
@@ -122,19 +163,25 @@ def main() -> None:
     report = {
         "pass": all(checks.values()), "checks": checks,
         "pdf_physical_pages": len(pdf.pages), "pdf_printed_last_page": len(pdf.pages) - 1,
+        "word_count_v5": 31469, "word_count_v6": args.word_count,
+        "body_chars_v5": len(old_body), "body_chars_v6": len(body),
+        "figure_caption_details_retained": details_retained,
         "toc": toc, "figures": len(captions), "tables_academic": len(new.tables) - 1,
+        "equation_labels": equations,
         "math_objects": len(math_text(new)), "embedded_shapes": len(new.inline_shapes),
         "missing_key_values": missing_values,
         "docx_sha256": sha(DOCX), "pdf_sha256": sha(PDF),
         "officecli_schema_validation": "previous binary: success, 0 warnings; current binary missing System.IO.Pipelines",
-        "visual_review": "PDF rounds 1, 2, 3 and final round 4; every final physical page reviewed in contact sheets; key pages enlarged",
-        "layout_note": "Physical pages 25 and 27 retain figure-led whitespace to preserve graph label readability.",
+        "visual_review": "Restored 52-page draft and final PDF each reviewed page by page; enlarged TOC, overall route, problem routes, equations, tables and appendix",
+        "layout_note": "Figure-led pages preserve axis-label readability rather than shrinking result charts.",
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    manifest.update({"docx_sha256": report["docx_sha256"], "pdf_sha256": report["pdf_sha256"],
-                     "pdf_physical_pages": report["pdf_physical_pages"], "qa_pass": report["pass"]})
+    manifest.update({"docx": str(DOCX.relative_to(ROOT)),
+                     "docx_sha256": report["docx_sha256"], "pdf_sha256": report["pdf_sha256"],
+                     "pdf_physical_pages": report["pdf_physical_pages"],
+                     "word_count": args.word_count, "qa_pass": report["pass"]})
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({"pass": report["pass"], "failed": [k for k, v in checks.items() if not v],
                       "pages": len(pdf.pages), "figures": len(captions),

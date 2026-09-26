@@ -4,12 +4,13 @@
 
 | Figure ID | 问题 | 论文位置 | 内容来源 | 文件 | 性质 |
 |---|---|---|---|---|---|
-| SCHEM-Q1-V6-001 | Q1 | 5.1.1，图1 | v5质量表示、M1配比响应及既有留出与外推记录 | `06_results/figures/paper_v6/SCHEM-Q1-V6-001.png` | 冻结模型流程示意 |
-| SCHEM-Q2-V6-001 | Q2 | 5.2.1，图7 | B1加性幂律、B7质量情景及整轨迹验证记录 | `06_results/figures/paper_v6/SCHEM-Q2-V6-001.png` | 冻结模型流程示意 |
-| SCHEM-Q3-V6-001 | Q3 | 5.3.1，图13 | 题设成本、支持域、解析/数值求解与敏感性记录 | `06_results/figures/paper_v6/SCHEM-Q3-V6-001.png` | 冻结模型流程示意 |
-| SCHEM-Q4-V6-001 | Q4 | 5.4.1，图21 | C8前沿、桥接检验、描述分解、滚动验证与外生情景记录 | `06_results/figures/paper_v6/SCHEM-Q4-V6-001.png` | 冻结模型流程示意 |
+| SCHEM-ALL-V6-001 | 整体 | 第二章，图1 | 四问冻结证据链及跨来源检验顺序 | `06_results/figures/paper_v6/SCHEM-ALL-V6-001.png` | 论文总体框架示意 |
+| SCHEM-Q1-V6-001 | Q1 | 5.1.1，图2 | v5质量表示、M1配比响应及既有留出与外推记录 | `06_results/figures/paper_v6/SCHEM-Q1-V6-001.png` | 冻结模型流程示意 |
+| SCHEM-Q2-V6-001 | Q2 | 5.2.1，图8 | B1加性幂律、B7质量情景及整轨迹验证记录 | `06_results/figures/paper_v6/SCHEM-Q2-V6-001.png` | 冻结模型流程示意 |
+| SCHEM-Q3-V6-001 | Q3 | 5.3.1，图14 | 题设成本、支持域、解析/数值求解与敏感性记录 | `06_results/figures/paper_v6/SCHEM-Q3-V6-001.png` | 冻结模型流程示意 |
+| SCHEM-Q4-V6-001 | Q4 | 5.4.1，图22 | C8前沿、桥接检验、描述分解、滚动验证与外生情景记录 | `06_results/figures/paper_v6/SCHEM-Q4-V6-001.png` | 冻结模型流程示意 |
 
-四图由 `04_code/paper_v6/build_v6.py` 绘制，仅表达项目已冻结的模型链，不进入 RESULTS_REGISTRY，也不改变原结果图及其数据。
+五图由 `04_code/paper_v6/build_v6.py` 绘制，仅表达项目已冻结的模型链，不进入 RESULTS_REGISTRY，也不改变原结果图及其数据。
 
 > 二稿图4—7仅按既有机器表重新导出打印版式，未修改数值：`FIG4_Q2_TOTAL_LOSS_ELASTICITY_REEXPORT`、`FIG5_Q3_BUDGET_REEXPORT`、`FIG6_Q3_QUALITY_REEXPORT`、`FIG7_Q3_UNCERTAINTY_REEXPORT`，图源和SHA256见 `08_paper/revised_v2/figures/REEXPORT_MANIFEST_v1.json`。原图及原结果保留。图4图注现在仅描述N/D总Loss弹性热图，有限替代由公式和正文示例承担。
 

@@ -24,12 +24,16 @@ def sha(path: Path) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--rendered-pdf", type=Path, required=True)
+    parser.add_argument("--docx", type=Path, default=DOCX)
     args = parser.parse_args()
     pdf = args.rendered_pdf.resolve()
+    docx_path = args.docx.resolve()
+    map_path = MAP if docx_path == DOCX.resolve() else docx_path.parent / MAP.name
+    manifest_path = MANIFEST if docx_path == DOCX.resolve() else docx_path.parent / MANIFEST.name
     pages = PdfReader(pdf).pages
     lines = [set(line.strip() for line in (page.extract_text() or "").splitlines())
              for page in pages]
-    doc = Document(DOCX)
+    doc = Document(docx_path)
     rows = []
     for p in doc.paragraphs:
         if not p.style or p.style.name != "PaperTOC":
@@ -45,16 +49,16 @@ def main() -> None:
                      "printed_page": printed})
     if len(rows) != 37:
         raise ValueError(f"Expected 37 contents entries, got {len(rows)}")
-    temp = DOCX.with_suffix(".toc.docx")
+    temp = docx_path.with_suffix(".toc.docx")
     doc.save(temp)
-    temp.replace(DOCX)
-    MAP.write_text(json.dumps({"source_pdf_sha256": sha(pdf), "rows": rows},
-                              ensure_ascii=False, indent=2), encoding="utf-8")
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    temp.replace(docx_path)
+    map_path.write_text(json.dumps({"source_pdf_sha256": sha(pdf), "rows": rows},
+                                   ensure_ascii=False, indent=2), encoding="utf-8")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest["toc_rows_verified"] = len(rows)
-    manifest["docx_sha256"] = sha(DOCX)
-    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2),
-                        encoding="utf-8")
+    manifest["docx_sha256"] = sha(docx_path)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2),
+                             encoding="utf-8")
     print(json.dumps({"rows": len(rows), "first": rows[0], "last": rows[-1]},
                      ensure_ascii=False))
 
