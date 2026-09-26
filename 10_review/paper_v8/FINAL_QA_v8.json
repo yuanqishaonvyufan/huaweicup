@@ -1,0 +1,343 @@
+{
+  "pass": true,
+  "checks": {
+    "v7_baseline_verified": true,
+    "body_paragraph_count_unchanged": true,
+    "only_six_mapped_prose_paragraphs_expanded": true,
+    "all_nonbibliographic_numbers_unchanged": true,
+    "all_24_tables_identical": true,
+    "all_math_objects_identical": true,
+    "all_equation_paragraphs_identical": true,
+    "all_30_figure_captions_identical": true,
+    "all_embedded_media_identical": true,
+    "all_23_academic_tables_three_line": true,
+    "references_1_to_16_complete": true,
+    "first_citation_order_1_to_16": true,
+    "all_and_only_references_cited": true,
+    "three_existing_arxiv_replaced": true,
+    "no_unresolved_citation_placeholders": true,
+    "toc_37_entries_match_pdf": true,
+    "pdf_53_pages_no_blank": true,
+    "formal_result_values_present": true,
+    "final_pdf_visual_identical_to_checked_draft": true,
+    "anonymous_docx_and_pdf": true,
+    "no_docx_thumbnail_or_dangling_relation": true,
+    "word_count_reasonable": true
+  },
+  "failed": [],
+  "v7_sha256": "2b87fd35d0aae37dc1461cc3dfa9b7c1c22383ede26066b37093f6a9a3d4b63a",
+  "v8_docx_sha256": "6843c84edb7ac8315a20ee6750f64a0f58786915b0b1d939cde12a305465f011",
+  "v8_pdf_sha256": "d10edb8a5b571b1e5cecc433e45db1075b5058bac8c02d76cf470d4aecf2eed0",
+  "old_refs": 7,
+  "new_refs": 16,
+  "pdf_pages": 53,
+  "word_count_v8": 31993,
+  "citation_first_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reference_mentions": {
+    "1": 2,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1
+  },
+  "unexpected_prose_edits": [],
+  "numeric_paragraph_changes": [],
+  "missing_key_values": [],
+  "toc": [
+    {
+      "title": "一、引言",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "1.1 问题背景",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "1.2 问题重述",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "二、问题分析与总体思路",
+      "printed": 3,
+      "matches": [
+        3
+      ]
+    },
+    {
+      "title": "三、模型假设",
+      "printed": 4,
+      "matches": [
+        4
+      ]
+    },
+    {
+      "title": "四、符号说明",
+      "printed": 4,
+      "matches": [
+        4
+      ]
+    },
+    {
+      "title": "五、模型建立与求解",
+      "printed": 5,
+      "matches": [
+        5
+      ]
+    },
+    {
+      "title": "5.1 问题一模型的建立与求解",
+      "printed": 6,
+      "matches": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.1 问题分析与技术路线",
+      "printed": 6,
+      "matches": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.2 数据与模型准备",
+      "printed": 7,
+      "matches": [
+        7
+      ]
+    },
+    {
+      "title": "5.1.3 模型建立",
+      "printed": 9,
+      "matches": [
+        9
+      ]
+    },
+    {
+      "title": "5.1.4 求解与结果分析",
+      "printed": 13,
+      "matches": [
+        13
+      ]
+    },
+    {
+      "title": "5.2 问题二模型的建立与求解",
+      "printed": 15,
+      "matches": [
+        15
+      ]
+    },
+    {
+      "title": "5.2.1 问题分析与技术路线",
+      "printed": 15,
+      "matches": [
+        15
+      ]
+    },
+    {
+      "title": "5.2.2 数据与模型准备",
+      "printed": 16,
+      "matches": [
+        16
+      ]
+    },
+    {
+      "title": "5.2.3 模型建立",
+      "printed": 16,
+      "matches": [
+        16
+      ]
+    },
+    {
+      "title": "5.2.4 求解与结果分析",
+      "printed": 19,
+      "matches": [
+        19
+      ]
+    },
+    {
+      "title": "5.3 问题三模型的建立与求解",
+      "printed": 23,
+      "matches": [
+        23
+      ]
+    },
+    {
+      "title": "5.3.1 问题分析与技术路线",
+      "printed": 23,
+      "matches": [
+        23
+      ]
+    },
+    {
+      "title": "5.3.2 数据与模型准备",
+      "printed": 24,
+      "matches": [
+        24
+      ]
+    },
+    {
+      "title": "5.3.3 模型建立",
+      "printed": 24,
+      "matches": [
+        24
+      ]
+    },
+    {
+      "title": "5.3.4 求解与结果分析",
+      "printed": 29,
+      "matches": [
+        29
+      ]
+    },
+    {
+      "title": "5.4 问题四模型的建立与求解",
+      "printed": 33,
+      "matches": [
+        33
+      ]
+    },
+    {
+      "title": "5.4.1 问题分析与技术路线",
+      "printed": 33,
+      "matches": [
+        33
+      ]
+    },
+    {
+      "title": "5.4.2 数据与模型准备",
+      "printed": 35,
+      "matches": [
+        35
+      ]
+    },
+    {
+      "title": "5.4.3 模型建立",
+      "printed": 36,
+      "matches": [
+        36
+      ]
+    },
+    {
+      "title": "5.4.4 求解与结果分析",
+      "printed": 40,
+      "matches": [
+        40
+      ]
+    },
+    {
+      "title": "六、模型检验与分析",
+      "printed": 43,
+      "matches": [
+        43
+      ]
+    },
+    {
+      "title": "6.1 误差分析",
+      "printed": 43,
+      "matches": [
+        43
+      ]
+    },
+    {
+      "title": "6.2 灵敏度分析",
+      "printed": 44,
+      "matches": [
+        44
+      ]
+    },
+    {
+      "title": "七、模型评价",
+      "printed": 45,
+      "matches": [
+        45
+      ]
+    },
+    {
+      "title": "7.1 模型的优点",
+      "printed": 45,
+      "matches": [
+        45
+      ]
+    },
+    {
+      "title": "7.2 模型的缺点",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "八、模型改进与推广",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "8.1 模型的改进",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "8.2 模型的推广",
+      "printed": 46,
+      "matches": [
+        46
+      ]
+    },
+    {
+      "title": "参考文献",
+      "printed": 47,
+      "matches": [
+        47
+      ]
+    }
+  ],
+  "image_diff_pages_from_checked_draft": [],
+  "figures": 30,
+  "tables": 23,
+  "math_objects": 40,
+  "source_media_count": 34,
+  "bibliography_sources_checked": "Local candidate PDFs; NeurIPS/ICLR/PMLR/ACL/TMLR official publication records and DOI metadata",
+  "officecli_validation": "Passed: no OpenXML schema errors",
+  "visual_review": "First 53-page PDF visually reviewed; bibliography pagination revised; second final export checked against the reviewed PDF"
+}
