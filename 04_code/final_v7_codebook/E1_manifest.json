@@ -1,0 +1,23 @@
+{
+  "section": "E.1 问题一",
+  "modules": [
+    {
+      "filename": "q1_quality_score.py",
+      "purpose": "计算22项质量信号的统一效用、Q_full、W1和DQ0。",
+      "code_sha256": "37d1087b0cb9518ad25cd82159b8e8bf220d84726f7d2fc64b81ab47a82b2d85",
+      "sources": {
+        "04_code/paper_round8/q1_task_repair.py": "79a49739abed1fb34c4c619e5fa40a8c79130900e6cd26c0098632c0c047ed8f",
+        "04_code/modeling_phase1/round3_q1_descriptive.py": "bd7bb4977bc5120f9931a20ce1f4e166a9ed54f799d0f869a6a40311618c5c77"
+      }
+    },
+    {
+      "filename": "q1_mixture_model.py",
+      "purpose": "构造17域Helmert正交坐标，并拟合13个响应域的M1配比模型。",
+      "code_sha256": "1d2b97fa80ad008b2d2d8432d362023eb3ce5bdb053a687918633f8384f0d0a1",
+      "sources": {
+        "04_code/modeling_phase1/round4_train_p_response.py": "68a6a1b271dccfd60ee4405b8e2ad1b735b58558082f1685ccf35f667d31a813",
+        "04_code/modeling_phase1/round4_validate_p_response.py": "0839b12bd08717049f3511897a09157d89e748359423b722c426cb3312e2701e"
+      }
+    }
+  ]
+}
