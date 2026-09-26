@@ -1,0 +1,295 @@
+{
+  "pass": true,
+  "checks": {
+    "source_v5_unchanged": true,
+    "pdf_opens_43_pages": true,
+    "pdf_no_blank_pages": true,
+    "tables_content_preserved": true,
+    "all_23_academic_tables_three_line": true,
+    "original_29_media_preserved": true,
+    "math_content_preserved": true,
+    "figures_1_to_29_sequential": true,
+    "four_route_diagrams_present": true,
+    "toc_37_entries_match_final_pdf": true,
+    "citation_list_closed": true,
+    "key_result_values_present": true,
+    "no_thumbnail_or_dangling_relationship": true,
+    "anonymous_core_properties": true,
+    "no_reference_advertisement": true,
+    "single_ai_usage_notice": true,
+    "fixed_equation_reference": true
+  },
+  "pdf_physical_pages": 43,
+  "pdf_printed_last_page": 42,
+  "toc": [
+    {
+      "title": "一、引言",
+      "printed": 3,
+      "found": [
+        4
+      ]
+    },
+    {
+      "title": "1.1 问题背景",
+      "printed": 3,
+      "found": [
+        4
+      ]
+    },
+    {
+      "title": "1.2 问题重述",
+      "printed": 3,
+      "found": [
+        4
+      ]
+    },
+    {
+      "title": "二、问题分析与总体思路",
+      "printed": 3,
+      "found": [
+        4
+      ]
+    },
+    {
+      "title": "三、模型假设",
+      "printed": 3,
+      "found": [
+        4
+      ]
+    },
+    {
+      "title": "四、符号说明",
+      "printed": 4,
+      "found": [
+        5
+      ]
+    },
+    {
+      "title": "五、模型建立与求解",
+      "printed": 4,
+      "found": [
+        5
+      ]
+    },
+    {
+      "title": "5.1 问题一模型的建立与求解",
+      "printed": 5,
+      "found": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.1 问题分析与技术路线",
+      "printed": 5,
+      "found": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.2 数据与模型准备",
+      "printed": 5,
+      "found": [
+        6
+      ]
+    },
+    {
+      "title": "5.1.3 模型建立",
+      "printed": 7,
+      "found": [
+        8
+      ]
+    },
+    {
+      "title": "5.1.4 求解与结果分析",
+      "printed": 11,
+      "found": [
+        12
+      ]
+    },
+    {
+      "title": "5.2 问题二模型的建立与求解",
+      "printed": 13,
+      "found": [
+        14
+      ]
+    },
+    {
+      "title": "5.2.1 问题分析与技术路线",
+      "printed": 13,
+      "found": [
+        14
+      ]
+    },
+    {
+      "title": "5.2.2 数据与模型准备",
+      "printed": 13,
+      "found": [
+        14
+      ]
+    },
+    {
+      "title": "5.2.3 模型建立",
+      "printed": 14,
+      "found": [
+        15
+      ]
+    },
+    {
+      "title": "5.2.4 求解与结果分析",
+      "printed": 16,
+      "found": [
+        17
+      ]
+    },
+    {
+      "title": "5.3 问题三模型的建立与求解",
+      "printed": 19,
+      "found": [
+        20
+      ]
+    },
+    {
+      "title": "5.3.1 问题分析与技术路线",
+      "printed": 19,
+      "found": [
+        20
+      ]
+    },
+    {
+      "title": "5.3.2 数据与模型准备",
+      "printed": 20,
+      "found": [
+        21
+      ]
+    },
+    {
+      "title": "5.3.3 模型建立",
+      "printed": 20,
+      "found": [
+        21
+      ]
+    },
+    {
+      "title": "5.3.4 求解与结果分析",
+      "printed": 24,
+      "found": [
+        25
+      ]
+    },
+    {
+      "title": "5.4 问题四模型的建立与求解",
+      "printed": 28,
+      "found": [
+        29
+      ]
+    },
+    {
+      "title": "5.4.1 问题分析与技术路线",
+      "printed": 28,
+      "found": [
+        29
+      ]
+    },
+    {
+      "title": "5.4.2 数据与模型准备",
+      "printed": 29,
+      "found": [
+        30
+      ]
+    },
+    {
+      "title": "5.4.3 模型建立",
+      "printed": 30,
+      "found": [
+        31
+      ]
+    },
+    {
+      "title": "5.4.4 求解与结果分析",
+      "printed": 33,
+      "found": [
+        34
+      ]
+    },
+    {
+      "title": "六、模型检验与分析",
+      "printed": 36,
+      "found": [
+        37
+      ]
+    },
+    {
+      "title": "6.1 误差分析",
+      "printed": 36,
+      "found": [
+        37
+      ]
+    },
+    {
+      "title": "6.2 灵敏度分析",
+      "printed": 36,
+      "found": [
+        37
+      ]
+    },
+    {
+      "title": "七、模型评价",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    },
+    {
+      "title": "7.1 模型的优点",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    },
+    {
+      "title": "7.2 模型的缺点",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    },
+    {
+      "title": "八、模型改进与推广",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    },
+    {
+      "title": "8.1 模型的改进",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    },
+    {
+      "title": "8.2 模型的推广",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    },
+    {
+      "title": "参考文献",
+      "printed": 38,
+      "found": [
+        39
+      ]
+    }
+  ],
+  "figures": 29,
+  "tables_academic": 23,
+  "math_objects": 40,
+  "embedded_shapes": 33,
+  "missing_key_values": [],
+  "docx_sha256": "b5296f12284d3a2e0889ab00513c21718bc181293596e4f92e6aad63d96a9224",
+  "pdf_sha256": "cf59ce988968ae63a3d4af4a97dcf32bc8fa29035b59409b9813fb01c8c48e1d",
+  "officecli_schema_validation": "previous binary: success, 0 warnings; current binary missing System.IO.Pipelines",
+  "visual_review": "PDF rounds 1, 2, 3 and final round 4; every final physical page reviewed in contact sheets; key pages enlarged",
+  "layout_note": "Physical pages 25 and 27 retain figure-led whitespace to preserve graph label readability."
+}
