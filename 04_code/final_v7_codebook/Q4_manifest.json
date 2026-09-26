@@ -1,0 +1,93 @@
+{
+  "paper": "v7",
+  "baseline": "43d01e2",
+  "section": "Q4",
+  "sources": [
+    {
+      "section": "Q4",
+      "number": 1,
+      "path": "04_code/modeling_phase4/common.py",
+      "purpose": "提供问题四共享路径、数据读写和规范化工具。",
+      "sha256": "85cacdf34b14b824b39b5ce5cb55d0cbbe4b56f85276f5cbb974972e5e4a1462",
+      "lines": 28,
+      "bytes": 1590
+    },
+    {
+      "section": "Q4",
+      "number": 2,
+      "path": "04_code/modeling_phase4/round7_mapping.py",
+      "purpose": "核对 C 类附件字段、模型实体和评测记录映射。",
+      "sha256": "908ae9709edc8e1b9bc158e9234ff883466b9f76171acbfd0d31046471103c08",
+      "lines": 38,
+      "bytes": 4401
+    },
+    {
+      "section": "Q4",
+      "number": 3,
+      "path": "04_code/modeling_phase4/round7_freeze.py",
+      "purpose": "构建供前沿、桥接和预测使用的冻结规范输入。",
+      "sha256": "f474ece2a7c87abdb9f71882a89c93100d78695cd2438eca18aa5643a0cb04c8",
+      "lines": 64,
+      "bytes": 13649
+    },
+    {
+      "section": "Q4",
+      "number": 4,
+      "path": "04_code/modeling_phase4/round7_models.py",
+      "purpose": "计算评测前沿、描述性分解并检验 Loss–Benchmark 桥接。",
+      "sha256": "0518d5664d61977d457ce781eee68b2a49778fd29e00e2caaff4c3948075168e",
+      "lines": 145,
+      "bytes": 13520
+    },
+    {
+      "section": "Q4",
+      "number": 5,
+      "path": "04_code/modeling_phase4/round7_forecast.py",
+      "purpose": "比较动态模型并给出 12/24 个月条件预测及区间。",
+      "sha256": "33e20ca6c3ce728bbe48a87a3bc98daff24ec23d730447318de1b4bdc5ff14ac",
+      "lines": 64,
+      "bytes": 8170
+    },
+    {
+      "section": "Q4",
+      "number": 6,
+      "path": "04_code/paper_round8/q4_task_repair.py",
+      "purpose": "计算可用训练 D 子样本诊断和外生正增长放缓情景。",
+      "sha256": "b01e93ca6a4e52e70bd904c618715316246ac406c7989aeee249ee20f0ee63f7",
+      "lines": 56,
+      "bytes": 5291
+    },
+    {
+      "section": "Q4",
+      "number": 7,
+      "path": "04_code/modeling_phase4/round7_figures.py",
+      "purpose": "绘制问题四前沿、桥接、分解、预测及敏感性图。",
+      "sha256": "3fd405a12f9b8da4b18849032ff766f7332a5ffc8dc72176cccef06d330d63f0",
+      "lines": 37,
+      "bytes": 7608
+    },
+    {
+      "section": "Q4",
+      "number": 8,
+      "path": "04_code/paper_round8/revised_figures.py",
+      "purpose": "从冻结结果重导出最终稿的修订图。",
+      "sha256": "b8dd6913bc9757ad49f3e28857c23454fcde93432c14a6c276d800fdad72feac",
+      "lines": 63,
+      "bytes": 4631
+    },
+    {
+      "section": "Q4",
+      "number": 9,
+      "path": "04_code/paper_v5/supplementary_q4_vis.py",
+      "purpose": "绘制最终稿的放缓情景与任务分量补充图。",
+      "sha256": "77811ed10fd2bb37ab919451fbc1c724044cc17d890d4f8b778eddec1b88abe1",
+      "lines": 138,
+      "bytes": 7554
+    }
+  ],
+  "evidence": [
+    "06_results/raw/EXP-Q4-R7-20260925-v1/bridge_summary.json",
+    "06_results/raw/EXP-Q4-R7-20260925-v1/forecast_summary.json",
+    "06_results/raw/Q4_TASK_REPAIR_20260925_v1/summary.json"
+  ]
+}

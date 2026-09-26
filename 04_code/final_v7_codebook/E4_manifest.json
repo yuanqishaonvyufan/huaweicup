@@ -1,0 +1,15 @@
+{
+  "section": "E.4 问题四",
+  "modules": [
+    {
+      "filename": "q4_frontier_forecast.py",
+      "purpose": "构造滚动能力前沿，比较Loss桥接方法，拟合动态预测并计算条件放缓情景。",
+      "code_sha256": "951595802236a589bc2b9e39b2c102242ddc15e79b59f2a5411a733212792eed",
+      "sources": {
+        "04_code/modeling_phase4/round7_models.py": "0518d5664d61977d457ce781eee68b2a49778fd29e00e2caaff4c3948075168e",
+        "04_code/modeling_phase4/round7_forecast.py": "33e20ca6c3ce728bbe48a87a3bc98daff24ec23d730447318de1b4bdc5ff14ac",
+        "04_code/paper_round8/q4_task_repair.py": "b01e93ca6a4e52e70bd904c618715316246ac406c7989aeee249ee20f0ee63f7"
+      }
+    }
+  ]
+}

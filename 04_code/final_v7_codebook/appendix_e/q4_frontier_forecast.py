@@ -1,0 +1,150 @@
+"""Core Q4 rolling benchmark frontier, dynamic forecast, and slowdown scenario."""
+
+import numpy as np
+import pandas as pd
+from scipy.special import expit, logit
+from scipy.stats import spearmanr
+
+
+def bridge_predict(x, y, target, method):
+    """Predict benchmark score from Loss by mean, nonpositive linear, or monotone fit."""
+    x, y, target = np.asarray(x), np.asarray(y), np.asarray(target)
+    if method == "mean":
+        return np.full(len(target), np.mean(y))
+    if method == "linear":
+        slope = min(0.0, np.cov(x, y, ddof=0)[0, 1] / np.var(x))
+        return np.mean(y) + slope * (target - np.mean(x))
+    order = np.argsort(x)
+    xx, yy = x[order], -y[order]
+    blocks = []
+    for i, value in enumerate(yy):
+        blocks.append([i, i, float(value), 1])
+        while len(blocks) > 1 and blocks[-2][2] / blocks[-2][3] > blocks[-1][2] / blocks[-1][3]:
+            right, left = blocks.pop(), blocks.pop()
+            blocks.append([left[0], right[1], left[2] + right[2], left[3] + right[3]])
+    fitted = np.empty(len(x))
+    for start, end, total, count in blocks:
+        fitted[start:end + 1] = -total / count
+    return np.interp(target, xx, fitted)
+
+
+def assess_bridge(loss_values, benchmark_scores):
+    """LOSO plus low/high scale holdouts; compare with the training-mean rule."""
+    x, y = np.asarray(loss_values, float), np.asarray(benchmark_scores, float)
+    order = np.argsort(x)
+    x, y = x[order], y[order]
+    n = len(x)
+    splits = [("LOSO", [i]) for i in range(n)]
+    splits += [("LOW_SCALE", [0, 1]), ("HIGH_SCALE", [n - 2, n - 1])]
+    errors = {name: {} for name in ("mean", "linear", "monotone")}
+    for split_name, test_idx in splits:
+        keep = np.ones(n, dtype=bool)
+        keep[test_idx] = False
+        for method in errors:
+            estimate = bridge_predict(x[keep], y[keep], x[test_idx], method)
+            errors[method].setdefault(split_name, []).extend((estimate - y[test_idx]) ** 2)
+    rmse = {
+        method: {split: float(np.sqrt(np.mean(squared))) for split, squared in by_split.items()}
+        for method, by_split in errors.items()
+    }
+    rho = float(spearmanr(-x, y).statistic)
+    passing = [
+        method for method in ("linear", "monotone")
+        if rho >= 0.7 and all(rmse[method][split] <= rmse["mean"][split]
+                              for split in rmse["mean"])
+    ]
+    return {"spearman_minus_loss": rho, "rmse_by_split": rmse, "passing_methods": passing}
+
+
+def weekly_time(date, epoch):
+    return (pd.to_datetime(date) - epoch).total_seconds() / 604800
+
+
+def ols(design, outcome):
+    return np.linalg.lstsq(np.asarray(design, float), np.asarray(outcome, float), rcond=None)[0]
+
+
+def rolling_frontier(data, beta, epoch, window_days=28, quantile=0.90, min_n=15):
+    """Compute weekly q90 score frontier; S=beta*log(N), R=F-S."""
+    data = data.copy()
+    data["used_date"] = pd.to_datetime(data["date"], errors="coerce")
+    data = data.dropna(subset=["used_date", "score"])
+    dates = list(pd.date_range(data.used_date.min(), data.used_date.max(), freq="W-SUN"))
+    if not dates or dates[-1] != data.used_date.max():
+        dates.append(data.used_date.max())
+    rows = []
+    for t in dates:
+        group = data[(data.used_date > t - pd.Timedelta(days=window_days)) & (data.used_date <= t)]
+        group = group.sort_values(["score", "canonical"])
+        if len(group) < min_n:
+            continue
+        pos = quantile * (len(group) - 1)
+        i, j = int(np.floor(pos)), int(np.ceil(pos))
+        weight = pos - i
+        low, high = group.iloc[i], group.iloc[j]
+        log_n = (1 - weight) * np.log(low.N_B) + weight * np.log(high.N_B)
+        score = (1 - weight) * low.score + weight * high.score
+        rows.append({"date": t, "t_week": weekly_time(t, epoch), "F": score,
+                     "S": beta * log_n, "R": score - beta * log_n})
+    return pd.DataFrame(rows)
+
+
+def fit_dynamic(time_weeks, score, model="logit"):
+    time_weeks = np.asarray(time_weeks, float)
+    score = np.asarray(score, float)
+    if model == "local_logit":
+        keep = time_weeks >= time_weeks.max() - 13
+        time_weeks, score = time_weeks[keep], score[keep]
+    transformed = model in {"logit", "local_logit"}
+    z = logit(np.clip(score / 100, 0.001, 0.999)) if transformed else score
+    if model == "persistence":
+        fitted = np.full(len(z), z[-1])
+        innovations = z[4:] - z[:-4] if len(z) > 4 else np.diff(z)
+        sd = np.std(innovations, ddof=1) if len(innovations) > 1 else 0.0
+        coef = np.array([z[-1], 0.0])
+    else:
+        design = np.column_stack([np.ones(len(z)), time_weeks - time_weeks[-1]])
+        coef = ols(design, z)
+        fitted = design @ coef
+        sd = np.sqrt(np.sum((z - fitted) ** 2) / max(1, len(z) - 2))
+    return {"model": model, "time": time_weeks, "coef": coef, "fitted": fitted,
+            "residual": z - fitted, "sd": max(float(sd), 1e-8), "transform": transformed}
+
+
+def predict_dynamic(fit, target_weeks):
+    z = fit["coef"][0] + fit["coef"][1] * (np.asarray(target_weeks) - fit["time"][-1])
+    return 100 * expit(z) if fit["transform"] else np.clip(z, 0, 100)
+
+
+def select_dynamic_model(rolling_metrics):
+    """Select by equal-horizon MAE, retaining persistence within a 5% margin."""
+    scores = rolling_metrics.groupby("model").MAE.mean()
+    best = scores.idxmin()
+    return "persistence" if scores["persistence"] <= 1.05 * scores.min() else best
+
+
+def bootstrap_dynamic(fit, target_weeks, draws=1000, seed=20260925):
+    """Four-week moving-block residual bootstrap for conditional forecast bands."""
+    rng = np.random.default_rng(seed)
+    time_weeks = fit["time"]
+    n = len(time_weeks)
+    targets = np.atleast_1d(target_weeks)
+    horizon = np.maximum(0, targets - time_weeks[-1])
+    block = 4
+    starts = rng.integers(0, n, size=(draws, int(np.ceil(n / block))))
+    indices = ((starts[:, :, None] + np.arange(block)) % n).reshape(draws, -1)[:, :n]
+    if fit["model"] == "persistence":
+        predictions = np.full((draws, len(targets)), fit["coef"][0])
+    else:
+        z = fit["fitted"][None, :] + fit["residual"][indices]
+        design = np.column_stack([np.ones(n), time_weeks - time_weeks[-1]])
+        coef = z @ np.linalg.pinv(design).T
+        predictions = coef[:, 0, None] + coef[:, 1, None] * (targets - time_weeks[-1])
+    predictions += rng.normal(size=predictions.shape) * fit["sd"] * np.sqrt(1 + horizon / 4)
+    return 100 * expit(predictions) if fit["transform"] else np.clip(predictions, 0, 100)
+
+
+def slowdown_scenario(base_center, horizon_weeks, beta_log_n, reference_growth_per_week, rho):
+    """Conditional benchmark-space adjustment; rho=1/.5/0 retains 100/50/0%."""
+    shift = (rho - 1) * beta_log_n * reference_growth_per_week * horizon_weeks
+    return float(np.clip(base_center + shift, 0, 100))
