@@ -1,0 +1,66 @@
+{
+  "paper": "v7",
+  "baseline": "43d01e2",
+  "section": "Q3",
+  "sources": [
+    {
+      "section": "Q3",
+      "number": 1,
+      "path": "04_code/modeling_phase3/round6_core.py",
+      "purpose": "实现题设 FLOPs 成本、N–D 损失、解析最优、质量情景和 KKT 诊断。",
+      "sha256": "01f2639b9ec59eb7f97f20e459a2427b84d189247dc649d234c2a373b349b152",
+      "lines": 113,
+      "bytes": 6554
+    },
+    {
+      "section": "Q3",
+      "number": 2,
+      "path": "04_code/modeling_phase3/round6_baseline.py",
+      "purpose": "求解 51 个预算点的 N–D 基线最优路径。",
+      "sha256": "416630f469d15c38ac8353c59f35b787de6d7ecb1739d3d9aa2d5ea9b7b8829e",
+      "lines": 24,
+      "bytes": 2499
+    },
+    {
+      "section": "Q3",
+      "number": 3,
+      "path": "04_code/modeling_phase3/round6_scenarios.py",
+      "purpose": "计算质量、上下文长度、配比和供给约束的条件情景。",
+      "sha256": "37ff3a43fb607859106921fb9b22c70b658477ca4efa34efe1424f4ae02e8437",
+      "lines": 66,
+      "bytes": 6901
+    },
+    {
+      "section": "Q3",
+      "number": 4,
+      "path": "04_code/modeling_phase3/round6_uncertainty.py",
+      "purpose": "传播联合参数向量的不确定性并计算情景包络。",
+      "sha256": "8cc0816e3fd02486aaafca75ff5e0cfa041d6f8374d972a0d83b2db66b902bac",
+      "lines": 44,
+      "bytes": 4074
+    },
+    {
+      "section": "Q3",
+      "number": 5,
+      "path": "04_code/visualization/round6_figures.py",
+      "purpose": "绘制问题三预算路径、约束与不确定性图。",
+      "sha256": "6f90e2246324f8f168f020286ef25a2ae5d4903b3ae4a1247960d8ae703e2298",
+      "lines": 70,
+      "bytes": 8922
+    },
+    {
+      "section": "Q3",
+      "number": 6,
+      "path": "04_code/paper_v5/supplementary_q3_vis.py",
+      "purpose": "显示最终稿使用的预算构成和活跃约束补充图。",
+      "sha256": "06521650e3f93a66f282a466a513a24a9a0250017bde4376a7ac9760f7df19ce",
+      "lines": 112,
+      "bytes": 5750
+    }
+  ],
+  "evidence": [
+    "06_results/raw/EXP-Q3-BASE-R6-20260924-v1/summary.json",
+    "06_results/raw/SCEN-Q3-R6-20260924-v1/summary.json",
+    "06_results/raw/UNC-Q3-R6-20260924-v1/summary.json"
+  ]
+}

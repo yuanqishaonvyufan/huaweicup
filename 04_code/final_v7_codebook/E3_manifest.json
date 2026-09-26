@@ -1,0 +1,15 @@
+{
+  "section": "E.3 问题三",
+  "modules": [
+    {
+      "filename": "q3_resource_allocation.py",
+      "purpose": "计算给定算力预算下的N–D最优分配，并求解质量情景扩展。",
+      "code_sha256": "80d69ca748f8dcf6a5e43f29556421a0ca747a9def3d15f50820ea56fad09a56",
+      "sources": {
+        "04_code/modeling_phase3/round6_core.py": "01f2639b9ec59eb7f97f20e459a2427b84d189247dc649d234c2a373b349b152",
+        "04_code/modeling_phase3/round6_baseline.py": "416630f469d15c38ac8353c59f35b787de6d7ecb1739d3d9aa2d5ea9b7b8829e",
+        "04_code/modeling_phase3/round6_scenarios.py": "37ff3a43fb607859106921fb9b22c70b658477ca4efa34efe1424f4ae02e8437"
+      }
+    }
+  ]
+}
