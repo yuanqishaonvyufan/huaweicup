@@ -1,0 +1,14 @@
+{
+  "section": "E.2 问题二",
+  "modules": [
+    {
+      "filename": "q2_scaling_fit.py",
+      "purpose": "拟合五参数N–D标度律，并执行轨迹留出、前向和N–D分块验证。",
+      "code_sha256": "3f5746d3f6c6f709993cbb239ef976612ec27a4041f20f609c854f84c884e310",
+      "sources": {
+        "04_code/modeling_phase2/round5_fit.py": "f453b37cb7784ce4c34701343e5a2d5038d1521cc1ab126c261429cce21b7c1d",
+        "04_code/modeling_phase2/round5_prepare.py": "95f447c2ab8d57c2a8465b05395de62b40acb2b190dca0e7b49e471aec595d68"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "paper": "v7",
+  "baseline": "43d01e2",
+  "section": "Q2",
+  "sources": [
+    {
+      "section": "Q2",
+      "number": 1,
+      "path": "04_code/modeling_phase2/round5_prepare.py",
+      "purpose": "准备 B 类标度律输入并记录来源与字段校验。",
+      "sha256": "95f447c2ab8d57c2a8465b05395de62b40acb2b190dca0e7b49e471aec595d68",
+      "lines": 64,
+      "bytes": 4375
+    },
+    {
+      "section": "Q2",
+      "number": 2,
+      "path": "04_code/modeling_phase2/round5_fit.py",
+      "purpose": "拟合五参数 N–D 加性幂律，执行轨迹分组验证与参数稳定性计算。",
+      "sha256": "f453b37cb7784ce4c34701343e5a2d5038d1521cc1ab126c261429cce21b7c1d",
+      "lines": 134,
+      "bytes": 9418
+    },
+    {
+      "section": "Q2",
+      "number": 3,
+      "path": "04_code/modeling_phase2/round5_scenarios.py",
+      "purpose": "计算质量校准、跨来源形状诊断和条件替代情景。",
+      "sha256": "4c672869959d36a971be809c91a8eacb388010cb5b1e2cc6b6889e421191aa01",
+      "lines": 126,
+      "bytes": 9413
+    },
+    {
+      "section": "Q2",
+      "number": 4,
+      "path": "04_code/visualization/round5_figures.py",
+      "purpose": "绘制问题二标度律、验证、弹性和情景图。",
+      "sha256": "4e9b74e346555d767a856dbf6ff6c89e62d6a24243cda957cd5c74dc115714b3",
+      "lines": 73,
+      "bytes": 6978
+    },
+    {
+      "section": "Q2",
+      "number": 5,
+      "path": "04_code/paper_v5/supplementary_q2_vis.py",
+      "purpose": "显示冻结的整轨迹重抽样参数分布。",
+      "sha256": "d68a50727746a6818a9df94d8ef844e9c09be8ac09555c70ebf6040c1f96739d",
+      "lines": 118,
+      "bytes": 6040
+    }
+  ],
+  "evidence": [
+    "06_results/raw/EXP-Q2-ND-R5-20260924-v1/summary.json",
+    "06_results/raw/SCEN-Q2-R5-20260924-v3/summary.json"
+  ]
+}
