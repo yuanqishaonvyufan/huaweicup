@@ -5,7 +5,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile
+import xml.etree.ElementTree as ET
 
 from docx import Document
 from docx.enum.style import WD_STYLE_TYPE
@@ -89,6 +92,37 @@ def set_east_asia(style, name: str) -> None:
     fonts.set(qn("w:eastAsia"), name)
 
 
+def remove_package_thumbnail(target: Path) -> None:
+    """Remove the python-docx default thumbnail and its package relationship."""
+    temporary = target.with_name(target.stem + ".cleaned.docx")
+    namespace = "http://schemas.openxmlformats.org/package/2006/relationships"
+    ET.register_namespace("", namespace)
+    with ZipFile(target, "r") as source, ZipFile(temporary, "w", ZIP_DEFLATED) as output:
+        for info in source.infolist():
+            if info.filename.startswith("docProps/thumbnail."):
+                continue
+            data = source.read(info.filename)
+            if info.filename == "_rels/.rels":
+                relationships = ET.fromstring(data)
+                for relation in list(relationships):
+                    if relation.attrib.get("Type", "").endswith("/metadata/thumbnail"):
+                        relationships.remove(relation)
+                data = ET.tostring(relationships, encoding="utf-8", xml_declaration=True)
+            output.writestr(info, data)
+    with ZipFile(temporary) as check:
+        if check.testzip() is not None:
+            temporary.unlink(missing_ok=True)
+            raise RuntimeError("Generated DOCX package failed ZIP integrity check")
+        if any(name.startswith("docProps/thumbnail.") for name in check.namelist()):
+            temporary.unlink(missing_ok=True)
+            raise RuntimeError("Generated DOCX still contains a package thumbnail")
+        relationships = ET.fromstring(check.read("_rels/.rels"))
+        if any(item.attrib.get("Type", "").endswith("/metadata/thumbnail") for item in relationships):
+            temporary.unlink(missing_ok=True)
+            raise RuntimeError("Generated DOCX still has a thumbnail relationship")
+    os.replace(temporary, target)
+
+
 def build_docx(target: Path) -> None:
     doc = Document()
     section = doc.sections[0]
@@ -105,6 +139,14 @@ def build_docx(target: Path) -> None:
         style.font.color.rgb = RGBColor(25, 49, 77)
         set_east_asia(style, "Microsoft YaHei")
         style.paragraph_format.keep_with_next = True
+    title_style = doc.styles.add_style("AppendixTitle", WD_STYLE_TYPE.PARAGRAPH)
+    title_style.base_style = normal
+    title_style.font.name, title_style.font.size = "Microsoft YaHei", Pt(20)
+    title_style.font.bold = True
+    title_style.font.color.rgb = RGBColor(25, 49, 77)
+    set_east_asia(title_style, "Microsoft YaHei")
+    title_style.paragraph_format.space_after = Pt(13)
+    title_style.paragraph_format.keep_with_next = True
     code_style = doc.styles.add_style("AppendixCode", WD_STYLE_TYPE.PARAGRAPH)
     code_style.font.name, code_style.font.size = "Consolas", Pt(8.4)
     code_style.font.color.rgb = RGBColor(33, 40, 48)
@@ -120,13 +162,12 @@ def build_docx(target: Path) -> None:
     prompt_style.paragraph_format.space_after = Pt(3)
     prompt_style.paragraph_format.left_indent = Inches(.12)
 
-    doc.add_paragraph("附录 E 主要源程序及支撑材料", style="Title")
+    doc.add_paragraph("附录 E 主要源程序及支撑材料", style="AppendixTitle")
     doc.add_paragraph("对应论文：F_final_candidate_v7_最终投稿版")
     doc.add_paragraph("本附录收录论文模型与结果所需的核心计算函数。代码段保留模型定义和求解逻辑；完整数据处理、验证、作图程序及运行证据列于各问的支撑材料。")
     doc.add_paragraph("复制代码段单独运行前，请按对应支撑源程序补齐输入表、参数配置和运行环境。原始完整程序已在 GitHub 项目分问登记 SHA-256。")
 
     for key, (heading, _) in OUTLINE.items():
-        doc.add_page_break()
         doc.add_heading(heading, level=1)
         for row in snippet_records(key):
             doc.add_heading(row["filename"], level=2)
@@ -138,7 +179,6 @@ def build_docx(target: Path) -> None:
                 p = doc.add_paragraph(style="AppendixCode")
                 p.add_run(line)
 
-    doc.add_page_break()
     doc.add_heading("支撑材料与 Codex 提示词", level=1)
     for key, (heading, _) in OUTLINE.items():
         manifest_path = HERE / f"{key}_manifest.json"
@@ -154,6 +194,7 @@ def build_docx(target: Path) -> None:
     doc.core_properties.author = ""
     doc.core_properties.last_modified_by = ""
     doc.save(target)
+    remove_package_thumbnail(target)
 
 
 def main() -> None:
