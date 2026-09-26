@@ -171,6 +171,8 @@ def parse_and_insert(doc: Document, source: Path, figures: list[dict], xsl) -> N
             add_equation(doc, anchor, line[3:-3].strip(), xsl)
         elif line.startswith("表# "):
             add_para(doc, anchor, line, "PaperCaption").paragraph_format.keep_with_next = True
+        elif re.match(r"表[A-Z]\d+ ", line):
+            add_para(doc, anchor, line, "PaperCaption").paragraph_format.keep_with_next = True
         elif line.startswith("|"):
             rows = []
             while True:
@@ -183,6 +185,9 @@ def parse_and_insert(doc: Document, source: Path, figures: list[dict], xsl) -> N
                 i += 1
             add_table(doc, anchor, rows)
             after_table = True
+        elif line.startswith("# "):
+            p = add_para(doc, anchor, line[2:], "PaperH1")
+            p.paragraph_format.keep_with_next = True
         elif line.startswith("### "):
             p = add_para(doc, anchor, line[4:], "PaperH2")
             p.paragraph_format.space_before = Pt(6)
@@ -247,6 +252,12 @@ def main() -> None:
     opt = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     doc = Document(BASE)
+    # The supplied v3 has one inline TeX fragment already represented by a
+    # display equation; retain its meaning while removing raw source syntax.
+    for paragraph in doc.paragraphs:
+        replace_runs(paragraph, lambda value: value.replace(
+            "Q_full(i)=(1/22)Σ_{j=1}^{22}u_{ij}",
+            "Q_full(i) 为22项效用的等权平均"))
     old_elements = {p._p for p in doc.paragraphs}
     old_text = {p._p: p.text for p in doc.paragraphs}
     xsl = etree.XSLT(etree.parse(str(XSL)))

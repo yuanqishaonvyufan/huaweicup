@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "physical_pages": 52,
+  "toc_entries_verified": 37,
+  "figures": 25,
+  "body_tables": 20,
+  "appendix_tables": 3,
+  "equations": 28,
+  "embedded_shapes": 29,
+  "baseline_media_preserved": true,
+  "supplementary_runs": {
+    "SUPP-Q1-VIS-20260925-v1": {
+      "input_count": 3,
+      "output_count": 3,
+      "hashes_match": true
+    },
+    "SUPP-Q2-VIS-20260925-v1": {
+      "input_count": 2,
+      "output_count": 2,
+      "hashes_match": true
+    },
+    "SUPP-Q3-VIS-20260925-v1": {
+      "input_count": 2,
+      "output_count": 1,
+      "hashes_match": true
+    },
+    "SUPP-Q4-VIS-20260925-v1": {
+      "input_count": 3,
+      "output_count": 2,
+      "hashes_match": true
+    }
+  },
+  "docx_sha256": "c244a9d53ea35f3cc084920949db0ba238fa170c30d35b2ce77a660556387941",
+  "pdf_sha256": "4124f97409884cd87d5288df2abadf4d082e4758bc33637ed99dd22122287d41"
+}

@@ -1,12 +1,12 @@
 {
-  "stage": "q4",
+  "stage": "final",
   "baseline": "08_paper/v5/baseline_v3_user.docx",
   "baseline_sha256": "a34984fbefd0f4488f8b2ce94beff34e9e0c599df4eaf48b531ea46eda446353",
   "source_files": [
     {
       "phase": "q1",
       "source": "05_Q1_additions.md",
-      "sha256": "86fbb5f8f1a623f7dc88a736a1723decda04591e8acf340402e0fd908b48895d"
+      "sha256": "787d9203d04c6ae993e78062cd58bab84b0bff9bafb4280e1a151f9879f85c0a"
     },
     {
       "phase": "q2",
@@ -22,10 +22,15 @@
       "phase": "q4",
       "source": "08_Q4_additions.md",
       "sha256": "14f2a609f70bb0adc48cf870531a7d2ca5c83c64be79023c422418c716d620f7"
+    },
+    {
+      "phase": "final",
+      "source": "09_validation_back_additions.md",
+      "sha256": "dca2004bcf868d30d1a78517cf7da90821cf2868c68a8c975f2bc0fc0611c539"
     }
   ],
   "figures": 25,
-  "tables_body": 18,
+  "tables_body": 20,
   "equations": 28,
   "figure_sources_new": [
     {
@@ -195,5 +200,9 @@
     "word/media/image12.png": true,
     "word/media/image13.png": true
   },
-  "docx_sha256": "0d03e9540ccd0df896d7137c3ef9a577aa9998eabde067f912e30e79e4837761"
+  "docx_sha256": "c244a9d53ea35f3cc084920949db0ba238fa170c30d35b2ce77a660556387941",
+  "toc_refreshed": true,
+  "toc_rows": 37,
+  "pdf_sha256": "4124f97409884cd87d5288df2abadf4d082e4758bc33637ed99dd22122287d41",
+  "pdf_pages": 52
 }
